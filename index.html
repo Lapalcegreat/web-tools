@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AI 工具站 · 我的一些小工具</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+         background: #0f1419; color: #e6edf3; min-height: 100vh; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 56px 24px 80px; }
+  h1 { font-size: 30px; margin: 0 0 8px; letter-spacing: .5px; }
+  .sub { color: #8b98a9; margin: 0 0 40px; font-size: 14px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; }
+  a.card { display: block; padding: 22px; border-radius: 14px; text-decoration: none; color: inherit;
+           background: #161b22; border: 1px solid #262d36; transition: .18s transform, .18s border-color; }
+  a.card:hover { transform: translateY(-3px); border-color: #3b82f6; }
+  .tag { font-size: 12px; color: #58a6ff; background: #10233b; padding: 3px 8px; border-radius: 999px; }
+  .card h2 { font-size: 18px; margin: 12px 0 6px; }
+  .card p { margin: 0; color: #8b98a9; font-size: 13px; line-height: 1.6; }
+  .soon { border-style: dashed; opacity: .55; cursor: default; }
+  footer { margin-top: 48px; color: #5b6672; font-size: 12px; line-height: 1.8; }
+  footer a { color: #58a6ff; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>AI 工具站</h1>
+  <p class="sub">这里放我用 AI 写的一些网页小工具，点开即用，无需安装。</p>
+
+  <div class="grid">
+    <a class="card" href="etf/">
+      <span class="tag">行情</span>
+      <h2>ETF 成交量监控</h2>
+      <p>12 只宽基 ETF 的日 K、成交量、均线与爆量高亮，支持日/周切换。</p>
+    </a>
+    <div class="card soon">
+      <span class="tag">TBD</span>
+      <h2>更多工具</h2>
+      <p>新工具会以子目录形式加入。</p>
+    </div>
+  </div>
+
+  <footer>
+    静态站点，纯前端。数据为快照，更新需重新推送。<br />
+    源码与更新说明见仓库 README。
+  </footer>
+</div>
+</body>
+</html>

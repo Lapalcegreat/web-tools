@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A股宽基ETF · K线与成交量</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="app"></div>
+<script src="data/etf-data.js"></script>
+<script src="app.js"></script>
+<script>
+  try {
+    window.EtfDashboard.mount("#app");
+  } catch (e) {
+    document.getElementById("app").innerHTML =
+      '<div style="padding:40px;color:#8b98a9;font:14px system-ui">页面初始化失败：' + e.message + "</div>";
+  }
+</script>
+</body>
+</html>
