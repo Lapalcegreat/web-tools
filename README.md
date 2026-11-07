@@ -1,5 +1,7 @@
 ﻿# AI 工具站
 
+> 在线地址：<https://lapalcegreat.github.io/web-tools/>
+
 用 AI 写的一些网页小工具，静态托管在 GitHub Pages。
 
 ## 工具
@@ -41,3 +43,4 @@ git push
 
 - 纯静态：没有后端，`etf/` 页面的「刷新」在线上只会重读已提交的数据快照。
 - 数据仅供个人研究，不构成投资建议。
+
