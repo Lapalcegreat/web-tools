@@ -1,0 +1,7 @@
+# A股宽基ETF行情页：插入一个主面板「ETF行情」入口。
+# 宿主半把工作区 etf-dashboard 目录挂到 /etf-charts 路由，页面用同源 iframe 打开。
+- insert:
+    - id: etf-charts
+      name: "dsh-etf-charts"
+      config:
+        dir: "C:/Users/Administrator/Documents/deepseek-harness/default-workspace/etf-dashboard"

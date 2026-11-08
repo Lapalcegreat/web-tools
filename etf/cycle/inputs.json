@@ -1,0 +1,9 @@
+{
+ "ai": {
+  "capexGrowth": 45,
+  "capexTrend": "down",
+  "priceChange": -8,
+  "orderCoverage": 3,
+  "capacityUtil": 85
+ }
+}

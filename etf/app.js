@@ -106,6 +106,7 @@
       bars: [],
       ma5: [], ma10: [], ma20: [],
       spikes: [],
+      flows: null,
       price: { min: 0, max: 1 },
       status: "loading",
     };
@@ -142,7 +143,10 @@
     const refreshBtn = el("button", "icon-btn", "刷新");
     refreshBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v6h-6"/></svg><span>刷新</span>';
     refreshBtn.onclick = () => refreshNow();
-    ctr.append(viewSeg, rangeSeg, refreshBtn);
+    const cycleLink = el("a", "icon-btn", "产业温度计");
+    cycleLink.href = "cycle/";
+    cycleLink.style.textDecoration = "none";
+    ctr.append(viewSeg, rangeSeg, cycleLink, refreshBtn);
     top.appendChild(ctr);
 
     const main = el("div", "main");
@@ -168,7 +172,21 @@
     const tooltip = el("div", "tooltip");
     host.append(canvas, legend, tooltip);
     const foot = el("div", "chart-foot");
-    cwrap.append(chead, host, foot);
+    const flowPanel = el("div", "flow-panel");
+    flowPanel.style.display = "none";
+    flowPanel.innerHTML =
+      '<div class="flow-head"><b>国家队足迹</b>' +
+      '<div class="flow-stat"><b id="flow-net">--</b><span>今日净申购</span></div>' +
+      '<div class="flow-stat"><b id="flow-cum">--</b><span>5日累计</span></div>' +
+      '<div class="flow-stat score"><b id="flow-score">--</b><span>足迹分</span></div>' +
+      '<span class="flow-note">份额 T+1 · 净申购 = 份额变化 × 收盘价 · 足迹分 ≥65 偏多 / &lt;45 偏空</span></div>' +
+      '<div class="flow-body"><canvas id="flow-canvas"></canvas><div class="flow-table" id="flow-table"></div></div>';
+    const flowNet = flowPanel.querySelector("#flow-net");
+    const flowCum = flowPanel.querySelector("#flow-cum");
+    const flowScore = flowPanel.querySelector("#flow-score");
+    const flowCanvas = flowPanel.querySelector("#flow-canvas");
+    const flowTable = flowPanel.querySelector("#flow-table");
+    cwrap.append(chead, host, foot, flowPanel);
     main.append(side, cwrap);
     root.append(top, main);
 
@@ -220,7 +238,14 @@
         }
         state.status = "ok";
         priceCache.clear();
+        try {
+          const fr = await fetch("data/etf-flows.json?t=" + Date.now(), { cache: "no-store" });
+          state.flows = fr.ok ? await fr.json() : null;
+        } catch (e) {
+          state.flows = null;
+        }
         renderAll();
+        renderFlows();
       } catch (err) {
         state.status = "error";
         sub.textContent = "数据加载失败：" + err.message;
@@ -636,6 +661,86 @@
       updateHead();
     });
 
+    function renderFlows() {
+      const f = state.flows;
+      if (!f || !Array.isArray(f.history) || !f.history.length) {
+        flowPanel.style.display = "none";
+        return;
+      }
+      flowPanel.style.display = "";
+      const hist = f.history.slice(-30);
+      const last = hist[hist.length - 1];
+      const fmt1 = (v) => (v == null ? "—" : (v > 0 ? "+" : "") + v.toFixed(1));
+      const score = f.score == null ? null : Number(f.score);
+      const scoreColor = score == null ? "#2c3a4d" : score >= 65 ? "#21a67a" : score >= 45 ? "#f5a524" : "#f05252";
+      flowNet.textContent = last.total == null ? "—" : fmt1(last.total) + " 亿";
+      flowNet.className = last.total > 0 ? "up" : last.total < 0 ? "down" : "";
+      flowCum.textContent = last.cum5 == null ? "—" : fmt1(last.cum5) + " 亿";
+      flowCum.className = last.cum5 > 0 ? "up" : last.cum5 < 0 ? "down" : "";
+      flowScore.textContent = score == null ? "--" : score.toFixed(0);
+      flowScore.style.color = scoreColor;
+
+      const hostRect = flowCanvas.parentElement.getBoundingClientRect();
+      const tableW = flowTable.getBoundingClientRect().width || 480;
+      const W = Math.max(220, Math.floor(hostRect.width - tableW - 24));
+      const H = 150;
+      const dpr = window.devicePixelRatio || 1;
+      flowCanvas.width = W * dpr;
+      flowCanvas.height = H * dpr;
+      flowCanvas.style.width = W + "px";
+      flowCanvas.style.height = H + "px";
+      const g = flowCanvas.getContext("2d");
+      g.setTransform(dpr, 0, 0, dpr, 0, 0);
+      g.clearRect(0, 0, W, H);
+
+      const vals = hist.map((x) => x.total || 0);
+      const maxAbs = Math.max(1, ...vals.map((v) => Math.abs(v)));
+      const mid = H / 2;
+      const bw = Math.max(2, Math.min(18, ((W - 20) / hist.length) * 0.6));
+      g.strokeStyle = "#24303f";
+      g.beginPath();
+      g.moveTo(0, mid + 0.5);
+      g.lineTo(W, mid + 0.5);
+      g.stroke();
+      hist.forEach((x, i) => {
+        const cx = 10 + ((i + 0.5) * (W - 20)) / hist.length;
+        const v = x.total || 0;
+        const h = (Math.abs(v) / maxAbs) * (H / 2 - 8);
+        g.fillStyle = v > 0 ? "#f05252" : v < 0 ? "#21a67a" : "#2c3a4d";
+        g.fillRect(cx - bw / 2, v > 0 ? mid - h : mid, bw, Math.max(2, h));
+      });
+      g.fillStyle = "#5b6779";
+      g.font = "10px 'Segoe UI', 'Microsoft YaHei UI', sans-serif";
+      g.textAlign = "left";
+      const label = hist.length < 2
+        ? "历史从下一交易日起积累（今日为基准）"
+        : `${hist[0].date.slice(5)} ~ ${last.date.slice(5)} · 亿元`;
+      if (hist.length < 2) {
+        g.textAlign = "center";
+        g.fillText("今日为份额基准日，净申购从下一交易日起显示", W / 2, mid - 8);
+        g.textAlign = "left";
+        g.fillText(label, 10, H - 4);
+      } else {
+        g.fillText(label, 10, H - 4);
+      }
+
+      const rows = (f.etfs || []).slice().sort((a, b) => (b.shares || 0) - (a.shares || 0));
+      const head = '<div class="flow-row head"><span>标的</span><span>份额</span><span>净申购</span><span>尾盘</span><span>溢价</span><span class="r">量比</span></div>';
+      flowTable.innerHTML = head + rows.map((e) => {
+        const net = e.net == null ? "—" : (e.net > 0 ? "+" : "") + e.net.toFixed(1);
+        const cls = e.net > 0 ? "up" : e.net < 0 ? "down" : "";
+        const tail = e.tail == null ? "—" : (e.tail * 100).toFixed(0) + "%";
+        const prem = e.premium == null ? "—" : (e.premium > 0 ? "+" : "") + e.premium.toFixed(2) + "%";
+        const pcls = e.premium > 0 ? "up" : e.premium < 0 ? "down" : "";
+        return `<div class="flow-row"><span class="n">${e.name}</span>` +
+          `<span>${e.shares ? e.shares.toFixed(0) : "—"}</span>` +
+          `<span class="${cls}">${net}</span>` +
+          `<span>${tail}</span>` +
+          `<span class="${pcls}">${prem}</span>` +
+          `<span class="r">${e.amtRatio ? e.amtRatio.toFixed(1) : "—"}×</span></div>`;
+      }).join("");
+    }
+
     function renderAll() {
       if (!state.data) return;
       state.hover = -1;
@@ -668,7 +773,10 @@
       rangeSeg.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b.dataset.range === state.range));
     }
 
-    new ResizeObserver(() => { if (state.data) draw(); }).observe(host);
+    new ResizeObserver(() => {
+      if (state.data) draw();
+      if (state.flows) renderFlows();
+    }).observe(host);
 
     /* 自动刷新：每 60 秒拉一次，收盘后一般无变化 */
     let timer = null;

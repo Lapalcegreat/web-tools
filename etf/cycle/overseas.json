@@ -1,0 +1,413 @@
+{
+ "updatedAt": "2026-11-08 21:40",
+ "score": 28.1,
+ "stats": {
+  "count": 20,
+  "high": 7,
+  "low": 13,
+  "pos": 3,
+  "neg": 4,
+  "sources": 6,
+  "official": 12,
+  "officialImpact": 0
+ },
+ "items": [
+  {
+   "title": "Chinese AI lab Moonshot turned to Europe for Nvidia Blackwell access amid U.S. China curbs, sources tell CNBC",
+   "source": "CNBC Tech",
+   "tier": "major",
+   "url": "https://www.cnbc.com/2026/11/05/moonshot-ai-nvidia-chips-europe-china.html",
+   "time": "2026-11-06 18:28",
+   "ageH": 51.2,
+   "impact": -2.69,
+   "confidence": 0.8,
+   "tags": [
+    "监管"
+   ],
+   "sources": [
+    "CNBC Tech"
+   ],
+   "multiSource": false,
+   "direction": "neg",
+   "status": "high"
+  },
+  {
+   "title": "Nasdaq sell-off batters Asian chip stocks as SK Hynix, Samsung, Softbank, TSMC tumble",
+   "source": "CNBC Tech",
+   "tier": "major",
+   "url": "https://www.cnbc.com/2026/11/06/tech-stocks-sk-hynix-samsung-softbank.html",
+   "time": "2026-11-06 19:06",
+   "ageH": 50.5,
+   "impact": -2.24,
+   "confidence": 0.8,
+   "tags": [
+    "监管"
+   ],
+   "sources": [
+    "CNBC Tech"
+   ],
+   "multiSource": false,
+   "direction": "neg",
+   "status": "high"
+  },
+  {
+   "title": "OpenAI, Arm and Qualcomm executives react to post-midterm AI sell-off",
+   "source": "CNBC Tech",
+   "tier": "major",
+   "url": "https://www.cnbc.com/2026/11/06/tech-executives-ai-data-center-selloff-midterms.html",
+   "time": "2026-11-07 02:35",
+   "ageH": 43.1,
+   "impact": -1.84,
+   "confidence": 0.8,
+   "tags": [],
+   "sources": [
+    "CNBC Tech"
+   ],
+   "multiSource": false,
+   "direction": "neg",
+   "status": "high"
+  },
+  {
+   "title": "AI meltdown: Nvidia and Qualcomm drop more than 9%, pushing Nasdaq to worst day since April 2025",
+   "source": "CNBC Tech",
+   "tier": "major",
+   "url": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html",
+   "time": "2026-11-06 05:16",
+   "ageH": 64.4,
+   "impact": -1.16,
+   "confidence": 0.8,
+   "tags": [],
+   "sources": [
+    "CNBC Tech"
+   ],
+   "multiSource": false,
+   "direction": "neg",
+   "status": "high"
+  },
+  {
+   "title": "The US let Nvidia sell chips to an empty office in China",
+   "source": "The Verge",
+   "tier": "major",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+   "time": "2026-11-07 23:43",
+   "ageH": 21.9,
+   "impact": 0.6,
+   "confidence": 0.92,
+   "tags": [],
+   "sources": [
+    "The Verge"
+   ],
+   "multiSource": false,
+   "direction": "pos",
+   "status": "high"
+  },
+  {
+   "title": "Marvell-Lumentum deal tests whether AI optics go single-vendor",
+   "source": "Light Reading",
+   "tier": "trade",
+   "url": "https://www.lightreading.com/optical-networking/marvell-lumentum-deal-tests-whether-ai-optics-go-single-vendor",
+   "time": "2026-11-03 22:00",
+   "ageH": 119.6,
+   "impact": 0.53,
+   "confidence": 0.7,
+   "tags": [
+    "官方"
+   ],
+   "sources": [
+    "Light Reading"
+   ],
+   "multiSource": false,
+   "official": true,
+   "direction": "pos",
+   "status": "high"
+  },
+  {
+   "title": "Marvell strikes $115B deal for Lumentum",
+   "source": "Light Reading",
+   "tier": "trade",
+   "url": "https://www.lightreading.com/ai-machine-learning/marvell-strikes-115b-deal-for-lumentum",
+   "time": "2026-11-02 23:56",
+   "ageH": 141.7,
+   "impact": 0.53,
+   "confidence": 0.7,
+   "tags": [
+    "官方"
+   ],
+   "sources": [
+    "Light Reading"
+   ],
+   "multiSource": false,
+   "official": true,
+   "direction": "pos",
+   "status": "high"
+  }
+ ],
+ "pending": [
+  {
+   "title": "OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
+   "time": "2026-11-07 06:53",
+   "impact": 1.17,
+   "confidence": 0.18,
+   "tags": []
+  },
+  {
+   "title": "OpenAI will keep investing in AI data centers despite election results, CFO tells CNBC",
+   "source": "CNBC Tech",
+   "url": "https://www.cnbc.com/2026/11/06/open-ai-data-centers-election.html",
+   "time": "2026-11-07 06:25",
+   "impact": -0.25,
+   "confidence": 0.8,
+   "tags": [
+    "监管"
+   ]
+  },
+  {
+   "title": "OpenAI bugging suspect Alfozan pleads not guilty",
+   "source": "CNBC Tech",
+   "url": "https://www.cnbc.com/2026/11/06/openai-bugging-alfozan-saudi.html",
+   "time": "2026-11-07 05:15",
+   "impact": 0.24,
+   "confidence": 0.8,
+   "tags": []
+  },
+  {
+   "title": "Data centers lose at ballot box",
+   "source": "Light Reading",
+   "url": "https://www.lightreading.com/data-centers/data-centers-lose-at-ballot-box",
+   "time": "2026-11-05 22:16",
+   "impact": -0.18,
+   "confidence": 0.62,
+   "tags": [
+    "监管"
+   ]
+  },
+  {
+   "title": "Crusoe sells troubled Wyoming data center project to Google",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
+   "time": "2026-11-07 09:40",
+   "impact": 0.1,
+   "confidence": 0.7,
+   "tags": [
+    "官方"
+   ]
+  },
+  {
+   "title": "Cities Worldwide Build and Scale AI Services With NVIDIA Physical and Agentic AI",
+   "source": "NVIDIA Blog",
+   "url": "https://blogs.nvidia.com/blog/cities-physical-agentic-ai-applications/",
+   "time": "2026-11-03 15:00",
+   "impact": 0.07,
+   "confidence": 0.4,
+   "tags": []
+  },
+  {
+   "title": "Anthropic IPO meets AI backlash after midterms show stinging rebuke of data centers",
+   "source": "CNBC Tech",
+   "url": "https://www.cnbc.com/2026/11/07/anthropic-ipo-ai-data-center-backlash.html",
+   "time": "2026-11-07 21:00",
+   "impact": 0.0,
+   "confidence": 0.8,
+   "tags": []
+  },
+  {
+   "title": "AI stocks hammered by midterm shock as data center buildout becomes a 'war of attrition'",
+   "source": "CNBC Tech",
+   "url": "https://www.cnbc.com/2026/11/06/ai-data-center-midterms-selloff.html",
+   "time": "2026-11-07 04:44",
+   "impact": 0.0,
+   "confidence": 0.8,
+   "tags": [
+    "capex"
+   ]
+  },
+  {
+   "title": "Data center double-down: Hassett says blue wave won't stop AI build-out",
+   "source": "CNBC AI",
+   "url": "https://www.cnbc.com/2026/11/06/data-centers-ai-elections-hassett.html",
+   "time": "2026-11-07 02:54",
+   "impact": 0.0,
+   "confidence": 0.8,
+   "tags": []
+  },
+  {
+   "title": "Cramer’s week ahead: AI data center stocks face another hurdle and so does the Fed",
+   "source": "CNBC Tech",
+   "url": "https://www.cnbc.com/2026/11/06/cramer-coreweave-nebius-earnings.html",
+   "time": "2026-11-07 07:13",
+   "impact": 0.0,
+   "confidence": 0.7,
+   "tags": []
+  }
+ ],
+ "primary": [
+  {
+   "company": "Microsoft",
+   "form": "8-K",
+   "date": "2026-11-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526448357/d177209d8k.htm",
+   "title": "8-K",
+   "age": 3,
+   "items": [
+    "5.02"
+   ],
+   "labels": [
+    "高管变动"
+   ],
+   "signal": "",
+   "impact": -0.2
+  },
+  {
+   "company": "Micron",
+   "form": "8-K",
+   "date": "2026-11-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000110465926123389/tm2629062d1_8k.htm",
+   "title": "FORM 8-K",
+   "age": 3,
+   "items": [],
+   "labels": [],
+   "signal": "",
+   "impact": 0.0
+  },
+  {
+   "company": "Meta",
+   "form": "8-K",
+   "date": "2026-11-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526450074/d166273d8k.htm",
+   "title": "8-K",
+   "age": 3,
+   "items": [
+    "8.01",
+    "9.01"
+   ],
+   "labels": [
+    "其他事项",
+    "9.01"
+   ],
+   "signal": "",
+   "impact": 0.0
+  },
+  {
+   "company": "Alphabet",
+   "form": "8-K",
+   "date": "2026-11-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526449835/d174184d8k.htm",
+   "title": "8-K",
+   "age": 3,
+   "items": [
+    "8.01",
+    "9.01"
+   ],
+   "labels": [
+    "其他事项",
+    "9.01"
+   ],
+   "signal": "",
+   "impact": 0.0
+  },
+  {
+   "company": "Microsoft",
+   "form": "8-K",
+   "date": "2026-11-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526447173/d178557d8k.htm",
+   "title": "8-K",
+   "age": 4,
+   "items": [
+    "8.01",
+    "9.01"
+   ],
+   "labels": [
+    "其他事项",
+    "9.01"
+   ],
+   "signal": "",
+   "impact": 0.0
+  },
+  {
+   "company": "Coherent",
+   "form": "10-Q",
+   "date": "2026-11-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/820318/000082031826000023/iivi-20260930.htm",
+   "title": "10-Q",
+   "age": 4,
+   "items": [],
+   "labels": [],
+   "signal": "",
+   "impact": 0.0
+  },
+  {
+   "company": "Coherent",
+   "form": "8-K",
+   "date": "2026-11-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/820318/000119312526447200/d176836d8k.htm",
+   "title": "8-K",
+   "age": 4,
+   "items": [],
+   "labels": [],
+   "signal": "",
+   "impact": 0.0
+  },
+  {
+   "company": "Arista",
+   "form": "10-Q",
+   "date": "2026-11-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+   "title": "10-Q",
+   "age": 4,
+   "items": [],
+   "labels": [],
+   "signal": "",
+   "impact": 0.0
+  },
+  {
+   "company": "AMD",
+   "form": "10-Q",
+   "date": "2026-11-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000191/amd-20260926.htm",
+   "title": "10-Q",
+   "age": 4,
+   "items": [],
+   "labels": [],
+   "signal": "",
+   "impact": 0.0
+  },
+  {
+   "company": "Lumentum",
+   "form": "10-Q",
+   "date": "2026-11-03",
+   "url": "https://www.sec.gov/Archives/edgar/data/1633978/000162828026069615/lite-20260926.htm",
+   "title": "10-Q",
+   "age": 5,
+   "items": [],
+   "labels": [],
+   "signal": "",
+   "impact": 0.0
+  },
+  {
+   "company": "Fabrinet",
+   "form": "10-Q",
+   "date": "2026-11-03",
+   "url": "https://www.sec.gov/Archives/edgar/data/1408710/000140871026000041/fn-20260925.htm",
+   "title": "10-Q",
+   "age": 5,
+   "items": [],
+   "labels": [],
+   "signal": "",
+   "impact": 0.0
+  },
+  {
+   "company": "Arista",
+   "form": "8-K",
+   "date": "2026-11-03",
+   "url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000252/anet-20261103.htm",
+   "title": "8-K",
+   "age": 5,
+   "items": [],
+   "labels": [],
+   "signal": "",
+   "impact": 0.0
+  }
+ ]
+}

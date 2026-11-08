@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>产业周期温度计</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <h1>产业周期温度计</h1>
+      <div class="sub" id="updated">加载中…</div>
+    </div>
+    <div class="grow"></div>
+    <a class="btn" href="../" style="text-decoration:none; display:inline-flex; align-items:center">← ETF行情</a>
+    <div class="tabs" id="tabs"></div>
+    <button class="btn" id="refresh" title="重新读取 data.json；重新评分请运行 scripts/cycle_score.py">重新读取</button>
+  </div>
+
+  <div class="hero">
+    <div class="card score-card">
+      <div class="score-ring">
+        <canvas id="ring"></canvas>
+        <div class="score-center">
+          <b id="score-num">--</b>
+          <span id="theme-name">--</span>
+        </div>
+      </div>
+      <div class="stage-pill" id="stage-pill">--</div>
+    </div>
+
+    <div class="card stage-line">
+      <div class="stage-track" id="stage-track"></div>
+      <div class="stage-desc" id="stage-desc"></div>
+    </div>
+  </div>
+
+  <div class="card dims">
+    <h2>评分维度（0–100，越高越健康）</h2>
+    <div class="dim-grid" id="dims"></div>
+  </div>
+
+  <div class="card section">
+    <h2>个股明细</h2>
+    <div style="overflow-x:auto">
+      <table>
+        <thead>
+          <tr>
+            <th>标的</th><th>收盘</th><th>当日</th><th>距高点</th><th>PE</th>
+            <th>景气</th><th>盈利</th><th>供给</th><th>估值</th><th>筹码</th><th>总分</th>
+          </tr>
+        </thead>
+        <tbody id="stock-rows"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card section">
+    <h2>行业输入（手工 · 占总分 15%）</h2>
+    <div class="input-grid">
+      <label>客户资本开支增速 %<input id="in-capex" type="number" step="1" placeholder="如 45" /></label>
+      <label>资本开支趋势
+        <select id="in-trend">
+          <option value="">未填</option>
+          <option value="up">加速</option>
+          <option value="flat">持平</option>
+          <option value="down">放缓</option>
+        </select>
+      </label>
+      <label>主导产品价格年降 %<input id="in-price" type="number" step="1" placeholder="负数=降价，如 -10" /></label>
+      <label>订单能见度（季度）<input id="in-order" type="number" step="0.5" placeholder="如 3" /></label>
+      <label>产能利用率 %<input id="in-util" type="number" step="1" placeholder="如 85" /></label>
+    </div>
+    <div class="input-actions">
+      <button class="btn primary" id="save-inputs">保存并重新评分</button>
+      <span class="status" id="input-status">留空 = 不参与评分；填写后总分 = 自动分 × 85% + 行业分 × 15%</span>
+    </div>
+  </div>
+
+  <div class="card section" id="overseas-card" style="display:none">
+    <h2>海外新闻影响因子 <span class="score-badge" id="overseas-score">--</span></h2>
+    <div class="overseas-head">
+      <div class="bar"><i id="overseas-bar"></i></div>
+      <div class="sub" id="overseas-stat"></div>
+    </div>
+    <div class="news-list" id="overseas-news"></div>
+    <div class="pending-label" id="overseas-pending-label" style="display:none">待核实 / 影响较小（不计入评分）</div>
+    <div class="news-list pending-list" id="overseas-pending"></div>
+    <div class="pending-label" id="overseas-primary-label" style="display:none">官方文件（SEC EDGAR · 可信度锚点）</div>
+    <div class="news-list" id="overseas-primary"></div>
+  </div>
+
+  <div class="card section">
+    <h2>最新资讯与叙事（国内）</h2>
+    <div class="sub" id="news-stat" style="margin:-6px 0 8px"></div>
+    <div class="news-list" id="news"></div>
+  </div>
+
+  <details class="method">
+    <summary>评分方法与权重（点击展开）</summary>
+    <table>
+      <tr><th style="text-align:left">维度</th><th style="text-align:left">构成</th><th>权重</th></tr>
+      <tr><td>景气</td><td style="text-align:left">营收同比 30%、净利同比 35%、净利环比 15%、增速二阶导 20%</td><td>25%</td></tr>
+      <tr><td>盈利质量</td><td style="text-align:left">毛利率 30%、毛利率同比变化 25%、净利率 20%、经营现金流/净利润 25%</td><td>20%</td></tr>
+      <tr><td>供给/运营</td><td style="text-align:left">存货周转天数变化 30%、应收周转天数变化 30%、资产负债率变化 20%、毛利率趋势 20%</td><td>15%</td></tr>
+      <tr><td>估值</td><td style="text-align:left">PE 五年分位 50%、PB 五年分位 25%、PEG 25%</td><td>20%</td></tr>
+      <tr><td>筹码</td><td style="text-align:left">换手率 40%、成交额活跃度 30%、距 2 年高点回撤 30%</td><td>10%</td></tr>
+      <tr><td>新闻叙事</td><td style="text-align:left">国内资讯情绪/热度 60%、海外新闻影响因子 40%（来源、时效、事件方向加权）</td><td>10%</td></tr>
+      <tr><td>行业输入</td><td style="text-align:left">capex 增速 30%、capex 趋势 20%、产品价格 20%、订单能见度 15%、产能利用率 15%（手工填写）</td><td>15%</td></tr>
+    </table>
+    <p>自动指标合计占 85%（表内为内部相对权重，按 85% 等比例缩放），行业输入单独占 15%；未填写行业输入时自动分即总分。</p>
+    <p>阶段判定规则：景气 &lt;35 且盈利 &lt;45 → 阶段 5；景气 ≥55 且增速未转负、股价距高点 &gt;−25%、行业分 ≥50 → 阶段 2；
+      景气 ≥60 但估值已贵、股价仍在高位 → 阶段 3；景气 ≥35 且（增速二阶导转负、或股价距高点 &lt;−40%、或行业分 &lt;45）→ 阶段 4；
+      其余为过渡期。所有指标先做极值截断，再按上表加权；股票池取中位数以降低个股噪声。</p>
+    <p>数据来自东方财富公开接口（财务主要指标、估值历史、日 K、行情快照、资讯搜索），仅供研究参考，不构成投资建议。</p>
+  </details>
+
+  <div class="foot">
+    生成脚本：<code>scripts/cycle_score.py</code> · 页面：<code>etf-dashboard/cycle/</code> ·
+    行业输入保存在 <code>etf-dashboard/cycle/inputs.json</code>，每日 15:10 的更新任务会沿用。
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

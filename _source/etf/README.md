@@ -1,0 +1,142 @@
+# A股宽基ETF行情插件
+
+在 DeepSeek Harness 左侧导航新增 **「ETF行情」** 页：收盘后查看 12 只代表性宽基 ETF 的日 K 线、成交量与均线，数据从 2026-06-01 开始，每个交易日收盘后自动增量更新。
+
+![ETF 行情页](docs/daily-spike.png)
+
+## 打开方式
+
+- **插件页**：DSH 左侧导航 →「ETF行情」。
+- **独立网页**：<http://127.0.0.1:59398/etf-charts/>（登录态无关，任何本机浏览器都能直接打开）。
+- **离线文件**：双击 `etf-dashboard/index.html`（数据内嵌在 `data/etf-data.js`，无需服务器）。
+
+## 功能
+
+- **标的**：上证50、沪深300、中证500、中证1000、中证2000、中证A500、创业板指、科创50、科创100、深证100、双创50、MSCI中国A50，共 12 只代表性 ETF。
+- **K 线**：日 K 为单位；超过 150 个交易日时「自动」模式压缩为周 K（也可手动切「日K / 周K」）。周 K 按自然周（周一至周五）聚合：开高低收取当周、收盘取周末、成交量与成交额求和；悬停显示「周一 ~ 周五」日期区间。
+- **均线**：MA5 / MA10 / MA20，按当前显示周期计算。
+- **爆量高亮**：某根 K 线成交量 ≥ 前 20 根均量的 2 倍（周 K 为前 12 周均量的 1.8 倍）时判定为爆量——K 线加橙色描边与高点橙点、成交量柱变橙、背后加竖向高亮带；悬停显示「量能 N×均量」，页脚统计当前视图内爆量根数。系数与窗口在 `app.js` 顶部 `SPIKE` 中可调。
+- **成交量**：K 线下方独立副图，红涨绿跌（爆量为橙）；成交额单位元。
+- **交互**：悬停十字光标显示当日开高低收、涨跌幅、量额、均线与爆量倍数；区间切换（近1月/近3月/近6月/全部）；点击左侧列表切换标的；行情统计显示当日上涨/下跌家数。
+- **刷新**：「刷新」按钮先调用宿主接口补抓一次最新收盘数据，再重载页面数据；页面每 60 秒自动重读数据文件。
+
+## 数据
+
+| 项目 | 说明 |
+| --- | --- |
+| 来源 | 东方财富公开行情接口 `push2his.eastmoney.com` |
+| 复权 | 前复权（`fqt=1`） |
+| 范围 | 2026-06-01 起，至最近一个已收盘交易日（当前 2026-11-06，108 个交易日） |
+| 成交量 | 手（1 手 = 100 份） |
+| 文件 | `etf-dashboard/data/etf-daily.json`（结构化）+ `etf-data.js`（供 file:// 内嵌） |
+
+字段：`[date, open, close, high, low, volume, amount, amplitude]`。
+
+## 产业周期温度计
+
+ETF 行情页右上角的「产业温度计」进入（或直接打开 `<DSH 地址>/etf-charts/cycle/`），用同一套数据源给产业做 0–100 的量化评分：
+
+- **六个维度**：景气（营收/净利同比、环比、增速二阶导）、盈利质量（毛利率及变化、净利率、经营现金流/净利润）、供给/运营（存货与应收周转天数变化、杠杆、毛利率趋势）、估值（PE/PB 五年分位、PEG）、筹码（换手率、成交活跃度、距 2 年高点回撤）、新闻叙事（近 30 条资讯正负面词与热度）。
+- **阶段判定**：1 导入 → 2 加速 → 3 泡沫 → 4 杀估值 → 5 杀业绩 → 6 出清，按景气、增速二阶导、股价位置、估值分位的组合规则落位。
+- **行业输入（手工，15%）**：客户资本开支增速与趋势、主导产品价格年降、订单能见度、产能利用率。页面表单保存后写入 `cycle/inputs.json` 并自动重跑评分；留空则只按自动指标算。行业分 <45 会直接触发「阶段 4」。
+- **海外新闻影响因子**：每 6 小时抓取 CNBC、MarketWatch、The Verge、Ars Technica、TechCrunch、Tom's Hardware、NVIDIA Blog、SemiAnalysis 等 RSS，按「来源权重 × 时效 × 事件方向（capex/订单/价格/监管/技术）」打分。**先做可信度过滤**：来源层级 + 传闻措辞扣分 + 官方措辞加分 + 多源交叉，只有可信度 ≥0.55 且影响 ≥0.4 的条目进入因子，其余进「待核实 / 影响较小」列表。**SEC EDGAR 一手文件**（8-K/10-Q/10-K/6-K/20-F，覆盖 15 家海外 AI 链公司）单列为 95% 可信度锚点，并解析 8-K 的 Item：2.02 业绩、1.01 重大合同、1.02 合同终止、2.06 资产减值、3.01 退市警告、4.02 财报重述、5.02 高管变动等；方向明确的 Item（1.01/1.02/2.05/2.06/3.01/4.02）带方向分并参与打分，业绩类（2.02）再读 Exhibit 99.1 新闻稿前 8000 字，识别「上调/下调指引、超预期/不及预期、需求强劲/走弱」等措辞并计入方向分。新闻标题提到某公司且该公司 7 天内有官方文件时，可信度 +0.08 并打「官方」标签。最终「新闻叙事」维度 = 国内资讯 60% + 海外因子 40%；页面单独展示海外分与高影响条目。
+- **当前内置主题**：AI 硬件（中际旭创、新易盛、东山精密、天孚通信、胜宏科技）、新能源（宁德时代、隆基绿能、阳光电源、赣锋锂业、通威股份）。
+- 数据由 `scripts/cycle_score.py` 生成，写入 `etf-dashboard/cycle/data.json`；每日 15:10 的更新任务会顺带刷新一次，也可手动运行。
+- 页面上的「重新读取」只重读 JSON；要重新抓数评分，执行 `python scripts/cycle_score.py`，或在页面上填行业输入后点「保存并重新评分」（调用 `/etf-charts/api/cycle`，约 30–60 秒）。
+
+> 评分是研究工具，不是买卖信号；财务数据有季度滞后，新闻情绪用词表近似，股票池取中位数以降低个股噪声。
+
+## 国家队足迹（试运行）
+
+K 线下方新增资金面板，用「份额变化」而不是成交量观察国家队：
+
+- 每个交易日收盘后记录 12 只 ETF 的总份额（东财 `f84`，单位亿份）
+- **净申购（亿元）= 份额变化 × 收盘价**；面板显示今日净申购、5 日累计、每日净申购柱状图
+- **尾盘占比** = 14:30–15:00 成交额 / 全天（东财 1 分钟行情）
+- **溢价率** = 收盘价 / 当日单位净值 − 1（净值来自基金净值接口）
+- **足迹分 0–100**：净申购 30%、尾盘占比 20%、溢价 20%、量比 15%、逆势（沪深300 跌幅）15%，用 tanh 平滑
+- 表格列出各 ETF 的份额、当日净申购、尾盘占比、溢价率、量比
+- 份额是 T+1 口径，历史从 **2026-11-06** 起积累，首日只作基准；后续每天自动追加
+- 下一步可加：事件日历（汇金公告/国常会/指数调样）、季报前十大持有人验证
+
+> 成交量里混有套利、做市和量化，不能单独代表国家队；份额变化才是“真金白银”。但份额也会被套利盘污染，需要连续多日 + 溢价 + 逆势一起看。
+
+## 自动更新
+
+已注册两个 Windows 计划任务：
+
+| 任务 | 触发 | 作用 |
+| --- | --- | --- |
+| `DSH-ETF-Daily-Update` | 周一至周五 15:10 | 收盘后增量抓取当日 K 线，并刷新产业周期评分 |
+| `DSH-ETF-Flow-Evening` | 周一至周五 21:30 | 净值公布后补齐当日溢价率与足迹分 |
+| `DSH-AI-Overseas-News` | 每 6 小时（08:10 起） | 抓取海外 AI 产业链新闻并计算影响因子 |
+| `DSH-ETF-Update-OnLogon` | 用户登录时 | 补抓关机/休眠期间错过的交易日 |
+
+- 脚本会先判断当日是否为交易日：没有新 K 线时直接跳过写入，不会改动数据文件。
+- 运行日志：`logs/etf-update.log`（UTF-8）。
+- 手动执行：`python scripts/fetch_etf.py`（`--full` 从头重抓）。
+
+查询/删除任务：
+
+```powershell
+schtasks /Query /TN "DSH-ETF-Daily-Update"
+schtasks /Delete /TN "DSH-ETF-Daily-Update" /F
+```
+
+## 目录
+
+```
+etf-dashboard/            行情页（静态，无构建）
+  index.html
+  app.js                  Canvas K线 + 成交量渲染、日/周聚合、爆量识别
+  style.css
+  data/etf-daily.json     结构化日线数据
+  data/etf-data.js        window.ETF_DATA 内嵌副本
+  data/etf-shares.json    每日 ETF 份额快照（亿份）
+  data/etf-flows.json     净申购、5 日累计、量比
+  cycle/                  产业周期温度计（评分页）
+    index.html
+    app.js
+    style.css
+    data.json             六维评分、阶段、个股明细、资讯
+    inputs.json           行业手工输入
+    overseas.json         海外新闻影响因子与条目
+etf-plugin/               DSH 插件包 dsh-etf-charts
+  lib/index.js            宿主半：/etf-charts 静态路由 + /api/update
+  lib/client.js           浏览器半：主面板 iframe + 左侧导航入口
+  cordis.patch.yml        插入 etf-charts 行
+scripts/
+  fetch_etf.py            增量抓取脚本
+  cycle_score.py          产业周期评分（财务+估值+行情+资讯）
+  overseas_news.py        海外 AI 产业链新闻抓取与影响因子
+  update_etf.cmd          计划任务入口
+  update_news.cmd         海外新闻任务入口
+  update_etf_hidden.vbs   隐藏窗口启动（ETF）
+  update_news_hidden.vbs  隐藏窗口启动（新闻）
+logs/
+  etf-update.log          ETF/评分更新日志
+  news-update.log         海外新闻更新日志
+docs/                     页面截图
+```
+
+## 增删标的
+
+编辑 `scripts/fetch_etf.py` 顶部的 `ETFS` 列表（`code` / `secid` / `name` / `sector` / `index`），然后执行：
+
+```powershell
+python scripts/fetch_etf.py --full
+```
+
+`secid` 规则：沪市 `1.代码`，深市 `0.代码`。
+
+## 插件实现说明
+
+`dsh-etf-charts` 按 DSH bundle 规范安装（`dsh.bundle.patch` 插入 `etf-charts` 行），宿主半用 `ctx.webServer.register` 挂 `/etf-charts` 前缀路由，直接读工作区文件，因此**收盘后写入数据无需重启 DSH**；浏览器半在 `main` 与 `sidebar.panellist` 两个槽位注册页面与入口，页面内容为同源 iframe。
+
+重新安装（代码改动后）：
+
+```powershell
+dsh plugin --profile desktop add "file:C:/Users/Administrator/Documents/deepseek-harness/default-workspace/etf-plugin"
+```
+
+> 桌面版配置由 Electron 应用托管，插件安装请通过应用内「插件」页或 `plugin_manager` 完成；直接修改 `~/.dsh/profiles/desktop/cordis.patch.yml` 只对该 profile 生效。
