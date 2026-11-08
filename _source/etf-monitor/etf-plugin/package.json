@@ -1,8 +1,8 @@
 {
   "name": "dsh-etf-charts",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
-  "description": "A股宽基ETF行情页：本地日K数据 + 日/月K线与成交量，收盘后增量更新",
+  "description": "A股宽基ETF行情页：本地日K数据 + 日/周K线与成交量、国家队资金足迹，收盘后增量更新",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -20,6 +20,7 @@
     "client": {
       "platform": "web",
       "inject": [
+        "@deepseek-ai/dsh-client-ui-slots",
         "@deepseek-ai/dsh-client-ui-layout",
         "@deepseek-ai/dsh-client-ui-sidebar"
       ]

@@ -11,6 +11,12 @@ window.__ModuleLoader__.load({
     var exports = module.exports;
     const React = require("react");
     const h = React.createElement;
+    function report(text) {
+      try {
+        fetch("/etf-charts/api/diag", { method: "POST", body: String(text) });
+      } catch (error) {}
+    }
+    report("client module loaded");
 
     const PANEL_ID = "etf-charts";
 
@@ -63,11 +69,24 @@ window.__ModuleLoader__.load({
     const inject = ["slots"];
 
     function apply(ctx) {
-      ctx.slots.register({ name: "main", key: PANEL_ID }, EtfPage);
-      ctx.slots.register(
-        { name: "sidebar.panellist", id: PANEL_ID, order: 30, label: "ETF行情" },
-        EtfIcon
-      );
+      try {
+        if (!ctx.slots || typeof ctx.slots.inject !== "function") {
+          report("client apply FAILED: ctx.slots.inject unavailable");
+          return;
+        }
+        ctx.slots.inject("main", () =>
+          ctx.slots.register({ name: "main", key: PANEL_ID }, EtfPage)
+        );
+        ctx.slots.inject("sidebar.panellist", () =>
+          ctx.slots.register(
+            { name: "sidebar.panellist", id: PANEL_ID, order: 30, label: () => "ETF行情" },
+            EtfIcon
+          )
+        );
+        report("client apply ok");
+      } catch (error) {
+        report("client apply FAILED: " + String(error && (error.stack || error.message || error)));
+      }
     }
 
     exports.apply = apply;

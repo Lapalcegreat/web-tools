@@ -1,4 +1,4 @@
-﻿# AI 工具站
+# AI 工具站
 
 > 在线地址：<https://lapalcegreat.github.io/web-tools/>
 
@@ -38,6 +38,10 @@ git add etf/data
 git commit -m "data: update etf daily"
 git push
 ```
+
+## 更新日志
+
+见 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 说明
 
