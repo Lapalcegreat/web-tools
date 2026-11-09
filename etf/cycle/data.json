@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-09 18:48",
+ "updatedAt": "2026-11-09 21:30",
  "themes": [
   {
    "id": "ai",
@@ -208,12 +208,12 @@
     "supply": 32.6,
     "valuation": 56.0,
     "crowd": 75.8,
-    "total": 58.6,
+    "total": 58.5,
     "drawdown": -67.3,
     "accel": -11.244196419089008,
-    "news": 55.3,
-    "newsDomestic": 73.5,
-    "overseas": 28.1,
+    "news": 53.8,
+    "newsDomestic": 66.6,
+    "overseas": 34.6,
     "industry": 57.6
    },
    "stage": "阶段4 杀估值",
@@ -229,62 +229,92 @@
     "capacityUtil": 85
    },
    "industry": 57.6,
-   "overseasAt": "2026-11-08 21:40",
+   "overseasAt": "2026-11-09 20:11",
    "news": [
     {
-     "date": "2026-11-09 18:45",
-     "title": "港股回落成交缩量，远信储能上市首日大涨后跳水，煤炭板块逆势走强",
-     "url": "http://finance.eastmoney.com/a/202611093926373520.html",
+     "date": "2026-11-09 21:23",
+     "title": "定增募资10亿元扩产！宏达电子押注AI服务器钽电容、光模块元器件，股价较年内高点回撤58%",
+     "url": "http://finance.eastmoney.com/a/202611093926514395.html",
      "media": "每日经济新闻"
     },
     {
-     "date": "2026-11-09 18:41",
-     "title": "晚报丨特朗普即将会见关键调解人，称无意升级伊朗战事；美银：华尔街“牛市信念逐一崩坍”；黄仁勋婚外情牵动AI交易走向；软银上调全年盈利预测",
-     "url": "http://hk.eastmoney.com/a/202611093926370138.html",
-     "media": "哈富证券"
+     "date": "2026-11-09 21:20",
+     "title": "控股股东400万股股份司法拍卖流拍，所持98%股份已质押！锦龙股份前三季净利由盈转亏",
+     "url": "http://finance.eastmoney.com/a/202611093926514647.html",
+     "media": "深圳商报·读创"
     },
     {
-     "date": "2026-11-09 18:25",
-     "title": "外交部回应英伟达事件 A股概念股反弹",
-     "url": "http://finance.eastmoney.com/a/202611093926371873.html",
+     "date": "2026-11-09 21:17",
+     "title": "中美关税延期两个月，外贸预期改善提振A股市场情绪，关注三个拐点信号",
+     "url": "http://finance.eastmoney.com/a/202611093926512085.html",
+     "media": "21世纪经济报道"
+    },
+    {
+     "date": "2026-11-09 21:17",
+     "title": "剑桥科技回应：砍单传闻不实 高速光模块订单需求旺盛已做好批量交付准备",
+     "url": "http://finance.eastmoney.com/a/202611093926512313.html",
+     "media": "财联社"
+    },
+    {
+     "date": "2026-11-09 21:13",
+     "title": "利好！300567，拟最高回购2亿元，并全部注销！A股公司密集公布",
+     "url": "http://finance.eastmoney.com/a/202611093926514839.html",
      "media": "证券时报网"
     },
     {
-     "date": "2026-11-09 18:15",
-     "title": "6G概念板块表现活跃 机构建议把握三条产业链投资主线",
-     "url": "http://finance.eastmoney.com/a/202611093926370229.html",
-     "media": "证券日报"
+     "date": "2026-11-09 21:12",
+     "title": "港股风向标｜全球“AI逆风”余震不断 机构关注空头情绪出清节奏",
+     "url": "http://finance.eastmoney.com/a/202611093926513576.html",
+     "media": "财联社"
     },
     {
-     "date": "2026-11-09 18:06",
-     "title": "元件板块涨幅居前 3只个股涨停",
-     "url": "http://finance.eastmoney.com/a/202611093926370014.html",
-     "media": "证券日报"
+     "date": "2026-11-09 21:09",
+     "title": "晚间利好！回购公告密集披露 多家拟注销！增持案例也不少",
+     "url": "http://forex.eastmoney.com/a/202611093926503392.html",
+     "media": "证券时报"
     },
     {
-     "date": "2026-11-09 18:03",
-     "title": "上周公募调研逾2000次 电子和医药生物行业关注度居前",
-     "url": "http://finance.eastmoney.com/a/202611093926357015.html",
+     "date": "2026-11-09 21:04",
+     "title": "主力大调仓，超86亿元资金，涌入这些方向",
+     "url": "http://finance.eastmoney.com/a/202611093926497975.html",
+     "media": "中国证券报"
+    },
+    {
+     "date": "2026-11-09 21:00",
+     "title": "11月9日东方财富财经晚报（附新闻联播）",
+     "url": "http://finance.eastmoney.com/a/202611093926464574.html",
+     "media": "东方财富Choice数据"
+    },
+    {
+     "date": "2026-11-09 20:56",
+     "title": "【新华解读】10月PPI同比涨幅扩大 电子行业对价格形成支撑",
+     "url": "http://finance.eastmoney.com/a/202611093926487050.html",
      "media": "新华财经"
     },
     {
-     "date": "2026-11-09 18:03",
-     "title": "美股盘前速递：三大股指期货涨跌不一，英伟达跌超5%；存储芯片股盘前普跌，SK海力士跌超3%；油价下跌，金价上涨",
-     "url": "http://finance.eastmoney.com/a/202611093926357223.html",
-     "media": "中新经纬"
+     "date": "2026-11-09 20:36",
+     "title": "11月9日晚间上市公司利好消息一览(附名单)",
+     "url": "http://finance.eastmoney.com/a/202611093926479364.html",
+     "media": "东方财富研究中心"
     },
     {
-     "date": "2026-11-09 16:48",
-     "title": "【每日收评】三大指数冲高回落涨跌不一，两市成交额不足1.5万亿，煤炭、冰雪经济等热点轮番活跃",
-     "url": "http://finance.eastmoney.com/a/202611093926298523.html",
-     "media": "财联社"
+     "date": "2026-11-09 20:27",
+     "title": "唐山工控集团召开投资者交流会，共进股份“换引擎”锚定硬科技转型",
+     "url": "http://finance.eastmoney.com/a/202611093926468678.html",
+     "media": "蓝鲸财经"
+    },
+    {
+     "date": "2026-11-09 20:26",
+     "title": "美股盘前：三大股指期货齐涨 英伟达盘前跌超5% 布油跌破95美元",
+     "url": "http://stock.eastmoney.com/a/202611093926479667.html",
+     "media": "哈富证券"
     }
    ],
    "newsStats": {
-    "count": 8,
-    "pos": 3,
-    "neg": 0,
-    "score": 73.5
+    "count": 13,
+    "pos": 8,
+    "neg": 1,
+    "score": 66.6
    }
   },
   {
@@ -494,12 +524,12 @@
     "supply": 34.6,
     "valuation": 78.5,
     "crowd": 86.7,
-    "total": 45.9,
+    "total": 46.3,
     "drawdown": -59.4,
     "accel": -10.381544324428997,
-    "news": 40.4,
-    "newsDomestic": 48.6,
-    "overseas": 28.1,
+    "news": 44.7,
+    "newsDomestic": 51.4,
+    "overseas": 34.6,
     "industry": null
    },
    "stage": "阶段5 出清/衰退",
@@ -508,98 +538,98 @@
    ],
    "inputs": {},
    "industry": null,
-   "overseasAt": "2026-11-08 21:40",
+   "overseasAt": "2026-11-09 20:11",
    "news": [
     {
-     "date": "2026-11-09 18:45",
-     "title": "港股回落成交缩量，远信储能上市首日大涨后跳水，煤炭板块逆势走强",
-     "url": "http://finance.eastmoney.com/a/202611093926373520.html",
-     "media": "每日经济新闻"
+     "date": "2026-11-09 21:18",
+     "title": "金圆股份出清亏损子公司：拟公开挂牌转让灌南金圆全部股权，评估减值率16.97%",
+     "url": "http://finance.eastmoney.com/a/202611093926514210.html",
+     "media": "深圳商报·读创"
     },
     {
-     "date": "2026-11-09 18:30",
-     "title": "震裕科技：公司储能产品对美供货有望提升",
-     "url": "http://finance.eastmoney.com/a/202611093926370739.html",
-     "media": "南方财经网"
+     "date": "2026-11-09 21:16",
+     "title": "华原股份：滤清器壳体圆弧折弯整形模具及方法获发明专利",
+     "url": "http://finance.eastmoney.com/a/202611093926510360.html",
+     "media": "中国证券报·中证网"
     },
     {
-     "date": "2026-11-09 18:27",
-     "title": "人形机器人多股涨停，拓邦股份纹丝不动，天价离婚分股不分权",
-     "url": "http://finance.eastmoney.com/a/202611093926372659.html",
-     "media": "南方都市报"
+     "date": "2026-11-09 21:11",
+     "title": "太空算力产业化加速，中科星云在合肥成立",
+     "url": "http://finance.eastmoney.com/a/202611093926508228.html",
+     "media": "第一财经"
     },
     {
-     "date": "2026-11-09 18:26",
-     "title": "松下进博会发布全新地域战略 确立三大事业领域",
-     "url": "http://finance.eastmoney.com/a/202611093926367553.html",
-     "media": "新京报"
+     "date": "2026-11-09 21:06",
+     "title": "玛莎拉蒂找上中国合伙人，要解决哪些问题？",
+     "url": "http://finance.eastmoney.com/a/202611093926505296.html",
+     "media": "界面新闻"
     },
     {
-     "date": "2026-11-09 18:25",
-     "title": "汕头老板深圳做储能，上市首日冲高回落收涨59%",
-     "url": "http://finance.eastmoney.com/a/202611093926367166.html",
+     "date": "2026-11-09 21:05",
+     "title": "COP31开幕！中国企业亮出绿色技术，寻求国际规则互认",
+     "url": "http://finance.eastmoney.com/a/202611093926503447.html",
      "media": "21世纪经济报道"
     },
     {
-     "date": "2026-11-09 18:24",
-     "title": "放量涨停后，002488，紧急公告！",
-     "url": "http://finance.eastmoney.com/a/202611093926369911.html",
-     "media": "证券时报网"
+     "date": "2026-11-09 21:04",
+     "title": "主力大调仓，超86亿元资金，涌入这些方向",
+     "url": "http://finance.eastmoney.com/a/202611093926497975.html",
+     "media": "中国证券报"
     },
     {
-     "date": "2026-11-09 18:02",
-     "title": "鸿蒙智行：问界M8累计交付突破19万台",
-     "url": "http://finance.eastmoney.com/a/202611093926355952.html",
+     "date": "2026-11-09 21:01",
+     "title": "险资锚定 “六张网”：上市险企布局提速 长钱寻找稳健收益新底座",
+     "url": "http://insurance.eastmoney.com/a/202611093926491251.html",
+     "media": "新华财经"
+    },
+    {
+     "date": "2026-11-09 21:01",
+     "title": "工业机器人龙头出手！埃斯顿拟斥资4.85亿元受让三家基金所持股份，收购埃斯顿江苏智能44.86%股权",
+     "url": "http://finance.eastmoney.com/a/202611093926492192.html",
      "media": "每日经济新闻"
     },
     {
-     "date": "2026-11-09 17:55",
-     "title": "记者手记｜中国摩托“驶向”欧洲 拓宽产业合作空间",
-     "url": "http://finance.eastmoney.com/a/202611093926357371.html",
-     "media": "新华社"
-    },
-    {
-     "date": "2026-11-09 17:52",
-     "title": "壹评级发布申能股份首次评级",
-     "url": "http://finance.eastmoney.com/a/202611093926354259.html",
-     "media": "第一财经"
-    },
-    {
-     "date": "2026-11-09 17:52",
-     "title": "壹评级发布中国石油首次评级",
-     "url": "http://finance.eastmoney.com/a/202611093926353985.html",
-     "media": "第一财经"
-    },
-    {
-     "date": "2026-11-09 17:43",
-     "title": "映翰通：车载新品预计Q4导入市场 边缘AI产品处于规模化推广期|直击业绩会",
-     "url": "http://finance.eastmoney.com/a/202611093926347730.html",
-     "media": "科创板日报"
-    },
-    {
-     "date": "2026-11-09 17:33",
-     "title": "从能源岛到产业港 如东洋口港培育向海新增量",
-     "url": "http://finance.eastmoney.com/a/202611093926338344.html",
+     "date": "2026-11-09 21:01",
+     "title": "亚普股份：发布2027“提质增效重回报”2.0行动方案，加速构建新能源“第二增长曲线”",
+     "url": "http://finance.eastmoney.com/a/202611093926491532.html",
      "media": "上海证券报·中国证券网"
     },
     {
-     "date": "2026-11-09 17:31",
-     "title": "宁波能源：完成收购岳西风电100%股权并增资朗辰新能源7900万元",
-     "url": "http://finance.eastmoney.com/a/202611093926329779.html",
-     "media": "财联社"
+     "date": "2026-11-09 21:01",
+     "title": "50股每笔成交量增长超50%",
+     "url": "http://finance.eastmoney.com/a/202611093926496662.html",
+     "media": "证券时报网"
     },
     {
-     "date": "2026-11-09 17:29",
-     "title": "全球“变压器荒”好转了吗？进博会上的能源巨头：扩产之外还有这道坎",
-     "url": "http://finance.eastmoney.com/a/202611093926337591.html",
-     "media": "第一财经"
+     "date": "2026-11-09 20:58",
+     "title": "龙洲股份拟挂牌转让中汽宏远51%股权及债权，底价合计13.1亿元，标的资不抵债",
+     "url": "http://finance.eastmoney.com/a/202611093926493465.html",
+     "media": "深圳商报·读创"
+    },
+    {
+     "date": "2026-11-09 20:58",
+     "title": "前三季度机器人业务同比大增737.03% 豪能股份多举措扩大产能建设",
+     "url": "http://finance.eastmoney.com/a/202611093926495333.html",
+     "media": "证券日报"
+    },
+    {
+     "date": "2026-11-09 20:54",
+     "title": "看好中国市场机遇 跨国企业加码在华创新布局——第九届进博会上的外资新动向",
+     "url": "http://finance.eastmoney.com/a/202611093926486359.html",
+     "media": "经济参考网"
+    },
+    {
+     "date": "2026-11-09 20:54",
+     "title": "从“外生”驱动到“内生”增长 A股科技企业“独立叙事”路径清晰",
+     "url": "http://stock.eastmoney.com/a/202611093926487414.html",
+     "media": "证券日报之声"
     }
    ],
    "newsStats": {
     "count": 30,
-    "pos": 15,
-    "neg": 8,
-    "score": 48.6
+    "pos": 13,
+    "neg": 5,
+    "score": 51.4
    }
   }
  ]
