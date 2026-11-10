@@ -668,7 +668,7 @@
         return;
       }
       flowPanel.style.display = "";
-      const hist = f.history.slice(-30);
+      const hist = f.history.slice(-45);
       const last = hist[hist.length - 1];
       const fmt1 = (v) => (v == null ? "—" : (v > 0 ? "+" : "") + v.toFixed(1));
       const score = f.score == null ? null : Number(f.score);
@@ -682,8 +682,8 @@
 
       const hostRect = flowCanvas.parentElement.getBoundingClientRect();
       const tableW = flowTable.getBoundingClientRect().width || 480;
-      const W = Math.max(220, Math.floor(hostRect.width - tableW - 24));
-      const H = 150;
+      const W = Math.max(240, Math.floor(hostRect.width - tableW - 24));
+      const H = 160;
       const dpr = window.devicePixelRatio || 1;
       flowCanvas.width = W * dpr;
       flowCanvas.height = H * dpr;
@@ -693,36 +693,94 @@
       g.setTransform(dpr, 0, 0, dpr, 0, 0);
       g.clearRect(0, 0, W, H);
 
-      const vals = hist.map((x) => x.total || 0);
-      const maxAbs = Math.max(1, ...vals.map((v) => Math.abs(v)));
-      const mid = H / 2;
-      const bw = Math.max(2, Math.min(18, ((W - 20) / hist.length) * 0.6));
+      const padL = 8, padR = 8, padT = 20, padB = 16;
+      const plotW = W - padL - padR;
+      const n = hist.length;
+      const step = plotW / n;
+      const x = (i) => padL + (i + 0.5) * step;
+      const zeroY = padT + (H - padT - padB) / 2;
+      const half = (H - padT - padB) / 2 - 4;
+      const totals = hist.map((d) => d.total);
+      const maxAbs = Math.max(1, ...totals.filter((v) => v != null).map((v) => Math.abs(v)));
+
       g.strokeStyle = "#24303f";
       g.beginPath();
-      g.moveTo(0, mid + 0.5);
-      g.lineTo(W, mid + 0.5);
+      g.moveTo(padL, zeroY + 0.5);
+      g.lineTo(W - padR, zeroY + 0.5);
       g.stroke();
-      hist.forEach((x, i) => {
-        const cx = 10 + ((i + 0.5) * (W - 20)) / hist.length;
-        const v = x.total || 0;
-        const h = (Math.abs(v) / maxAbs) * (H / 2 - 8);
-        g.fillStyle = v > 0 ? "#f05252" : v < 0 ? "#21a67a" : "#2c3a4d";
-        g.fillRect(cx - bw / 2, v > 0 ? mid - h : mid, bw, Math.max(2, h));
+
+      g.fillStyle = "#4a5568";
+      g.font = "9px 'Segoe UI', sans-serif";
+      g.textAlign = "left";
+      g.fillText(`+${maxAbs.toFixed(0)}亿`, padL, padT + 2);
+      g.fillText(`-${maxAbs.toFixed(0)}亿`, padL, H - padB - 2);
+
+      const bw = Math.max(2, Math.min(16, step * 0.55));
+      hist.forEach((d, i) => {
+        if (d.total == null) return;
+        const v = d.total;
+        const h = Math.max(1, (Math.abs(v) / maxAbs) * half);
+        const cx = x(i);
+        g.fillStyle = v >= 0 ? "#f05252" : "#21a67a";
+        g.fillRect(cx - bw / 2, v >= 0 ? zeroY - h : zeroY, bw, h);
       });
-      g.fillStyle = "#5b6779";
+
+      const prems = hist.map((d) => d.premium).filter((v) => v != null);
+      if (prems.length > 1) {
+        const pmin = Math.min(...prems);
+        const pmax = Math.max(...prems);
+        const span = pmax - pmin || 0.1;
+        const py = (v) => padT + 6 + ((pmax - v) / span) * (H - padT - padB - 10);
+        g.strokeStyle = "#f5a524";
+        g.lineWidth = 1.4;
+        g.beginPath();
+        let started = false;
+        hist.forEach((d, i) => {
+          if (d.premium == null) { started = false; return; }
+          const px = x(i);
+          const yy = py(d.premium);
+          if (!started) { g.moveTo(px, yy); started = true; } else g.lineTo(px, yy);
+        });
+        g.stroke();
+        g.fillStyle = "#8b98a9";
+        g.font = "9px 'Segoe UI', sans-serif";
+        g.textAlign = "right";
+        g.fillText(`溢价 ${pmin.toFixed(2)}% ~ ${pmax.toFixed(2)}%`, W - padR, 10);
+      }
+
+      const firstBar = hist.findIndex((d) => d.total != null);
+      if (firstBar > 0) {
+        const px = x(firstBar) - step / 2;
+        g.save();
+        g.setLineDash([3, 3]);
+        g.strokeStyle = "#3a4a5f";
+        g.beginPath();
+        g.moveTo(px, padT);
+        g.lineTo(px, H - padB);
+        g.stroke();
+        g.restore();
+      }
+
       g.font = "10px 'Segoe UI', 'Microsoft YaHei UI', sans-serif";
       g.textAlign = "left";
-      const label = hist.length < 2
-        ? "历史从下一交易日起积累（今日为基准）"
-        : `${hist[0].date.slice(5)} ~ ${last.date.slice(5)} · 亿元`;
-      if (hist.length < 2) {
-        g.textAlign = "center";
-        g.fillText("今日为份额基准日，净申购从下一交易日起显示", W / 2, mid - 8);
-        g.textAlign = "left";
-        g.fillText(label, 10, H - 4);
-      } else {
-        g.fillText(label, 10, H - 4);
-      }
+      g.fillStyle = "#f05252";
+      g.fillRect(padL, 3, 8, 8);
+      g.fillStyle = "#8b98a9";
+      g.fillText("净申购(11-06起)", padL + 12, 10);
+      g.strokeStyle = "#f5a524";
+      g.beginPath(); g.moveTo(padL + 116, 7); g.lineTo(padL + 132, 7); g.stroke();
+      g.fillStyle = "#8b98a9";
+      g.fillText("溢价率(%)", padL + 136, 10);
+
+      g.fillStyle = "#5b6779";
+      g.font = "9px 'Segoe UI', sans-serif";
+      g.textAlign = "left";
+      g.fillText(hist[0].date.slice(5), padL, H - 2);
+      g.textAlign = "center";
+      g.fillText(hist[Math.floor(n / 2)].date.slice(5), W / 2, H - 2);
+      g.textAlign = "right";
+      g.fillText(last.date.slice(5), W - padR, H - 2);
+
 
       const rows = (f.etfs || []).slice().sort((a, b) => (b.shares || 0) - (a.shares || 0));
       const head = '<div class="flow-row head"><span>标的</span><span>份额</span><span>净申购</span><span>尾盘</span><span>溢价</span><span class="r">量比</span></div>';
