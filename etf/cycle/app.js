@@ -352,8 +352,10 @@
       if (!res.ok) throw new Error("HTTP " + res.status);
       state.data = await res.json();
       state.overseas = ovRes && ovRes.ok ? await ovRes.json() : null;
+      const wanted = new URLSearchParams(location.search).get("theme");
+      if (wanted && state.data.themes.some((t) => t.id === wanted)) state.themeId = wanted;
       if (!state.themeId) state.themeId = state.data.themes[0].id;
-      $("#updated").textContent = `数据更新：${state.data.updatedAt} · 财务口径 2026 三季报 · 行情 2026-11-06 收盘`;
+      $("#updated").textContent = `数据更新：${state.data.updatedAt} · 财务口径 2026 三季报 · 行情截至最近收盘`;
       renderTabs();
       renderTheme();
       renderOverseas();

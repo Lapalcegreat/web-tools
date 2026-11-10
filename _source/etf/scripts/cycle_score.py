@@ -51,6 +51,26 @@ THEMES = [
             ("002460", "赣锋锂业"), ("600438", "通威股份"),
         ],
     },
+    {
+        "id": "humanoid",
+        "name": "人形机器人",
+        "keyword": "人形机器人",
+        "match": ["人形机器人", "具身智能", "减速器", "灵巧手", "丝杠", "机器人", "执行器"],
+        "stocks": [
+            ("688017", "绿的谐波"), ("002472", "双环传动"), ("002050", "三花智控"),
+            ("601689", "拓普集团"), ("003021", "兆威机电"), ("688322", "奥比中光"),
+        ],
+    },
+    {
+        "id": "aiglasses",
+        "name": "AI眼镜",
+        "keyword": "AI眼镜",
+        "match": ["AI眼镜", "智能眼镜", "AR眼镜", "光波导", "MicroLED", "眼镜"],
+        "stocks": [
+            ("002273", "水晶光电"), ("002241", "歌尔股份"), ("688608", "恒玄科技"),
+            ("300622", "博士眼镜"), ("001314", "亿道信息"), ("688127", "蓝特光学"),
+        ],
+    },
 ]
 
 POS = ["增长", "超预期", "涨价", "供不应求", "扩产", "订单", "突破", "新高", "利好", "加速", "放量", "中标", "翻倍"]
@@ -127,7 +147,7 @@ def fetch_main(code: str) -> list[dict]:
 
 def fetch_value_history(code: str) -> list[dict]:
     u = ("https://datacenter-web.eastmoney.com/api/data/v1/get?reportName=RPT_VALUEANALYSIS_DET"
-         "&columns=SECURITY_CODE,TRADE_DATE,PE_TTM,PB_MRQ,PEG_CAR"
+         "&columns=SECURITY_CODE,TRADE_DATE,PE_TTM,PB_MRQ,PEG_CAR,PS_TTM"
          f"&filter=(SECURITY_CODE%3D%22{code}%22)&pageNumber=1&pageSize=1600"
          "&sortColumns=TRADE_DATE&sortTypes=-1")
     j = json.loads(get(u))
@@ -213,10 +233,13 @@ def analyze_stock(code: str, name: str) -> dict:
 
     pe_hist = [v.get("PE_TTM") for v in vals]
     pb_hist = [v.get("PB_MRQ") for v in vals]
+    ps_hist = [v.get("PS_TTM") for v in vals]
     pe = quote["pe"] or None
     pb = quote["pb"] or None
     pe_pct = pct_rank(pe_hist[:1250], pe) if pe else None
     pb_pct = pct_rank(pb_hist[:1250], pb) if pb else None
+    ps = float(vals[0].get("PS_TTM")) if (vals and vals[0].get("PS_TTM")) else None
+    ps_pct = pct_rank(ps_hist[:1250], ps) if ps else None
     peg = (pe / pro_yoy) if (pe and pro_yoy and pro_yoy > 0) else None
 
     growth = _wavg([
@@ -237,11 +260,18 @@ def analyze_stock(code: str, name: str) -> dict:
         (ramp(debt_chg, 10, -10), 0.20),
         (ramp(gm_chg, -6, 6), 0.20),
     ])
-    valuation = _wavg([
-        ((100 - pe_pct) if pe_pct is not None else None, 0.50),
-        ((100 - pb_pct) if pb_pct is not None else None, 0.25),
-        (ramp(peg, 3.0, 0.6), 0.25),
-    ])
+    if pe and pe > 0:
+        valuation = _wavg([
+            ((100 - pe_pct) if pe_pct is not None else None, 0.50),
+            ((100 - pb_pct) if pb_pct is not None else None, 0.25),
+            (ramp(peg, 3.0, 0.6), 0.25),
+        ])
+    else:
+        # 亏损公司 PE 失效，用 PS + PB 分位
+        valuation = _wavg([
+            ((100 - ps_pct) if ps_pct is not None else None, 0.60),
+            ((100 - pb_pct) if pb_pct is not None else None, 0.40),
+        ])
     crowd = _wavg([
         (ramp(quote["turnover"], 8, 1), 0.40),
         (ramp(amt_ratio, 2.0, 0.6), 0.30),
@@ -255,6 +285,7 @@ def analyze_stock(code: str, name: str) -> dict:
     return {
         "code": code, "name": name, "price": round(last, 2), "chg": quote["chg"],
         "mcap": quote["mcap"], "pe": pe, "pb": pb, "pePct": pe_pct, "pbPct": pb_pct,
+        "ps": ps, "psPct": ps_pct,
         "peg": peg, "drawdown": round(drawdown, 1), "turnover": quote["turnover"],
         "amtRatio": round(amt_ratio, 2) if amt_ratio else None,
         "revYoy": rev_yoy, "proYoy": pro_yoy, "proQoq": pro_qoq, "revQoq": rev_qoq,
@@ -324,6 +355,9 @@ def classify(basket: dict) -> tuple[str, list[str]]:
     if g < 35 and (q or 0) < 45:
         reasons.append(f"景气 {g:.0f}、盈利 {q:.0f}：增长与盈利同步走弱")
         return "阶段5 出清/衰退", reasons
+    if g < 45 and (q or 0) >= 45 and (v or 100) < 40 and (dd is None or dd > -50):
+        reasons.append(f"景气 {g:.0f} 尚未兑现、估值 {v:.0f} 偏贵：估值先行")
+        return "阶段1 导入期", reasons
     if g >= 55 and (acc is None or acc > -10) and (dd is None or dd > -25) and (ind is None or ind >= 50):
         reasons.append(f"景气 {g:.0f}、增速仍在加速、股价距 2 年高点 {dd:.0f}%")
         return "阶段2 加速期", reasons
@@ -399,6 +433,9 @@ def run() -> dict:
         # 行业手工输入占 15%，其余自动指标按原比例缩放到 85%
         total = (auto_total * 0.85 + ind * 0.15) if (ind is not None and auto_total is not None) else auto_total
         basket["total"] = round(total, 1)
+        for key, value in list(basket.items()):
+            if isinstance(value, float):
+                basket[key] = round(value, 1)
         stage, reasons = classify(basket)
         out["themes"].append({
             "id": theme["id"], "name": theme["name"], "keyword": theme["keyword"],
