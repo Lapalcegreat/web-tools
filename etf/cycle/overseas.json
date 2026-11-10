@@ -1,25 +1,95 @@
 {
- "updatedAt": "2026-11-09 20:11",
- "score": 34.6,
+ "updatedAt": "2026-11-10 20:12",
+ "score": 25.4,
  "stats": {
-  "count": 25,
+  "count": 20,
   "high": 7,
-  "low": 18,
-  "pos": 3,
-  "neg": 4,
-  "sources": 6,
+  "low": 13,
+  "pos": 2,
+  "neg": 5,
+  "sources": 5,
   "official": 12,
   "officialImpact": 0
  },
  "items": [
   {
-   "title": "OpenAI, Arm and Qualcomm executives react to post-midterm AI sell-off",
+   "title": "SoftBank swings to $7 billion loss after U.S. data center hit and Intel share decline",
    "source": "CNBC Tech",
    "tier": "major",
-   "url": "https://www.cnbc.com/2026/11/06/tech-executives-ai-data-center-selloff-midterms.html",
-   "time": "2026-11-07 02:35",
-   "ageH": 65.6,
-   "impact": -1.84,
+   "url": "https://www.cnbc.com/2026/11/10/softbank-2q-earnings-tech-selloff.html",
+   "time": "2026-11-10 17:01",
+   "ageH": 3.1,
+   "impact": -3.22,
+   "confidence": 0.92,
+   "tags": [
+    "监管"
+   ],
+   "sources": [
+    "CNBC Tech"
+   ],
+   "multiSource": false,
+   "direction": "neg",
+   "status": "high"
+  },
+  {
+   "title": "As Nvidia probes Jensen Huang affair, here's the board member likely to play a big role",
+   "source": "CNBC Tech",
+   "tier": "major",
+   "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-investigation.html",
+   "time": "2026-11-10 19:57",
+   "ageH": 0.2,
+   "impact": -1.73,
+   "confidence": 0.8,
+   "tags": [],
+   "sources": [
+    "CNBC Tech"
+   ],
+   "multiSource": false,
+   "direction": "neg",
+   "status": "high"
+  },
+  {
+   "title": "This beaten-down data center stock could be worth a look, says Mike Khouw",
+   "source": "CNBC AI",
+   "tier": "major",
+   "url": "https://www.cnbc.com/2026/11/09/this-beaten-down-data-center-stock-could-be-worth-a-look-says-mike-khouw.html",
+   "time": "2026-11-10 03:23",
+   "ageH": 16.8,
+   "impact": 1.73,
+   "confidence": 0.58,
+   "tags": [],
+   "sources": [
+    "CNBC AI"
+   ],
+   "multiSource": false,
+   "direction": "pos",
+   "status": "ok"
+  },
+  {
+   "title": "Nvidia scandal fails to bring down the tech bulls as spy investigation widens",
+   "source": "CNBC Tech",
+   "tier": "major",
+   "url": "https://www.cnbc.com/2026/11/10/nvidia-scandal-fails-to-bring-down-the-tech-bulls-as-spy-investigation-widens.html",
+   "time": "2026-11-10 19:41",
+   "ageH": 0.5,
+   "impact": -1.5,
+   "confidence": 0.8,
+   "tags": [],
+   "sources": [
+    "CNBC Tech"
+   ],
+   "multiSource": false,
+   "direction": "neg",
+   "status": "high"
+  },
+  {
+   "title": "Jim Cramer says this is the stock to buy as data center development slows",
+   "source": "CNBC Tech",
+   "tier": "major",
+   "url": "https://www.cnbc.com/investingclub/2026/11/09/cramer-says-this-is-the-stock-to-buy-as-data-center-development-slows.html",
+   "time": "2026-11-10 01:22",
+   "ageH": 18.8,
+   "impact": -1.45,
    "confidence": 0.8,
    "tags": [],
    "sources": [
@@ -35,8 +105,8 @@
    "tier": "major",
    "url": "https://www.cnbc.com/2026/11/09/nasdaq-defies-nvidia-impact-huang-faces-espionage-affair-probe.html",
    "time": "2026-11-09 19:04",
-   "ageH": 1.1,
-   "impact": -1.73,
+   "ageH": 25.1,
+   "impact": -1.38,
    "confidence": 0.8,
    "tags": [],
    "sources": [
@@ -45,59 +115,6 @@
    "multiSource": false,
    "direction": "neg",
    "status": "high"
-  },
-  {
-   "title": "Nasdaq sell-off batters Asian chip stocks as SK Hynix, Samsung, Softbank, TSMC tumble",
-   "source": "CNBC Tech",
-   "tier": "major",
-   "url": "https://www.cnbc.com/2026/11/06/tech-stocks-sk-hynix-samsung-softbank.html",
-   "time": "2026-11-06 19:06",
-   "ageH": 73.1,
-   "impact": -1.54,
-   "confidence": 0.8,
-   "tags": [
-    "监管"
-   ],
-   "sources": [
-    "CNBC Tech"
-   ],
-   "multiSource": false,
-   "direction": "neg",
-   "status": "high"
-  },
-  {
-   "title": "How Wall Street is reacting to the news of Nvidia’s investigation into Jensen Huang spy claims",
-   "source": "MarketWatch",
-   "tier": "major",
-   "url": "https://www.marketwatch.com/story/how-wall-street-is-reacting-to-the-news-of-nvidias-jensen-huang-investigation-into-spy-claims-d8c839ab?mod=mw_rss_topstories",
-   "time": "2026-11-09 17:12",
-   "ageH": 3.0,
-   "impact": -1.5,
-   "confidence": 0.8,
-   "tags": [],
-   "sources": [
-    "MarketWatch"
-   ],
-   "multiSource": false,
-   "direction": "neg",
-   "status": "high"
-  },
-  {
-   "title": "NVIDIA Announces New Planned Investments in Korean Startups at the MSIT-NVIDIA AI Startup Partnership Forum",
-   "source": "NVIDIA Blog",
-   "tier": "vendor",
-   "url": "https://blogs.nvidia.com/blog/korean-startup-investments-msit/",
-   "time": "2026-11-09 16:00",
-   "ageH": 4.2,
-   "impact": 1.14,
-   "confidence": 0.64,
-   "tags": [],
-   "sources": [
-    "NVIDIA Blog"
-   ],
-   "multiSource": false,
-   "direction": "pos",
-   "status": "ok"
   },
   {
    "title": "Marvell-Lumentum deal tests whether AI optics go single-vendor",
@@ -105,27 +122,7 @@
    "tier": "trade",
    "url": "https://www.lightreading.com/optical-networking/marvell-lumentum-deal-tests-whether-ai-optics-go-single-vendor",
    "time": "2026-11-03 22:00",
-   "ageH": 142.2,
-   "impact": 0.53,
-   "confidence": 0.7,
-   "tags": [
-    "官方"
-   ],
-   "sources": [
-    "Light Reading"
-   ],
-   "multiSource": false,
-   "official": true,
-   "direction": "pos",
-   "status": "high"
-  },
-  {
-   "title": "Marvell strikes $115B deal for Lumentum",
-   "source": "Light Reading",
-   "tier": "trade",
-   "url": "https://www.lightreading.com/ai-machine-learning/marvell-strikes-115b-deal-for-lumentum",
-   "time": "2026-11-02 23:56",
-   "ageH": 164.2,
+   "ageH": 166.2,
    "impact": 0.53,
    "confidence": 0.7,
    "tags": [
@@ -142,50 +139,32 @@
  ],
  "pending": [
   {
-   "title": "OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation",
-   "source": "TechCrunch",
-   "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
-   "time": "2026-11-07 06:53",
-   "impact": 1.17,
-   "confidence": 0.18,
-   "tags": []
-  },
-  {
-   "title": "From Chips to Skills, NVIDIA and Korea Expand Sovereign AI Collaboration",
-   "source": "NVIDIA Blog",
-   "url": "https://blogs.nvidia.com/blog/korea-sovereign-ai-collaboration/",
-   "time": "2026-11-09 13:00",
-   "impact": 0.78,
-   "confidence": 0.4,
-   "tags": []
-  },
-  {
-   "title": "OpenAI will keep investing in AI data centers despite election results, CFO tells CNBC",
-   "source": "CNBC Tech",
-   "url": "https://www.cnbc.com/2026/11/06/open-ai-data-centers-election.html",
-   "time": "2026-11-07 06:25",
-   "impact": -0.25,
-   "confidence": 0.8,
+   "title": "Marvell strikes $115B deal for Lumentum",
+   "source": "Light Reading",
+   "url": "https://www.lightreading.com/ai-machine-learning/marvell-strikes-115b-deal-for-lumentum",
+   "time": "2026-11-02 23:56",
+   "impact": 0.34,
+   "confidence": 0.7,
    "tags": [
-    "监管"
+    "官方"
    ]
   },
   {
-   "title": "OpenAI bugging suspect Alfozan pleads not guilty",
+   "title": "What is Megaspeed? The Nvidia chip buyer in the spotlight after Jensen Huang’s affair",
    "source": "CNBC Tech",
-   "url": "https://www.cnbc.com/2026/11/06/openai-bugging-alfozan-saudi.html",
-   "time": "2026-11-07 05:15",
-   "impact": 0.24,
+   "url": "https://www.cnbc.com/2026/11/09/megaspeed-nvidia-jensen-huang-alice-huang.html",
+   "time": "2026-11-10 09:33",
+   "impact": -0.22,
    "confidence": 0.8,
    "tags": []
   },
   {
-   "title": "What is MegaSpeed? The Nvidia chip buyer in the spotlight after Jensen Haung’s affair",
+   "title": "Nvidia stock falls 4% as scrutiny turns to Jensen Huang’s affair with alleged Chinese spy",
    "source": "CNBC Tech",
-   "url": "https://www.cnbc.com/2026/11/09/megaspeed-nvidia-jensen-huang-alice-huang.html",
-   "time": "2026-11-09 18:35",
+   "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html",
+   "time": "2026-11-10 05:04",
    "impact": -0.22,
-   "confidence": 0.8,
+   "confidence": 0.95,
    "tags": []
   },
   {
@@ -193,7 +172,7 @@
    "source": "CNBC Tech",
    "url": "https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-email-board-of-directors-statement.html",
    "time": "2026-11-09 06:19",
-   "impact": -0.22,
+   "impact": -0.18,
    "confidence": 0.8,
    "tags": []
   },
@@ -209,23 +188,41 @@
    ]
   },
   {
-   "title": "Crusoe sells troubled Wyoming data center project to Google",
-   "source": "TechCrunch",
-   "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
-   "time": "2026-11-07 09:40",
-   "impact": 0.1,
-   "confidence": 0.7,
+   "title": "Nvidia stock edges higher as investors weigh potential fallout of CEO's affair with alleged spy",
+   "source": "CNBC Tech",
+   "url": "https://www.cnbc.com/2026/11/10/nvidia-nvda-jensen-huang-affair-chinese-spy.html",
+   "time": "2026-11-10 19:28",
+   "impact": 0.0,
+   "confidence": 0.8,
+   "tags": []
+  },
+  {
+   "title": "TSMC's October sales jump as global chip boom rolls on",
+   "source": "CNBC Tech",
+   "url": "https://www.cnbc.com/2026/11/10/tsmcs-october-sales-.html",
+   "time": "2026-11-10 13:42",
+   "impact": 0.0,
+   "confidence": 0.88,
    "tags": [
     "官方"
    ]
   },
   {
-   "title": "Cities Worldwide Build and Scale AI Services With NVIDIA Physical and Agentic AI",
-   "source": "NVIDIA Blog",
-   "url": "https://blogs.nvidia.com/blog/cities-physical-agentic-ai-applications/",
-   "time": "2026-11-03 15:00",
-   "impact": 0.07,
-   "confidence": 0.4,
+   "title": "Jensen Huang affair puts Nvidia's future at risk, with no clear successor to the renowned CEO",
+   "source": "CNBC Tech",
+   "url": "https://www.cnbc.com/2026/11/09/jensen-huang-affair-nvidia-succession.html",
+   "time": "2026-11-10 14:52",
+   "impact": 0.0,
+   "confidence": 0.8,
+   "tags": []
+  },
+  {
+   "title": "Nvidia's CEO turmoil gives newly empowered Democrats fresh ammunition in pursuit of oversight",
+   "source": "CNBC Tech",
+   "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-affair-congress-scrutiny.html",
+   "time": "2026-11-10 04:29",
+   "impact": 0.0,
+   "confidence": 0.8,
    "tags": []
   },
   {
@@ -240,12 +237,24 @@
  ],
  "primary": [
   {
+   "company": "TSMC",
+   "form": "6-K",
+   "date": "2026-11-10",
+   "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000796/tsm-revenue20261110.htm",
+   "title": "6-K",
+   "age": 0,
+   "items": [],
+   "labels": [],
+   "signal": "",
+   "impact": 0.0
+  },
+  {
    "company": "Microsoft",
    "form": "8-K",
    "date": "2026-11-05",
    "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526448357/d177209d8k.htm",
    "title": "8-K",
-   "age": 4,
+   "age": 5,
    "items": [],
    "labels": [],
    "signal": "",
@@ -257,7 +266,7 @@
    "date": "2026-11-05",
    "url": "https://www.sec.gov/Archives/edgar/data/723125/000110465926123389/tm2629062d1_8k.htm",
    "title": "FORM 8-K",
-   "age": 4,
+   "age": 5,
    "items": [],
    "labels": [],
    "signal": "",
@@ -269,7 +278,7 @@
    "date": "2026-11-05",
    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526450074/d166273d8k.htm",
    "title": "8-K",
-   "age": 4,
+   "age": 5,
    "items": [],
    "labels": [],
    "signal": "",
@@ -281,7 +290,7 @@
    "date": "2026-11-05",
    "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526449835/d174184d8k.htm",
    "title": "8-K",
-   "age": 4,
+   "age": 5,
    "items": [],
    "labels": [],
    "signal": "",
@@ -293,7 +302,7 @@
    "date": "2026-11-04",
    "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526447173/d178557d8k.htm",
    "title": "8-K",
-   "age": 5,
+   "age": 6,
    "items": [],
    "labels": [],
    "signal": "",
@@ -305,7 +314,7 @@
    "date": "2026-11-04",
    "url": "https://www.sec.gov/Archives/edgar/data/820318/000082031826000023/iivi-20260930.htm",
    "title": "10-Q",
-   "age": 5,
+   "age": 6,
    "items": [],
    "labels": [],
    "signal": "",
@@ -317,7 +326,7 @@
    "date": "2026-11-04",
    "url": "https://www.sec.gov/Archives/edgar/data/820318/000119312526447200/d176836d8k.htm",
    "title": "8-K",
-   "age": 5,
+   "age": 6,
    "items": [],
    "labels": [],
    "signal": "",
@@ -329,7 +338,7 @@
    "date": "2026-11-04",
    "url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
    "title": "10-Q",
-   "age": 5,
+   "age": 6,
    "items": [],
    "labels": [],
    "signal": "",
@@ -341,7 +350,7 @@
    "date": "2026-11-04",
    "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000191/amd-20260926.htm",
    "title": "10-Q",
-   "age": 5,
+   "age": 6,
    "items": [],
    "labels": [],
    "signal": "",
@@ -353,7 +362,7 @@
    "date": "2026-11-03",
    "url": "https://www.sec.gov/Archives/edgar/data/1633978/000162828026069615/lite-20260926.htm",
    "title": "10-Q",
-   "age": 6,
+   "age": 7,
    "items": [],
    "labels": [],
    "signal": "",
@@ -365,19 +374,7 @@
    "date": "2026-11-03",
    "url": "https://www.sec.gov/Archives/edgar/data/1408710/000140871026000041/fn-20260925.htm",
    "title": "10-Q",
-   "age": 6,
-   "items": [],
-   "labels": [],
-   "signal": "",
-   "impact": 0.0
-  },
-  {
-   "company": "Arista",
-   "form": "8-K",
-   "date": "2026-11-03",
-   "url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000252/anet-20261103.htm",
-   "title": "8-K",
-   "age": 6,
+   "age": 7,
    "items": [],
    "labels": [],
    "signal": "",

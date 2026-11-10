@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-10 18:52",
+ "updatedAt": "2026-11-10 21:30",
  "themes": [
   {
    "id": "ai",
@@ -208,12 +208,12 @@
     "supply": 32.6,
     "valuation": 54.5,
     "crowd": 80.5,
-    "total": 58.6,
+    "total": 58.3,
     "drawdown": -66.2,
     "accel": -11.244196419089008,
-    "news": 52.5,
-    "newsDomestic": 64.5,
-    "overseas": 34.6,
+    "news": 49.9,
+    "newsDomestic": 66.3,
+    "overseas": 25.4,
     "industry": 57.6
    },
    "stage": "阶段4 杀估值",
@@ -229,74 +229,80 @@
     "capacityUtil": 85
    },
    "industry": 57.6,
-   "overseasAt": "2026-11-09 20:11",
+   "overseasAt": "2026-11-10 20:12",
    "news": [
     {
-     "date": "2026-11-10 18:38",
-     "title": "华利集团：拟不超5亿美元投资光通信企业O-Net Technologies，取得不超过25%股权",
-     "url": "http://finance.eastmoney.com/a/202611103927442667.html",
-     "media": "第一财经"
+     "date": "2026-11-10 21:17",
+     "title": "中金公司李求索：外部扰动边际缓和后市场有望率先迎来估值修复",
+     "url": "http://finance.eastmoney.com/a/202611103927560559.html",
+     "media": "中国证券报·中证金牛座"
     },
     {
-     "date": "2026-11-10 18:36",
-     "title": "华利集团：拟以自有资金不超过5亿美元投资O-Net Technologies",
-     "url": "http://finance.eastmoney.com/a/202611103927439680.html",
-     "media": "界面新闻"
-    },
-    {
-     "date": "2026-11-10 18:29",
-     "title": "华利集团：拟不超5亿美元投资光通信企业O-Net Technologies 取得后者不超过25%股权",
-     "url": "http://finance.eastmoney.com/a/202611103927430527.html",
+     "date": "2026-11-10 21:14",
+     "title": "瑞银下调Lumentum目标价",
+     "url": "http://finance.eastmoney.com/a/202611103927559310.html",
      "media": "财联社"
     },
     {
-     "date": "2026-11-10 18:19",
-     "title": "【新华解读】前10个月我国外贸增势强劲 AI产业链拉动出口增长",
-     "url": "http://finance.eastmoney.com/a/202611103927432043.html",
-     "media": "新华财经"
-    },
-    {
-     "date": "2026-11-10 18:01",
-     "title": "百亿基金经理最新调仓：谢治宇减持晶合集成，雷志勇加仓天孚通信",
-     "url": "http://finance.eastmoney.com/a/202611103927418232.html",
-     "media": "澎湃新闻"
-    },
-    {
-     "date": "2026-11-10 17:59",
-     "title": "美股盘前速递：纳指期货小幅下跌，英伟达涨近2%；存储芯片股、光通信股普涨；国际油价下跌，金价跌破4100美元",
-     "url": "http://finance.eastmoney.com/a/202611103927420019.html",
-     "media": "中新经纬"
-    },
-    {
-     "date": "2026-11-10 17:57",
-     "title": "新华财经晚报：前10个月我国货物贸易进出口同比增长20%",
-     "url": "http://forex.eastmoney.com/a/202611103927415594.html",
-     "media": "新华财经"
-    },
-    {
-     "date": "2026-11-10 17:40",
-     "title": "天孚通信大宗交易成交36.57万股 成交额4695.68万元",
-     "url": "http://finance.eastmoney.com/a/202611103927401091.html",
+     "date": "2026-11-10 21:14",
+     "title": "全球AI焦虑，A股科技板块拿什么定价？答案藏在三季报里",
+     "url": "http://stock.eastmoney.com/a/202611103927566770.html",
      "media": "证券时报网"
     },
     {
-     "date": "2026-11-10 17:37",
-     "title": "再度涨停！大牛股9天7板，股民：“不愧是飞天羊”",
-     "url": "http://finance.eastmoney.com/a/202611103927402041.html",
-     "media": "华夏时报"
+     "date": "2026-11-10 21:00",
+     "title": "11月10日东方财富财经晚报（附新闻联播）",
+     "url": "http://finance.eastmoney.com/a/202611103927502638.html",
+     "media": "东方财富Choice数据"
     },
     {
-     "date": "2026-11-10 17:37",
-     "title": "AI叙事迎来反转！公募大举调仓 多只软件股强势反弹",
-     "url": "http://finance.eastmoney.com/a/202611103927388266.html",
-     "media": "券商中国"
+     "date": "2026-11-10 20:49",
+     "title": "鞋企跨界大手笔！华利集团拟最高砸约33亿元入股光通信企业，前三季度净利下滑35%",
+     "url": "http://finance.eastmoney.com/a/202611103927527745.html",
+     "media": "每日经济新闻"
+    },
+    {
+     "date": "2026-11-10 20:44",
+     "title": "聚灿光电拟募资不超15亿元 加码红黄光扩产与前沿光芯片研发",
+     "url": "http://finance.eastmoney.com/a/202611103927523476.html",
+     "media": "证券时报网"
+    },
+    {
+     "date": "2026-11-10 20:44",
+     "title": "华利集团：拟不超过5亿美元投资O-Net Technologies Group Limited",
+     "url": "http://finance.eastmoney.com/a/202611103927523297.html",
+     "media": "上海证券报·中国证券网"
+    },
+    {
+     "date": "2026-11-10 20:37",
+     "title": "现有及在建产能已被锁定至2027年底！磷化铟龙头云南锗业最新消息，章建平是第三大股东，股价较年内高点回撤45%",
+     "url": "http://finance.eastmoney.com/a/202611103927518042.html",
+     "media": "每日经济新闻"
+    },
+    {
+     "date": "2026-11-10 20:35",
+     "title": "300979，筹划投资股权！拟参与光通信企业重组",
+     "url": "http://finance.eastmoney.com/a/202611103927523911.html",
+     "media": "证券时报网"
+    },
+    {
+     "date": "2026-11-10 20:34",
+     "title": "11月10日晚间上市公司利好消息一览(附名单)",
+     "url": "http://finance.eastmoney.com/a/202611103927518522.html",
+     "media": "东方财富研究中心"
+    },
+    {
+     "date": "2026-11-10 20:31",
+     "title": "突发！460亿纺织制造概念股拟5亿美元投资光通信企业|盘后公告集锦",
+     "url": "http://finance.eastmoney.com/a/202611103927511237.html",
+     "media": "财联社"
     }
    ],
    "newsStats": {
-    "count": 10,
-    "pos": 4,
+    "count": 11,
+    "pos": 6,
     "neg": 1,
-    "score": 64.5
+    "score": 66.3
    }
   },
   {
@@ -506,12 +512,12 @@
     "supply": 34.6,
     "valuation": 79.1,
     "crowd": 91.5,
-    "total": 46.8,
+    "total": 46.9,
     "drawdown": -59.5,
     "accel": -10.381544324428997,
-    "news": 43.3,
-    "newsDomestic": 49.2,
-    "overseas": 34.6,
+    "news": 44.7,
+    "newsDomestic": 57.5,
+    "overseas": 25.4,
     "industry": null
    },
    "stage": "阶段5 出清/衰退",
@@ -520,98 +526,98 @@
    ],
    "inputs": {},
    "industry": null,
-   "overseasAt": "2026-11-09 20:11",
+   "overseasAt": "2026-11-10 20:12",
    "news": [
     {
-     "date": "2026-11-10 18:43",
-     "title": "恒勃股份：部分募集资金投资项目延期",
-     "url": "http://finance.eastmoney.com/a/202611103927441651.html",
-     "media": "南方财经网"
-    },
-    {
-     "date": "2026-11-10 18:39",
-     "title": "玛莎拉蒂与尊界合作造车：一场各取所需的产业联姻",
-     "url": "http://finance.eastmoney.com/a/202611103927441340.html",
-     "media": "红星资本局"
-    },
-    {
-     "date": "2026-11-10 18:38",
-     "title": "晚间公告丨11月10日这些公告有看头",
-     "url": "http://finance.eastmoney.com/a/202611103927438627.html",
-     "media": "第一财经"
-    },
-    {
-     "date": "2026-11-10 18:37",
-     "title": "猪价创近十年新低 光伏巨头通威却一边巨亏118亿 一边14亿入主猪企 意欲何为？",
-     "url": "http://finance.eastmoney.com/a/202611103927437575.html",
-     "media": "新财富杂志"
-    },
-    {
-     "date": "2026-11-10 18:19",
-     "title": "【新华解读】前10个月我国外贸增势强劲 AI产业链拉动出口增长",
-     "url": "http://finance.eastmoney.com/a/202611103927432043.html",
-     "media": "新华财经"
-    },
-    {
-     "date": "2026-11-10 18:19",
-     "title": "双杰电气：拟2亿元增资江储新能 旨在参与汇宁时代江门储能电站项目",
-     "url": "http://finance.eastmoney.com/a/202611103927434076.html",
+     "date": "2026-11-10 21:13",
+     "title": "杰瑞股份9亿元增资全资子公司 加码发电机组业务",
+     "url": "http://finance.eastmoney.com/a/202611103927566415.html",
      "media": "证券时报网"
     },
     {
-     "date": "2026-11-10 18:18",
-     "title": "冲刺上市数量过百，公募REITs供给提速，估值大面积下调",
-     "url": "http://bond.eastmoney.com/a/202611103927438598.html",
-     "media": "财联社"
+     "date": "2026-11-10 21:02",
+     "title": "通威集团入主，天邦食品预重整迎关键期",
+     "url": "http://finance.eastmoney.com/a/202611103927536766.html",
+     "media": "北京商报"
     },
     {
-     "date": "2026-11-10 18:16",
-     "title": "海伦哲：控股子公司气溶胶灭火剂用冷却剂获发明专利 已应用于公司产品",
-     "url": "http://finance.eastmoney.com/a/202611103927429941.html",
+     "date": "2026-11-10 20:59",
+     "title": "重庆两江新区力争2030年GDP实现8000亿元",
+     "url": "http://finance.eastmoney.com/a/202611103927562576.html",
+     "media": "中国新闻网"
+    },
+    {
+     "date": "2026-11-10 20:59",
+     "title": "浙江从省间电力现货市场年度购电量连续三年破百亿千瓦时",
+     "url": "http://xianhuo.eastmoney.com/a/202611103927562176.html",
+     "media": "中国新闻网"
+    },
+    {
+     "date": "2026-11-10 20:59",
+     "title": "中国机会｜江森自控大中华区总裁毛应俊：在手订单充足，中国高增长行业有新需求",
+     "url": "http://finance.eastmoney.com/a/202611103927535995.html",
+     "media": "澎湃新闻"
+    },
+    {
+     "date": "2026-11-10 20:51",
+     "title": "奥迪全球CEO高德诺：任用本土管理者模式有望全球推广",
+     "url": "http://finance.eastmoney.com/a/202611103927527693.html",
+     "media": "第一财经"
+    },
+    {
+     "date": "2026-11-10 20:49",
+     "title": "鹏高控股集团：与千沐新能源签订合作框架意向书 拟设立合营公司",
+     "url": "http://finance.eastmoney.com/a/202611103927526823.html",
+     "media": "南方财经网"
+    },
+    {
+     "date": "2026-11-10 20:46",
+     "title": "远景探索AI基建新模式",
+     "url": "http://finance.eastmoney.com/a/202611103927557678.html",
+     "media": "证券日报"
+    },
+    {
+     "date": "2026-11-10 20:42",
+     "title": "112 亿美元！上海交易团九连冠，进博红利不止于订单",
+     "url": "http://biz.eastmoney.com/a/202611103927565276.html",
+     "media": "上观新闻"
+    },
+    {
+     "date": "2026-11-10 20:37",
+     "title": "宁波港年集装箱吞吐量再破4000万标准箱",
+     "url": "http://finance.eastmoney.com/a/202611103927553212.html",
+     "media": "证券日报"
+    },
+    {
+     "date": "2026-11-10 20:35",
+     "title": "上海浦东北片区首个万卡级算力集群启动建设，系达卯与浦东环保能源首个成果",
+     "url": "http://finance.eastmoney.com/a/202611103927565168.html",
+     "media": "上观新闻"
+    },
+    {
+     "date": "2026-11-10 20:34",
+     "title": "11月10日晚间上市公司利好消息一览(附名单)",
+     "url": "http://finance.eastmoney.com/a/202611103927518522.html",
+     "media": "东方财富研究中心"
+    },
+    {
+     "date": "2026-11-10 20:33",
+     "title": "拟4.5亿元投泰国！摩恩电气“两级增资”出海，自建电缆基地",
+     "url": "http://finance.eastmoney.com/a/202611103927517089.html",
+     "media": "每日经济新闻"
+    },
+    {
+     "date": "2026-11-10 20:32",
+     "title": "扩大产能赶订单 云南瑞丽沿边产业园见闻",
+     "url": "http://finance.eastmoney.com/a/202611103927565961.html",
      "media": "中国证券报·中证网"
-    },
-    {
-     "date": "2026-11-10 18:14",
-     "title": "调研桌上的新常态：主观老将与量化大厂同台 基本面成必选项",
-     "url": "http://finance.eastmoney.com/a/202611103927425837.html",
-     "media": "优优财富"
-    },
-    {
-     "date": "2026-11-10 18:11",
-     "title": "欧洲车企三季报分化，比拼“含中量”的时代来了？",
-     "url": "http://finance.eastmoney.com/a/202611103927427660.html",
-     "media": "21世纪经济报道"
-    },
-    {
-     "date": "2026-11-10 18:11",
-     "title": "蓝鲸新闻一线直击进博会｜覆盖整车、零部件及未来出行，汽车及智慧出行展区成集中呈现全球汽车行业创新成果",
-     "url": "http://finance.eastmoney.com/a/202611103927429065.html",
-     "media": "蓝鲸财经"
-    },
-    {
-     "date": "2026-11-10 18:08",
-     "title": "猪价磨底，光伏大佬刘汉元抄底！通威集团拟花14亿控股“浙江猪王”天邦食品",
-     "url": "http://finance.eastmoney.com/a/202611103927427744.html",
-     "media": "时代财经"
-    },
-    {
-     "date": "2026-11-10 18:07",
-     "title": "双杰电气：拟2亿元增资江储新能参与储能电站项目",
-     "url": "http://finance.eastmoney.com/a/202611103927422537.html",
-     "media": "财联社"
-    },
-    {
-     "date": "2026-11-10 18:07",
-     "title": "车圈事｜10月乘用车出口占销量比例高达35%，成车企增长核心动力",
-     "url": "http://finance.eastmoney.com/a/202611103927428970.html",
-     "media": "深圳商报·读创"
     }
    ],
    "newsStats": {
     "count": 30,
-    "pos": 6,
-    "neg": 3,
-    "score": 49.2
+    "pos": 14,
+    "neg": 2,
+    "score": 57.5
    }
   }
  ]
