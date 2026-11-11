@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-11 20:59",
+ "updatedAt": "2026-11-11 21:30",
  "themes": [
   {
    "id": "ai",
@@ -12,16 +12,16 @@
      "price": 542.0,
      "chg": 15.07,
      "mcap": 638427025422.0,
-     "pe": 21.53,
-     "pb": 6.77,
-     "pePct": 10.72,
+     "pe": 24.64658904,
+     "pb": 6.76564823,
+     "pePct": 18.16,
      "pbPct": 49.04,
      "ps": 7.71212994,
      "psPct": 49.04,
-     "peg": 0.10164864198231505,
+     "peg": 0.11636285673071108,
      "drawdown": -60.8,
      "turnover": 5.47,
-     "amtRatio": 0.88,
+     "amtRatio": 1.22,
      "revYoy": 178.134819531741,
      "proYoy": 211.808043670134,
      "proQoq": 26.645946114878,
@@ -42,27 +42,27 @@
       "growth": 82.5,
       "quality": 71.9,
       "supply": 89.6,
-      "valuation": 82.4,
-      "crowd": 68.5,
-      "total": 79.7
+      "valuation": 78.7,
+      "crowd": 61.1,
+      "total": 78.1
      }
     },
     {
      "code": "300502",
      "name": "新易盛",
-     "price": 215.0,
-     "chg": 16.97,
+     "price": 183.8,
+     "chg": 22.16,
      "mcap": 299868514340.0,
-     "pe": 19.78,
-     "pb": 10.73,
-     "pePct": 18.0,
+     "pe": 20.57111939,
+     "pb": 10.72580859,
+     "pePct": 20.0,
      "pbPct": 62.96000000000001,
      "ps": 7.46183635,
      "psPct": 31.2,
-     "peg": 0.24805547159133673,
-     "drawdown": -64.8,
-     "turnover": 9.96,
-     "amtRatio": 0.84,
+     "peg": 0.25797667954742876,
+     "drawdown": -69.9,
+     "turnover": 6.94,
+     "amtRatio": 1.53,
      "revYoy": 92.973636160318,
      "proYoy": 79.740228558985,
      "proQoq": 11.116600945351,
@@ -83,27 +83,27 @@
       "growth": 71.9,
       "quality": 58.3,
       "supply": 32.6,
-      "valuation": 75.3,
-      "crowd": 54.9,
-      "total": 61.2
+      "valuation": 74.3,
+      "crowd": 46.1,
+      "total": 60.0
      }
     },
     {
      "code": "002384",
      "name": "东山精密",
-     "price": 92.06,
-     "chg": 10.0,
+     "price": 83.69,
+     "chg": 12.97,
      "mcap": 179092670787.92,
-     "pe": 25.4,
-     "pb": 6.8,
-     "pePct": 59.440000000000005,
+     "pe": 32.85179783,
+     "pb": 6.79949782,
+     "pePct": 67.60000000000001,
      "pbPct": 84.64,
      "ps": 3.06489295,
      "psPct": 77.60000000000001,
-     "peg": 0.07642726952553701,
-     "drawdown": -66.6,
-     "turnover": 10.32,
-     "amtRatio": 0.81,
+     "peg": 0.09884933886424654,
+     "drawdown": -69.7,
+     "turnover": 8.94,
+     "amtRatio": 1.23,
      "revYoy": 67.633165441457,
      "proYoy": 332.342109795156,
      "proQoq": 52.066802256515,
@@ -124,9 +124,9 @@
       "growth": 95.9,
       "quality": 50.0,
       "supply": 56.5,
-      "valuation": 49.1,
-      "crowd": 55.5,
-      "total": 64.2
+      "valuation": 45.0,
+      "crowd": 46.4,
+      "total": 62.3
      }
     },
     {
@@ -134,17 +134,17 @@
      "name": "天孚通信",
      "price": 144.06,
      "chg": 13.96,
-     "mcap": 157144262897.58002,
-     "pe": 56.57,
-     "pb": 23.88,
-     "pePct": 54.64,
-     "pbPct": 77.60000000000001,
+     "mcap": 157144262897.58,
+     "pe": 59.62892369,
+     "pb": 23.88283839,
+     "pePct": 59.199999999999996,
+     "pbPct": 77.68,
      "ps": 26.20761761,
      "psPct": 69.12,
-     "peg": 1.3411208322242687,
+     "peg": 1.4136395927836347,
      "drawdown": -59.3,
      "turnover": 6.88,
-     "amtRatio": 0.63,
+     "amtRatio": 1.03,
      "revYoy": 21.250922102987,
      "proYoy": 42.181135838579,
      "proQoq": 13.480540820735,
@@ -165,9 +165,9 @@
       "growth": 48.7,
       "quality": 87.5,
       "supply": 27.8,
-      "valuation": 45.6,
-      "crowd": 65.4,
-      "total": 55.0
+      "valuation": 42.5,
+      "crowd": 56.7,
+      "total": 53.4
      }
     },
     {
@@ -176,16 +176,16 @@
      "price": 145.97,
      "chg": 9.92,
      "mcap": 143457099153.61,
-     "pe": 31.8,
-     "pb": 3.74,
-     "pePct": 45.68,
-     "pbPct": 50.239999999999995,
+     "pe": 32.23084641,
+     "pb": 3.74440295,
+     "pePct": 46.96,
+     "pbPct": 50.32,
      "ps": 6.06954693,
      "psPct": 71.44,
-     "peg": 7.426764997527646,
+     "peg": 7.527387482970992,
      "drawdown": -62.9,
      "turnover": 5.9,
-     "amtRatio": 0.51,
+     "amtRatio": 0.94,
      "revYoy": 30.76538658107,
      "proYoy": 4.281810453217,
      "proQoq": -11.435776622577,
@@ -206,9 +206,9 @@
       "growth": 23.7,
       "quality": 54.1,
       "supply": 32.2,
-      "valuation": 39.6,
-      "crowd": 72.0,
-      "total": 40.8
+      "valuation": 38.9,
+      "crowd": 64.7,
+      "total": 39.8
      }
     }
    ],
@@ -216,14 +216,14 @@
     "growth": 71.9,
     "quality": 58.3,
     "supply": 32.6,
-    "valuation": 49.1,
-    "crowd": 65.4,
-    "total": 55.5,
+    "valuation": 45.0,
+    "crowd": 56.7,
+    "total": 55.1,
     "drawdown": -62.9,
     "accel": -11.2,
-    "news": 42.3,
-    "newsDomestic": 53.5,
-    "overseas": 25.4,
+    "news": 54.8,
+    "newsDomestic": 71.0,
+    "overseas": 30.6,
     "industry": 57.6
    },
    "stage": "阶段4 杀估值",
@@ -239,62 +239,92 @@
     "capacityUtil": 85
    },
    "industry": 57.6,
-   "overseasAt": "2026-11-10 20:12",
+   "overseasAt": "2026-11-11 20:11",
    "news": [
     {
-     "date": "2026-11-11 18:28",
-     "title": "“光禁令”担忧缓解！光芯片为何领涨",
-     "url": "http://finance.eastmoney.com/a/202611113928522490.html",
-     "media": "东方财富研究中心"
+     "date": "2026-11-11 21:00",
+     "title": "11月11日东方财富财经晚报（附新闻联播）",
+     "url": "http://finance.eastmoney.com/a/202611113928607588.html",
+     "media": "东方财富Choice数据"
     },
     {
-     "date": "2026-11-11 18:07",
-     "title": "英伟达，盘前上涨超3%！存储芯片股，大反弹",
-     "url": "http://finance.eastmoney.com/a/202611113928515398.html",
-     "media": "中国基金报"
+     "date": "2026-11-11 20:58",
+     "title": "科创板晚报|广钢气体拟2亿元至4亿元回购股份 汇宇制药与同源康签署3亿元和解协议",
+     "url": "http://finance.eastmoney.com/a/202611113928660023.html",
+     "media": "科创板日报"
     },
     {
-     "date": "2026-11-11 18:05",
-     "title": "美股盘前速递：纳指期货涨超1%；英伟达连跌两天后涨超3%；存储芯片、光通信股全线大涨，海力士涨超7%，闪迪、康宁涨超6%；金银价格齐涨",
-     "url": "http://finance.eastmoney.com/a/202611113928513336.html",
-     "media": "中新经纬"
+     "date": "2026-11-11 20:53",
+     "title": "美股盘前：三大股指期货齐涨 CoreWeave绩后大涨 英伟达盘前涨近4%",
+     "url": "http://stock.eastmoney.com/a/202611113928657039.html",
+     "media": "哈富证券"
     },
     {
-     "date": "2026-11-11 18:01",
-     "title": "拟30亿元跨界“追光”，股价大跌！300979：系财务性投资",
-     "url": "http://finance.eastmoney.com/a/202611113928511398.html",
-     "media": "大众证券报"
+     "date": "2026-11-11 20:49",
+     "title": "“鞋王”拟跨界追光，资金跑步出逃",
+     "url": "http://finance.eastmoney.com/a/202611113928629427.html",
+     "media": "海报新闻"
     },
     {
-     "date": "2026-11-11 17:58",
-     "title": "美股盘前速递：纳指期货涨超1%，英伟达涨超3%；存储芯片、光通信股全线大涨，SK海力士涨超7%；金银价格齐涨",
-     "url": "http://finance.eastmoney.com/a/202611113928513464.html",
-     "media": "中新经纬"
+     "date": "2026-11-11 20:47",
+     "title": "拟重金布局光通信股价大跌，A股“鞋王”华利集团跨界遇冷",
+     "url": "http://finance.eastmoney.com/a/202611113928623180.html",
+     "media": "北京商报"
     },
     {
-     "date": "2026-11-11 17:52",
-     "title": "大模型双雄逆市齐升！光模块飙升",
-     "url": "http://finance.eastmoney.com/a/202611113928515289.html",
-     "media": "中国基金报"
+     "date": "2026-11-11 20:44",
+     "title": "重磅信号！连续两周逆势加仓！百亿私募嗅到了什么？",
+     "url": "http://fund.eastmoney.com/a/202611113928621238.html",
+     "media": "券商中国"
     },
     {
-     "date": "2026-11-11 17:47",
-     "title": "【美股盘前】英伟达涨超3%，黄仁勋重返英伟达总部主持晨会；存储、光通信、AI芯片股上涨，SK海力士涨超7%",
-     "url": "http://finance.eastmoney.com/a/202611113928504521.html",
+     "date": "2026-11-11 20:43",
+     "title": "“鞋王”也要“追光”？华利集团33.58亿买昂纳IPO门票，公司回应：不参与经营，纯财务投资",
+     "url": "http://finance.eastmoney.com/a/202611113928619229.html",
+     "media": "蓝鲸财经"
+    },
+    {
+     "date": "2026-11-11 20:38",
+     "title": "股价较年内高点回撤近六成，长芯博创控股股东两日增持逾4亿元，长飞光纤持股比例升至20%",
+     "url": "http://finance.eastmoney.com/a/202611113928614821.html",
      "media": "每日经济新闻"
     },
     {
-     "date": "2026-11-11 17:11",
-     "title": "美股盘前：AI硬件股票大幅上涨 英伟达涨3.6% SK海力士涨7.2%",
-     "url": "http://finance.eastmoney.com/a/202611113928464118.html",
-     "media": "21世纪经济报道"
+     "date": "2026-11-11 20:31",
+     "title": "CPO飙涨！通信ETF全线领涨，通信类指数怎么选？",
+     "url": "http://finance.eastmoney.com/a/202611113928611563.html",
+     "media": "中国基金报"
+    },
+    {
+     "date": "2026-11-11 20:29",
+     "title": "美股盘前飙了：纳指期货上涨2%，英伟达股价大涨近4%；SK海力士、闪迪、希捷涨超8%，西部数据涨超7%，美光科技涨超6%",
+     "url": "http://finance.eastmoney.com/a/202611113928609424.html",
+     "media": "中新经纬"
+    },
+    {
+     "date": "2026-11-11 20:23",
+     "title": "AI算力需求带动电子树脂赛道升温，圣泉集团2亿元补链上游关键原料",
+     "url": "http://finance.eastmoney.com/a/202611113928609060.html",
+     "media": "澎湃新闻"
+    },
+    {
+     "date": "2026-11-11 20:21",
+     "title": "德科立持续加快产能建设",
+     "url": "http://finance.eastmoney.com/a/202611113928640938.html",
+     "media": "证券日报"
+    },
+    {
+     "date": "2026-11-11 20:13",
+     "title": "股市面面观丨光通信板块放量大涨 A股企稳回升信号增强",
+     "url": "http://finance.eastmoney.com/a/202611113928606626.html",
+     "media": "新华财经"
     }
    ],
    "newsStats": {
-    "count": 8,
-    "pos": 0,
+    "count": 13,
+    "pos": 3,
     "neg": 0,
-    "score": 53.5
+    "score": 71.0
    }
   },
   {
@@ -308,16 +338,16 @@
      "price": 246.66,
      "chg": -1.32,
      "mcap": 1141357407548.76,
-     "pe": 13.27,
-     "pb": 2.95,
-     "pePct": 1.04,
-     "pbPct": 0.72,
+     "pe": 13.01474778,
+     "pb": 2.95015118,
+     "pePct": 0.8,
+     "pbPct": 0.8,
      "ps": 1.95851323,
      "psPct": 7.6,
-     "peg": 0.4199048515696433,
+     "peg": 0.4118278624549544,
      "drawdown": -46.2,
      "turnover": 0.9,
-     "amtRatio": 1.12,
+     "amtRatio": 1.67,
      "revYoy": 56.192574435138,
      "proYoy": 31.602397425025,
      "proQoq": 3.173042822456,
@@ -338,9 +368,9 @@
       "growth": 49.2,
       "quality": 42.9,
       "supply": 42.5,
-      "valuation": 99.3,
-      "crowd": 80.6,
-      "total": 61.3
+      "valuation": 99.4,
+      "crowd": 68.9,
+      "total": 60.0
      }
     },
     {
@@ -349,16 +379,16 @@
      "price": 11.75,
      "chg": -3.37,
      "mcap": 89042320537.75,
-     "pe": -14.17,
-     "pb": 1.93,
+     "pe": -11.5200148,
+     "pb": 1.92500199,
      "pePct": null,
-     "pbPct": 16.24,
+     "pbPct": 15.76,
      "ps": 1.40674196,
      "psPct": 34.64,
      "peg": null,
      "drawdown": -48.5,
      "turnover": 1.42,
-     "amtRatio": 0.48,
+     "amtRatio": 0.69,
      "revYoy": -13.847137221509,
      "proYoy": -38.484298283435,
      "proQoq": -2.588895836936,
@@ -379,9 +409,9 @@
       "growth": 15.9,
       "quality": 21.8,
       "supply": 34.6,
-      "valuation": 72.7,
-      "crowd": 90.7,
-      "total": 41.2
+      "valuation": 72.9,
+      "crowd": 88.7,
+      "total": 41.1
      }
     },
     {
@@ -390,16 +420,16 @@
      "price": 80.09,
      "chg": 0.62,
      "mcap": 166043502948.16,
-     "pe": 18.87,
-     "pb": 3.36,
-     "pePct": 41.120000000000005,
-     "pbPct": 6.32,
+     "pe": 20.30095634,
+     "pb": 3.35817473,
+     "pePct": 45.92,
+     "pbPct": 6.239999999999999,
      "ps": 2.31758716,
      "psPct": 35.52,
      "peg": null,
      "drawdown": -60.8,
      "turnover": 4.16,
-     "amtRatio": 0.51,
+     "amtRatio": 0.95,
      "revYoy": -26.413954050989,
      "proYoy": -44.458235484251,
      "proQoq": -25.544467390711,
@@ -420,9 +450,9 @@
       "growth": 6.9,
       "quality": 41.5,
       "supply": 22.9,
-      "valuation": 70.5,
-      "crowd": 81.9,
-      "total": 39.7
+      "valuation": 67.3,
+      "crowd": 74.5,
+      "total": 38.2
      }
     },
     {
@@ -430,17 +460,17 @@
      "name": "赣锋锂业",
      "price": 37.15,
      "chg": 0.43,
-     "mcap": 77892197108.59999,
-     "pe": 11.66,
-     "pb": 1.62,
-     "pePct": 40.57471264367816,
-     "pbPct": 18.48,
+     "mcap": 77892197108.6,
+     "pe": 11.80234801,
+     "pb": 1.61864068,
+     "pePct": 41.14942528735632,
+     "pbPct": 18.32,
      "ps": 1.74584856,
      "psPct": 1.52,
-     "peg": 0.0005967093458105056,
+     "peg": 0.0006039941132139814,
      "drawdown": -59.3,
      "turnover": 2.4,
-     "amtRatio": 0.4,
+     "amtRatio": 0.71,
      "revYoy": 147.242600641863,
      "proYoy": 19540.5017230999,
      "proQoq": 3.098318762185,
@@ -461,9 +491,9 @@
       "growth": 91.8,
       "quality": 51.6,
       "supply": 92.7,
-      "valuation": 75.1,
-      "crowd": 91.6,
-      "total": 79.3
+      "valuation": 74.8,
+      "crowd": 89.1,
+      "total": 78.9
      }
     },
     {
@@ -471,17 +501,17 @@
      "name": "通威股份",
      "price": 11.73,
      "chg": -2.01,
-     "mcap": 52808354711.520004,
-     "pe": -5.86,
-     "pb": 1.72,
+     "mcap": 52808354711.52,
+     "pe": -4.78249792,
+     "pb": 1.7222399,
      "pePct": null,
-     "pbPct": 17.84,
+     "pbPct": 18.08,
      "ps": 0.67819744,
      "psPct": 9.120000000000001,
      "peg": null,
      "drawdown": -62.3,
      "turnover": 0.97,
-     "amtRatio": 0.46,
+     "amtRatio": 0.71,
      "revYoy": -9.694357384684,
      "proYoy": -28.245354546407,
      "proQoq": -13.631816721749,
@@ -502,9 +532,9 @@
       "growth": 4.4,
       "quality": 7.8,
       "supply": 34.1,
-      "valuation": 87.4,
-      "crowd": 100.0,
-      "total": 39.2
+      "valuation": 87.3,
+      "crowd": 97.7,
+      "total": 38.9
      }
     }
    ],
@@ -512,14 +542,14 @@
     "growth": 15.9,
     "quality": 41.5,
     "supply": 34.6,
-    "valuation": 75.1,
-    "crowd": 90.7,
-    "total": 46.1,
+    "valuation": 74.8,
+    "crowd": 88.7,
+    "total": 45.8,
     "drawdown": -59.3,
     "accel": -10.4,
-    "news": 45.7,
-    "newsDomestic": 59.2,
-    "overseas": 25.4,
+    "news": 44.9,
+    "newsDomestic": 54.5,
+    "overseas": 30.6,
     "industry": null
    },
    "stage": "阶段5 出清/衰退",
@@ -528,98 +558,98 @@
    ],
    "inputs": {},
    "industry": null,
-   "overseasAt": "2026-11-10 20:12",
+   "overseasAt": "2026-11-11 20:11",
    "news": [
     {
-     "date": "2026-11-11 18:27",
-     "title": "在华转型进入“深水期” 两大合资品牌同日释放出海信号",
-     "url": "http://finance.eastmoney.com/a/202611113928524977.html",
+     "date": "2026-11-11 21:20",
+     "title": "亿都（国际控股）预计中期净利润大增，碧桂园服务、八马茶业实施股份回购丨港股公告精选",
+     "url": "http://finance.eastmoney.com/a/202611113928666020.html",
+     "media": "21世纪经济报道"
+    },
+    {
+     "date": "2026-11-11 21:15",
+     "title": "布局智能领域 罗普斯金投资设立合伙企业",
+     "url": "http://finance.eastmoney.com/a/202611113928660872.html",
+     "media": "北京商报"
+    },
+    {
+     "date": "2026-11-11 21:12",
+     "title": "激活“文旅+科技”新动能，寿县聚力打造“一区五地”新格局",
+     "url": "http://finance.eastmoney.com/a/202611113928663315.html",
+     "media": "证券时报网"
+    },
+    {
+     "date": "2026-11-11 21:10",
+     "title": "港股公告精选｜洛阳钼业获18亿元贷款承诺可用于回购 中远海发订立逾130亿元造船合同",
+     "url": "http://finance.eastmoney.com/a/202611113928664711.html",
      "media": "财联社"
     },
     {
-     "date": "2026-11-11 18:23",
-     "title": "彩客新能源：11月11日斥资47.51万港元回购50万股",
-     "url": "http://finance.eastmoney.com/a/202611113928527358.html",
-     "media": "南方财经网"
-    },
-    {
-     "date": "2026-11-11 18:21",
-     "title": "湖南裕能副总经理汪咏梅因病不幸去世，年仅47岁，曾主导公司改制上市及资本运作相关工作",
-     "url": "http://finance.eastmoney.com/a/202611113928524778.html",
-     "media": "深圳商报·读创"
-    },
-    {
-     "date": "2026-11-11 18:11",
-     "title": "【答疑室】光弘科技：已在服务器领域与华勤技术开展合作",
-     "url": "http://finance.eastmoney.com/a/202611113928517148.html",
-     "media": "中国证券报·中证金牛座"
-    },
-    {
-     "date": "2026-11-11 18:10",
-     "title": "丰茂股份：公司产能利用率接近饱和状态",
-     "url": "http://finance.eastmoney.com/a/202611113928519432.html",
-     "media": "南方财经网"
-    },
-    {
-     "date": "2026-11-11 18:10",
-     "title": "丰茂股份：报告期内新能源相关配套订单较上年同期有所增加",
-     "url": "http://finance.eastmoney.com/a/202611113928519531.html",
-     "media": "南方财经网"
-    },
-    {
-     "date": "2026-11-11 18:06",
-     "title": "新华财经晚报：10月新能源汽车月度新车销量占比达64.3%",
-     "url": "http://finance.eastmoney.com/a/202611113928513230.html",
-     "media": "新华财经"
-    },
-    {
-     "date": "2026-11-11 18:03",
-     "title": "【调研快报】明星电力接待线上参与公司2026年第三季度业绩说明会的投资者调研",
-     "url": "http://stock.eastmoney.com/a/202611113928506294.html",
+     "date": "2026-11-11 21:00",
+     "title": "11月11日东方财富财经晚报（附新闻联播）",
+     "url": "http://finance.eastmoney.com/a/202611113928607588.html",
      "media": "东方财富Choice数据"
     },
     {
-     "date": "2026-11-11 17:56",
-     "title": "美锦能源第一大股东“解旧押新”5000万股，超16亿持股中仅不到9万股未被质押",
-     "url": "http://finance.eastmoney.com/a/202611113928513583.html",
-     "media": "深圳商报·读创"
+     "date": "2026-11-11 20:57",
+     "title": "蔚来能源与保利置业达成战略合作，共建充换电网络",
+     "url": "http://finance.eastmoney.com/a/202611113928639630.html",
+     "media": "中国基金报"
     },
     {
-     "date": "2026-11-11 17:55",
-     "title": "英洛华：公司机器人领域磁材产品尚处开拓培育和送样验证阶段",
-     "url": "http://finance.eastmoney.com/a/202611113928509879.html",
-     "media": "上海证券报·中国证券网"
-    },
-    {
-     "date": "2026-11-11 17:54",
-     "title": "东风加码整车试验验证 家用新能源车看重长期使用表现",
-     "url": "http://finance.eastmoney.com/a/202611113928517692.html",
-     "media": "中国证券报·中证网"
-    },
-    {
-     "date": "2026-11-11 17:44",
-     "title": "西安高新区打造对外开放强劲引擎 前三季度外贸进出口总值超6500亿元",
-     "url": "http://finance.eastmoney.com/a/202611113928501740.html",
+     "date": "2026-11-11 20:55",
+     "title": "全国首个CMF微专业在渝正式落地",
+     "url": "http://finance.eastmoney.com/a/202611113928630296.html",
      "media": "中国新闻网"
     },
     {
-     "date": "2026-11-11 17:41",
-     "title": "【调研快报】赣能股份接待东方财富证券研究所等29家机构调研",
-     "url": "http://stock.eastmoney.com/a/202611113928491653.html",
-     "media": "东方财富Choice数据"
+     "date": "2026-11-11 20:44",
+     "title": "车市“双十一”促销聚焦金融方案 二十余品牌集中让利",
+     "url": "http://finance.eastmoney.com/a/202611113928624162.html",
+     "media": "上海证券报·中国证券网"
     },
     {
-     "date": "2026-11-11 17:33",
-     "title": "华为、比亚迪、大疆、腾讯在列！深圳上新4条工业旅游路线",
-     "url": "http://finance.eastmoney.com/a/202611113928493479.html",
-     "media": "21世纪经济报道"
+     "date": "2026-11-11 20:44",
+     "title": "重磅经济数据即将发布，哪些看点值得关注",
+     "url": "http://finance.eastmoney.com/a/202611113928624626.html",
+     "media": "第一财经"
+    },
+    {
+     "date": "2026-11-11 20:44",
+     "title": "重磅信号！连续两周逆势加仓！百亿私募嗅到了什么？",
+     "url": "http://fund.eastmoney.com/a/202611113928621238.html",
+     "media": "券商中国"
+    },
+    {
+     "date": "2026-11-11 20:36",
+     "title": "11月11日晚间上市公司利好消息一览(附名单)",
+     "url": "http://finance.eastmoney.com/a/202611113928614240.html",
+     "media": "东方财富研究中心"
+    },
+    {
+     "date": "2026-11-11 20:34",
+     "title": "AI漫剧营收占比仅为2.57% 16天9板短剧概念牛股提示风险|盘后公告集锦",
+     "url": "http://finance.eastmoney.com/a/202611113928612822.html",
+     "media": "财联社"
+    },
+    {
+     "date": "2026-11-11 20:33",
+     "title": "从第1名掉到第66名，特斯拉10月国内只卖出8817辆，出口同比增长66.3％",
+     "url": "http://finance.eastmoney.com/a/202611113928614419.html",
+     "media": "华夏时报网"
+    },
+    {
+     "date": "2026-11-11 20:25",
+     "title": "日丰股份：重中之重是加快推进光棒光纤项目投产并顺利实现市场投放",
+     "url": "http://finance.eastmoney.com/a/202611113928609179.html",
+     "media": "南方财经网"
     }
    ],
    "newsStats": {
     "count": 30,
-    "pos": 11,
-    "neg": 1,
-    "score": 59.2
+    "pos": 12,
+    "neg": 3,
+    "score": 54.5
    }
   },
   {
@@ -633,15 +663,15 @@
      "price": 765.0,
      "chg": 0.52,
      "mcap": 309415220100.0,
-     "pe": 600.12,
-     "pb": 34.72,
-     "pePct": 100.0,
-     "pbPct": 45.45454545454545,
+     "pe": 551.99108935,
+     "pb": 34.72482986,
+     "pePct": 98.18181818181819,
+     "pbPct": 47.27272727272727,
      "ps": 131.69579139,
      "psPct": 94.54545454545455,
-     "peg": 2.218215466242435,
+     "peg": 2.040317222595781,
      "drawdown": -9.5,
-     "turnover": 20.15,
+     "turnover": 2014.61,
      "amtRatio": null,
      "revYoy": 55.711211692603,
      "proYoy": 270.541797734635,
@@ -663,9 +693,9 @@
       "growth": 61.0,
       "quality": 50.1,
       "supply": 26.3,
-      "valuation": 21.8,
+      "valuation": 24.1,
       "crowd": 0.0,
-      "total": 37.3
+      "total": 37.8
      }
     },
     {
@@ -673,17 +703,17 @@
      "name": "上纬新材",
      "price": 240.31,
      "chg": 9.8,
-     "mcap": 96931856855.68001,
-     "pe": -172.28,
-     "pb": 104.19,
+     "mcap": 96931856855.68,
+     "pe": -219.58039908,
+     "pb": 104.18529492,
      "pePct": null,
      "pbPct": 100.0,
      "ps": 56.14732419,
      "psPct": 100.0,
      "peg": null,
      "drawdown": 0.0,
-     "turnover": 3.33,
-     "amtRatio": 2.19,
+     "turnover": 333.23,
+     "amtRatio": 1.84,
      "revYoy": -5.50747230798,
      "proYoy": -796.937164649663,
      "proQoq": -184.155985186628,
@@ -705,8 +735,8 @@
       "quality": 19.5,
       "supply": 30.2,
       "valuation": 0.0,
-      "crowd": 26.7,
-      "total": 12.7
+      "crowd": 3.5,
+      "total": 10.2
      }
     },
     {
@@ -715,16 +745,16 @@
      "price": 303.0,
      "chg": 0.08,
      "mcap": 55549027875.0,
-     "pe": 341.26,
-     "pb": 15.35,
-     "pePct": 72.56,
-     "pbPct": 92.56,
+     "pe": 363.5862995,
+     "pb": 15.35196505,
+     "pePct": 74.32,
+     "pbPct": 92.64,
      "ps": 73.58051179,
      "psPct": 86.32,
-     "peg": 11.249728586586933,
+     "peg": 11.985721113451644,
      "drawdown": -37.9,
-     "turnover": 4.61,
-     "amtRatio": 0.99,
+     "turnover": 460.57,
+     "amtRatio": 1.03,
      "revYoy": 45.303519637989,
      "proYoy": 30.334954072304,
      "proQoq": 8.309312929434,
@@ -745,9 +775,9 @@
       "growth": 49.5,
       "quality": 32.6,
       "supply": 56.5,
-      "valuation": 15.6,
-      "crowd": 57.7,
-      "total": 40.3
+      "valuation": 14.7,
+      "crowd": 37.5,
+      "total": 37.9
      }
     },
     {
@@ -755,17 +785,17 @@
      "name": "双环传动",
      "price": 44.59,
      "chg": 3.82,
-     "mcap": 37901397086.28001,
-     "pe": 30.9,
-     "pb": 3.55,
-     "pePct": 51.6,
-     "pbPct": 67.60000000000001,
+     "mcap": 37901397086.28,
+     "pe": 29.5385424,
+     "pb": 3.55459579,
+     "pePct": 45.839999999999996,
+     "pbPct": 67.92,
      "ps": 3.88168756,
      "psPct": 73.2,
-     "peg": 12.852715279031003,
+     "peg": 12.286423146433176,
      "drawdown": -12.8,
      "turnover": 4.35,
-     "amtRatio": 1.35,
+     "amtRatio": 1.34,
      "revYoy": 10.082666089577,
      "proYoy": 2.404161247578,
      "proQoq": 0.951419987885,
@@ -786,9 +816,9 @@
       "growth": 28.5,
       "quality": 55.7,
       "supply": 43.6,
-      "valuation": 32.3,
-      "crowd": 36.4,
-      "total": 38.8
+      "valuation": 35.1,
+      "crowd": 36.6,
+      "total": 39.4
      }
     },
     {
@@ -797,16 +827,16 @@
      "price": 36.35,
      "chg": 2.83,
      "mcap": 152961306537.25,
-     "pe": 37.4,
-     "pb": 4.67,
-     "pePct": 48.4,
-     "pbPct": 20.560000000000002,
+     "pe": 39.34362838,
+     "pb": 4.66681012,
+     "pePct": 55.67999999999999,
+     "pbPct": 20.48,
      "ps": 4.74211265,
      "psPct": 63.839999999999996,
      "peg": null,
      "drawdown": -37.5,
      "turnover": 2.91,
-     "amtRatio": 0.39,
+     "amtRatio": 0.54,
      "revYoy": 5.177828385183,
      "proYoy": -5.399228241674,
      "proQoq": -2.731705324185,
@@ -827,9 +857,9 @@
       "growth": 22.7,
       "quality": 56.9,
       "supply": 45.8,
-      "valuation": 60.9,
+      "valuation": 56.1,
       "crowd": 75.6,
-      "total": 48.5
+      "total": 47.4
      }
     },
     {
@@ -838,16 +868,16 @@
      "price": 51.25,
      "chg": 5.84,
      "mcap": 89064073475.0,
-     "pe": 40.19,
-     "pb": 3.6,
-     "pePct": 53.44,
+     "pe": 35.99153234,
+     "pb": 3.59964982,
+     "pePct": 39.28,
      "pbPct": 12.559999999999999,
      "ps": 2.8483651,
      "psPct": 9.36,
      "peg": null,
      "drawdown": -38.2,
      "turnover": 3.53,
-     "amtRatio": 0.66,
+     "amtRatio": 0.9,
      "revYoy": 8.061041846166,
      "proYoy": -15.483350997238,
      "proQoq": -1.280874392367,
@@ -868,9 +898,9 @@
       "growth": 23.7,
       "quality": 44.5,
       "supply": 47.7,
-      "valuation": 60.2,
-      "crowd": 71.2,
-      "total": 45.7
+      "valuation": 69.6,
+      "crowd": 65.9,
+      "total": 47.2
      }
     },
     {
@@ -879,16 +909,16 @@
      "price": 103.27,
      "chg": -3.49,
      "mcap": 27681384085.5,
-     "pe": 169.35,
-     "pb": 5.42,
-     "pePct": 99.28,
-     "pbPct": 73.04,
+     "pe": 141.47766015,
+     "pb": 5.42294594,
+     "pePct": 96.8,
+     "pbPct": 73.2,
      "ps": 16.0728588,
      "psPct": 81.28,
      "peg": null,
      "drawdown": -36.2,
      "turnover": 6.13,
-     "amtRatio": 2.06,
+     "amtRatio": 2.26,
      "revYoy": 0.534552034891,
      "proYoy": -32.353332924018,
      "proQoq": -9.277134977539,
@@ -909,9 +939,9 @@
       "growth": 16.1,
       "quality": 54.7,
       "supply": 47.6,
-      "valuation": 9.5,
+      "valuation": 11.1,
       "crowd": 26.4,
-      "total": 29.6
+      "total": 29.9
      }
     },
     {
@@ -920,16 +950,16 @@
      "price": 120.28,
      "chg": 4.5,
      "mcap": 49664181164.96,
-     "pe": 504.3,
-     "pb": 12.28,
-     "pePct": 83.11258278145695,
-     "pbPct": 93.16888045540796,
+     "pe": 529.73700027,
+     "pb": 12.28475699,
+     "pePct": 84.10596026490066,
+     "pbPct": 93.26375711574953,
      "ps": 52.96442732,
      "psPct": 95.63567362428842,
      "peg": null,
      "drawdown": -18.9,
-     "turnover": 5.62,
-     "amtRatio": 1.62,
+     "turnover": 562.32,
+     "amtRatio": 1.64,
      "revYoy": -0.427769029148,
      "proYoy": -31.621715627213,
      "proQoq": -14.272226335737,
@@ -950,9 +980,9 @@
       "growth": 13.3,
       "quality": 58.4,
       "supply": 38.4,
-      "valuation": 13.5,
-      "crowd": 27.0,
-      "total": 29.1
+      "valuation": 12.8,
+      "crowd": 13.0,
+      "total": 27.4
      }
     }
    ],
@@ -960,14 +990,14 @@
     "growth": 23.2,
     "quality": 52.4,
     "supply": 44.7,
-    "valuation": 18.7,
-    "crowd": 31.7,
-    "total": 34.5,
+    "valuation": 19.4,
+    "crowd": 31.5,
+    "total": 34.9,
     "drawdown": -27.6,
     "accel": -0.9,
-    "news": 46.2,
-    "newsDomestic": 60.0,
-    "overseas": 25.4,
+    "news": 48.5,
+    "newsDomestic": 60.4,
+    "overseas": 30.6,
     "industry": null
    },
    "stage": "阶段1 导入期",
@@ -976,98 +1006,98 @@
    ],
    "inputs": {},
    "industry": null,
-   "overseasAt": "2026-11-10 20:12",
+   "overseasAt": "2026-11-11 20:11",
    "news": [
     {
-     "date": "2026-11-11 18:26",
-     "title": "端侧算力再下一城：地瓜“嵌入”珞石",
-     "url": "http://finance.eastmoney.com/a/202611113928526476.html",
-     "media": "财中社"
+     "date": "2026-11-11 21:28",
+     "title": "两日砸下4亿元！1400亿龙头，出手抄底，“还没买够”",
+     "url": "http://forex.eastmoney.com/a/202611113928670331.html",
+     "media": "中国证券报"
     },
     {
-     "date": "2026-11-11 18:22",
-     "title": "热门股股价翻倍 AI智能体重构机器人技能开发 具身智能产业化提速",
-     "url": "http://finance.eastmoney.com/a/202611113928519753.html",
-     "media": "数据宝"
-    },
-    {
-     "date": "2026-11-11 18:06",
-     "title": "新华财经晚报：10月新能源汽车月度新车销量占比达64.3%",
-     "url": "http://finance.eastmoney.com/a/202611113928513230.html",
-     "media": "新华财经"
-    },
-    {
-     "date": "2026-11-11 18:02",
-     "title": "从商品到服务：双十一的叙事换轨",
-     "url": "http://finance.eastmoney.com/a/202611113928512554.html",
-     "media": "金融投资报"
-    },
-    {
-     "date": "2026-11-11 18:00",
-     "title": "具身智能机器人产业行动方案印发 光洋股份三连板丨牛股复盘",
-     "url": "http://finance.eastmoney.com/a/202611113928512742.html",
+     "date": "2026-11-11 21:23",
+     "title": "沐曦和优必选联姻造具身芯片 合资公司最新融资5亿元",
+     "url": "http://finance.eastmoney.com/a/202611113928667378.html",
      "media": "21世纪经济报道"
     },
     {
-     "date": "2026-11-11 17:57",
-     "title": "福莱新材：柔性传感器项目收入占比极低 对主营业务无重大影响",
-     "url": "http://finance.eastmoney.com/a/202611113928511179.html",
-     "media": "证券时报网"
+     "date": "2026-11-11 21:13",
+     "title": "北京机器人产业方案出炉！目标培育一批头部人形机器人企业",
+     "url": "http://finance.eastmoney.com/a/202611113928662814.html",
+     "media": "北京商报"
     },
     {
-     "date": "2026-11-11 17:19",
-     "title": "反弹加速！瑞迪智驱20CM涨停，11天内最大涨幅达52%",
-     "url": "http://finance.eastmoney.com/a/202611113928489484.html",
-     "media": "金融投资网"
+     "date": "2026-11-11 21:00",
+     "title": "11月11日东方财富财经晚报（附新闻联播）",
+     "url": "http://finance.eastmoney.com/a/202611113928607588.html",
+     "media": "东方财富Choice数据"
     },
     {
-     "date": "2026-11-11 17:18",
-     "title": "【焦点复盘】硬科技成长股全面反攻，科创50放量收复20日线，“易中天”均大涨超13%",
-     "url": "http://finance.eastmoney.com/a/202611113928477497.html",
-     "media": "财联社"
+     "date": "2026-11-11 20:48",
+     "title": "独家|机器人车模来了！优必选首次披露超仿生人形机器人大额订单 永达汽车采购400台，计划今年内交付",
+     "url": "http://finance.eastmoney.com/a/202611113928623317.html",
+     "media": "每日经济新闻"
     },
     {
-     "date": "2026-11-11 17:07",
-     "title": "摩根士丹利发布最新人形机器人调查：企业从赶潮流进入明算账",
-     "url": "http://finance.eastmoney.com/a/202611113928467013.html",
-     "media": "财联社"
+     "date": "2026-11-11 20:47",
+     "title": "商家省力，消费者省时：今年双11的AI含量有多高？",
+     "url": "http://finance.eastmoney.com/a/202611113928628769.html",
+     "media": "第一财经"
     },
     {
-     "date": "2026-11-11 17:06",
-     "title": "地瓜机器人与珞石机器人达成合作",
-     "url": "http://finance.eastmoney.com/a/202611113928469612.html",
-     "media": "广州日报"
+     "date": "2026-11-11 20:42",
+     "title": "从进博会窥见物理AI未来",
+     "url": "http://finance.eastmoney.com/a/202611113928615355.html",
+     "media": "中国经营报"
     },
     {
-     "date": "2026-11-11 17:01",
-     "title": "险资一个月调研逾500家公司：电子、医药居前，AI产业链获密集关注",
-     "url": "http://finance.eastmoney.com/a/202611113928459759.html",
-     "media": "财中社"
-    },
-    {
-     "date": "2026-11-11 16:55",
-     "title": "港股收盘 | 三大指数集体调整 “AI+硬件”主线逆势走强",
-     "url": "http://hk.eastmoney.com/a/202611113928453193.html",
-     "media": "财联社"
-    },
-    {
-     "date": "2026-11-11 16:53",
-     "title": "万亿赛道，利好来了！北京，最新发布！",
-     "url": "http://finance.eastmoney.com/a/202611113928458253.html",
-     "media": "券商中国"
-    },
-    {
-     "date": "2026-11-11 16:52",
-     "title": "地瓜机器人与珞石机器人达成深度合作",
-     "url": "http://finance.eastmoney.com/a/202611113928450881.html",
+     "date": "2026-11-11 20:32",
+     "title": "优必选：永达汽车将采购400台超仿生人形机器人U1 Pro",
+     "url": "http://finance.eastmoney.com/a/202611113928613835.html",
      "media": "上海证券报·中国证券网"
+    },
+    {
+     "date": "2026-11-11 19:58",
+     "title": "昊志机电：目前谐波减速器已经和不少协作机器人头部客户建立稳定合作",
+     "url": "http://finance.eastmoney.com/a/202611113928603539.html",
+     "media": "南方财经网"
+    },
+    {
+     "date": "2026-11-11 19:48",
+     "title": "无锡、泰州提前热场，苏州四个县级市全到：20余城主官为何扎堆进博会？",
+     "url": "http://finance.eastmoney.com/a/202611113928574584.html",
+     "media": "时代周报"
+    },
+    {
+     "date": "2026-11-11 19:48",
+     "title": "第三季度营收同比增长34.3%，激光雷达出货量同比增长超六成 禾赛科技CFO樊鹏：今年汽车市场整体表现弱于年初预期",
+     "url": "http://finance.eastmoney.com/a/202611113928574735.html",
+     "media": "每日经济新闻"
+    },
+    {
+     "date": "2026-11-11 19:44",
+     "title": "优必选与永达首批400台超仿生人形机器人U1 Pro采购合同落地",
+     "url": "http://finance.eastmoney.com/a/202611113928571149.html",
+     "media": "界面新闻"
+    },
+    {
+     "date": "2026-11-11 19:33",
+     "title": "实探机器人工厂：产线火热、抱团出海，供应链补课进行时",
+     "url": "http://finance.eastmoney.com/a/202611113928569224.html",
+     "media": "每日经济新闻"
+    },
+    {
+     "date": "2026-11-11 19:32",
+     "title": "11月11日晚间沪深上市公司重大事项公告最新快递",
+     "url": "http://finance.eastmoney.com/a/202611113928571382.html",
+     "media": "东方财富Choice数据"
     }
    ],
    "newsStats": {
     "count": 30,
-    "pos": 15,
+    "pos": 18,
     "neg": 1,
-    "score": 60.0
+    "score": 60.4
    }
   },
   {
@@ -1080,17 +1110,17 @@
      "name": "水晶光电",
      "price": 24.35,
      "chg": -1.54,
-     "mcap": 33857024581.350002,
-     "pe": 24.32,
-     "pb": 3.19,
-     "pePct": 1.3599999999999999,
-     "pbPct": 68.64,
+     "mcap": 33857024581.35,
+     "pe": 27.44971449,
+     "pb": 3.18705324,
+     "pePct": 12.559999999999999,
+     "pbPct": 68.47999999999999,
      "ps": 4.24878608,
      "psPct": 42.559999999999995,
-     "peg": 3.9203211650486516,
+     "peg": 4.424823054674739,
      "drawdown": -43.9,
      "turnover": 2.74,
-     "amtRatio": 0.64,
+     "amtRatio": 0.85,
      "revYoy": 20.303132613758,
      "proYoy": 6.203573374759,
      "proQoq": 3.121404869617,
@@ -1111,9 +1141,9 @@
       "growth": 33.8,
       "quality": 65.0,
       "supply": 39.6,
-      "valuation": 57.2,
-      "crowd": 79.5,
-      "total": 52.0
+      "valuation": 51.6,
+      "crowd": 75.0,
+      "total": 50.2
      }
     },
     {
@@ -1122,16 +1152,16 @@
      "price": 25.14,
      "chg": -2.14,
      "mcap": 89734365121.02,
-     "pe": 25.7,
-     "pb": 2.3,
-     "pePct": 26.742160278745647,
-     "pbPct": 43.76,
+     "pe": 22.59373094,
+     "pb": 2.26618126,
+     "pePct": 22.21254355400697,
+     "pbPct": 41.760000000000005,
      "ps": 0.92831202,
      "psPct": 62.32,
-     "peg": 21.22137015161083,
+     "peg": 18.65641740792382,
      "drawdown": -35.7,
      "turnover": 3.3,
-     "amtRatio": 0.96,
+     "amtRatio": 1.05,
      "revYoy": 0.167155381965,
      "proYoy": 1.211043387698,
      "proQoq": -0.442517960184,
@@ -1152,9 +1182,9 @@
       "growth": 23.6,
       "quality": 16.1,
       "supply": 43.2,
-      "valuation": 50.7,
-      "crowd": 64.6,
-      "total": 35.8
+      "valuation": 53.5,
+      "crowd": 62.6,
+      "total": 36.2
      }
     },
     {
@@ -1163,16 +1193,16 @@
      "price": 134.09,
      "chg": -1.34,
      "mcap": 31764050042.23,
-     "pe": 110.53,
-     "pb": 4.5,
-     "pePct": 70.72,
+     "pe": 103.15053832,
+     "pb": 4.49826636,
+     "pePct": 66.72,
      "pbPct": 64.4,
      "ps": 11.60032299,
      "psPct": 74.16,
      "peg": null,
      "drawdown": -40.5,
-     "turnover": 3.64,
-     "amtRatio": 1.34,
+     "turnover": 364.41,
+     "amtRatio": 1.85,
      "revYoy": -26.813897173994,
      "proYoy": -57.031058842003,
      "proQoq": -33.099302081716,
@@ -1193,9 +1223,9 @@
       "growth": 6.7,
       "quality": 72.2,
       "supply": 37.6,
-      "valuation": 31.4,
-      "crowd": 57.4,
-      "total": 37.5
+      "valuation": 34.1,
+      "crowd": 21.6,
+      "total": 34.1
      }
     },
     {
@@ -1204,16 +1234,16 @@
      "price": 16.78,
      "chg": -1.76,
      "mcap": 5352753886.8,
-     "pe": 30.63,
-     "pb": 5.79,
-     "pePct": 28.48,
-     "pbPct": 52.88,
+     "pe": 27.90109635,
+     "pb": 5.79355571,
+     "pePct": 17.599999999999998,
+     "pbPct": 53.12,
      "ps": 3.69134009,
      "psPct": 33.6,
-     "peg": 0.622150558892825,
+     "peg": 0.5667216026077395,
      "drawdown": -47.4,
      "turnover": 8.51,
-     "amtRatio": 0.8,
+     "amtRatio": 1.25,
      "revYoy": 8.301823966446,
      "proYoy": 49.232455974176,
      "proQoq": 9.245204662847,
@@ -1234,9 +1264,9 @@
       "growth": 42.8,
       "quality": 80.4,
       "supply": 34.9,
-      "valuation": 72.3,
-      "crowd": 48.1,
-      "total": 57.0
+      "valuation": 77.9,
+      "crowd": 38.5,
+      "total": 57.2
      }
     },
     {
@@ -1244,17 +1274,17 @@
      "name": "亿道信息",
      "price": 44.09,
      "chg": 3.62,
-     "mcap": 6286969460.000001,
-     "pe": 23.41,
-     "pb": 2.76,
-     "pePct": 1.2114537444933922,
-     "pbPct": 18.3920704845815,
+     "mcap": 6286969460.0,
+     "pe": 24.20358482,
+     "pb": 2.76395412,
+     "pePct": 1.3215859030837005,
+     "pbPct": 18.94273127753304,
      "ps": 0.96497793,
      "psPct": 1.3215859030837005,
-     "peg": 0.008408302669574035,
+     "peg": 0.008693339036961453,
      "drawdown": -31.4,
      "turnover": 9.61,
-     "amtRatio": 0.99,
+     "amtRatio": 1.25,
      "revYoy": 67.766945617636,
      "proYoy": 2784.15286889119,
      "proQoq": 4.04007964973,
@@ -1275,9 +1305,9 @@
       "growth": 88.1,
       "quality": 16.3,
       "supply": 11.0,
-      "valuation": 94.8,
-      "crowd": 34.4,
-      "total": 54.8
+      "valuation": 94.6,
+      "crowd": 28.9,
+      "total": 54.2
      }
     },
     {
@@ -1286,16 +1316,16 @@
      "price": 46.86,
      "chg": 1.67,
      "mcap": 19020366222.0,
-     "pe": 33.37,
-     "pb": 7.48,
-     "pePct": 3.2800000000000002,
-     "pbPct": 84.39999999999999,
+     "pe": 33.58047359,
+     "pb": 7.48254521,
+     "pePct": 3.5999999999999996,
+     "pbPct": 84.48,
      "ps": 9.24267436,
      "psPct": 16.32,
-     "peg": 0.4696318318199789,
+     "peg": 0.47259392644453474,
      "drawdown": -54.9,
-     "turnover": 1.88,
-     "amtRatio": 0.56,
+     "turnover": 187.89,
+     "amtRatio": 0.79,
      "revYoy": 49.65919572158,
      "proYoy": 71.055660496181,
      "proQoq": 1.59387897421,
@@ -1316,9 +1346,9 @@
       "growth": 48.9,
       "quality": 84.9,
       "supply": 62.6,
-      "valuation": 77.3,
-      "crowd": 91.9,
-      "total": 70.3
+      "valuation": 77.1,
+      "crowd": 53.0,
+      "total": 65.9
      }
     }
    ],
@@ -1326,14 +1356,14 @@
     "growth": 38.3,
     "quality": 68.6,
     "supply": 38.6,
-    "valuation": 64.8,
-    "crowd": 61.0,
-    "total": 53.1,
+    "valuation": 65.3,
+    "crowd": 45.8,
+    "total": 51.8,
     "drawdown": -42.2,
     "accel": -0.6,
-    "news": 49.5,
-    "newsDomestic": 65.5,
-    "overseas": 25.4,
+    "news": 50.6,
+    "newsDomestic": 64.0,
+    "overseas": 30.6,
     "industry": null
    },
    "stage": "阶段4 杀估值",
@@ -1343,8 +1373,26 @@
    ],
    "inputs": {},
    "industry": null,
-   "overseasAt": "2026-11-10 20:12",
+   "overseasAt": "2026-11-11 20:11",
    "news": [
+    {
+     "date": "2026-11-11 20:47",
+     "title": "商家省力，消费者省时：今年双11的AI含量有多高？",
+     "url": "http://finance.eastmoney.com/a/202611113928628769.html",
+     "media": "第一财经"
+    },
+    {
+     "date": "2026-11-11 18:58",
+     "title": "直击南芯科技业绩会：已围绕服务器供电链路推出多款产品 消费电子业务保持稳健",
+     "url": "http://finance.eastmoney.com/a/202611113928539766.html",
+     "media": "财联社"
+    },
+    {
+     "date": "2026-11-11 17:53",
+     "title": "AI眼镜概念板块表现活跃 机构称行业由导入期迈向成长期",
+     "url": "http://finance.eastmoney.com/a/202611113928530193.html",
+     "media": "证券日报"
+    },
     {
      "date": "2026-11-11 15:22",
      "title": "南芯科技：今年消费电子业务保持稳健",
@@ -1410,31 +1458,13 @@
      "title": "21专访丨蔡司光学杨晓光：AI眼镜要过“光学关”，中国创新输出全球",
      "url": "http://finance.eastmoney.com/a/202611113927766578.html",
      "media": "21世纪经济报道"
-    },
-    {
-     "date": "2026-11-11 01:55",
-     "title": "从有形商品到无形算力 从中国网民到全球用户 双11，“十八变”",
-     "url": "http://finance.eastmoney.com/a/202611113927718088.html",
-     "media": "上海证券报"
-    },
-    {
-     "date": "2026-11-10 20:27",
-     "title": "新一代通信网建设提速：与AI融合共生，产业链探寻增长新路径",
-     "url": "http://finance.eastmoney.com/a/202611103927505324.html",
-     "media": "21世纪经济报道"
-    },
-    {
-     "date": "2026-11-10 20:06",
-     "title": "AI眼镜加速迭代 产业链竞逐高频应用",
-     "url": "http://finance.eastmoney.com/a/202611103927499768.html",
-     "media": "证券时报网"
     }
    ],
    "newsStats": {
-    "count": 24,
-    "pos": 13,
+    "count": 27,
+    "pos": 14,
     "neg": 0,
-    "score": 65.5
+    "score": 64.0
    }
   },
   {
@@ -1777,12 +1807,12 @@
     "supply": 31.7,
     "valuation": 26.5,
     "crowd": 85.8,
-    "total": 31.4,
+    "total": 31.6,
     "drawdown": -56.0,
     "accel": -0.5,
-    "news": 42.3,
+    "news": 44.4,
     "newsDomestic": 53.6,
-    "overseas": 25.4,
+    "overseas": 30.6,
     "industry": null
    },
    "stage": "阶段5 出清/衰退",
@@ -1791,8 +1821,14 @@
    ],
    "inputs": {},
    "industry": null,
-   "overseasAt": "2026-11-10 20:12",
+   "overseasAt": "2026-11-11 20:11",
    "news": [
+    {
+     "date": "2026-11-11 20:04",
+     "title": "国机精工：商业航天发展为公司相关业务带来新增量",
+     "url": "http://finance.eastmoney.com/a/202611113928602948.html",
+     "media": "上海证券报·中国证券网"
+    },
     {
      "date": "2026-11-11 17:39",
      "title": "25年机房老兵，要把算力搬上天",
@@ -1870,12 +1906,6 @@
      "title": "洛轴股份：目前民用航空、商业航天相关产品暂未形成规模化商业供货",
      "url": "http://finance.eastmoney.com/a/202611113928044010.html",
      "media": "南方财经网"
-    },
-    {
-     "date": "2026-11-11 08:51",
-     "title": "南通构建总规模超1400亿元基金矩阵",
-     "url": "http://finance.eastmoney.com/a/202611113928199238.html",
-     "media": "新华日报"
     }
    ],
    "newsStats": {
