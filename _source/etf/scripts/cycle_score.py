@@ -72,15 +72,26 @@ THEMES = [
             ("300622", "博士眼镜"), ("001314", "亿道信息"), ("688127", "蓝特光学"),
         ],
     },
+    {
+        "id": "space",
+        "name": "商业航天",
+        "keyword": "商业航天",
+        "match": ["商业航天", "卫星互联网", "火箭", "卫星", "低轨", "星座", "发射"],
+        "stocks": [
+            ("600118", "中国卫星"), ("601698", "中国卫通"), ("600879", "航天电子"),
+            ("300762", "上海瀚讯"), ("001270", "铖昌科技"), ("688523", "航天环宇"),
+            ("003009", "中天火箭"), ("002465", "海格通信"),
+        ],
+    },
 ]
 
 POS = ["增长", "超预期", "涨价", "供不应求", "扩产", "订单", "突破", "新高", "利好", "加速", "放量", "中标", "翻倍"]
 NEG = ["下滑", "不及预期", "降价", "过剩", "砍单", "减持", "亏损", "暴跌", "风险", "放缓", "库存", "亏损", "跌停"]
 
 
-def get(url: str, referer: str | None = None, tries: int = 3) -> str:
+def get(url: str, referer: str | None = None, tries: int = 4) -> str:
     last = None
-    for _ in range(tries):
+    for attempt in range(tries):
         try:
             req = urllib.request.Request(url, headers={**HEAD, **({"Referer": referer} if referer else {})})
             raw = urllib.request.urlopen(req, timeout=25).read()
@@ -92,7 +103,7 @@ def get(url: str, referer: str | None = None, tries: int = 3) -> str:
             return text
         except Exception as exc:  # noqa: BLE001
             last = exc
-            time.sleep(1.0)
+            time.sleep(1.5 * (attempt + 1))
     raise RuntimeError(str(last))
 
 
@@ -114,13 +125,30 @@ def median(values):
     return statistics.median(vals) if vals else None
 
 
+def fetch_kline_tencent(code: str) -> list[dict]:
+    prefix = "sh" if code.startswith(("6", "5")) else "sz"
+    u = (f"https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?"
+         f"param={prefix}{code},day,2023-01-01,2026-12-31,640,qfq")
+    d = json.loads(get(u, referer="https://gu.qq.com/"))
+    block = d["data"][f"{prefix}{code}"]
+    rows = block.get("qfqday") or block.get("day") or []
+    out = []
+    for row in rows:
+        out.append({"d": row[0], "o": float(row[1]), "c": float(row[2]),
+                    "h": float(row[3]), "l": float(row[4]), "v": float(row[5]), "a": 0.0})
+    return out
+
+
 def fetch_kline(code: str, beg: str = "20230101") -> list[dict]:
     q = urllib.parse.urlencode({
         "secid": secid(code), "fields1": "f1,f2,f3,f4,f5,f6",
         "fields2": "f51,f52,f53,f54,f55,f56,f57,f58", "klt": "101", "fqt": "1",
         "beg": beg, "end": "20500101", "lmt": "3000",
     })
-    d = json.loads(get("https://push2his.eastmoney.com/api/qt/stock/kline/get?" + q))["data"]
+    try:
+        d = json.loads(get("https://push2his.eastmoney.com/api/qt/stock/kline/get?" + q))["data"]
+    except Exception:  # noqa: BLE001
+        return fetch_kline_tencent(code)
     rows = []
     for line in d["klines"]:
         p = line.split(",")
@@ -131,12 +159,32 @@ def fetch_kline(code: str, beg: str = "20230101") -> list[dict]:
 
 def fetch_quote(code: str) -> dict:
     q = urllib.parse.urlencode({"secid": secid(code), "fields": "f43,f57,f58,f116,f162,f167,f168,f170,f174,f175"})
-    d = json.loads(get("https://push2.eastmoney.com/api/qt/stock/get?" + q))["data"]
+    d = json.loads(get("https://push2.eastmoney.com/api/qt/stock/get?" + q, tries=1))["data"]
     return {
         "price": d.get("f43", 0) / 100, "name": d.get("f58"), "mcap": d.get("f116"),
         "pe": (d.get("f162") or 0) / 100, "pb": (d.get("f167") or 0) / 100,
         "turnover": (d.get("f168") or 0) / 100, "chg": (d.get("f170") or 0) / 100,
         "high52": (d.get("f174") or 0) / 100, "low52": (d.get("f175") or 0) / 100,
+    }
+
+
+def quote_from_value(kline: list[dict], vals: list[dict]) -> dict:
+    """push2 行情被限流时的兜底：用估值历史 + 日 K 反推行情快照。"""
+    row = vals[0] if vals else {}
+    last = kline[-1]
+    prev = kline[-2]["c"] if len(kline) > 1 else last["c"]
+    close = float(row.get("CLOSE_PRICE") or last["c"])
+    free = float(row.get("FREE_SHARES_A") or row.get("TOTAL_SHARES") or 0)
+    return {
+        "price": close,
+        "name": "",
+        "mcap": float(row.get("TOTAL_MARKET_CAP") or 0),
+        "pe": float(row.get("PE_TTM") or 0),
+        "pb": float(row.get("PB_MRQ") or 0),
+        "turnover": round(last["v"] * 100 / free * 100, 2) if free else 0,
+        "chg": round((close / prev - 1) * 100, 2) if prev else 0,
+        "high52": max(b["h"] for b in kline[-250:]),
+        "low52": min(b["l"] for b in kline[-250:]),
     }
 
 
@@ -148,7 +196,8 @@ def fetch_main(code: str) -> list[dict]:
 
 def fetch_value_history(code: str) -> list[dict]:
     u = ("https://datacenter-web.eastmoney.com/api/data/v1/get?reportName=RPT_VALUEANALYSIS_DET"
-         "&columns=SECURITY_CODE,TRADE_DATE,PE_TTM,PB_MRQ,PEG_CAR,PS_TTM"
+         "&columns=SECURITY_CODE,TRADE_DATE,PE_TTM,PB_MRQ,PEG_CAR,PS_TTM,"
+         "TOTAL_MARKET_CAP,CLOSE_PRICE,TOTAL_SHARES,FREE_SHARES_A,CHANGE_RATE"
          f"&filter=(SECURITY_CODE%3D%22{code}%22)&pageNumber=1&pageSize=1600"
          "&sortColumns=TRADE_DATE&sortTypes=-1")
     j = json.loads(get(u))
@@ -187,19 +236,37 @@ def fetch_news(keyword: str, size: int = 30) -> list[dict]:
     return out
 
 
+def kline_from_value(vals: list[dict]) -> list[dict]:
+    """日 K 被限流时的兜底：用估值历史里的收盘价拼一条 close-only 序列。"""
+    rows = []
+    for v in reversed(vals):
+        date = (v.get("TRADE_DATE") or "")[:10]
+        close = v.get("CLOSE_PRICE")
+        if date and close:
+            rows.append({"d": date, "o": float(close), "c": float(close),
+                         "h": float(close), "l": float(close), "v": 0.0, "a": 0.0})
+    return rows
+
+
 def analyze_stock(code: str, name: str) -> dict:
-    quote = fetch_quote(code)
-    kline = fetch_kline(code)
-    main = fetch_main(code)
     vals = fetch_value_history(code)
+    try:
+        kline = fetch_kline(code)
+    except Exception:  # noqa: BLE001
+        kline = kline_from_value(vals)
+    try:
+        quote = fetch_quote(code)
+    except Exception:  # noqa: BLE001
+        quote = quote_from_value(kline, vals)
+    main = fetch_main(code)
 
     closes = [r["c"] for r in kline]
     last = closes[-1]
     peak2y = max(closes[-500:])
     drawdown = (last / peak2y - 1) * 100
-    amounts = [r["a"] for r in kline]
-    amt_ratio = (statistics.mean(amounts[-20:]) / statistics.mean(amounts[-250:])
-                 if len(amounts) >= 250 else None)
+    amounts = [r["a"] or r["v"] for r in kline]
+    avg250 = statistics.mean(amounts[-250:]) if len(amounts) >= 250 else 0
+    amt_ratio = (statistics.mean(amounts[-20:]) / avg250) if avg250 else None
 
     latest = main[0]
     prev = main[1] if len(main) > 1 else None
@@ -378,7 +445,7 @@ def classify(basket: dict) -> tuple[str, list[str]]:
     return "过渡期", reasons
 
 
-def run() -> dict:
+def run(only=None) -> dict:
     now = dt.datetime.now()
     try:
         inputs = json.loads(INPUTS_PATH.read_text(encoding="utf-8"))
@@ -386,8 +453,16 @@ def run() -> dict:
             inputs = {}
     except Exception:  # noqa: BLE001
         inputs = {}
+    old = {}
+    if only and OUT.exists():
+        try:
+            old = json.loads(OUT.read_text(encoding="utf-8"))
+        except Exception:  # noqa: BLE001
+            old = {}
     out = {"updatedAt": now.strftime("%Y-%m-%d %H:%M"), "themes": []}
     for theme in THEMES:
+        if only and theme["id"] not in only:
+            continue
         stocks = []
         for code, name in theme["stocks"]:
             try:
@@ -395,7 +470,7 @@ def run() -> dict:
                 print(f"[ok] {theme['id']} {code} {name}", file=sys.stderr)
             except Exception as exc:  # noqa: BLE001
                 print(f"[warn] {code} {name}: {exc}", file=sys.stderr)
-            time.sleep(0.15)
+            time.sleep(0.6 if only else 0.2)
 
         if not stocks:
             continue
@@ -448,6 +523,12 @@ def run() -> dict:
             "newsStats": {"count": len(news), "pos": pos, "neg": neg, "score": round(news_score, 1)},
         })
 
+    if only:
+        merged = {t["id"]: t for t in old.get("themes", [])}
+        for t in out["themes"]:
+            merged[t["id"]] = t
+        out["themes"] = [merged[t["id"]] for t in THEMES if t["id"] in merged]
+
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"written {OUT}", file=sys.stderr)
@@ -455,7 +536,12 @@ def run() -> dict:
 
 
 if __name__ == "__main__":
-    data = run()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--only", default="", help="逗号分隔的主题 id，只重跑这些主题并合并")
+    args = parser.parse_args()
+    only = [s for s in args.only.split(",") if s]
+    data = run(only or None)
     for t in data["themes"]:
         b = t["basket"]
         print(f"{t['name']}: 总分 {b['total']} | 景气 {b['growth']} 盈利 {b['quality']} "
