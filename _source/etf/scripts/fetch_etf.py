@@ -28,6 +28,7 @@ from pathlib import Path
 START_DATE = "2026-06-01"
 TZ = dt.timezone(dt.timedelta(hours=8))  # Asia/Shanghai，无夏令时
 KLINE_URL = "https://push2his.eastmoney.com/api/qt/stock/kline/get"
+TENCENT_KLINE_URL = "https://web.ifzq.gtimg.cn/appstock/app/kline/kline"
 
 # 各板块代表性宽基 ETF（同一指数取规模/流动性最好的一只）
 ETFS = [
@@ -64,6 +65,33 @@ def now_shanghai() -> dt.datetime:
     return dt.datetime.now(TZ)
 
 
+def fetch_klines_tencent(secid: str, beg: str) -> list[list]:
+    """东财限流时的日 K 兜底：腾讯日线，成交额按 量(手)×100×收盘 估算。"""
+    code = secid.split(".")[-1]
+    prefix = "sh" if code.startswith(("6", "5")) else "sz"
+    beg_date = f"{beg[:4]}-{beg[4:6]}-{beg[6:]}" if len(beg) == 8 else beg
+    query = urllib.parse.urlencode({"param": f"{prefix}{code},day,,,640"})
+    req = urllib.request.Request(
+        f"{TENCENT_KLINE_URL}?{query}",
+        headers={**HEADERS, "Referer": "https://gu.qq.com/"})
+    with urllib.request.urlopen(req, timeout=25) as resp:
+        payload = json.loads(resp.read().decode("utf-8"))
+    block = payload["data"][f"{prefix}{code}"]
+    rows = block.get("day") or block.get("qfqday") or []
+    out = []
+    prev_close = None
+    for row in rows:
+        date = row[0]
+        if date < beg_date:
+            continue
+        open_, close, high, low, volume = (float(row[1]), float(row[2]), float(row[3]),
+                                           float(row[4]), float(row[5]))
+        amplitude = ((high - low) / prev_close * 100) if prev_close else 0.0
+        out.append([date, open_, close, high, low, volume, volume * 100 * close, amplitude])
+        prev_close = close
+    return out
+
+
 def fetch_klines(secid: str, beg: str, end: str = "20500101") -> list[list]:
     """返回 [[date, open, close, high, low, volume(手), amount(元), amplitude], ...]。"""
     query = urllib.parse.urlencode({
@@ -96,7 +124,10 @@ def fetch_klines(secid: str, beg: str, end: str = "20500101") -> list[list]:
         except Exception as exc:  # noqa: BLE001
             last_err = exc
             time.sleep(1.2 * (attempt + 1))
-    raise RuntimeError(f"抓取 {secid} 失败: {last_err}")
+    try:
+        return fetch_klines_tencent(secid, beg)
+    except Exception as exc:  # noqa: BLE001
+        raise RuntimeError(f"抓取 {secid} 失败: {last_err} / 腾讯: {exc}")
 
 
 def load_existing() -> dict:
@@ -284,8 +315,29 @@ def fetch_index_change() -> float | None:
         return None
 
 
+def fetch_nav_history(code: str, pages: int = 3) -> dict:
+    """最近约 60 个交易日的单位净值（接口每页 20 条，翻页补齐）。"""
+    out = {}
+    for page in range(1, pages + 1):
+        try:
+            req = urllib.request.Request(
+                f"https://api.fund.eastmoney.com/f10/lsjz?fundCode={code}&pageIndex={page}&pageSize=20",
+                headers={**HEADERS, "Referer": "http://fundf10.eastmoney.com/"})
+            data = json.loads(urllib.request.urlopen(req, timeout=20).read().decode("utf-8"))
+            rows = data["Data"]["LSJZList"]
+            for r in rows:
+                if r.get("DWJZ"):
+                    out[r["FSRQ"]] = float(r["DWJZ"])
+            if len(rows) < 20:
+                break
+        except Exception:  # noqa: BLE001
+            break
+        time.sleep(0.15)
+    return out
+
+
 def update_flows(doc: dict) -> None:
-    """记录每日份额快照，计算净申购（亿元）与 5 日累计。"""
+    """记录份额快照；净申购自首次记录起，溢价率/量比可回补到 9 月。"""
     today = doc["latestTradeDate"]
     history = {}
     if SHARES_PATH.exists():
@@ -303,15 +355,27 @@ def update_flows(doc: dict) -> None:
         json.dumps({"updatedAt": doc["updatedAt"], "history": history}, ensure_ascii=False),
         encoding="utf-8")
 
-    closes = {e["code"]: {b[0]: b[2] for b in e["bars"]} for e in doc["etfs"]}
-    dates = sorted(history)
-    rows = []
+    bars_list = {e["code"]: e["bars"] for e in doc["etfs"]}
+    closes = {code: {b[0]: b[2] for b in bars} for code, bars in bars_list.items()}
+    navs = {code: fetch_nav_history(code) for code in bars_list}
+
+    # 每个交易日的量比 = 成交额 / 前 20 日均额
+    ratios = {}
+    for code, bars in bars_list.items():
+        table = {}
+        for i in range(20, len(bars)):
+            avg = sum(b[6] for b in bars[i - 20:i]) / 20
+            if avg:
+                table[bars[i][0]] = round(bars[i][6] / avg, 2)
+        ratios[code] = table
+
+    # 有份额快照的日期才能算净申购
+    share_totals = {}
     last_known = {}
-    for date in dates:
+    for date in sorted(history):
         total = 0.0
         has_value = False
-        for etf in doc["etfs"]:
-            code = etf["code"]
+        for code in bars_list:
             cur = history[date].get(code)
             prev = last_known.get(code)
             if cur is not None and prev is not None and date in closes[code]:
@@ -319,7 +383,27 @@ def update_flows(doc: dict) -> None:
                 has_value = True
             if cur is not None:
                 last_known[code] = cur
-        rows.append({"date": date, "total": round(total, 2) if has_value else None})
+        share_totals[date] = round(total, 2) if has_value else None
+
+    # 图表横轴：最近 45 个交易日（约覆盖 9 月中至今）
+    all_dates = sorted({b[0] for bars in bars_list.values() for b in bars[-45:]})
+    rows = []
+    for date in all_dates:
+        prem_vals = []
+        amt_vals = []
+        for code in bars_list:
+            nav = navs[code].get(date)
+            close = closes[code].get(date)
+            if nav and close:
+                prem_vals.append((close / nav - 1) * 100)
+            if date in ratios[code]:
+                amt_vals.append(ratios[code][date])
+        rows.append({
+            "date": date,
+            "total": share_totals.get(date),
+            "premium": round(sorted(prem_vals)[len(prem_vals) // 2], 3) if prem_vals else None,
+            "amtRatio": round(sorted(amt_vals)[len(amt_vals) // 2], 2) if amt_vals else None,
+        })
     for i, row in enumerate(rows):
         vals = [x["total"] for x in rows[max(0, i - 4):i + 1] if x["total"] is not None]
         row["cum5"] = round(sum(vals), 2) if vals else None
@@ -327,39 +411,33 @@ def update_flows(doc: dict) -> None:
     etfs = []
     for etf in doc["etfs"]:
         code = etf["code"]
-        shares = history[dates[-1]].get(code) if dates else None
+        shares = history[today].get(code) if today in history else None
         prev = None
-        for date in reversed(dates[:-1]):
+        for date in reversed([d for d in sorted(history) if d < today]):
             if code in history[date]:
                 prev = history[date][code]
                 break
         net = None
-        if shares is not None and prev is not None and dates[-1] in closes[code]:
-            net = round((shares - prev) * closes[code][dates[-1]], 2)
-        amounts = [b[6] for b in etf["bars"][-20:]]
-        avg = sum(amounts) / len(amounts) if amounts else 0
+        if shares is not None and prev is not None and today in closes[code]:
+            net = round((shares - prev) * closes[code][today], 2)
         tail = fetch_tail_ratio(etf["secid"])
-        nav_date, nav = fetch_nav(code)
-        premium = None
-        if nav and nav_date == today and etf["bars"]:
-            premium = round((etf["bars"][-1][2] / nav - 1) * 100, 3)
+        nav = navs[code].get(today)
+        premium = round((closes[code][today] / nav - 1) * 100, 3) if (nav and today in closes[code]) else None
         etfs.append({
             "code": code, "name": etf["name"], "shares": shares, "net": net,
             "amount": etf["bars"][-1][6],
-            "amtRatio": round(etf["bars"][-1][6] / avg, 2) if avg else None,
-            "tail": tail, "premium": premium, "navDate": nav_date,
+            "amtRatio": ratios[code].get(today),
+            "tail": tail, "premium": premium, "navDate": today if nav else None,
         })
 
     index_chg = fetch_index_change()
+    last = rows[-1] if rows else {}
+    net5 = last.get("cum5")
+    tail_med = sorted([e["tail"] for e in etfs if e["tail"] is not None])
+    tail_med = tail_med[len(tail_med) // 2] if tail_med else None
+    prem_med = last.get("premium")
+    amt_med = last.get("amtRatio")
 
-    def median(values):
-        vals = sorted(v for v in values if v is not None)
-        return vals[len(vals) // 2] if vals else None
-
-    net5 = rows[-1]["cum5"] if rows else None
-    tail_med = median([e["tail"] for e in etfs])
-    prem_med = median([e["premium"] for e in etfs])
-    amt_med = median([e["amtRatio"] for e in etfs])
     s1 = math.tanh((net5 or 0) / 120) if net5 is not None else 0.0
     s2 = math.tanh(((tail_med or 0.18) - 0.18) / 0.12) if tail_med is not None else 0.0
     s3 = math.tanh((prem_med or 0) / 0.4) if prem_med is not None else 0.0
@@ -370,7 +448,7 @@ def update_flows(doc: dict) -> None:
 
     FLOWS_PATH.write_text(json.dumps({
         "updatedAt": doc["updatedAt"],
-        "note": "份额为收盘快照（亿份）；净申购=(份额变化)×收盘价，单位亿元",
+        "note": "柱=每日净申购（亿元，自首次份额快照起）；线=溢价率中位数（%）；量比=成交额/20日均额",
         "history": rows,
         "etfs": etfs,
         "indexChg": index_chg,
@@ -380,8 +458,8 @@ def update_flows(doc: dict) -> None:
             "amtRatio": amt_med, "indexChg": index_chg,
         },
     }, ensure_ascii=False), encoding="utf-8")
-    latest = rows[-1]["total"] if rows else None
-    print(f"资金流: 记录 {len(rows)} 天，最新净申购 {latest if latest is not None else '基准日'} 亿元")
+    latest = last.get("total")
+    print(f"资金流: {len(rows)} 个交易日，最新净申购 {latest if latest is not None else '基准日'} 亿元")
 
 
 if __name__ == "__main__":

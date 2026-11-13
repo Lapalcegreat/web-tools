@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-13 18:51",
+ "updatedAt": "2026-11-13 19:02",
  "themes": [
   {
    "id": "ai",
@@ -218,11 +218,11 @@
     "supply": 32.6,
     "valuation": 50.1,
     "crowd": 53.5,
-    "total": 54.9,
+    "total": 55.3,
     "drawdown": -66.0,
     "accel": -11.2,
-    "news": 44.9,
-    "newsDomestic": 54.4,
+    "news": 50.0,
+    "newsDomestic": 63.0,
     "overseas": 30.6,
     "industry": 57.6
    },
@@ -241,6 +241,12 @@
    "industry": 57.6,
    "overseasAt": "2026-11-11 20:11",
    "news": [
+    {
+     "date": "2026-11-13 18:48",
+     "title": "利扬芯片：拟3.06亿元收购众望达51%股权 完善“光存算”测试领域产业布局",
+     "url": "http://finance.eastmoney.com/a/202611133930804422.html",
+     "media": "证券时报网"
+    },
     {
      "date": "2026-11-13 18:38",
      "title": "“股王”，逆势上涨",
@@ -270,6 +276,12 @@
      "title": "全球白电龙头走强",
      "url": "http://finance.eastmoney.com/a/202611133930794284.html",
      "media": "中国基金报"
+    },
+    {
+     "date": "2026-11-13 18:29",
+     "title": "利扬芯片：拟3.06亿元收购众望达51%股权 后者专注于光通讯、光芯片测试等领域仪器仪表",
+     "url": "http://finance.eastmoney.com/a/202611133930797010.html",
+     "media": "财联社"
     },
     {
      "date": "2026-11-13 17:58",
@@ -306,19 +318,13 @@
      "title": "中际旭创H股纳入MSCI 中国指数 获国际资本市场进一步认可",
      "url": "http://finance.eastmoney.com/a/202611133930772236.html",
      "media": "新京报"
-    },
-    {
-     "date": "2026-11-13 17:17",
-     "title": "业绩亏损的蓝盾光电，13.5亿元收购岚创科技",
-     "url": "http://finance.eastmoney.com/a/202611133930754574.html",
-     "media": "理财周刊-财事汇"
     }
    ],
    "newsStats": {
-    "count": 12,
+    "count": 13,
     "pos": 4,
-    "neg": 3,
-    "score": 54.4
+    "neg": 1,
+    "score": 63.0
    }
   },
   {
@@ -538,11 +544,11 @@
     "supply": 34.6,
     "valuation": 76.0,
     "crowd": 87.9,
-    "total": 45.2,
+    "total": 45.3,
     "drawdown": -59.9,
     "accel": -10.4,
-    "news": 37.7,
-    "newsDomestic": 42.5,
+    "news": 38.8,
+    "newsDomestic": 44.3,
     "overseas": 30.6,
     "industry": null
    },
@@ -554,6 +560,12 @@
    "industry": null,
    "overseasAt": "2026-11-11 20:11",
    "news": [
+    {
+     "date": "2026-11-13 18:54",
+     "title": "《“十五五”新型储能实施方案》发布 23只概念股业绩有望持续高增长",
+     "url": "http://finance.eastmoney.com/a/202611133930804882.html",
+     "media": "人民财讯"
+    },
     {
      "date": "2026-11-13 18:48",
      "title": "科力远：相关产品已在AIDC备电系统规模化应用",
@@ -631,19 +643,13 @@
      "title": "盘后利好来了！两部门重磅发布！“十五五”新型储能实施方案出炉",
      "url": "http://finance.eastmoney.com/a/202611133930762659.html",
      "media": "券商中国"
-    },
-    {
-     "date": "2026-11-13 17:34",
-     "title": "两部门：加快锂离子电池储能迭代升级，Q3锂电产业链高景气延续丨机会前瞻",
-     "url": "http://finance.eastmoney.com/a/202611133930769197.html",
-     "media": "21世纪经济报道"
     }
    ],
    "newsStats": {
     "count": 30,
-    "pos": 5,
+    "pos": 6,
     "neg": 5,
-    "score": 42.5
+    "score": 44.3
    }
   },
   {
@@ -1003,6 +1009,12 @@
    "overseasAt": "2026-11-11 20:11",
    "news": [
     {
+     "date": "2026-11-13 18:48",
+     "title": "300695，子公司签下机器人项目合同！",
+     "url": "http://finance.eastmoney.com/a/202611133930805228.html",
+     "media": "证券时报网"
+    },
+    {
      "date": "2026-11-13 18:31",
      "title": "SpaceX与特斯拉或最快12月官宣合并",
      "url": "http://finance.eastmoney.com/a/202611133930796785.html",
@@ -1079,12 +1091,6 @@
      "title": "603286，13秒涨停",
      "url": "http://finance.eastmoney.com/a/202611133930645789.html",
      "media": "中新经纬"
-    },
-    {
-     "date": "2026-11-13 14:22",
-     "title": "从COP31长江影像展看重明视界：亿像素阵列计算摄像机加速落地城市内容资产市场",
-     "url": "http://finance.eastmoney.com/a/202611133930642012.html",
-     "media": "中国新闻网"
     }
    ],
    "newsStats": {

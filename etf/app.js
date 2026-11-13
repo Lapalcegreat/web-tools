@@ -673,12 +673,22 @@
       const fmt1 = (v) => (v == null ? "—" : (v > 0 ? "+" : "") + v.toFixed(1));
       const score = f.score == null ? null : Number(f.score);
       const scoreColor = score == null ? "#2c3a4d" : score >= 65 ? "#21a67a" : score >= 45 ? "#f5a524" : "#f05252";
-      flowNet.textContent = last.total == null ? "—" : fmt1(last.total) + " 亿";
+      flowNet.textContent = last.total == null ? "待补" : fmt1(last.total) + " 亿";
       flowNet.className = last.total > 0 ? "up" : last.total < 0 ? "down" : "";
       flowCum.textContent = last.cum5 == null ? "—" : fmt1(last.cum5) + " 亿";
       flowCum.className = last.cum5 > 0 ? "up" : last.cum5 < 0 ? "down" : "";
       flowScore.textContent = score == null ? "--" : score.toFixed(0);
       flowScore.style.color = scoreColor;
+      const note = flowPanel.querySelector(".flow-note");
+      if (note) {
+        if (last.total == null) {
+          note.textContent = "今日份额接口限流：净申购/尾盘待补，K线与溢价率已更新";
+          note.style.color = "#f5a524";
+        } else {
+          note.textContent = "份额 T+1 · 净申购 = 份额变化 × 收盘价 · 足迹分 ≥65 偏多 / <45 偏空";
+          note.style.color = "";
+        }
+      }
 
       const hostRect = flowCanvas.parentElement.getBoundingClientRect();
       const tableW = flowTable.getBoundingClientRect().width || 480;
