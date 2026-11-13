@@ -175,6 +175,11 @@ def quote_from_value(kline: list[dict], vals: list[dict]) -> dict:
     prev = kline[-2]["c"] if len(kline) > 1 else last["c"]
     close = float(row.get("CLOSE_PRICE") or last["c"])
     free = float(row.get("FREE_SHARES_A") or row.get("TOTAL_SHARES") or 0)
+    rate = row.get("CHANGE_RATE")
+    if rate is not None:
+        chg = float(rate)
+    else:
+        chg = round((close / prev - 1) * 100, 2) if prev else 0
     return {
         "price": close,
         "name": "",
@@ -182,7 +187,7 @@ def quote_from_value(kline: list[dict], vals: list[dict]) -> dict:
         "pe": float(row.get("PE_TTM") or 0),
         "pb": float(row.get("PB_MRQ") or 0),
         "turnover": round(last["v"] * 100 / free * 100, 2) if free else 0,
-        "chg": round((close / prev - 1) * 100, 2) if prev else 0,
+        "chg": chg,
         "high52": max(b["h"] for b in kline[-250:]),
         "low52": min(b["l"] for b in kline[-250:]),
     }
