@@ -1,13 +1,13 @@
 {
- "updatedAt": "2026-11-15 19:35",
+ "updatedAt": "2026-11-15 20:12",
  "score": 45.9,
  "stats": {
-  "count": 21,
+  "count": 22,
   "high": 2,
-  "low": 19,
+  "low": 20,
   "pos": 1,
   "neg": 1,
-  "sources": 6,
+  "sources": 7,
   "official": 12,
   "officialImpact": 0
  },
@@ -18,7 +18,7 @@
    "tier": "trade",
    "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
    "time": "2026-11-14 02:40",
-   "ageH": 40.9,
+   "ageH": 41.5,
    "impact": -1.8,
    "confidence": 0.7,
    "tags": [
@@ -39,7 +39,7 @@
    "tier": "vendor",
    "url": "https://blogs.nvidia.com/blog/korean-startup-investments-msit/",
    "time": "2026-11-09 16:00",
-   "ageH": 147.5,
+   "ageH": 148.2,
    "impact": 0.63,
    "confidence": 0.72,
    "tags": [
@@ -133,6 +133,18 @@
    ]
   },
   {
+   "title": "Where supercomputing meets agentic AI: What’s new in Google Cloud HPC and AI at SC26",
+   "source": "Google Cloud Blog",
+   "url": "https://cloud.google.com/blog/topics/hpc/whats-new-in-hpc-and-ai-at-sc26/",
+   "time": "2026-11-14 01:00",
+   "impact": -0.01,
+   "confidence": 0.3,
+   "tags": [
+    "价格",
+    "监管"
+   ]
+  },
+  {
    "title": "Nvidia's leadership crisis rattles the AI trade. Here's how we're adjusting our portfolio",
    "source": "CNBC Tech",
    "url": "https://www.cnbc.com/investingclub/2026/11/14/nvidias-leadership-crisis-rattles-wall-street-how-were-adjusting.html",
@@ -153,15 +165,6 @@
    "tags": [
     "官方"
    ]
-  },
-  {
-   "title": "OpenAI launches ChatGPT Wallet, allowing its 'dots' AI agents to make purchases for users",
-   "source": "CNBC Tech",
-   "url": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html",
-   "time": "2026-11-14 02:56",
-   "impact": 0.0,
-   "confidence": 0.8,
-   "tags": []
   }
  ],
  "primary": [
