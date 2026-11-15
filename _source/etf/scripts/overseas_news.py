@@ -212,7 +212,7 @@ def parse_feed(raw: bytes) -> list[dict]:
     out = []
     for item in root.findall(".//item"):
         out.append({
-            "title": (item.findtext("title") or "").strip(),
+            "title": html_lib.unescape((item.findtext("title") or "").strip()),
             "link": (item.findtext("link") or "").strip(),
             "desc": re.sub(r"<[^>]+>", " ", item.findtext("description") or ""),
             "time": parse_time(item.findtext("pubDate") or item.findtext("date")),
@@ -220,7 +220,7 @@ def parse_feed(raw: bytes) -> list[dict]:
     for entry in root.findall(f".//{atom}entry"):
         el = entry.find(f"{atom}link")
         out.append({
-            "title": (entry.findtext(f"{atom}title") or "").strip(),
+            "title": html_lib.unescape((entry.findtext(f"{atom}title") or "").strip()),
             "link": (el.get("href") if el is not None else "") or "",
             "desc": re.sub(r"<[^>]+>", " ", entry.findtext(f"{atom}summary") or entry.findtext(f"{atom}content") or ""),
             "time": parse_time(entry.findtext(f"{atom}published") or entry.findtext(f"{atom}updated")),

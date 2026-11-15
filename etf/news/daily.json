@@ -1,6 +1,6 @@
 {
- "updatedAt": "2026-11-15 19:10",
- "score": 52.9,
+ "updatedAt": "2026-11-15 19:19",
+ "score": 45.9,
  "days": [
   {
    "date": "2026-11-15",
@@ -41,23 +41,6 @@
    "date": "2026-11-14",
    "items": [
     {
-     "title": "Trump doesn’t plan to raise Nvidia, spy issue during China trip: U.S. officials",
-     "source": "CNBC AI",
-     "url": "https://www.cnbc.com/2026/11/13/trump-nvidia-huang-china.html",
-     "time": "2026-11-14 23:36",
-     "impact": 2.0,
-     "confidence": 0.95,
-     "tier": "major",
-     "direction": "pos",
-     "tags": [
-      "官方"
-     ],
-     "categories": [
-      "chip",
-      "policy"
-     ]
-    },
-    {
      "title": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
      "source": "TechCrunch",
      "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
@@ -76,7 +59,7 @@
      ]
     },
     {
-     "title": "The OpenAI board member who fired Sam Altman says we still can&#8217;t trust AI CEOs",
+     "title": "The OpenAI board member who fired Sam Altman says we still can’t trust AI CEOs",
      "source": "The Verge",
      "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
      "time": "2026-11-14 23:00",
@@ -169,20 +152,20 @@
     }
    ],
    "stats": {
-    "count": 8,
-    "pos": 1,
+    "count": 7,
+    "pos": 0,
     "neg": 1,
-    "avgConf": 0.79,
-    "netImpact": -0.1
+    "avgConf": 0.76,
+    "netImpact": -2.1
    },
    "categories": {
     "chip": {
-     "count": 5,
-     "impact": 0.2
+     "count": 4,
+     "impact": -1.8
     },
     "policy": {
-     "count": 2,
-     "impact": 0.2
+     "count": 1,
+     "impact": -1.8
     },
     "other": {
      "count": 2,
@@ -197,7 +180,7 @@
      "impact": 0.0
     }
    },
-   "conclusion": "多空消息相互抵消，方向不明。对应主题：AI硬件（阶段4 杀估值，56.8分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。"
+   "conclusion": "出口管制/监管风险升温。对应主题：AI硬件（阶段4 杀估值，56.8分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。"
   },
   {
    "date": "2026-11-13",
