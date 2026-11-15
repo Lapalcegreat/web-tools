@@ -1,23 +1,20 @@
 (() => {
   const $ = (sel) => document.querySelector(sel);
   const CAT_LABEL = {
-    capex: "资本开支", chip: "算力芯片", memory: "HBM/存储",
-    network: "光互连", power: "电力/散热", policy: "政策/监管",
-    model: "模型/应用", other: "其他",
+    capex: "资本开支 Capex", chip: "算力芯片 Chips", memory: "HBM/存储 Memory",
+    network: "光互连 Optics", power: "电力/散热 Power", policy: "政策/监管 Policy",
+    model: "模型/应用 Models", other: "其他 Other",
   };
   const TIER_LABEL = {
-    major: "一线媒体", research: "研究", trade: "垂直媒体",
-    vendor: "厂商", official: "官方",
+    major: "一线媒体 Major", research: "研究 Research", trade: "垂直媒体 Trade",
+    vendor: "厂商 Vendor", official: "官方 Official",
   };
-  const WEEK = "日一二三四五六";
+  const WEEK = ["周日 Sun", "周一 Mon", "周二 Tue", "周三 Wed", "周四 Thu", "周五 Fri", "周六 Sat"];
   let data = null;
   let activeDate = null;
 
   const fmtImpact = (v) => (v > 0 ? "+" : "") + Number(v || 0).toFixed(1);
-  const weekday = (date) => {
-    const d = new Date(date + "T00:00:00");
-    return "周" + WEEK[d.getDay()];
-  };
+  const weekday = (date) => WEEK[new Date(date + "T00:00:00").getDay()];
 
   function el(tag, cls, text) {
     const node = document.createElement(tag);
@@ -30,7 +27,7 @@
     const host = $("#days");
     host.innerHTML = "";
     if (!data || !data.days || !data.days.length) {
-      host.appendChild(el("div", "empty", "暂无数据"));
+      host.appendChild(el("div", "empty", "暂无数据 / No data"));
       return;
     }
     data.days.forEach((day) => {
@@ -38,7 +35,7 @@
       btn.type = "button";
       btn.appendChild(el("span", "d", day.date.slice(5)));
       btn.appendChild(el("span", "w", weekday(day.date)));
-      btn.appendChild(el("span", "n", `${day.stats.count} 条`));
+      btn.appendChild(el("span", "n", `${day.stats.count} 条 / items`));
       btn.onclick = () => select(day.date);
       host.appendChild(btn);
     });
@@ -48,11 +45,11 @@
     const host = $("#stats");
     host.innerHTML = "";
     const items = [
-      ["条数", `${day.stats.count}`],
-      ["净影响", fmtImpact(day.stats.netImpact)],
-      ["平均可信度", `${Math.round(day.stats.avgConf * 100)}%`],
-      ["偏多", `${day.stats.pos}`],
-      ["偏空", `${day.stats.neg}`],
+      ["条数 / Items", `${day.stats.count}`],
+      ["净影响 / Net", fmtImpact(day.stats.netImpact)],
+      ["平均可信度 / Conf", `${Math.round(day.stats.avgConf * 100)}%`],
+      ["偏多 / Bull", `${day.stats.pos}`],
+      ["偏空 / Bear", `${day.stats.neg}`],
     ];
     items.forEach(([k, v]) => {
       const node = el("span", "stat");
@@ -80,7 +77,7 @@
     const host = $("#items");
     host.innerHTML = "";
     if (!day.items || !day.items.length) {
-      host.appendChild(el("div", "empty", "当日无高可信度条目"));
+      host.appendChild(el("div", "empty", "当日无高可信度条目 / No high-confidence items"));
       return;
     }
     day.items.forEach((it) => {
@@ -90,12 +87,13 @@
       link.target = "_blank";
       link.rel = "noopener noreferrer";
       card.appendChild(link);
+      if (it.titleZh) card.appendChild(el("p", "title-zh", it.titleZh));
 
       const meta = el("div", "meta");
       meta.appendChild(el("span", null, `${it.source} · ${it.time.slice(5)}`));
       const imp = el("span", "badge impact " + (it.impact >= 0 ? "up" : "down"), fmtImpact(it.impact));
       meta.appendChild(imp);
-      meta.appendChild(el("span", "badge conf", `可信 ${Math.round(it.confidence * 100)}%`));
+      meta.appendChild(el("span", "badge conf", `可信 Conf ${Math.round(it.confidence * 100)}%`));
       if (it.tier) meta.appendChild(el("span", "badge tier", TIER_LABEL[it.tier] || it.tier));
       (it.tags || []).forEach((tag) => meta.appendChild(el("span", "badge tag", tag)));
       card.appendChild(meta);
@@ -108,8 +106,9 @@
     const day = data.days.find((d) => d.date === date) || data.days[0];
     if (!day) return;
     renderDays();
-    $("#date").textContent = `${day.date} ${weekday(day.date)} · 更新 ${data.updatedAt}`;
+    $("#date").textContent = `${day.date} ${weekday(day.date)} · 更新 Updated ${data.updatedAt}`;
     $("#conclusion").textContent = day.conclusion || "无高置信度方向性事件。";
+    $("#conclusionEn").textContent = day.conclusionEn || "";
     renderStats(day);
     renderCats(day);
     renderItems(day);
@@ -121,14 +120,14 @@
       .then((d) => {
         data = d;
         if (!d.days || !d.days.length) {
-          $("#conclusion").textContent = "还没有生成每日情报，请先运行 scripts/overseas_news.py。";
+          $("#conclusion").textContent = "还没有生成每日情报，请先运行 scripts/overseas_news.py。 / No digest yet.";
           return;
         }
         const first = d.days.find((day) => day.stats.count >= 3) || d.days[0];
         select(first.date);
       })
       .catch((err) => {
-        $("#conclusion").textContent = "读取 daily.json 失败：" + err.message;
+        $("#conclusion").textContent = "读取 daily.json 失败 / Failed to load: " + err.message;
       });
   }
 

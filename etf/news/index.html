@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>海外AI情报 · 每日</title>
+<title>海外AI情报 / Overseas AI Brief</title>
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 <header class="topbar">
   <div class="brand">
-    <b>海外AI情报</b>
-    <span>每日 · 高可信度 · AI产业链</span>
+    <b>海外AI情报 / Overseas AI Brief</b>
+    <span>每日 · 高可信度 · AI产业链 / Daily · High-confidence · AI supply chain</span>
   </div>
   <nav>
-    <a href="../">← ETF行情</a>
-    <a href="../cycle/">产业温度计</a>
-    <button id="reload">刷新</button>
+    <a href="../">← ETF行情 / ETF</a>
+    <a href="../cycle/">产业温度计 / Cycle</a>
+    <button id="reload">刷新 / Refresh</button>
   </nav>
 </header>
 
@@ -23,9 +23,10 @@
   <aside class="days" id="days"></aside>
   <section class="content">
     <div class="summary">
-      <div class="kicker" id="date">加载中…</div>
-      <h1>今日结论</h1>
+      <div class="kicker" id="date">Loading…</div>
+      <h1>今日结论 / Daily Take</h1>
       <p id="conclusion">正在读取海外 AI 产业链新闻…</p>
+      <p id="conclusionEn" class="en"></p>
       <div class="stats" id="stats"></div>
     </div>
     <div class="cats" id="cats"></div>
@@ -34,8 +35,8 @@
 </main>
 
 <footer>
-  数据来源：WSJ / CNBC / SemiAnalysis / TrendForce / IEEE Spectrum / 官方博客 / SEC EDGAR。
-  只做概率判断，不构成投资建议。
+  数据来源 / Sources：WSJ · CNBC · MarketWatch · SemiAnalysis · TrendForce · IEEE Spectrum · 官方博客 / Official blogs · SEC EDGAR。
+  只做概率判断，不构成投资建议 / For research only, not investment advice.
 </footer>
 <script src="app.js"></script>
 </body>

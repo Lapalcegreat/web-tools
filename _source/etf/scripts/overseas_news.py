@@ -32,7 +32,17 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "etf-dashboard" / "cycle" / "overseas.json"
 NEWS_DIR = ROOT / "etf-dashboard" / "news"
 DAILY_PATH = NEWS_DIR / "daily.json"
+TRANSLATE_CACHE = NEWS_DIR / "translate-cache.json"
 CYCLE_PATH = ROOT / "etf-dashboard" / "cycle" / "data.json"
+THEME_EN = {
+    "ai": "AI Hardware", "newenergy": "New Energy", "humanoid": "Humanoid Robots",
+    "aiglasses": "AI Glasses", "space": "Commercial Space", "hbm": "NVHBM/Custom HBM",
+}
+STAGE_EN = {
+    "阶段1": "Stage 1 introduction", "阶段2": "Stage 2 acceleration",
+    "阶段3": "Stage 3 bubble", "阶段4": "Stage 4 valuation de-rating",
+    "阶段5": "Stage 5 earnings drawdown", "阶段6": "Stage 6 clearing",
+}
 LOG = ROOT / "logs" / "news-update.log"
 
 socket.setdefaulttimeout(12)
@@ -400,6 +410,51 @@ def fetch_primary_filings() -> list[dict]:
     return out[:12]
 
 
+_TRANSLATE_CACHE = None
+
+
+def load_translate_cache() -> dict:
+    global _TRANSLATE_CACHE
+    if _TRANSLATE_CACHE is None:
+        try:
+            _TRANSLATE_CACHE = json.loads(TRANSLATE_CACHE.read_text(encoding="utf-8"))
+        except Exception:  # noqa: BLE001
+            _TRANSLATE_CACHE = {}
+    return _TRANSLATE_CACHE
+
+
+def translate_zh(text: str) -> str:
+    """英文标题 → 中文（MyMemory 免费接口，带本地缓存；失败返回空串）。"""
+    cache = load_translate_cache()
+    key = text.strip()
+    if not key:
+        return ""
+    if key in cache:
+        return cache[key]
+    try:
+        query = urllib.parse.urlencode({"q": key[:480], "langpair": "en|zh-CN"})
+        req = urllib.request.Request(
+            "https://api.mymemory.translated.net/get?" + query,
+            headers={"User-Agent": HEAD["User-Agent"]})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            data = json.loads(resp.read().decode("utf-8", "ignore"))
+        zh = (data.get("responseData", {}).get("translatedText") or "").strip()
+        zh = html_lib.unescape(zh)
+        if zh and "MYMEMORY WARNING" not in zh.upper() and zh.lower() != key.lower():
+            cache[key] = zh
+            return zh
+    except Exception:  # noqa: BLE001
+        pass
+    return ""
+
+
+def save_translate_cache() -> None:
+    if _TRANSLATE_CACHE is not None:
+        TRANSLATE_CACHE.parent.mkdir(parents=True, exist_ok=True)
+        TRANSLATE_CACHE.write_text(
+            json.dumps(_TRANSLATE_CACHE, ensure_ascii=False, indent=0), encoding="utf-8")
+
+
 def classify_categories(item: dict) -> list[str]:
     """把一条新闻归入 AI 产业链的 6 个观察维度。"""
     text = " ".join([item.get("title", ""), item.get("source", ""), " ".join(item.get("tags", []))]).lower()
@@ -429,7 +484,7 @@ def load_cycle() -> dict:
         return {}
 
 
-def build_conclusion(items: list[dict], cycle: dict) -> tuple[str, dict]:
+def build_conclusion(items: list[dict], cycle: dict) -> tuple[str, str, dict]:
     cats = {}
     for it in items:
         for c in it.get("categories", ["other"]):
@@ -439,25 +494,32 @@ def build_conclusion(items: list[dict], cycle: dict) -> tuple[str, dict]:
     for row in cats.values():
         row["impact"] = round(row["impact"], 2)
 
-    signals = []
+    zh, en = [], []
     if cats.get("capex", {}).get("impact", 0) >= 0.6 or (
             cats.get("capex", {}).get("count", 0) >= 2 and cats.get("capex", {}).get("impact", 0) > 0.2):
-        signals.append("云厂商资本开支/数据中心投入信号偏强")
+        zh.append("云厂商资本开支/数据中心投入信号偏强")
+        en.append("Cloud capex / data-center spending signals are firm")
     if cats.get("chip", {}).get("impact", 0) >= 0.6:
-        signals.append("算力芯片链偏多")
+        zh.append("算力芯片链偏多")
+        en.append("Compute-chip chain is bullish")
     if cats.get("memory", {}).get("impact", 0) >= 0.4:
-        signals.append("HBM/存储链条偏紧")
+        zh.append("HBM/存储链条偏紧")
+        en.append("HBM / memory supply stays tight")
     if cats.get("network", {}).get("impact", 0) >= 0.4:
-        signals.append("光互连/网络需求偏强")
+        zh.append("光互连/网络需求偏强")
+        en.append("Optical interconnect demand is strong")
     if cats.get("policy", {}).get("impact", 0) <= -0.6:
-        signals.append("出口管制/监管风险升温")
-    if not signals:
+        zh.append("出口管制/监管风险升温")
+        en.append("Export-control / regulatory risk is rising")
+    if not zh:
         pos_max = max((float(i.get("impact", 0)) for i in items), default=0)
         neg_min = min((float(i.get("impact", 0)) for i in items), default=0)
         if pos_max >= 1 and neg_min <= -1:
-            signals.append("多空消息相互抵消，方向不明")
-    if not signals:
-        signals.append("无高置信度方向性事件，维持观察")
+            zh.append("多空消息相互抵消，方向不明")
+            en.append("Bullish and bearish headlines offset each other; direction unclear")
+    if not zh:
+        zh.append("无高置信度方向性事件，维持观察")
+        en.append("No high-confidence directional catalyst; stay on watch")
 
     themes = {t.get("id"): t for t in cycle.get("themes", [])}
     wanted = []
@@ -465,25 +527,31 @@ def build_conclusion(items: list[dict], cycle: dict) -> tuple[str, dict]:
         wanted.append("hbm")
     if "ai" in themes:
         wanted.append("ai")
-    if cats.get("policy", {}).get("impact", 0) <= -0.6 and "newenergy" in themes:
-        pass
-    links = []
+    links_zh, links_en = [], []
     for tid in dict.fromkeys(wanted):
         t = themes.get(tid)
         if t:
-            links.append(f"{t['name']}（{t['stage']}，{t['basket']['total']}分）")
+            links_zh.append(f"{t['name']}（{t['stage']}，{t['basket']['total']}分）")
+            en_name = THEME_EN.get(tid, t["name"])
+            en_stage = next((v for k, v in STAGE_EN.items() if t["stage"].startswith(k)), t["stage"])
+            links_en.append(f"{en_name} ({en_stage}, {t['basket']['total']})")
 
-    stage_hint = ""
-    if links:
-        stage_hint = "对应主题：" + "、".join(links) + "。"
+    stage_zh = stage_en = ""
+    if links_zh:
+        stage_zh = "对应主题：" + "、".join(links_zh) + "。"
+        stage_en = "Themes: " + "; ".join(links_en) + ". "
         stages = [themes[tid]["stage"] for tid in dict.fromkeys(wanted) if tid in themes]
         if any("阶段4" in s for s in stages):
-            stage_hint += "事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。"
+            stage_zh += "事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。"
+            stage_en += "Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
         elif any("阶段5" in s for s in stages):
-            stage_hint += "板块仍在出清阶段，利好需要连续验证。"
+            stage_zh += "板块仍在出清阶段，利好需要连续验证。"
+            stage_en += "The theme is still clearing; positives need consecutive confirmation."
         elif any("阶段1" in s for s in stages):
-            stage_hint += "板块处于导入期，事件只提升关注度，尚未到业绩兑现。"
-    return "；".join(signals) + "。" + stage_hint, cats
+            stage_zh += "板块处于导入期，事件只提升关注度，尚未到业绩兑现。"
+            stage_en += "The theme is in the introduction stage; headlines raise attention, not earnings yet."
+
+    return "；".join(zh) + "。" + stage_zh, " ".join(en) + ". " + stage_en, cats
 
 
 def build_daily(items: list[dict], primary: list[dict], score: float) -> None:
@@ -518,6 +586,16 @@ def build_daily(items: list[dict], primary: list[dict], score: float) -> None:
         days.setdefault(date, []).append(it)
 
     cycle = load_cycle()
+    # 每条标题补中文；每次最多翻 30 条，结果落缓存，后续增量翻译
+    budget = 30
+    for date in sorted(days, reverse=True)[:5]:
+        for it in days[date]:
+            if not it.get("titleZh") and budget > 0:
+                zh = translate_zh(it["title"])
+                if zh:
+                    it["titleZh"] = zh
+                    budget -= 1
+    save_translate_cache()
     out_days = []
     for date in sorted(days, reverse=True)[:14]:
         rows = sorted(days[date], key=lambda x: x["confidence"] * abs(x["impact"]), reverse=True)[:12]
@@ -532,11 +610,12 @@ def build_daily(items: list[dict], primary: list[dict], score: float) -> None:
                 row = cats.setdefault(c, {"count": 0, "impact": 0.0})
                 row["count"] += 1
                 row["impact"] += float(it["impact"])
-        conclusion, _ = build_conclusion(rows, cycle)
+        conclusion, conclusion_en, _ = build_conclusion(rows, cycle)
         out_days.append({
             "date": date,
             "items": [{
-                "title": it["title"], "source": it["source"], "url": it["url"],
+                "title": it["title"], "titleZh": it.get("titleZh", ""),
+                "source": it["source"], "url": it["url"],
                 "time": it["time"], "impact": round(float(it["impact"]), 2),
                 "confidence": round(float(it["confidence"]), 2),
                 "tier": it.get("tier", ""), "direction": it.get("direction", "neu"),
@@ -550,6 +629,7 @@ def build_daily(items: list[dict], primary: list[dict], score: float) -> None:
             "categories": {k: {"count": v["count"], "impact": round(v["impact"], 2)}
                            for k, v in cats.items()},
             "conclusion": conclusion,
+            "conclusionEn": conclusion_en,
         })
 
     doc = {

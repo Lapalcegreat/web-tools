@@ -98,6 +98,14 @@ nav a:hover, nav button:hover { border-color: #33465c; }
 .kicker { color: var(--dim); font-size: 11px; letter-spacing: .5px; }
 .summary h1 { margin: 4px 0 8px; font-size: 18px; }
 .summary p { margin: 0; color: #c4cedb; font-size: 14px; line-height: 1.7; }
+.summary p.en { margin-top: 6px; color: #8b98a9; font-size: 12.5px; line-height: 1.65; }
+
+.title-zh {
+  margin: 6px 0 0;
+  color: #9fb0c4;
+  font-size: 12.5px;
+  line-height: 1.6;
+}
 
 .stats { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
 .stat {
