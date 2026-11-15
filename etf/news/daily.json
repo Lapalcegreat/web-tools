@@ -1,0 +1,448 @@
+{
+ "updatedAt": "2026-11-15 19:10",
+ "score": 52.9,
+ "days": [
+  {
+   "date": "2026-11-15",
+   "items": [
+    {
+     "title": "Nvidia's leadership crisis rattles the AI trade. Here's how we're adjusting our portfolio",
+     "source": "CNBC Tech",
+     "url": "https://www.cnbc.com/investingclub/2026/11/14/nvidias-leadership-crisis-rattles-wall-street-how-were-adjusting.html",
+     "time": "2026-11-15 02:48",
+     "impact": 0.0,
+     "confidence": 0.88,
+     "tier": "major",
+     "direction": "neu",
+     "tags": [
+      "官方"
+     ],
+     "categories": [
+      "chip"
+     ]
+    }
+   ],
+   "stats": {
+    "count": 1,
+    "pos": 0,
+    "neg": 0,
+    "avgConf": 0.88,
+    "netImpact": 0.0
+   },
+   "categories": {
+    "chip": {
+     "count": 1,
+     "impact": 0.0
+    }
+   },
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，56.8分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。"
+  },
+  {
+   "date": "2026-11-14",
+   "items": [
+    {
+     "title": "Trump doesn’t plan to raise Nvidia, spy issue during China trip: U.S. officials",
+     "source": "CNBC AI",
+     "url": "https://www.cnbc.com/2026/11/13/trump-nvidia-huang-china.html",
+     "time": "2026-11-14 23:36",
+     "impact": 2.0,
+     "confidence": 0.95,
+     "tier": "major",
+     "direction": "pos",
+     "tags": [
+      "官方"
+     ],
+     "categories": [
+      "chip",
+      "policy"
+     ]
+    },
+    {
+     "title": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
+     "source": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+     "time": "2026-11-14 02:40",
+     "impact": -1.8,
+     "confidence": 0.7,
+     "tier": "trade",
+     "direction": "neg",
+     "tags": [
+      "监管",
+      "官方"
+     ],
+     "categories": [
+      "chip",
+      "policy"
+     ]
+    },
+    {
+     "title": "The OpenAI board member who fired Sam Altman says we still can&#8217;t trust AI CEOs",
+     "source": "The Verge",
+     "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
+     "time": "2026-11-14 23:00",
+     "impact": -0.3,
+     "confidence": 0.8,
+     "tier": "major",
+     "direction": "neu",
+     "tags": [],
+     "categories": [
+      "other"
+     ]
+    },
+    {
+     "title": "Lutnick faces questions over Nvidia spy scandal. His sons' firm has deep ties to the chipmaker",
+     "source": "CNBC Tech",
+     "url": "https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html",
+     "time": "2026-11-14 07:42",
+     "impact": 0.0,
+     "confidence": 0.88,
+     "tier": "major",
+     "direction": "neu",
+     "tags": [
+      "官方"
+     ],
+     "categories": [
+      "chip"
+     ]
+    },
+    {
+     "title": "OpenAI launches ChatGPT Wallet, allowing its 'dots' AI agents to make purchases for users",
+     "source": "CNBC Tech",
+     "url": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html",
+     "time": "2026-11-14 02:56",
+     "impact": 0.0,
+     "confidence": 0.8,
+     "tier": "major",
+     "direction": "neu",
+     "tags": [],
+     "categories": [
+      "other"
+     ]
+    },
+    {
+     "title": "A trading strategy to ride out the Nvidia uncertainty and generate income in the process",
+     "source": "CNBC AI",
+     "url": "https://www.cnbc.com/2026/11/13/a-trading-strategy-to-ride-out-the-nvidia-uncertainty-and-generate-income-in-the-process.html",
+     "time": "2026-11-14 03:30",
+     "impact": 0.0,
+     "confidence": 0.88,
+     "tier": "major",
+     "direction": "neu",
+     "tags": [
+      "官方"
+     ],
+     "categories": [
+      "chip"
+     ]
+    },
+    {
+     "title": "This young startup wants to power floating data centers with the ocean’s heat, and investors are already on board",
+     "source": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/13/this-young-startup-wants-to-power-floating-data-centers-with-the-oceans-heat-and-investors-are-already-on-board/",
+     "time": "2026-11-14 04:07",
+     "impact": 0.0,
+     "confidence": 0.62,
+     "tier": "trade",
+     "direction": "neu",
+     "tags": [],
+     "categories": [
+      "capex",
+      "power"
+     ]
+    },
+    {
+     "title": "How Nvidia turmoil and a Democratic Congress could reshape the AI trade, according to ETF experts",
+     "source": "CNBC AI",
+     "url": "https://www.cnbc.com/2026/11/14/nvidia-ai-trade-data-centers-congress.html",
+     "time": "2026-11-14 23:50",
+     "impact": 0.0,
+     "confidence": 0.66,
+     "tier": "major",
+     "direction": "neu",
+     "tags": [
+      "订单",
+      "官方"
+     ],
+     "categories": [
+      "chip"
+     ]
+    }
+   ],
+   "stats": {
+    "count": 8,
+    "pos": 1,
+    "neg": 1,
+    "avgConf": 0.79,
+    "netImpact": -0.1
+   },
+   "categories": {
+    "chip": {
+     "count": 5,
+     "impact": 0.2
+    },
+    "policy": {
+     "count": 2,
+     "impact": 0.2
+    },
+    "other": {
+     "count": 2,
+     "impact": -0.3
+    },
+    "capex": {
+     "count": 1,
+     "impact": 0.0
+    },
+    "power": {
+     "count": 1,
+     "impact": 0.0
+    }
+   },
+   "conclusion": "多空消息相互抵消，方向不明。对应主题：AI硬件（阶段4 杀估值，56.8分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。"
+  },
+  {
+   "date": "2026-11-13",
+   "items": [
+    {
+     "title": "Nvidia scandal draws in Commerce Secretary Lutnick, who reportedly agrees to testify about China chip sales",
+     "source": "CNBC Tech",
+     "url": "https://www.cnbc.com/2026/11/13/nvidia-scandal-lutnick-chip-sales.html",
+     "time": "2026-11-13 23:49",
+     "impact": -0.34,
+     "confidence": 0.66,
+     "tier": "major",
+     "direction": "neu",
+     "tags": [
+      "监管",
+      "官方"
+     ],
+     "categories": [
+      "chip",
+      "policy"
+     ]
+    },
+    {
+     "title": "Why Singapore keeps turning up in the fight over Nvidia chips and China",
+     "source": "CNBC Tech",
+     "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-alice-spy-megaspeed-.html",
+     "time": "2026-11-13 15:15",
+     "impact": -0.18,
+     "confidence": 0.88,
+     "tier": "major",
+     "direction": "neu",
+     "tags": [
+      "官方"
+     ],
+     "categories": [
+      "chip",
+      "policy"
+     ]
+    },
+    {
+     "title": "Nvidia without Jensen Huang. What lies ahead for Asian chipmakers?",
+     "source": "CNBC Tech",
+     "url": "https://www.cnbc.com/2026/11/13/nvidia-without-jensen-huang-what-lies-ahead-for-asian-chipmakers-.html",
+     "time": "2026-11-13 15:29",
+     "impact": 0.17,
+     "confidence": 0.88,
+     "tier": "major",
+     "direction": "neu",
+     "tags": [
+      "官方"
+     ],
+     "categories": [
+      "chip"
+     ]
+    },
+    {
+     "title": "Jensen Huang scandal casts doubt on Nvidia’s AI dominance — how we got here",
+     "source": "CNBC Tech",
+     "url": "https://www.cnbc.com/2026/11/13/jensen-huang-scandal-casts-doubt-on-nvidias-ai-dominance-how-we-got-here.html",
+     "time": "2026-11-13 22:01",
+     "impact": 0.0,
+     "confidence": 0.88,
+     "tier": "major",
+     "direction": "neu",
+     "tags": [
+      "官方"
+     ],
+     "categories": [
+      "chip"
+     ]
+    },
+    {
+     "title": "Nvidia’s turmoil is prompting a rotation across chip stocks. Here's what we know",
+     "source": "CNBC Tech",
+     "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-affairs-amd-broadcom-tsmc.html",
+     "time": "2026-11-13 16:27",
+     "impact": 0.0,
+     "confidence": 0.88,
+     "tier": "major",
+     "direction": "neu",
+     "tags": [
+      "官方"
+     ],
+     "categories": [
+      "chip"
+     ]
+    },
+    {
+     "title": "Microsoft’s latest email outage turned into a full-blown global cloud crisis",
+     "source": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/13/microsoft-latest-email-outage-turned-into-a-full-blown-global-cloud-crisis/",
+     "time": "2026-11-13 21:15",
+     "impact": 0.0,
+     "confidence": 0.62,
+     "tier": "trade",
+     "direction": "neu",
+     "tags": [],
+     "categories": [
+      "other"
+     ]
+    },
+    {
+     "title": "Jensen Huang out as Nvidia CEO as telecom makes big bets on AI",
+     "source": "Light Reading",
+     "url": "https://www.lightreading.com/ai-machine-learning/jensen-huang-out-as-nvidia-ceo-as-telecom-makes-big-bets-on-ai",
+     "time": "2026-11-13 00:45",
+     "impact": 0.0,
+     "confidence": 0.6,
+     "tier": "trade",
+     "direction": "neu",
+     "tags": [
+      "官方"
+     ],
+     "categories": [
+      "chip"
+     ]
+    }
+   ],
+   "stats": {
+    "count": 7,
+    "pos": 0,
+    "neg": 0,
+    "avgConf": 0.77,
+    "netImpact": -0.35
+   },
+   "categories": {
+    "chip": {
+     "count": 6,
+     "impact": -0.35
+    },
+    "policy": {
+     "count": 2,
+     "impact": -0.52
+    },
+    "other": {
+     "count": 1,
+     "impact": 0.0
+    }
+   },
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，56.8分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。"
+  },
+  {
+   "date": "2026-11-09",
+   "items": [
+    {
+     "title": "NVIDIA Announces New Planned Investments in Korean Startups at the MSIT-NVIDIA AI Startup Partnership Forum",
+     "source": "NVIDIA Blog",
+     "url": "https://blogs.nvidia.com/blog/korean-startup-investments-msit/",
+     "time": "2026-11-09 16:00",
+     "impact": 0.63,
+     "confidence": 0.72,
+     "tier": "vendor",
+     "direction": "pos",
+     "tags": [
+      "官方"
+     ],
+     "categories": [
+      "chip"
+     ]
+    }
+   ],
+   "stats": {
+    "count": 1,
+    "pos": 1,
+    "neg": 0,
+    "avgConf": 0.72,
+    "netImpact": 0.63
+   },
+   "categories": {
+    "chip": {
+     "count": 1,
+     "impact": 0.63
+    }
+   },
+   "conclusion": "算力芯片链偏多。对应主题：AI硬件（阶段4 杀估值，56.8分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。"
+  },
+  {
+   "date": "2026-11-05",
+   "items": [
+    {
+     "title": "Data centers lose at ballot box",
+     "source": "Light Reading",
+     "url": "https://www.lightreading.com/data-centers/data-centers-lose-at-ballot-box",
+     "time": "2026-11-05 22:16",
+     "impact": -0.08,
+     "confidence": 0.62,
+     "tier": "trade",
+     "direction": "neu",
+     "tags": [
+      "监管"
+     ],
+     "categories": [
+      "capex"
+     ]
+    }
+   ],
+   "stats": {
+    "count": 1,
+    "pos": 0,
+    "neg": 0,
+    "avgConf": 0.62,
+    "netImpact": -0.08
+   },
+   "categories": {
+    "capex": {
+     "count": 1,
+     "impact": -0.08
+    }
+   },
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，56.8分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-15",
+  "items": [
+   {
+    "title": "Nvidia's leadership crisis rattles the AI trade. Here's how we're adjusting our portfolio",
+    "source": "CNBC Tech",
+    "url": "https://www.cnbc.com/investingclub/2026/11/14/nvidias-leadership-crisis-rattles-wall-street-how-were-adjusting.html",
+    "time": "2026-11-15 02:48",
+    "impact": 0.0,
+    "confidence": 0.88,
+    "tier": "major",
+    "direction": "neu",
+    "tags": [
+     "官方"
+    ],
+    "categories": [
+     "chip"
+    ]
+   }
+  ],
+  "stats": {
+   "count": 1,
+   "pos": 0,
+   "neg": 0,
+   "avgConf": 0.88,
+   "netImpact": 0.0
+  },
+  "categories": {
+   "chip": {
+    "count": 1,
+    "impact": 0.0
+   }
+  },
+  "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，56.8分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。"
+ }
+}

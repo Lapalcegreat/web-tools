@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>海外AI情报 · 每日</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <b>海外AI情报</b>
+    <span>每日 · 高可信度 · AI产业链</span>
+  </div>
+  <nav>
+    <a href="../">← ETF行情</a>
+    <a href="../cycle/">产业温度计</a>
+    <button id="reload">刷新</button>
+  </nav>
+</header>
+
+<main class="layout">
+  <aside class="days" id="days"></aside>
+  <section class="content">
+    <div class="summary">
+      <div class="kicker" id="date">加载中…</div>
+      <h1>今日结论</h1>
+      <p id="conclusion">正在读取海外 AI 产业链新闻…</p>
+      <div class="stats" id="stats"></div>
+    </div>
+    <div class="cats" id="cats"></div>
+    <div class="items" id="items"></div>
+  </section>
+</main>
+
+<footer>
+  数据来源：WSJ / CNBC / SemiAnalysis / TrendForce / IEEE Spectrum / 官方博客 / SEC EDGAR。
+  只做概率判断，不构成投资建议。
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

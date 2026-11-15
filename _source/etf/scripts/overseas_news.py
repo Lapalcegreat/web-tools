@@ -30,6 +30,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "etf-dashboard" / "cycle" / "overseas.json"
+NEWS_DIR = ROOT / "etf-dashboard" / "news"
+DAILY_PATH = NEWS_DIR / "daily.json"
+CYCLE_PATH = ROOT / "etf-dashboard" / "cycle" / "data.json"
 LOG = ROOT / "logs" / "news-update.log"
 
 socket.setdefaulttimeout(12)
@@ -43,6 +46,9 @@ FEEDS = [
     ("CNBC AI", "https://www.cnbc.com/id/100003114/device/rss/rss.html", "major"),
     ("MarketWatch", "https://feeds.content.dowjones.io/public/rss/mw_topstories", "major"),
     ("SemiAnalysis", "https://semianalysis.com/feed/", "research"),
+    ("TrendForce", "https://www.trendforce.com/news/feed/", "research"),
+    ("IEEE Spectrum AI", "https://spectrum.ieee.org/feeds/topic/artificial-intelligence.rss", "research"),
+    ("Google Cloud Blog", "https://cloudblog.withgoogle.com/rss/", "vendor"),
     ("The Verge", "https://www.theverge.com/rss/index.xml", "major"),
     ("Ars Technica", "https://feeds.arstechnica.com/arstechnica/technology-lab", "major"),
     ("TechCrunch", "https://techcrunch.com/feed/", "trade"),
@@ -394,6 +400,169 @@ def fetch_primary_filings() -> list[dict]:
     return out[:12]
 
 
+def classify_categories(item: dict) -> list[str]:
+    """把一条新闻归入 AI 产业链的 6 个观察维度。"""
+    text = " ".join([item.get("title", ""), item.get("source", ""), " ".join(item.get("tags", []))]).lower()
+    table = {
+        "capex": ["capex", "capital expenditure", "data center", "datacenter", "buildout",
+                  "spend", "investment", "gigawatt", "power purchase", "ai factory"],
+        "chip": ["nvidia", "amd", "gpu", "tpu", "asic", "broadcom", "marvell", "accelerator",
+                 "rubin", "blackwell", "trainium", "inferentia", "chip"],
+        "memory": ["hbm", "dram", "nand", "memory", "sk hynix", "micron", "samsung", "hybrid bonding"],
+        "network": ["optical", "transceiver", "800g", "1.6t", "ethernet", "infiniband",
+                    "nvlink", "switch", "networking", "cpo", "optics"],
+        "power": ["power", "cooling", "liquid cooling", "energy", "grid", "nuclear", "electricity", "utility"],
+        "policy": ["export", "ban", "tariff", "sanction", "regulation", "china", "restrict",
+                   "license", "probe", "investigation", "lawsuit"],
+        "model": ["model", "inference", "agent", "llm", "gemini", "gpt", "claude", "training", "reasoning"],
+    }
+    cats = [key for key, words in table.items()
+            if any((re.search(rf"\b{re.escape(w)}\b", text) if re.fullmatch(r"[a-z0-9]+", w) else w in text)
+                   for w in words)]
+    return cats or ["other"]
+
+
+def load_cycle() -> dict:
+    try:
+        return json.loads(CYCLE_PATH.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        return {}
+
+
+def build_conclusion(items: list[dict], cycle: dict) -> tuple[str, dict]:
+    cats = {}
+    for it in items:
+        for c in it.get("categories", ["other"]):
+            row = cats.setdefault(c, {"count": 0, "impact": 0.0})
+            row["count"] += 1
+            row["impact"] += float(it.get("impact", 0))
+    for row in cats.values():
+        row["impact"] = round(row["impact"], 2)
+
+    signals = []
+    if cats.get("capex", {}).get("impact", 0) >= 0.6 or (
+            cats.get("capex", {}).get("count", 0) >= 2 and cats.get("capex", {}).get("impact", 0) > 0.2):
+        signals.append("云厂商资本开支/数据中心投入信号偏强")
+    if cats.get("chip", {}).get("impact", 0) >= 0.6:
+        signals.append("算力芯片链偏多")
+    if cats.get("memory", {}).get("impact", 0) >= 0.4:
+        signals.append("HBM/存储链条偏紧")
+    if cats.get("network", {}).get("impact", 0) >= 0.4:
+        signals.append("光互连/网络需求偏强")
+    if cats.get("policy", {}).get("impact", 0) <= -0.6:
+        signals.append("出口管制/监管风险升温")
+    if not signals:
+        pos_max = max((float(i.get("impact", 0)) for i in items), default=0)
+        neg_min = min((float(i.get("impact", 0)) for i in items), default=0)
+        if pos_max >= 1 and neg_min <= -1:
+            signals.append("多空消息相互抵消，方向不明")
+    if not signals:
+        signals.append("无高置信度方向性事件，维持观察")
+
+    themes = {t.get("id"): t for t in cycle.get("themes", [])}
+    wanted = []
+    if cats.get("memory", {}).get("impact", 0) >= 0.4 and "hbm" in themes:
+        wanted.append("hbm")
+    if "ai" in themes:
+        wanted.append("ai")
+    if cats.get("policy", {}).get("impact", 0) <= -0.6 and "newenergy" in themes:
+        pass
+    links = []
+    for tid in dict.fromkeys(wanted):
+        t = themes.get(tid)
+        if t:
+            links.append(f"{t['name']}（{t['stage']}，{t['basket']['total']}分）")
+
+    stage_hint = ""
+    if links:
+        stage_hint = "对应主题：" + "、".join(links) + "。"
+        stages = [themes[tid]["stage"] for tid in dict.fromkeys(wanted) if tid in themes]
+        if any("阶段4" in s for s in stages):
+            stage_hint += "事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。"
+        elif any("阶段5" in s for s in stages):
+            stage_hint += "板块仍在出清阶段，利好需要连续验证。"
+        elif any("阶段1" in s for s in stages):
+            stage_hint += "板块处于导入期，事件只提升关注度，尚未到业绩兑现。"
+    return "；".join(signals) + "。" + stage_hint, cats
+
+
+def build_daily(items: list[dict], primary: list[dict], score: float) -> None:
+    """按天聚合高可信度条目，生成 news/daily.json（含每日结论）。"""
+    merged = [dict(x) for x in items]
+    for p in primary:
+        if abs(p.get("impact", 0)) < 0.5:
+            continue
+        merged.append({
+            "title": f"{p['company']} 提交 {p['form']}",
+            "source": "SEC EDGAR",
+            "url": p["url"],
+            "time": f"{p['date']} 00:00",
+            "tier": "official",
+            "impact": p["impact"],
+            "confidence": 0.95,
+            "tags": ["官方"],
+            "sources": ["SEC EDGAR"],
+            "multiSource": False,
+            "official": True,
+            "direction": "pos" if p["impact"] > 0 else "neg",
+        })
+
+    days = {}
+    for it in merged:
+        if float(it.get("confidence", 0)) < 0.55:
+            continue
+        date = (it.get("time") or "")[:10]
+        if len(date) != 10:
+            continue
+        it["categories"] = classify_categories(it)
+        days.setdefault(date, []).append(it)
+
+    cycle = load_cycle()
+    out_days = []
+    for date in sorted(days, reverse=True)[:14]:
+        rows = sorted(days[date], key=lambda x: x["confidence"] * abs(x["impact"]), reverse=True)[:12]
+        cats = {}
+        pos = neg = 0
+        for it in rows:
+            if it["impact"] >= 0.4:
+                pos += 1
+            elif it["impact"] <= -0.4:
+                neg += 1
+            for c in it["categories"]:
+                row = cats.setdefault(c, {"count": 0, "impact": 0.0})
+                row["count"] += 1
+                row["impact"] += float(it["impact"])
+        conclusion, _ = build_conclusion(rows, cycle)
+        out_days.append({
+            "date": date,
+            "items": [{
+                "title": it["title"], "source": it["source"], "url": it["url"],
+                "time": it["time"], "impact": round(float(it["impact"]), 2),
+                "confidence": round(float(it["confidence"]), 2),
+                "tier": it.get("tier", ""), "direction": it.get("direction", "neu"),
+                "tags": it.get("tags", []), "categories": it["categories"],
+            } for it in rows],
+            "stats": {
+                "count": len(rows), "pos": pos, "neg": neg,
+                "avgConf": round(sum(float(x["confidence"]) for x in rows) / len(rows), 2),
+                "netImpact": round(sum(float(x["impact"]) for x in rows), 2),
+            },
+            "categories": {k: {"count": v["count"], "impact": round(v["impact"], 2)}
+                           for k, v in cats.items()},
+            "conclusion": conclusion,
+        })
+
+    doc = {
+        "updatedAt": datetime.now().astimezone().strftime("%Y-%m-%d %H:%M"),
+        "score": score,
+        "days": out_days,
+        "latest": out_days[0] if out_days else None,
+    }
+    NEWS_DIR.mkdir(parents=True, exist_ok=True)
+    DAILY_PATH.write_text(json.dumps(doc, ensure_ascii=False, indent=1), encoding="utf-8")
+    log(f"daily digest: {len(out_days)} days, latest {doc['latest']['date'] if doc['latest'] else 'n/a'}")
+
+
 def main() -> int:
     now = datetime.now(timezone.utc)
     seen = set()
@@ -508,6 +677,11 @@ def main() -> int:
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(doc, ensure_ascii=False, indent=1), encoding="utf-8")
+    try:
+        build_daily(items, primary, score)
+    except Exception as exc:  # noqa: BLE001
+        print(f"[warn] daily digest: {exc}", file=sys.stderr)
+        log(f"daily digest failed: {exc!r}")
     print(f"overseas news: {len(items)} clustered, {len(high)} high-confidence, score {score}")
     log(f"done: {len(items)} clustered, {len(high)} high, score {score}")
     for x in high[:5]:

@@ -1,0 +1,177 @@
+:root {
+  --bg: #0b0f14;
+  --panel: #111821;
+  --panel2: #0e141c;
+  --line: #1f2a37;
+  --text: #d7dee8;
+  --dim: #8b98a9;
+  --muted: #5b6779;
+  --accent: #f5a524;
+  --red: #f05252;
+  --green: #21a67a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 14px/1.6 "Segoe UI", "Microsoft YaHei UI", "PingFang SC", sans-serif;
+}
+
+a { color: inherit; }
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 22px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(11, 15, 20, .92);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+}
+
+.brand { display: flex; align-items: baseline; gap: 10px; }
+.brand b { font-size: 16px; letter-spacing: .5px; }
+.brand span { color: var(--dim); font-size: 11px; }
+
+nav { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+nav a, nav button {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--text);
+  padding: 6px 11px;
+  border-radius: 7px;
+  font-size: 12px;
+  text-decoration: none;
+  cursor: pointer;
+}
+nav a:hover, nav button:hover { border-color: #33465c; }
+
+.layout {
+  display: grid;
+  grid-template-columns: 188px minmax(0, 1fr);
+  gap: 18px;
+  max-width: 1240px;
+  margin: 18px auto;
+  padding: 0 18px;
+}
+
+.days {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-self: start;
+  position: sticky;
+  top: 74px;
+}
+
+.day {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--line);
+  background: var(--panel2);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+}
+.day:hover { border-color: #33465c; }
+.day.active { border-color: var(--accent); background: #171d22; }
+.day .d { font-weight: 600; font-size: 13px; }
+.day .w { color: var(--muted); font-size: 11px; }
+.day .n { margin-left: auto; color: var(--dim); font-size: 11px; }
+
+.summary {
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, #141c26, #10161e);
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+.kicker { color: var(--dim); font-size: 11px; letter-spacing: .5px; }
+.summary h1 { margin: 4px 0 8px; font-size: 18px; }
+.summary p { margin: 0; color: #c4cedb; font-size: 14px; line-height: 1.7; }
+
+.stats { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.stat {
+  border: 1px solid var(--line);
+  background: var(--panel2);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 11px;
+  color: var(--dim);
+}
+.stat b { color: var(--text); font-weight: 600; }
+
+.cats { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0; }
+.cat {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 11px;
+  color: var(--dim);
+}
+.cat b { color: var(--text); margin-left: 4px; }
+.cat .up { color: var(--red); }
+.cat .down { color: var(--green); }
+
+.items { display: flex; flex-direction: column; gap: 10px; }
+.item {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+.item .title {
+  display: block;
+  color: #e6edf6;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1.45;
+}
+.item .title:hover { color: var(--accent); }
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.badge {
+  border-radius: 999px;
+  padding: 2px 8px;
+  border: 1px solid var(--line);
+  font-size: 10.5px;
+}
+.badge.impact.up { color: var(--red); border-color: rgba(240, 82, 82, .35); }
+.badge.impact.down { color: var(--green); border-color: rgba(33, 166, 122, .35); }
+.badge.conf { color: #9fb0c4; }
+.badge.tier { color: var(--dim); }
+.badge.tag { color: #c9b27a; border-color: rgba(245, 165, 36, .25); }
+
+footer {
+  max-width: 1240px;
+  margin: 26px auto 40px;
+  padding: 0 18px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.empty { color: var(--dim); padding: 40px 0; text-align: center; }
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+  .days { position: static; flex-direction: row; overflow-x: auto; padding-bottom: 4px; }
+  .day { flex: 0 0 auto; }
+}

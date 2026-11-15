@@ -146,7 +146,10 @@
     const cycleLink = el("a", "icon-btn", "产业温度计");
     cycleLink.href = "cycle/";
     cycleLink.style.textDecoration = "none";
-    ctr.append(viewSeg, rangeSeg, cycleLink, refreshBtn);
+    const newsLink = el("a", "icon-btn", "每日情报");
+    newsLink.href = "news/";
+    newsLink.style.textDecoration = "none";
+    ctr.append(viewSeg, rangeSeg, newsLink, cycleLink, refreshBtn);
     top.appendChild(ctr);
 
     const main = el("div", "main");
