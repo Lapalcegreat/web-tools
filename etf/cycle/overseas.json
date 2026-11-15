@@ -1,42 +1,25 @@
 {
- "updatedAt": "2026-11-14 20:12",
- "score": 40.2,
+ "updatedAt": "2026-11-15 19:35",
+ "score": 45.9,
  "stats": {
-  "count": 24,
-  "high": 7,
-  "low": 17,
-  "pos": 3,
-  "neg": 4,
+  "count": 21,
+  "high": 2,
+  "low": 19,
+  "pos": 1,
+  "neg": 1,
   "sources": 6,
   "official": 12,
   "officialImpact": 0
  },
  "items": [
   {
-   "title": "Why the data center slowdown concern is overblown. Two stocks to buy amid the fear",
-   "source": "CNBC AI",
-   "tier": "major",
-   "url": "https://www.cnbc.com/2026/11/13/data-center-slowdown-utility-stocks.html",
-   "time": "2026-11-14 00:54",
-   "ageH": 19.3,
-   "impact": -3.45,
-   "confidence": 0.8,
-   "tags": [],
-   "sources": [
-    "CNBC AI"
-   ],
-   "multiSource": false,
-   "direction": "neg",
-   "status": "high"
-  },
-  {
    "title": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
    "source": "TechCrunch",
    "tier": "trade",
    "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
    "time": "2026-11-14 02:40",
-   "ageH": 17.5,
-   "impact": -2.25,
+   "ageH": 40.9,
+   "impact": -1.8,
    "confidence": 0.7,
    "tags": [
     "监管",
@@ -51,52 +34,12 @@
    "status": "high"
   },
   {
-   "title": "Trump doesn’t plan to raise Nvidia, spy issue during China trip: U.S. officials",
-   "source": "CNBC AI",
-   "tier": "major",
-   "url": "https://www.cnbc.com/2026/11/13/trump-nvidia-huang-china.html",
-   "time": "2026-11-14 09:34",
-   "ageH": 10.6,
-   "impact": 2.0,
-   "confidence": 0.95,
-   "tags": [
-    "官方"
-   ],
-   "sources": [
-    "CNBC AI"
-   ],
-   "multiSource": false,
-   "official": true,
-   "direction": "pos",
-   "status": "high"
-  },
-  {
-   "title": "Jensen Huang's exit from Nvidia raises critical questions about the future of AI",
-   "source": "CNBC Tech",
-   "tier": "major",
-   "url": "https://www.cnbc.com/2026/11/12/jensen-huangs-exit-from-nvidia-raises-questions-about-future-of-ai.html",
-   "time": "2026-11-13 04:32",
-   "ageH": 39.6,
-   "impact": 1.12,
-   "confidence": 0.88,
-   "tags": [
-    "官方"
-   ],
-   "sources": [
-    "CNBC Tech"
-   ],
-   "multiSource": false,
-   "official": true,
-   "direction": "pos",
-   "status": "high"
-  },
-  {
    "title": "NVIDIA Announces New Planned Investments in Korean Startups at the MSIT-NVIDIA AI Startup Partnership Forum",
    "source": "NVIDIA Blog",
    "tier": "vendor",
    "url": "https://blogs.nvidia.com/blog/korean-startup-investments-msit/",
    "time": "2026-11-09 16:00",
-   "ageH": 124.2,
+   "ageH": 147.5,
    "impact": 0.63,
    "confidence": 0.72,
    "tags": [
@@ -109,48 +52,6 @@
    "official": true,
    "direction": "pos",
    "status": "high"
-  },
-  {
-   "title": "Jensen Huang affair in DC: Resignation calls and moves to tighten Nvidia China exports",
-   "source": "CNBC AI",
-   "tier": "major",
-   "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-congress-resign-ai-chips.html",
-   "time": "2026-11-12 20:03",
-   "ageH": 48.1,
-   "impact": -0.42,
-   "confidence": 0.88,
-   "tags": [
-    "监管",
-    "官方"
-   ],
-   "sources": [
-    "CNBC AI"
-   ],
-   "multiSource": false,
-   "official": true,
-   "direction": "neg",
-   "status": "high"
-  },
-  {
-   "title": "Nvidia scandal draws in Commerce Secretary Lutnick, who reportedly agrees to testify about China chip sales",
-   "source": "CNBC Tech",
-   "tier": "major",
-   "url": "https://www.cnbc.com/2026/11/13/nvidia-scandal-lutnick-chip-sales.html",
-   "time": "2026-11-13 23:49",
-   "ageH": 20.3,
-   "impact": -0.42,
-   "confidence": 0.66,
-   "tags": [
-    "监管",
-    "官方"
-   ],
-   "sources": [
-    "CNBC Tech"
-   ],
-   "multiSource": false,
-   "official": true,
-   "direction": "neg",
-   "status": "ok"
   }
  ],
  "pending": [
@@ -176,6 +77,27 @@
    "tags": [
     "官方"
    ]
+  },
+  {
+   "title": "Nvidia scandal draws in Commerce Secretary Lutnick, who reportedly agrees to testify about China chip sales",
+   "source": "CNBC Tech",
+   "url": "https://www.cnbc.com/2026/11/13/nvidia-scandal-lutnick-chip-sales.html",
+   "time": "2026-11-13 23:49",
+   "impact": -0.34,
+   "confidence": 0.66,
+   "tags": [
+    "监管",
+    "官方"
+   ]
+  },
+  {
+   "title": "The OpenAI board member who fired Sam Altman says we still can’t trust AI CEOs",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
+   "time": "2026-11-14 23:00",
+   "impact": -0.3,
+   "confidence": 0.8,
+   "tags": []
   },
   {
    "title": "Why Singapore keeps turning up in the fight over Nvidia chips and China",
@@ -211,6 +133,17 @@
    ]
   },
   {
+   "title": "Nvidia's leadership crisis rattles the AI trade. Here's how we're adjusting our portfolio",
+   "source": "CNBC Tech",
+   "url": "https://www.cnbc.com/investingclub/2026/11/14/nvidias-leadership-crisis-rattles-wall-street-how-were-adjusting.html",
+   "time": "2026-11-15 02:48",
+   "impact": 0.0,
+   "confidence": 0.88,
+   "tags": [
+    "官方"
+   ]
+  },
+  {
    "title": "Lutnick faces questions over Nvidia spy scandal. His sons' firm has deep ties to the chipmaker",
    "source": "CNBC Tech",
    "url": "https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html",
@@ -227,41 +160,8 @@
    "url": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html",
    "time": "2026-11-14 02:56",
    "impact": 0.0,
-   "confidence": 0.9,
+   "confidence": 0.8,
    "tags": []
-  },
-  {
-   "title": "Jensen Huang scandal casts doubt on Nvidia’s AI dominance — how we got here",
-   "source": "CNBC Tech",
-   "url": "https://www.cnbc.com/2026/11/13/jensen-huang-scandal-casts-doubt-on-nvidias-ai-dominance-how-we-got-here.html",
-   "time": "2026-11-13 22:01",
-   "impact": 0.0,
-   "confidence": 0.88,
-   "tags": [
-    "官方"
-   ]
-  },
-  {
-   "title": "Nvidia’s turmoil is prompting a rotation across chip stocks. Here's what we know",
-   "source": "CNBC Tech",
-   "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-affairs-amd-broadcom-tsmc.html",
-   "time": "2026-11-13 16:27",
-   "impact": 0.0,
-   "confidence": 0.88,
-   "tags": [
-    "官方"
-   ]
-  },
-  {
-   "title": "Here's what Nvidia interim CEO Colette Kress and board chair Harvey Jones wrote to Nvidia employees",
-   "source": "CNBC Tech",
-   "url": "https://www.cnbc.com/2026/11/12/nvidia-kress-jones-employee-emails.html",
-   "time": "2026-11-13 03:42",
-   "impact": 0.0,
-   "confidence": 0.88,
-   "tags": [
-    "官方"
-   ]
   }
  ],
  "primary": [
@@ -271,7 +171,7 @@
    "date": "2026-11-13",
    "url": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026073564/vrt-20261113.htm",
    "title": "8-K",
-   "age": 1,
+   "age": 2,
    "items": [],
    "labels": [],
    "signal": "",
@@ -283,7 +183,7 @@
    "date": "2026-11-13",
    "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000801/tsm-fsx20261113x6k.htm",
    "title": "6-K",
-   "age": 1,
+   "age": 2,
    "items": [],
    "labels": [],
    "signal": "",
@@ -295,7 +195,7 @@
    "date": "2026-11-12",
    "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000800/a20261112statementregardin.htm",
    "title": "6-K",
-   "age": 2,
+   "age": 3,
    "items": [],
    "labels": [],
    "signal": "",
@@ -307,7 +207,7 @@
    "date": "2026-11-12",
    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm",
    "title": "8-K",
-   "age": 2,
+   "age": 3,
    "items": [],
    "labels": [],
    "signal": "",
@@ -319,7 +219,7 @@
    "date": "2026-11-12",
    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526458525/d177728d8k.htm",
    "title": "8-K",
-   "age": 2,
+   "age": 3,
    "items": [],
    "labels": [],
    "signal": "",
@@ -331,7 +231,7 @@
    "date": "2026-11-12",
    "url": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000026/mrvl-20261111.htm",
    "title": "8-K",
-   "age": 2,
+   "age": 3,
    "items": [],
    "labels": [],
    "signal": "",
@@ -343,7 +243,7 @@
    "date": "2026-11-10",
    "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000797/tsm-boardx202611xx.htm",
    "title": "6-K",
-   "age": 4,
+   "age": 5,
    "items": [],
    "labels": [],
    "signal": "",
@@ -355,7 +255,7 @@
    "date": "2026-11-10",
    "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000796/tsm-revenue20261110.htm",
    "title": "6-K",
-   "age": 4,
+   "age": 5,
    "items": [],
    "labels": [],
    "signal": "",
@@ -367,7 +267,7 @@
    "date": "2026-11-05",
    "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526448357/d177209d8k.htm",
    "title": "8-K",
-   "age": 9,
+   "age": 10,
    "items": [],
    "labels": [],
    "signal": "",
@@ -379,7 +279,7 @@
    "date": "2026-11-05",
    "url": "https://www.sec.gov/Archives/edgar/data/723125/000110465926123389/tm2629062d1_8k.htm",
    "title": "FORM 8-K",
-   "age": 9,
+   "age": 10,
    "items": [],
    "labels": [],
    "signal": "",
@@ -391,7 +291,7 @@
    "date": "2026-11-05",
    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526450074/d166273d8k.htm",
    "title": "8-K",
-   "age": 9,
+   "age": 10,
    "items": [],
    "labels": [],
    "signal": "",
@@ -403,7 +303,7 @@
    "date": "2026-11-05",
    "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526449835/d174184d8k.htm",
    "title": "8-K",
-   "age": 9,
+   "age": 10,
    "items": [],
    "labels": [],
    "signal": "",
