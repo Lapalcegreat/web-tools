@@ -307,7 +307,13 @@
     "pos": 8,
     "neg": 0,
     "score": 72.5
-   }
+   },
+   "nameEn": "AI Hardware",
+   "stageEn": "Stage 4 Valuation De-rating",
+   "reasonsEn": [
+    "Growth acceleration -11pct",
+    "price -70% from 2-year high"
+   ]
   },
   {
    "id": "newenergy",
@@ -632,7 +638,12 @@
     "pos": 9,
     "neg": 5,
     "score": 48.2
-   }
+   },
+   "nameEn": "New Energy",
+   "stageEn": "Stage 5 Earnings Drawdown",
+   "reasonsEn": [
+    "Growth 16, quality 42: both deteriorating"
+   ]
   },
   {
    "id": "humanoid",
@@ -1080,7 +1091,12 @@
     "pos": 12,
     "neg": 6,
     "score": 49.2
-   }
+   },
+   "nameEn": "Humanoid Robots",
+   "stageEn": "Stage 1 Introduction",
+   "reasonsEn": [
+    "Growth 23 not yet materialized, valuation 25 rich: valuation ahead of earnings"
+   ]
   },
   {
    "id": "aiglasses",
@@ -1447,7 +1463,13 @@
     "pos": 24,
     "neg": 2,
     "score": 59.9
-   }
+   },
+   "nameEn": "AI Glasses",
+   "stageEn": "Stage 4 Valuation De-rating",
+   "reasonsEn": [
+    "Growth acceleration -1pct",
+    "price -46% from 2-year high"
+   ]
   },
   {
    "id": "space",
@@ -1895,7 +1917,12 @@
     "pos": 19,
     "neg": 2,
     "score": 58.7
-   }
+   },
+   "nameEn": "Commercial Space",
+   "stageEn": "Stage 5 Earnings Drawdown",
+   "reasonsEn": [
+    "Growth 15, quality 24: both deteriorating"
+   ]
   },
   {
    "id": "hbm",
@@ -2344,7 +2371,13 @@
     "pos": 29,
     "neg": 0,
     "score": 62.5
-   }
+   },
+   "nameEn": "NVHBM / Custom HBM",
+   "stageEn": "Stage 4 Valuation De-rating",
+   "reasonsEn": [
+    "Growth acceleration -4pct",
+    "price -64% from 2-year high"
+   ]
   }
  ]
 }

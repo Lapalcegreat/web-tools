@@ -33,7 +33,7 @@ HEAD = {
 THEMES = [
     {
         "id": "ai",
-        "name": "AI硬件",
+        "name": "AI硬件", "nameEn": "AI Hardware",
         "keyword": "光模块",
         "match": ["光模块", "光通信", "CPO", "光芯片", "AI算力", "PCB", "铜缆", "1.6T"],
         "stocks": [
@@ -43,7 +43,7 @@ THEMES = [
     },
     {
         "id": "newenergy",
-        "name": "新能源",
+        "name": "新能源", "nameEn": "New Energy",
         "keyword": "新能源",
         "match": ["新能源", "锂", "光伏", "储能", "电池", "硅料", "组件"],
         "stocks": [
@@ -53,7 +53,7 @@ THEMES = [
     },
     {
         "id": "humanoid",
-        "name": "人形机器人",
+        "name": "人形机器人", "nameEn": "Humanoid Robots",
         "keyword": "人形机器人",
         "match": ["人形机器人", "具身智能", "减速器", "灵巧手", "丝杠", "机器人", "执行器"],
         "stocks": [
@@ -64,7 +64,7 @@ THEMES = [
     },
     {
         "id": "aiglasses",
-        "name": "AI眼镜",
+        "name": "AI眼镜", "nameEn": "AI Glasses",
         "keyword": "AI眼镜",
         "match": ["AI眼镜", "智能眼镜", "AR眼镜", "光波导", "MicroLED", "眼镜"],
         "stocks": [
@@ -74,7 +74,7 @@ THEMES = [
     },
     {
         "id": "space",
-        "name": "商业航天",
+        "name": "商业航天", "nameEn": "Commercial Space",
         "keyword": "商业航天",
         "match": ["商业航天", "卫星互联网", "火箭", "卫星", "低轨", "星座", "发射"],
         "stocks": [
@@ -85,7 +85,7 @@ THEMES = [
     },
     {
         "id": "hbm",
-        "name": "NVHBM/定制HBM",
+        "name": "NVHBM/定制HBM", "nameEn": "NVHBM / Custom HBM",
         "keyword": "HBM",
         "match": ["HBM", "高带宽内存", "定制HBM", "NVHBM", "先进封装", "存储芯片", "DRAM"],
         "stocks": [
@@ -430,35 +430,54 @@ def industry_score(inp: dict) -> float | None:
     return _wavg(parts)
 
 
-def classify(basket: dict) -> tuple[str, list[str]]:
+STAGE_EN = {
+    "阶段1 导入期": "Stage 1 Introduction",
+    "阶段2 加速期": "Stage 2 Acceleration",
+    "阶段3 泡沫/拥挤顶": "Stage 3 Bubble / Crowding Peak",
+    "阶段4 杀估值": "Stage 4 Valuation De-rating",
+    "阶段5 出清/衰退": "Stage 5 Earnings Drawdown",
+    "过渡期": "Transition",
+    "数据不足": "Insufficient Data",
+}
+
+
+def classify(basket: dict) -> tuple[str, list[str], list[str]]:
     g, q, v = basket.get("growth"), basket.get("quality"), basket.get("valuation")
     dd, acc, ind = basket.get("drawdown"), basket.get("accel"), basket.get("industry")
-    reasons = []
+    reasons, reasons_en = [], []
     if g is None:
-        return "数据不足", reasons
+        return "数据不足", reasons, reasons_en
     if g < 35 and (q or 0) < 45:
         reasons.append(f"景气 {g:.0f}、盈利 {q:.0f}：增长与盈利同步走弱")
-        return "阶段5 出清/衰退", reasons
+        reasons_en.append(f"Growth {g:.0f}, quality {q:.0f}: both deteriorating")
+        return "阶段5 出清/衰退", reasons, reasons_en
     if g < 45 and (q or 0) >= 45 and (v or 100) < 40 and (dd is None or dd > -50):
         reasons.append(f"景气 {g:.0f} 尚未兑现、估值 {v:.0f} 偏贵：估值先行")
-        return "阶段1 导入期", reasons
+        reasons_en.append(f"Growth {g:.0f} not yet materialized, valuation {v:.0f} rich: valuation ahead of earnings")
+        return "阶段1 导入期", reasons, reasons_en
     if g >= 55 and (acc is None or acc > -10) and (dd is None or dd > -25) and (ind is None or ind >= 50):
         reasons.append(f"景气 {g:.0f}、增速仍在加速、股价距 2 年高点 {dd:.0f}%")
-        return "阶段2 加速期", reasons
+        reasons_en.append(f"Growth {g:.0f}, acceleration intact, price {dd:.0f}% from 2-year high")
+        return "阶段2 加速期", reasons, reasons_en
     if g >= 60 and (v or 100) < 30 and (dd is None or dd > -20):
         reasons.append(f"景气 {g:.0f} 但估值已贵、股价仍在高位")
-        return "阶段3 泡沫/拥挤顶", reasons
+        reasons_en.append(f"Growth {g:.0f} but valuation rich and price near highs")
+        return "阶段3 泡沫/拥挤顶", reasons, reasons_en
     if g >= 35 and ((acc is not None and acc < 0) or (dd is not None and dd < -40)
                     or (ind is not None and ind < 45)):
         if acc is not None:
             reasons.append(f"增速二阶导 {acc:+.0f}pct")
+            reasons_en.append(f"Growth acceleration {acc:+.0f}pct")
         if dd is not None:
             reasons.append(f"股价距 2 年高点 {dd:.0f}%")
+            reasons_en.append(f"price {dd:.0f}% from 2-year high")
         if ind is not None and ind < 45:
             reasons.append(f"行业输入 {ind:.0f}：capex/价格转弱")
-        return "阶段4 杀估值", reasons
+            reasons_en.append(f"industry input {ind:.0f}: capex/pricing weakening")
+        return "阶段4 杀估值", reasons, reasons_en
     reasons.append("增长、估值与筹码均处于中间地带")
-    return "过渡期", reasons
+    reasons_en.append("Growth, valuation and crowding are all mid-range")
+    return "过渡期", reasons, reasons_en
 
 
 def run(only=None) -> dict:
@@ -528,10 +547,12 @@ def run(only=None) -> dict:
         for key, value in list(basket.items()):
             if isinstance(value, float):
                 basket[key] = round(value, 1)
-        stage, reasons = classify(basket)
+        stage, reasons, reasons_en = classify(basket)
         out["themes"].append({
-            "id": theme["id"], "name": theme["name"], "keyword": theme["keyword"],
-            "stocks": stocks, "basket": basket, "stage": stage, "reasons": reasons,
+            "id": theme["id"], "name": theme["name"], "nameEn": theme.get("nameEn", theme["name"]),
+            "keyword": theme["keyword"],
+            "stocks": stocks, "basket": basket, "stage": stage,
+            "stageEn": STAGE_EN.get(stage, stage), "reasons": reasons, "reasonsEn": reasons_en,
             "inputs": inp, "industry": basket["industry"],
             "overseasAt": overseas_at,
             "news": [{"date": n["date"][:16], "title": n["title"], "url": n["url"], "media": n["media"]}
