@@ -1,46 +1,25 @@
 {
- "updatedAt": "2026-11-15 20:12",
- "score": 45.9,
+ "updatedAt": "2026-11-16 20:12",
+ "score": 51.4,
  "stats": {
-  "count": 22,
-  "high": 2,
-  "low": 20,
-  "pos": 1,
-  "neg": 1,
-  "sources": 7,
+  "count": 18,
+  "high": 1,
+  "low": 17,
+  "pos": 0,
+  "neg": 0,
+  "sources": 6,
   "official": 12,
   "officialImpact": 0
  },
  "items": [
-  {
-   "title": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
-   "source": "TechCrunch",
-   "tier": "trade",
-   "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-   "time": "2026-11-14 02:40",
-   "ageH": 41.5,
-   "impact": -1.8,
-   "confidence": 0.7,
-   "tags": [
-    "监管",
-    "官方"
-   ],
-   "sources": [
-    "TechCrunch"
-   ],
-   "multiSource": false,
-   "official": true,
-   "direction": "neg",
-   "status": "high"
-  },
   {
    "title": "NVIDIA Announces New Planned Investments in Korean Startups at the MSIT-NVIDIA AI Startup Partnership Forum",
    "source": "NVIDIA Blog",
    "tier": "vendor",
    "url": "https://blogs.nvidia.com/blog/korean-startup-investments-msit/",
    "time": "2026-11-09 16:00",
-   "ageH": 148.2,
-   "impact": 0.63,
+   "ageH": 172.2,
+   "impact": 0.4,
    "confidence": 0.72,
    "tags": [
     "官方"
@@ -50,7 +29,7 @@
    ],
    "multiSource": false,
    "official": true,
-   "direction": "pos",
+   "direction": "neu",
    "status": "high"
   }
  ],
@@ -68,17 +47,6 @@
    ]
   },
   {
-   "title": "From Chips to Skills, NVIDIA and Korea Expand Sovereign AI Collaboration",
-   "source": "NVIDIA Blog",
-   "url": "https://blogs.nvidia.com/blog/korea-sovereign-ai-collaboration/",
-   "time": "2026-11-09 13:00",
-   "impact": 0.43,
-   "confidence": 0.48,
-   "tags": [
-    "官方"
-   ]
-  },
-  {
    "title": "Nvidia scandal draws in Commerce Secretary Lutnick, who reportedly agrees to testify about China chip sales",
    "source": "CNBC Tech",
    "url": "https://www.cnbc.com/2026/11/13/nvidia-scandal-lutnick-chip-sales.html",
@@ -91,21 +59,25 @@
    ]
   },
   {
-   "title": "The OpenAI board member who fired Sam Altman says we still can’t trust AI CEOs",
+   "title": "Congress wants to tighten export rules on AI chips after Nvidia spy scandal",
    "source": "The Verge",
-   "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
-   "time": "2026-11-14 23:00",
-   "impact": -0.3,
-   "confidence": 0.8,
-   "tags": []
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
+   "time": "2026-11-16 03:15",
+   "impact": -0.31,
+   "confidence": 0.88,
+   "tags": [
+    "订单",
+    "监管",
+    "官方"
+   ]
   },
   {
-   "title": "Why Singapore keeps turning up in the fight over Nvidia chips and China",
-   "source": "CNBC Tech",
-   "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-alice-spy-megaspeed-.html",
-   "time": "2026-11-13 15:15",
-   "impact": -0.18,
-   "confidence": 0.88,
+   "title": "From Chips to Skills, NVIDIA and Korea Expand Sovereign AI Collaboration",
+   "source": "NVIDIA Blog",
+   "url": "https://blogs.nvidia.com/blog/korea-sovereign-ai-collaboration/",
+   "time": "2026-11-09 13:00",
+   "impact": 0.27,
+   "confidence": 0.48,
    "tags": [
     "官方"
    ]
@@ -115,33 +87,21 @@
    "source": "CNBC Tech",
    "url": "https://www.cnbc.com/2026/11/13/nvidia-without-jensen-huang-what-lies-ahead-for-asian-chipmakers-.html",
    "time": "2026-11-13 15:29",
-   "impact": 0.17,
+   "impact": 0.12,
    "confidence": 0.88,
    "tags": [
     "官方"
    ]
   },
   {
-   "title": "Data centers lose at ballot box",
-   "source": "Light Reading",
-   "url": "https://www.lightreading.com/data-centers/data-centers-lose-at-ballot-box",
-   "time": "2026-11-05 22:16",
-   "impact": -0.08,
-   "confidence": 0.62,
+   "title": "Why Singapore keeps turning up in the fight over Nvidia chips and China",
+   "source": "CNBC Tech",
+   "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-alice-spy-megaspeed-.html",
+   "time": "2026-11-13 15:15",
+   "impact": -0.12,
+   "confidence": 0.88,
    "tags": [
-    "监管"
-   ]
-  },
-  {
-   "title": "Where supercomputing meets agentic AI: What’s new in Google Cloud HPC and AI at SC26",
-   "source": "Google Cloud Blog",
-   "url": "https://cloud.google.com/blog/topics/hpc/whats-new-in-hpc-and-ai-at-sc26/",
-   "time": "2026-11-14 01:00",
-   "impact": -0.01,
-   "confidence": 0.3,
-   "tags": [
-    "价格",
-    "监管"
+    "官方"
    ]
   },
   {
@@ -156,10 +116,30 @@
    ]
   },
   {
-   "title": "Lutnick faces questions over Nvidia spy scandal. His sons' firm has deep ties to the chipmaker",
+   "title": "Lutnick faces questions over Nvidia spy scandal. His sons' firm has ties to the chipmaker",
    "source": "CNBC Tech",
    "url": "https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html",
-   "time": "2026-11-14 07:42",
+   "time": "2026-11-16 03:58",
+   "impact": 0.0,
+   "confidence": 0.88,
+   "tags": [
+    "官方"
+   ]
+  },
+  {
+   "title": "OpenAI launches ChatGPT Wallet, allowing its 'dots' AI agents to make purchases for users",
+   "source": "CNBC Tech",
+   "url": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html",
+   "time": "2026-11-14 02:56",
+   "impact": 0.0,
+   "confidence": 0.8,
+   "tags": []
+  },
+  {
+   "title": "Jensen Huang scandal casts doubt on Nvidia’s AI dominance — how we got here",
+   "source": "CNBC Tech",
+   "url": "https://www.cnbc.com/2026/11/13/jensen-huang-scandal-casts-doubt-on-nvidias-ai-dominance-how-we-got-here.html",
+   "time": "2026-11-13 22:01",
    "impact": 0.0,
    "confidence": 0.88,
    "tags": [
@@ -174,7 +154,7 @@
    "date": "2026-11-13",
    "url": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026073564/vrt-20261113.htm",
    "title": "8-K",
-   "age": 2,
+   "age": 3,
    "items": [],
    "labels": [],
    "signal": "",
@@ -186,7 +166,7 @@
    "date": "2026-11-13",
    "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000801/tsm-fsx20261113x6k.htm",
    "title": "6-K",
-   "age": 2,
+   "age": 3,
    "items": [],
    "labels": [],
    "signal": "",
@@ -198,7 +178,7 @@
    "date": "2026-11-12",
    "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000800/a20261112statementregardin.htm",
    "title": "6-K",
-   "age": 3,
+   "age": 4,
    "items": [],
    "labels": [],
    "signal": "",
@@ -210,7 +190,7 @@
    "date": "2026-11-12",
    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm",
    "title": "8-K",
-   "age": 3,
+   "age": 4,
    "items": [],
    "labels": [],
    "signal": "",
@@ -222,7 +202,7 @@
    "date": "2026-11-12",
    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526458525/d177728d8k.htm",
    "title": "8-K",
-   "age": 3,
+   "age": 4,
    "items": [],
    "labels": [],
    "signal": "",
@@ -234,7 +214,7 @@
    "date": "2026-11-12",
    "url": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000026/mrvl-20261111.htm",
    "title": "8-K",
-   "age": 3,
+   "age": 4,
    "items": [],
    "labels": [],
    "signal": "",
@@ -246,7 +226,7 @@
    "date": "2026-11-10",
    "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000797/tsm-boardx202611xx.htm",
    "title": "6-K",
-   "age": 5,
+   "age": 6,
    "items": [],
    "labels": [],
    "signal": "",
@@ -258,7 +238,7 @@
    "date": "2026-11-10",
    "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000796/tsm-revenue20261110.htm",
    "title": "6-K",
-   "age": 5,
+   "age": 6,
    "items": [],
    "labels": [],
    "signal": "",
@@ -270,7 +250,7 @@
    "date": "2026-11-05",
    "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526448357/d177209d8k.htm",
    "title": "8-K",
-   "age": 10,
+   "age": 11,
    "items": [],
    "labels": [],
    "signal": "",
@@ -282,7 +262,7 @@
    "date": "2026-11-05",
    "url": "https://www.sec.gov/Archives/edgar/data/723125/000110465926123389/tm2629062d1_8k.htm",
    "title": "FORM 8-K",
-   "age": 10,
+   "age": 11,
    "items": [],
    "labels": [],
    "signal": "",
@@ -294,7 +274,7 @@
    "date": "2026-11-05",
    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526450074/d166273d8k.htm",
    "title": "8-K",
-   "age": 10,
+   "age": 11,
    "items": [],
    "labels": [],
    "signal": "",
@@ -306,7 +286,7 @@
    "date": "2026-11-05",
    "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526449835/d174184d8k.htm",
    "title": "8-K",
-   "age": 10,
+   "age": 11,
    "items": [],
    "labels": [],
    "signal": "",
