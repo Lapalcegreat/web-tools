@@ -1,6 +1,6 @@
 {
- "updatedAt": "2026-11-17 14:12",
- "score": 58.4,
+ "updatedAt": "2026-11-17 20:12",
+ "score": 58.1,
  "days": [
   {
    "date": "2026-11-17",
@@ -18,6 +18,42 @@
      "tags": [],
      "categories": [
       "other"
+     ]
+    },
+    {
+     "title": "Nvidia warns chip buyers of legal risks tied to China AI access, sources tell CNBC",
+     "titleZh": "消息人士告诉CNBC，英伟达警告芯片买家，使用中国人工智能存在法律风险",
+     "source": "CNBC Tech",
+     "url": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
+     "time": "2026-11-17 15:07",
+     "impact": -0.52,
+     "confidence": 0.88,
+     "tier": "major",
+     "direction": "neg",
+     "tags": [
+      "监管",
+      "官方"
+     ],
+     "categories": [
+      "chip",
+      "policy"
+     ]
+    },
+    {
+     "title": "Data center policy dominated the midterms. The 'Virginia of Europe' is the latest battleground",
+     "titleZh": "数据中心政策成为中期选举的主导话题。“欧洲的弗吉尼亚州”是最新战场",
+     "source": "CNBC Tech",
+     "url": "https://www.cnbc.com/2026/11/17/spain-data-center-decree-election.html",
+     "time": "2026-11-17 18:25",
+     "impact": 0.43,
+     "confidence": 0.8,
+     "tier": "major",
+     "direction": "pos",
+     "tags": [
+      "价格"
+     ],
+     "categories": [
+      "capex"
      ]
     },
     {
@@ -117,42 +153,6 @@
      ]
     },
     {
-     "title": "Trump’s accounts traded up to $97.5 million in Nvidia as Huang gained White House access",
-     "titleZh": "在黄仁勋获得白宫准入后，特朗普的账户在英伟达的交易额高达9750万美元",
-     "source": "CNBC AI",
-     "url": "https://www.cnbc.com/2026/11/16/trump-nvidia-stock-trades-jensen-huang.html",
-     "time": "2026-11-17 06:37",
-     "impact": 0.0,
-     "confidence": 0.88,
-     "tier": "major",
-     "direction": "neu",
-     "tags": [
-      "官方"
-     ],
-     "categories": [
-      "chip"
-     ]
-    },
-    {
-     "title": "Nvidia fallout: Commerce targets loophole for China's data center use",
-     "titleZh": "Nvidia事件余波：美国商务部瞄准中国数据中心使用的漏洞",
-     "source": "CNBC AI",
-     "url": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
-     "time": "2026-11-17 05:51",
-     "impact": 0.0,
-     "confidence": 0.88,
-     "tier": "major",
-     "direction": "neu",
-     "tags": [
-      "官方"
-     ],
-     "categories": [
-      "capex",
-      "chip",
-      "policy"
-     ]
-    },
-    {
      "title": "NVIDIA Announces Rubin HPC — A New GPU to Accelerate Agents for Science, Engineering and Analytics",
      "titleZh": "NVIDIA发布Rubin HPC——一款加速科学、工程和分析领域智能体的新型GPU",
      "source": "NVIDIA Blog",
@@ -167,6 +167,21 @@
      ],
      "categories": [
       "chip"
+     ]
+    },
+    {
+     "title": "Vodafone is sold on AI-RAN but not yet on need for GPUs",
+     "titleZh": "沃达丰已在销售 AI-RAN，但尚未对 GPU 产生需求",
+     "source": "Light Reading",
+     "url": "https://www.lightreading.com/5g/vodafone-is-sold-on-ai-ran-but-not-yet-on-need-for-gpus",
+     "time": "2026-11-17 16:30",
+     "impact": 0.0,
+     "confidence": 0.62,
+     "tier": "trade",
+     "direction": "neu",
+     "tags": [],
+     "categories": [
+      "other"
      ]
     },
     {
@@ -185,40 +200,31 @@
      "categories": [
       "chip"
      ]
-    },
-    {
-     "title": "Trump says ex-Nvidia CEO Jensen Huang’s affair with an alleged Chinese spy did not threaten national security",
-     "titleZh": "特朗普表示，英伟达前首席执行官黄仁勋与一名疑似中国间谍的婚外情并未危及国家安全。",
-     "source": "TechCrunch",
-     "url": "https://techcrunch.com/2026/11/16/trump-says-ex-nvidia-ceo-jensen-huangs-affair-with-an-alleged-chinese-spy-did-not-threaten-national-security/",
-     "time": "2026-11-17 03:12",
-     "impact": 0.0,
-     "confidence": 0.6,
-     "tier": "trade",
-     "direction": "neu",
-     "tags": [
-      "官方"
-     ],
-     "categories": [
-      "chip"
-     ]
     }
    ],
    "stats": {
     "count": 12,
-    "pos": 1,
-    "neg": 0,
-    "avgConf": 0.78,
-    "netImpact": 1.26
+    "pos": 2,
+    "neg": 1,
+    "avgConf": 0.77,
+    "netImpact": 1.17
    },
    "categories": {
     "other": {
-     "count": 4,
+     "count": 5,
      "impact": 1.6
+    },
+    "chip": {
+     "count": 3,
+     "impact": -0.52
+    },
+    "policy": {
+     "count": 1,
+     "impact": -0.52
     },
     "capex": {
      "count": 3,
-     "impact": -0.37
+     "impact": 0.06
     },
     "power": {
      "count": 2,
@@ -227,18 +233,10 @@
     "model": {
      "count": 1,
      "impact": 0.03
-    },
-    "chip": {
-     "count": 5,
-     "impact": 0.0
-    },
-    "policy": {
-     "count": 1,
-     "impact": 0.0
     }
    },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，60.9分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 60.9). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，60.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 60.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
   },
   {
    "date": "2026-11-16",
@@ -272,8 +270,8 @@
      "impact": 0.0
     }
    },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，60.9分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 60.9). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，60.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 60.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
   },
   {
    "date": "2026-11-15",
@@ -309,8 +307,8 @@
      "impact": 0.0
     }
    },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，60.9分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 60.9). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，60.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 60.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
   },
   {
    "date": "2026-11-13",
@@ -346,8 +344,8 @@
      "impact": 0.0
     }
    },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，60.9分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 60.9). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，60.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 60.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
   },
   {
    "date": "2026-11-09",
@@ -383,8 +381,8 @@
      "impact": 0.4
     }
    },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，60.9分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 60.9). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，60.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 60.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
   }
  ],
  "latest": {
@@ -403,6 +401,42 @@
     "tags": [],
     "categories": [
      "other"
+    ]
+   },
+   {
+    "title": "Nvidia warns chip buyers of legal risks tied to China AI access, sources tell CNBC",
+    "titleZh": "消息人士告诉CNBC，英伟达警告芯片买家，使用中国人工智能存在法律风险",
+    "source": "CNBC Tech",
+    "url": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
+    "time": "2026-11-17 15:07",
+    "impact": -0.52,
+    "confidence": 0.88,
+    "tier": "major",
+    "direction": "neg",
+    "tags": [
+     "监管",
+     "官方"
+    ],
+    "categories": [
+     "chip",
+     "policy"
+    ]
+   },
+   {
+    "title": "Data center policy dominated the midterms. The 'Virginia of Europe' is the latest battleground",
+    "titleZh": "数据中心政策成为中期选举的主导话题。“欧洲的弗吉尼亚州”是最新战场",
+    "source": "CNBC Tech",
+    "url": "https://www.cnbc.com/2026/11/17/spain-data-center-decree-election.html",
+    "time": "2026-11-17 18:25",
+    "impact": 0.43,
+    "confidence": 0.8,
+    "tier": "major",
+    "direction": "pos",
+    "tags": [
+     "价格"
+    ],
+    "categories": [
+     "capex"
     ]
    },
    {
@@ -502,42 +536,6 @@
     ]
    },
    {
-    "title": "Trump’s accounts traded up to $97.5 million in Nvidia as Huang gained White House access",
-    "titleZh": "在黄仁勋获得白宫准入后，特朗普的账户在英伟达的交易额高达9750万美元",
-    "source": "CNBC AI",
-    "url": "https://www.cnbc.com/2026/11/16/trump-nvidia-stock-trades-jensen-huang.html",
-    "time": "2026-11-17 06:37",
-    "impact": 0.0,
-    "confidence": 0.88,
-    "tier": "major",
-    "direction": "neu",
-    "tags": [
-     "官方"
-    ],
-    "categories": [
-     "chip"
-    ]
-   },
-   {
-    "title": "Nvidia fallout: Commerce targets loophole for China's data center use",
-    "titleZh": "Nvidia事件余波：美国商务部瞄准中国数据中心使用的漏洞",
-    "source": "CNBC AI",
-    "url": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
-    "time": "2026-11-17 05:51",
-    "impact": 0.0,
-    "confidence": 0.88,
-    "tier": "major",
-    "direction": "neu",
-    "tags": [
-     "官方"
-    ],
-    "categories": [
-     "capex",
-     "chip",
-     "policy"
-    ]
-   },
-   {
     "title": "NVIDIA Announces Rubin HPC — A New GPU to Accelerate Agents for Science, Engineering and Analytics",
     "titleZh": "NVIDIA发布Rubin HPC——一款加速科学、工程和分析领域智能体的新型GPU",
     "source": "NVIDIA Blog",
@@ -552,6 +550,21 @@
     ],
     "categories": [
      "chip"
+    ]
+   },
+   {
+    "title": "Vodafone is sold on AI-RAN but not yet on need for GPUs",
+    "titleZh": "沃达丰已在销售 AI-RAN，但尚未对 GPU 产生需求",
+    "source": "Light Reading",
+    "url": "https://www.lightreading.com/5g/vodafone-is-sold-on-ai-ran-but-not-yet-on-need-for-gpus",
+    "time": "2026-11-17 16:30",
+    "impact": 0.0,
+    "confidence": 0.62,
+    "tier": "trade",
+    "direction": "neu",
+    "tags": [],
+    "categories": [
+     "other"
     ]
    },
    {
@@ -570,40 +583,31 @@
     "categories": [
      "chip"
     ]
-   },
-   {
-    "title": "Trump says ex-Nvidia CEO Jensen Huang’s affair with an alleged Chinese spy did not threaten national security",
-    "titleZh": "特朗普表示，英伟达前首席执行官黄仁勋与一名疑似中国间谍的婚外情并未危及国家安全。",
-    "source": "TechCrunch",
-    "url": "https://techcrunch.com/2026/11/16/trump-says-ex-nvidia-ceo-jensen-huangs-affair-with-an-alleged-chinese-spy-did-not-threaten-national-security/",
-    "time": "2026-11-17 03:12",
-    "impact": 0.0,
-    "confidence": 0.6,
-    "tier": "trade",
-    "direction": "neu",
-    "tags": [
-     "官方"
-    ],
-    "categories": [
-     "chip"
-    ]
    }
   ],
   "stats": {
    "count": 12,
-   "pos": 1,
-   "neg": 0,
-   "avgConf": 0.78,
-   "netImpact": 1.26
+   "pos": 2,
+   "neg": 1,
+   "avgConf": 0.77,
+   "netImpact": 1.17
   },
   "categories": {
    "other": {
-    "count": 4,
+    "count": 5,
     "impact": 1.6
+   },
+   "chip": {
+    "count": 3,
+    "impact": -0.52
+   },
+   "policy": {
+    "count": 1,
+    "impact": -0.52
    },
    "capex": {
     "count": 3,
-    "impact": -0.37
+    "impact": 0.06
    },
    "power": {
     "count": 2,
@@ -612,17 +616,9 @@
    "model": {
     "count": 1,
     "impact": 0.03
-   },
-   "chip": {
-    "count": 5,
-    "impact": 0.0
-   },
-   "policy": {
-    "count": 1,
-    "impact": 0.0
    }
   },
-  "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，60.9分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-  "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 60.9). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+  "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，60.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+  "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 60.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
  }
 }

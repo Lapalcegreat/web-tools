@@ -1,13 +1,13 @@
 {
- "updatedAt": "2026-11-17 14:12",
- "score": 58.4,
+ "updatedAt": "2026-11-17 20:12",
+ "score": 58.1,
  "stats": {
-  "count": 22,
-  "high": 2,
+  "count": 24,
+  "high": 4,
   "low": 20,
-  "pos": 1,
-  "neg": 0,
-  "sources": 6,
+  "pos": 2,
+  "neg": 1,
+  "sources": 7,
   "official": 12,
   "officialImpact": 0
  },
@@ -18,10 +18,50 @@
    "tier": "major",
    "url": "https://www.cnbc.com/2026/11/16/openai-independent-ai-safety-evaluators.html",
    "time": "2026-11-17 05:54",
-   "ageH": 8.3,
+   "ageH": 14.3,
    "impact": 2.0,
    "confidence": 0.8,
    "tags": [],
+   "sources": [
+    "CNBC Tech"
+   ],
+   "multiSource": false,
+   "direction": "pos",
+   "status": "high"
+  },
+  {
+   "title": "Nvidia warns chip buyers of legal risks tied to China AI access, sources tell CNBC",
+   "source": "CNBC Tech",
+   "tier": "major",
+   "url": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
+   "time": "2026-11-17 15:07",
+   "ageH": 5.0,
+   "impact": -0.52,
+   "confidence": 0.88,
+   "tags": [
+    "监管",
+    "官方"
+   ],
+   "sources": [
+    "CNBC Tech"
+   ],
+   "multiSource": false,
+   "official": true,
+   "direction": "neg",
+   "status": "high"
+  },
+  {
+   "title": "Data center policy dominated the midterms. The 'Virginia of Europe' is the latest battleground",
+   "source": "CNBC Tech",
+   "tier": "major",
+   "url": "https://www.cnbc.com/2026/11/17/spain-data-center-decree-election.html",
+   "time": "2026-11-17 18:25",
+   "ageH": 1.7,
+   "impact": 0.43,
+   "confidence": 0.8,
+   "tags": [
+    "价格"
+   ],
    "sources": [
     "CNBC Tech"
    ],
@@ -35,7 +75,7 @@
    "tier": "vendor",
    "url": "https://blogs.nvidia.com/blog/korean-startup-investments-msit/",
    "time": "2026-11-09 16:00",
-   "ageH": 190.2,
+   "ageH": 196.2,
    "impact": 0.4,
    "confidence": 0.72,
    "tags": [
