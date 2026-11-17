@@ -1,36 +1,127 @@
 {
- "updatedAt": "2026-11-16 20:12",
- "score": 51.4,
+ "updatedAt": "2026-11-17 14:12",
+ "score": 58.4,
  "days": [
   {
-   "date": "2026-11-16",
+   "date": "2026-11-17",
    "items": [
     {
-     "title": "Congress wants to tighten export rules on AI chips after Nvidia spy scandal",
-     "titleZh": "在英伟达间谍丑闻之后，国会希望收紧人工智能芯片的出口规定",
-     "source": "The Verge",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
-     "time": "2026-11-16 03:15",
-     "impact": -0.31,
-     "confidence": 0.88,
+     "title": "OpenAI inks agreements with four independent evaluators to boost company's safety work",
+     "titleZh": "OpenAI与四家独立评估机构签署协议，以加强公司的安全工作",
+     "source": "CNBC Tech",
+     "url": "https://www.cnbc.com/2026/11/16/openai-independent-ai-safety-evaluators.html",
+     "time": "2026-11-17 05:54",
+     "impact": 2.0,
+     "confidence": 0.8,
      "tier": "major",
-     "direction": "neu",
-     "tags": [
-      "订单",
-      "监管",
-      "官方"
-     ],
+     "direction": "pos",
+     "tags": [],
      "categories": [
-      "chip",
-      "policy"
+      "other"
      ]
     },
     {
-     "title": "Lutnick faces questions over Nvidia spy scandal. His sons' firm has ties to the chipmaker",
-     "titleZh": "卢特尼克因英伟达间谍丑闻而面临质疑。他儿子的公司与这家芯片制造商有联系",
-     "source": "CNBC Tech",
-     "url": "https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html",
-     "time": "2026-11-16 03:58",
+     "title": "OpenAI releases a new image classifier and ChatGPT warnings to combat CSAM",
+     "titleZh": "OpenAI发布新的图像分类器和ChatGPT警告，以打击CSAM",
+     "source": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam/",
+     "time": "2026-11-17 01:00",
+     "impact": -0.29,
+     "confidence": 0.62,
+     "tier": "trade",
+     "direction": "neu",
+     "tags": [
+      "监管"
+     ],
+     "categories": [
+      "other"
+     ]
+    },
+    {
+     "title": "US data centers now burn more electricity than a midsized country",
+     "titleZh": "美国的数据中心现在消耗的电力比一个中等规模的国家还要多",
+     "source": "The Verge",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1034668/data-centers-electricity-climate-pollution-study-harvard",
+     "time": "2026-11-17 04:27",
+     "impact": -0.22,
+     "confidence": 0.8,
+     "tier": "major",
+     "direction": "neu",
+     "tags": [],
+     "categories": [
+      "capex",
+      "power"
+     ]
+    },
+    {
+     "title": "California sues OpenAI over rogue AI hacking incidents",
+     "titleZh": "加州就恶性人工智能黑客事件起诉OpenAI",
+     "source": "The Verge",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit",
+     "time": "2026-11-17 04:46",
+     "impact": -0.18,
+     "confidence": 0.9,
+     "tier": "major",
+     "direction": "neu",
+     "tags": [],
+     "categories": [
+      "other"
+     ]
+    },
+    {
+     "title": "Big Nuclear isn’t worried about the Democrats stopping data centers",
+     "titleZh": "大型核电公司并不担心民主党会阻止数据中心的发展",
+     "source": "The Verge",
+     "url": "https://www.theverge.com/science/1034694/nuclear-energy-constellation-earnings-data-centers-democrats",
+     "time": "2026-11-17 04:29",
+     "impact": -0.15,
+     "confidence": 0.92,
+     "tier": "major",
+     "direction": "neu",
+     "tags": [],
+     "categories": [
+      "capex",
+      "power"
+     ]
+    },
+    {
+     "title": "OpenAI will embed safety researchers to investigate AI subversion",
+     "titleZh": "OpenAI 将聘请安全研究人员来调查人工智能颠覆行为",
+     "source": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion/",
+     "time": "2026-11-17 01:02",
+     "impact": 0.07,
+     "confidence": 0.62,
+     "tier": "trade",
+     "direction": "neu",
+     "tags": [
+      "监管"
+     ],
+     "categories": [
+      "other"
+     ]
+    },
+    {
+     "title": "California sues OpenAI over Hugging Face, other AI model loss of control",
+     "titleZh": "加州起诉OpenAI，指控其对Hugging Face和其他人工智能模型失去控制",
+     "source": "CNBC AI",
+     "url": "https://www.cnbc.com/2026/11/16/openai-california-bonta-ai-lawsuit.html",
+     "time": "2026-11-17 06:11",
+     "impact": 0.03,
+     "confidence": 0.8,
+     "tier": "major",
+     "direction": "neu",
+     "tags": [],
+     "categories": [
+      "model"
+     ]
+    },
+    {
+     "title": "Trump’s accounts traded up to $97.5 million in Nvidia as Huang gained White House access",
+     "titleZh": "在黄仁勋获得白宫准入后，特朗普的账户在英伟达的交易额高达9750万美元",
+     "source": "CNBC AI",
+     "url": "https://www.cnbc.com/2026/11/16/trump-nvidia-stock-trades-jensen-huang.html",
+     "time": "2026-11-17 06:37",
      "impact": 0.0,
      "confidence": 0.88,
      "tier": "major",
@@ -43,11 +134,11 @@
      ]
     },
     {
-     "title": "Senator slams Commerce Secretary for flow of Nvidia AI chips to China",
-     "titleZh": "参议员抨击商务部长，称其纵容英伟达人工智能芯片流入中国",
-     "source": "The Verge",
-     "url": "https://www.theverge.com/policy/1034047/nvidia-us-commerce-department-cantwell-lutnick",
-     "time": "2026-11-16 19:00",
+     "title": "Nvidia fallout: Commerce targets loophole for China's data center use",
+     "titleZh": "Nvidia事件余波：美国商务部瞄准中国数据中心使用的漏洞",
+     "source": "CNBC AI",
+     "url": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
+     "time": "2026-11-17 05:51",
      "impact": 0.0,
      "confidence": 0.88,
      "tier": "major",
@@ -56,30 +147,133 @@
       "官方"
      ],
      "categories": [
+      "capex",
       "chip",
       "policy"
+     ]
+    },
+    {
+     "title": "NVIDIA Announces Rubin HPC — A New GPU to Accelerate Agents for Science, Engineering and Analytics",
+     "titleZh": "NVIDIA发布Rubin HPC——一款加速科学、工程和分析领域智能体的新型GPU",
+     "source": "NVIDIA Blog",
+     "url": "https://blogs.nvidia.com/blog/rubin-hpc/",
+     "time": "2026-11-17 00:00",
+     "impact": 0.0,
+     "confidence": 0.84,
+     "tier": "vendor",
+     "direction": "neu",
+     "tags": [
+      "官方"
+     ],
+     "categories": [
+      "chip"
+     ]
+    },
+    {
+     "title": "Jim Cramer says Nvidia’s leadership shake-up won’t derail the AI trade",
+     "titleZh": "吉姆·克莱默表示，英伟达的高层人事变动不会影响人工智能板块的走势",
+     "source": "CNBC Tech",
+     "url": "https://www.cnbc.com/2026/11/16/nvidia-cramer-ai-trade-leadership-change.html",
+     "time": "2026-11-17 07:23",
+     "impact": 0.0,
+     "confidence": 0.66,
+     "tier": "major",
+     "direction": "neu",
+     "tags": [
+      "官方"
+     ],
+     "categories": [
+      "chip"
+     ]
+    },
+    {
+     "title": "Trump says ex-Nvidia CEO Jensen Huang’s affair with an alleged Chinese spy did not threaten national security",
+     "titleZh": "特朗普表示，英伟达前首席执行官黄仁勋与一名疑似中国间谍的婚外情并未危及国家安全。",
+     "source": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/16/trump-says-ex-nvidia-ceo-jensen-huangs-affair-with-an-alleged-chinese-spy-did-not-threaten-national-security/",
+     "time": "2026-11-17 03:12",
+     "impact": 0.0,
+     "confidence": 0.6,
+     "tier": "trade",
+     "direction": "neu",
+     "tags": [
+      "官方"
+     ],
+     "categories": [
+      "chip"
      ]
     }
    ],
    "stats": {
-    "count": 3,
-    "pos": 0,
+    "count": 12,
+    "pos": 1,
     "neg": 0,
-    "avgConf": 0.88,
-    "netImpact": -0.31
+    "avgConf": 0.78,
+    "netImpact": 1.26
    },
    "categories": {
-    "chip": {
+    "other": {
+     "count": 4,
+     "impact": 1.6
+    },
+    "capex": {
      "count": 3,
-     "impact": -0.31
+     "impact": -0.37
+    },
+    "power": {
+     "count": 2,
+     "impact": -0.37
+    },
+    "model": {
+     "count": 1,
+     "impact": 0.03
+    },
+    "chip": {
+     "count": 5,
+     "impact": 0.0
     },
     "policy": {
-     "count": 2,
-     "impact": -0.31
+     "count": 1,
+     "impact": 0.0
     }
    },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，56.8分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 56.8). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，60.9分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 60.9). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+  },
+  {
+   "date": "2026-11-16",
+   "items": [
+    {
+     "title": "SKT powers up AI data centers with Hyosung",
+     "titleZh": "SKT与孝盛合作，为人工智能数据中心提供动力",
+     "source": "Light Reading",
+     "url": "https://www.lightreading.com/data-centers/skt-hyosung-heavy-industries-team-up-for-stable-aidc-power-supply",
+     "time": "2026-11-16 19:41",
+     "impact": 0.0,
+     "confidence": 0.62,
+     "tier": "trade",
+     "direction": "neu",
+     "tags": [],
+     "categories": [
+      "capex"
+     ]
+    }
+   ],
+   "stats": {
+    "count": 1,
+    "pos": 0,
+    "neg": 0,
+    "avgConf": 0.62,
+    "netImpact": 0.0
+   },
+   "categories": {
+    "capex": {
+     "count": 1,
+     "impact": 0.0
+    }
+   },
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，60.9分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 60.9). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
   },
   {
    "date": "2026-11-15",
@@ -115,181 +309,12 @@
      "impact": 0.0
     }
    },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，56.8分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 56.8). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
-  },
-  {
-   "date": "2026-11-14",
-   "items": [
-    {
-     "title": "OpenAI launches ChatGPT Wallet, allowing its 'dots' AI agents to make purchases for users",
-     "titleZh": "OpenAI推出ChatGPT钱包，允许其“dots”AI代理为用户购物",
-     "source": "CNBC Tech",
-     "url": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html",
-     "time": "2026-11-14 02:56",
-     "impact": 0.0,
-     "confidence": 0.8,
-     "tier": "major",
-     "direction": "neu",
-     "tags": [],
-     "categories": [
-      "other"
-     ]
-    },
-    {
-     "title": "This young startup wants to power floating data centers with the ocean’s heat, and investors are already on board",
-     "titleZh": "这家年轻的初创公司希望利用海洋的热能为浮动数据中心供电，投资者已经纷纷加入。",
-     "source": "TechCrunch",
-     "url": "https://techcrunch.com/2026/11/13/this-young-startup-wants-to-power-floating-data-centers-with-the-oceans-heat-and-investors-are-already-on-board/",
-     "time": "2026-11-14 04:07",
-     "impact": 0.0,
-     "confidence": 0.62,
-     "tier": "trade",
-     "direction": "neu",
-     "tags": [],
-     "categories": [
-      "capex",
-      "power"
-     ]
-    },
-    {
-     "title": "How Nvidia turmoil and a Democratic Congress could reshape the AI trade, according to ETF experts",
-     "titleZh": "ETF专家认为，英伟达的动荡和民主党掌控的国会可能会重塑人工智能行业",
-     "source": "CNBC AI",
-     "url": "https://www.cnbc.com/2026/11/14/nvidia-ai-trade-data-centers-congress.html",
-     "time": "2026-11-14 23:50",
-     "impact": 0.0,
-     "confidence": 0.66,
-     "tier": "major",
-     "direction": "neu",
-     "tags": [
-      "订单",
-      "官方"
-     ],
-     "categories": [
-      "chip"
-     ]
-    }
-   ],
-   "stats": {
-    "count": 3,
-    "pos": 0,
-    "neg": 0,
-    "avgConf": 0.69,
-    "netImpact": 0.0
-   },
-   "categories": {
-    "other": {
-     "count": 1,
-     "impact": 0.0
-    },
-    "capex": {
-     "count": 1,
-     "impact": 0.0
-    },
-    "power": {
-     "count": 1,
-     "impact": 0.0
-    },
-    "chip": {
-     "count": 1,
-     "impact": 0.0
-    }
-   },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，56.8分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 56.8). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，60.9分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 60.9). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
   },
   {
    "date": "2026-11-13",
    "items": [
-    {
-     "title": "Nvidia scandal draws in Commerce Secretary Lutnick, who reportedly agrees to testify about China chip sales",
-     "titleZh": "Nvidia丑闻牵涉到商务部长卢特尼克，据报道，他同意就向中国销售芯片一事作证",
-     "source": "CNBC Tech",
-     "url": "https://www.cnbc.com/2026/11/13/nvidia-scandal-lutnick-chip-sales.html",
-     "time": "2026-11-13 23:49",
-     "impact": -0.34,
-     "confidence": 0.66,
-     "tier": "major",
-     "direction": "neu",
-     "tags": [
-      "监管",
-      "官方"
-     ],
-     "categories": [
-      "chip",
-      "policy"
-     ]
-    },
-    {
-     "title": "Nvidia without Jensen Huang. What lies ahead for Asian chipmakers?",
-     "titleZh": "没有黄仁勋的英伟达。亚洲芯片制造商的前景如何？",
-     "source": "CNBC Tech",
-     "url": "https://www.cnbc.com/2026/11/13/nvidia-without-jensen-huang-what-lies-ahead-for-asian-chipmakers-.html",
-     "time": "2026-11-13 15:29",
-     "impact": 0.12,
-     "confidence": 0.88,
-     "tier": "major",
-     "direction": "neu",
-     "tags": [
-      "官方"
-     ],
-     "categories": [
-      "chip"
-     ]
-    },
-    {
-     "title": "Why Singapore keeps turning up in the fight over Nvidia chips and China",
-     "titleZh": "为什么新加坡频频出现在围绕英伟达芯片和中国的争端中",
-     "source": "CNBC Tech",
-     "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-alice-spy-megaspeed-.html",
-     "time": "2026-11-13 15:15",
-     "impact": -0.12,
-     "confidence": 0.88,
-     "tier": "major",
-     "direction": "neu",
-     "tags": [
-      "官方"
-     ],
-     "categories": [
-      "chip",
-      "policy"
-     ]
-    },
-    {
-     "title": "Jensen Huang scandal casts doubt on Nvidia’s AI dominance — how we got here",
-     "titleZh": "黄仁勋丑闻令英伟达的人工智能主导地位蒙上阴影——我们是如何走到这一步的",
-     "source": "CNBC Tech",
-     "url": "https://www.cnbc.com/2026/11/13/jensen-huang-scandal-casts-doubt-on-nvidias-ai-dominance-how-we-got-here.html",
-     "time": "2026-11-13 22:01",
-     "impact": 0.0,
-     "confidence": 0.88,
-     "tier": "major",
-     "direction": "neu",
-     "tags": [
-      "官方"
-     ],
-     "categories": [
-      "chip"
-     ]
-    },
-    {
-     "title": "Nvidia’s turmoil is prompting a rotation across chip stocks. Here's what we know",
-     "titleZh": "英伟达的动荡正在引发芯片股的轮动。以下是我们所了解的情况",
-     "source": "CNBC Tech",
-     "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-affairs-amd-broadcom-tsmc.html",
-     "time": "2026-11-13 16:27",
-     "impact": 0.0,
-     "confidence": 0.88,
-     "tier": "major",
-     "direction": "neu",
-     "tags": [
-      "官方"
-     ],
-     "categories": [
-      "chip"
-     ]
-    },
     {
      "title": "Jensen Huang out as Nvidia CEO as telecom makes big bets on AI",
      "titleZh": "随着电信业对人工智能下大赌注，Jensen Huang卸任英伟达首席执行官",
@@ -309,24 +334,20 @@
     }
    ],
    "stats": {
-    "count": 6,
+    "count": 1,
     "pos": 0,
     "neg": 0,
-    "avgConf": 0.8,
-    "netImpact": -0.34
+    "avgConf": 0.6,
+    "netImpact": 0.0
    },
    "categories": {
     "chip": {
-     "count": 6,
-     "impact": -0.34
-    },
-    "policy": {
-     "count": 2,
-     "impact": -0.46
+     "count": 1,
+     "impact": 0.0
     }
    },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，56.8分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 56.8). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，60.9分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 60.9). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
   },
   {
    "date": "2026-11-09",
@@ -362,39 +383,130 @@
      "impact": 0.4
     }
    },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，56.8分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 56.8). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，60.9分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 60.9). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
   }
  ],
  "latest": {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "items": [
    {
-    "title": "Congress wants to tighten export rules on AI chips after Nvidia spy scandal",
-    "titleZh": "在英伟达间谍丑闻之后，国会希望收紧人工智能芯片的出口规定",
-    "source": "The Verge",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
-    "time": "2026-11-16 03:15",
-    "impact": -0.31,
-    "confidence": 0.88,
+    "title": "OpenAI inks agreements with four independent evaluators to boost company's safety work",
+    "titleZh": "OpenAI与四家独立评估机构签署协议，以加强公司的安全工作",
+    "source": "CNBC Tech",
+    "url": "https://www.cnbc.com/2026/11/16/openai-independent-ai-safety-evaluators.html",
+    "time": "2026-11-17 05:54",
+    "impact": 2.0,
+    "confidence": 0.8,
     "tier": "major",
-    "direction": "neu",
-    "tags": [
-     "订单",
-     "监管",
-     "官方"
-    ],
+    "direction": "pos",
+    "tags": [],
     "categories": [
-     "chip",
-     "policy"
+     "other"
     ]
    },
    {
-    "title": "Lutnick faces questions over Nvidia spy scandal. His sons' firm has ties to the chipmaker",
-    "titleZh": "卢特尼克因英伟达间谍丑闻而面临质疑。他儿子的公司与这家芯片制造商有联系",
-    "source": "CNBC Tech",
-    "url": "https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html",
-    "time": "2026-11-16 03:58",
+    "title": "OpenAI releases a new image classifier and ChatGPT warnings to combat CSAM",
+    "titleZh": "OpenAI发布新的图像分类器和ChatGPT警告，以打击CSAM",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam/",
+    "time": "2026-11-17 01:00",
+    "impact": -0.29,
+    "confidence": 0.62,
+    "tier": "trade",
+    "direction": "neu",
+    "tags": [
+     "监管"
+    ],
+    "categories": [
+     "other"
+    ]
+   },
+   {
+    "title": "US data centers now burn more electricity than a midsized country",
+    "titleZh": "美国的数据中心现在消耗的电力比一个中等规模的国家还要多",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1034668/data-centers-electricity-climate-pollution-study-harvard",
+    "time": "2026-11-17 04:27",
+    "impact": -0.22,
+    "confidence": 0.8,
+    "tier": "major",
+    "direction": "neu",
+    "tags": [],
+    "categories": [
+     "capex",
+     "power"
+    ]
+   },
+   {
+    "title": "California sues OpenAI over rogue AI hacking incidents",
+    "titleZh": "加州就恶性人工智能黑客事件起诉OpenAI",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit",
+    "time": "2026-11-17 04:46",
+    "impact": -0.18,
+    "confidence": 0.9,
+    "tier": "major",
+    "direction": "neu",
+    "tags": [],
+    "categories": [
+     "other"
+    ]
+   },
+   {
+    "title": "Big Nuclear isn’t worried about the Democrats stopping data centers",
+    "titleZh": "大型核电公司并不担心民主党会阻止数据中心的发展",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/science/1034694/nuclear-energy-constellation-earnings-data-centers-democrats",
+    "time": "2026-11-17 04:29",
+    "impact": -0.15,
+    "confidence": 0.92,
+    "tier": "major",
+    "direction": "neu",
+    "tags": [],
+    "categories": [
+     "capex",
+     "power"
+    ]
+   },
+   {
+    "title": "OpenAI will embed safety researchers to investigate AI subversion",
+    "titleZh": "OpenAI 将聘请安全研究人员来调查人工智能颠覆行为",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion/",
+    "time": "2026-11-17 01:02",
+    "impact": 0.07,
+    "confidence": 0.62,
+    "tier": "trade",
+    "direction": "neu",
+    "tags": [
+     "监管"
+    ],
+    "categories": [
+     "other"
+    ]
+   },
+   {
+    "title": "California sues OpenAI over Hugging Face, other AI model loss of control",
+    "titleZh": "加州起诉OpenAI，指控其对Hugging Face和其他人工智能模型失去控制",
+    "source": "CNBC AI",
+    "url": "https://www.cnbc.com/2026/11/16/openai-california-bonta-ai-lawsuit.html",
+    "time": "2026-11-17 06:11",
+    "impact": 0.03,
+    "confidence": 0.8,
+    "tier": "major",
+    "direction": "neu",
+    "tags": [],
+    "categories": [
+     "model"
+    ]
+   },
+   {
+    "title": "Trump’s accounts traded up to $97.5 million in Nvidia as Huang gained White House access",
+    "titleZh": "在黄仁勋获得白宫准入后，特朗普的账户在英伟达的交易额高达9750万美元",
+    "source": "CNBC AI",
+    "url": "https://www.cnbc.com/2026/11/16/trump-nvidia-stock-trades-jensen-huang.html",
+    "time": "2026-11-17 06:37",
     "impact": 0.0,
     "confidence": 0.88,
     "tier": "major",
@@ -407,11 +519,11 @@
     ]
    },
    {
-    "title": "Senator slams Commerce Secretary for flow of Nvidia AI chips to China",
-    "titleZh": "参议员抨击商务部长，称其纵容英伟达人工智能芯片流入中国",
-    "source": "The Verge",
-    "url": "https://www.theverge.com/policy/1034047/nvidia-us-commerce-department-cantwell-lutnick",
-    "time": "2026-11-16 19:00",
+    "title": "Nvidia fallout: Commerce targets loophole for China's data center use",
+    "titleZh": "Nvidia事件余波：美国商务部瞄准中国数据中心使用的漏洞",
+    "source": "CNBC AI",
+    "url": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
+    "time": "2026-11-17 05:51",
     "impact": 0.0,
     "confidence": 0.88,
     "tier": "major",
@@ -420,29 +532,97 @@
      "官方"
     ],
     "categories": [
+     "capex",
      "chip",
      "policy"
+    ]
+   },
+   {
+    "title": "NVIDIA Announces Rubin HPC — A New GPU to Accelerate Agents for Science, Engineering and Analytics",
+    "titleZh": "NVIDIA发布Rubin HPC——一款加速科学、工程和分析领域智能体的新型GPU",
+    "source": "NVIDIA Blog",
+    "url": "https://blogs.nvidia.com/blog/rubin-hpc/",
+    "time": "2026-11-17 00:00",
+    "impact": 0.0,
+    "confidence": 0.84,
+    "tier": "vendor",
+    "direction": "neu",
+    "tags": [
+     "官方"
+    ],
+    "categories": [
+     "chip"
+    ]
+   },
+   {
+    "title": "Jim Cramer says Nvidia’s leadership shake-up won’t derail the AI trade",
+    "titleZh": "吉姆·克莱默表示，英伟达的高层人事变动不会影响人工智能板块的走势",
+    "source": "CNBC Tech",
+    "url": "https://www.cnbc.com/2026/11/16/nvidia-cramer-ai-trade-leadership-change.html",
+    "time": "2026-11-17 07:23",
+    "impact": 0.0,
+    "confidence": 0.66,
+    "tier": "major",
+    "direction": "neu",
+    "tags": [
+     "官方"
+    ],
+    "categories": [
+     "chip"
+    ]
+   },
+   {
+    "title": "Trump says ex-Nvidia CEO Jensen Huang’s affair with an alleged Chinese spy did not threaten national security",
+    "titleZh": "特朗普表示，英伟达前首席执行官黄仁勋与一名疑似中国间谍的婚外情并未危及国家安全。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/16/trump-says-ex-nvidia-ceo-jensen-huangs-affair-with-an-alleged-chinese-spy-did-not-threaten-national-security/",
+    "time": "2026-11-17 03:12",
+    "impact": 0.0,
+    "confidence": 0.6,
+    "tier": "trade",
+    "direction": "neu",
+    "tags": [
+     "官方"
+    ],
+    "categories": [
+     "chip"
     ]
    }
   ],
   "stats": {
-   "count": 3,
-   "pos": 0,
+   "count": 12,
+   "pos": 1,
    "neg": 0,
-   "avgConf": 0.88,
-   "netImpact": -0.31
+   "avgConf": 0.78,
+   "netImpact": 1.26
   },
   "categories": {
-   "chip": {
+   "other": {
+    "count": 4,
+    "impact": 1.6
+   },
+   "capex": {
     "count": 3,
-    "impact": -0.31
+    "impact": -0.37
+   },
+   "power": {
+    "count": 2,
+    "impact": -0.37
+   },
+   "model": {
+    "count": 1,
+    "impact": 0.03
+   },
+   "chip": {
+    "count": 5,
+    "impact": 0.0
    },
    "policy": {
-    "count": 2,
-    "impact": -0.31
+    "count": 1,
+    "impact": 0.0
    }
   },
-  "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，56.8分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-  "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 56.8). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+  "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，60.9分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+  "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 60.9). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
  }
 }
