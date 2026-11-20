@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20 19:22",
+ "updatedAt": "2026-11-20 21:32",
  "themes": [
   {
    "id": "ai",
@@ -22,7 +22,7 @@
      "peg": 0.0844167440489003,
      "drawdown": -71.5,
      "turnover": 3.41,
-     "amtRatio": 0.91,
+     "amtRatio": 1.41,
      "revYoy": 178.134819531741,
      "proYoy": 211.808043670134,
      "proQoq": 26.645946114878,
@@ -44,26 +44,26 @@
       "quality": 71.9,
       "supply": 89.6,
       "valuation": 90.8,
-      "crowd": 79.7,
-      "total": 82.9
+      "crowd": 68.9,
+      "total": 81.7
      }
     },
     {
      "code": "300502",
      "name": "新易盛",
-     "price": 165.0,
-     "chg": -1.23,
+     "price": 167.06,
+     "chg": -1.233089907818,
      "mcap": 230131650540.0,
-     "pe": 15.18,
-     "pb": 8.23,
-     "pePct": 7.76,
-     "pbPct": 48.32,
+     "pe": 15.78713814,
+     "pb": 8.2314345,
+     "pePct": 8.959999999999999,
+     "pbPct": 48.4,
      "ps": 5.72652557,
      "psPct": 20.4,
-     "peg": 0.19036815261660725,
-     "drawdown": -73.0,
-     "turnover": 7.1,
-     "amtRatio": 0.87,
+     "peg": 0.19798210295223856,
+     "drawdown": -72.6,
+     "turnover": 7.19,
+     "amtRatio": 1.89,
      "revYoy": 92.973636160318,
      "proYoy": 79.740228558985,
      "proQoq": 11.116600945351,
@@ -84,27 +84,27 @@
       "growth": 71.9,
       "quality": 58.3,
       "supply": 32.6,
-      "valuation": 84.0,
-      "crowd": 59.3,
-      "total": 63.6
+      "valuation": 83.4,
+      "crowd": 36.9,
+      "total": 61.0
      }
     },
     {
      "code": "002384",
      "name": "东山精密",
      "price": 67.6,
-     "chg": -5.72,
-     "mcap": 131508413483.19998,
-     "pe": 18.65,
-     "pb": 4.99,
-     "pePct": 28.96,
-     "pbPct": 75.92,
+     "chg": -5.718270571827,
+     "mcap": 131508413483.2,
+     "pe": 24.12319719,
+     "pb": 4.99289651,
+     "pePct": 55.2,
+     "pbPct": 76.0,
      "ps": 2.25056228,
      "psPct": 73.52,
-     "peg": 0.0561168730965065,
+     "peg": 0.07258543675030736,
      "drawdown": -75.5,
      "turnover": 7.86,
-     "amtRatio": 0.93,
+     "amtRatio": 1.63,
      "revYoy": 67.633165441457,
      "proYoy": 332.342109795156,
      "proQoq": 52.066802256515,
@@ -125,9 +125,9 @@
       "growth": 95.9,
       "quality": 50.0,
       "supply": 56.5,
-      "valuation": 66.5,
-      "crowd": 53.8,
-      "total": 67.9
+      "valuation": 53.4,
+      "crowd": 38.8,
+      "total": 63.3
      }
     },
     {
@@ -217,14 +217,14 @@
     "growth": 71.9,
     "quality": 58.3,
     "supply": 32.6,
-    "valuation": 66.5,
-    "crowd": 71.8,
-    "total": 60.3,
+    "valuation": 61.5,
+    "crowd": 68.9,
+    "total": 59.5,
     "drawdown": -72.5,
     "accel": -11.2,
-    "news": 58.2,
-    "newsDomestic": 63.7,
-    "overseas": 50.0,
+    "news": 60.9,
+    "newsDomestic": 74.0,
+    "overseas": 41.2,
     "industry": 57.6
    },
    "stage": "阶段4 杀估值",
@@ -245,92 +245,56 @@
     "capacityUtil": 85
    },
    "industry": 57.6,
-   "overseasAt": "2026-11-17 20:12（已过期）",
+   "overseasAt": "2026-11-20 20:12",
    "news": [
     {
-     "date": "2026-11-20 19:04",
-     "title": "美股芯片股，盘前大跌！",
-     "url": "http://finance.eastmoney.com/a/202611203936250568.html",
-     "media": "中国基金报"
-    },
-    {
-     "date": "2026-11-20 18:59",
-     "title": "专访格力电器CMO朱磊：AI算力增长，制冷正成为关键基础设施",
-     "url": "http://finance.eastmoney.com/a/202611203936247862.html",
-     "media": "21世纪经济报道"
-    },
-    {
-     "date": "2026-11-20 18:46",
-     "title": "主力资金｜尾盘资金出逃23股",
-     "url": "http://finance.eastmoney.com/a/202611203936238875.html",
-     "media": "数据宝"
-    },
-    {
-     "date": "2026-11-20 18:42",
-     "title": "晚报丨全球市场遭遇“黑色星期五”，Anthropic盘前跌超6%；得州候任州长称不讨厌数据中心；黄仁勋或将创办新半导体公司；黄金跌幅收窄，德银称黄金需要一个打破紧缩叙事的催化剂",
-     "url": "http://hk.eastmoney.com/a/202611203936224626.html",
-     "media": "哈富证券"
-    },
-    {
-     "date": "2026-11-20 18:35",
-     "title": "晚间公告丨11月20日这些公告有看头",
-     "url": "http://finance.eastmoney.com/a/202611203936234341.html",
-     "media": "第一财经"
-    },
-    {
-     "date": "2026-11-20 18:32",
-     "title": "PCB全球缺货预警 短缺或延续至2027年上半年 机构密集调研股出炉",
-     "url": "http://finance.eastmoney.com/a/202611203936221051.html",
-     "media": "数据宝"
-    },
-    {
-     "date": "2026-11-20 18:31",
-     "title": "【美股盘前】Anthropic跌近7%，上市首日开盘涨34%后回吐半数涨幅；AI芯片、光通信、存储股下跌，英特尔、迈威尔跌超4%；SpaceX跌超3%，逾430亿美元融资遭贷款方设限",
-     "url": "http://finance.eastmoney.com/a/202611203936230263.html",
+     "date": "2026-11-20 21:27",
+     "title": "月初获5.4亿元专项贷款支持！光纤龙头亨通光电控股股东亨通集团今日首次增持，金额超2000万元",
+     "url": "http://finance.eastmoney.com/a/202611203936373756.html",
      "media": "每日经济新闻"
     },
     {
-     "date": "2026-11-20 18:18",
-     "title": "连续四日抢筹，南向资金净流入118.21亿港元",
-     "url": "http://finance.eastmoney.com/a/202611203936225577.html",
-     "media": "中国基金报"
+     "date": "2026-11-20 21:02",
+     "title": "美的AIDC模块化预制冷却方案首次在北美亮相",
+     "url": "http://finance.eastmoney.com/a/202611203936360766.html",
+     "media": "上海证券报·中国证券网"
     },
     {
-     "date": "2026-11-20 18:12",
-     "title": "Anthropic盘前跌超6%，美股半导体、光通信股普跌，金银油集体下挫",
-     "url": "http://finance.eastmoney.com/a/202611203936219633.html",
-     "media": "21世纪经济报道"
+     "date": "2026-11-20 20:51",
+     "title": "全球市场回调、A股尾盘拉升！头部券商发声：A股有望迎估值修复窗口",
+     "url": "http://finance.eastmoney.com/a/202611203936366569.html",
+     "media": "大河财立方"
     },
     {
-     "date": "2026-11-20 18:12",
-     "title": "腾景科技：光通信、半导体设备等重点应用领域订单交付能力持续提升",
-     "url": "http://finance.eastmoney.com/a/202611203936216245.html",
-     "media": "人民财讯"
+     "date": "2026-11-20 20:48",
+     "title": "新易盛：主营业务发展态势良好 看好高速光互联行业长期前景",
+     "url": "http://finance.eastmoney.com/a/202611203936313870.html",
+     "media": "上海证券报·中国证券网"
     },
     {
-     "date": "2026-11-20 17:53",
-     "title": "联讯仪器：高速光通信测试设备在手订单饱满 扩产进展符合预期",
-     "url": "http://finance.eastmoney.com/a/202611203936210460.html",
+     "date": "2026-11-20 20:46",
+     "title": "家电龙头的APEC时刻：从卖产品到输出能力",
+     "url": "http://finance.eastmoney.com/a/202611203936313366.html",
+     "media": "第一财经"
+    },
+    {
+     "date": "2026-11-20 20:43",
+     "title": "11月20日晚间上市公司利好消息一览(附名单)",
+     "url": "http://finance.eastmoney.com/a/202611203936313288.html",
+     "media": "东方财富研究中心"
+    },
+    {
+     "date": "2026-11-20 20:35",
+     "title": "联讯仪器：AI景气周期具备强持续性 主动对冲外部环境不确定性",
+     "url": "http://finance.eastmoney.com/a/202611203936312753.html",
      "media": "证券时报网"
-    },
-    {
-     "date": "2026-11-20 17:50",
-     "title": "美股盘前速递：纳指期货跌1.07%；存储芯片、光通信板块普跌，闪迪、Lumentum跌超4%，西部数据、应用光电跌超3%；AI巨头Anthropic重挫",
-     "url": "http://finance.eastmoney.com/a/202611203936219287.html",
-     "media": "中新经纬"
-    },
-    {
-     "date": "2026-11-20 17:47",
-     "title": "腾景科技：在光通信、半导体设备等重点应用领域的订单交付能力持续提升",
-     "url": "http://finance.eastmoney.com/a/202611203936206021.html",
-     "media": "财联社"
     }
    ],
    "newsStats": {
-    "count": 13,
+    "count": 7,
     "pos": 9,
-    "neg": 2,
-    "score": 63.7
+    "neg": 0,
+    "score": 74.0
    }
   },
   {
@@ -551,12 +515,12 @@
     "supply": 34.6,
     "valuation": 83.2,
     "crowd": 91.9,
-    "total": 48.3,
+    "total": 48.4,
     "drawdown": -63.7,
     "accel": -10.4,
-    "news": 50.4,
-    "newsDomestic": 50.7,
-    "overseas": 50.0,
+    "news": 51.3,
+    "newsDomestic": 58.1,
+    "overseas": 41.2,
     "industry": null
    },
    "stage": "阶段5 出清/衰退",
@@ -569,98 +533,98 @@
    ],
    "inputs": {},
    "industry": null,
-   "overseasAt": "2026-11-17 20:12（已过期）",
+   "overseasAt": "2026-11-20 20:12",
    "news": [
     {
-     "date": "2026-11-20 19:03",
-     "title": "江苏：1—10月全省规模以上工业增加值同比增长6.6%",
-     "url": "http://finance.eastmoney.com/a/202611203936247966.html",
-     "media": "人民财讯"
-    },
-    {
-     "date": "2026-11-20 19:02",
-     "title": "地产商黄涛的A股扩张术：收购沃森生物通过反垄断审查，实控上市公司将增至3家",
-     "url": "http://finance.eastmoney.com/a/202611203936251045.html",
-     "media": "时代周报"
-    },
-    {
-     "date": "2026-11-20 19:01",
-     "title": "分析检测仪器供应商泽天春来冲刺北交所上市 三名实控人合计持股100% 公司回应：实控人承诺不会滥用控制地位",
-     "url": "http://finance.eastmoney.com/a/202611203936247426.html",
-     "media": "每日经济新闻"
-    },
-    {
-     "date": "2026-11-20 18:52",
-     "title": "63只个股四季度以来融资净买入额均超5000万元 扎堆电子等六行业",
-     "url": "http://finance.eastmoney.com/a/202611203936250614.html",
-     "media": "证券日报"
-    },
-    {
-     "date": "2026-11-20 18:50",
-     "title": "恒力石化：全产业链协同释放 潜在分红能力提升",
-     "url": "http://finance.eastmoney.com/a/202611203936246772.html",
-     "media": "证券日报"
-    },
-    {
-     "date": "2026-11-20 18:47",
-     "title": "【调研快报】超捷股份接待西部证券等5家机构调研",
-     "url": "http://stock.eastmoney.com/a/202611203936230319.html",
+     "date": "2026-11-20 21:33",
+     "title": "【调研快报】鼎龙股份接待幸福人寿等3家机构调研",
+     "url": "http://stock.eastmoney.com/a/202611203936374325.html",
      "media": "东方财富Choice数据"
     },
     {
-     "date": "2026-11-20 18:36",
-     "title": "璞泰来港股上市获中国证监会备案",
-     "url": "http://finance.eastmoney.com/a/202611203936222355.html",
-     "media": "财联社"
+     "date": "2026-11-20 21:26",
+     "title": "内外市场双向赋能 沪市电力设备企业发展提质扩容",
+     "url": "http://finance.eastmoney.com/a/202611203936373228.html",
+     "media": "经济参考网"
     },
     {
-     "date": "2026-11-20 18:34",
-     "title": "零跑A10后备厢储物盒疑被啤酒压穿，内部人士：已与车主达成一致，其最大承重40kg",
-     "url": "http://finance.eastmoney.com/a/202611203936231217.html",
-     "media": "红星资本局"
-    },
-    {
-     "date": "2026-11-20 18:29",
-     "title": "东南亚MPV争霸：千台岚图梦想家发运",
-     "url": "http://finance.eastmoney.com/a/202611203936229712.html",
-     "media": "财中社"
-    },
-    {
-     "date": "2026-11-20 18:27",
-     "title": "31.98万元起！享界首款MPV上市 余承东：我们用料很狠，导致纯电车型成本很高",
-     "url": "http://finance.eastmoney.com/a/202611203936228032.html",
+     "date": "2026-11-20 21:19",
+     "title": "连续3年出现虚增营收，上百起诉讼仲裁未及时披露！*ST仕净拟被罚950万元，牵涉10名责任人，股票将被叠加“ST”",
+     "url": "http://finance.eastmoney.com/a/202611203936368941.html",
      "media": "每日经济新闻"
     },
     {
-     "date": "2026-11-20 18:27",
-     "title": "杭州与合肥强强联手，打通长三角西向科创廊道",
-     "url": "http://finance.eastmoney.com/a/202611203936228184.html",
+     "date": "2026-11-20 21:19",
+     "title": "到2030年新型储能装机目标3亿千瓦，但要过并网与调度两道关",
+     "url": "http://finance.eastmoney.com/a/202611203936369237.html",
+     "media": "每日经济新闻"
+    },
+    {
+     "date": "2026-11-20 21:16",
+     "title": "衢州东峰聚焦主业经营 基本面持续优化",
+     "url": "http://finance.eastmoney.com/a/202611203936366945.html",
+     "media": "上海证券报·中国证券网"
+    },
+    {
+     "date": "2026-11-20 21:10",
+     "title": "云图控股拟对子公司荆州新能源增资10亿元，增资标的今年三季度末负债总额近35亿元",
+     "url": "http://finance.eastmoney.com/a/202611203936364182.html",
+     "media": "深圳商报·读创"
+    },
+    {
+     "date": "2026-11-20 21:06",
+     "title": "行业竞逐液冷，海尔磁悬浮凭借全球领先优势率先发力",
+     "url": "http://finance.eastmoney.com/a/202611203936364677.html",
      "media": "21世纪经济报道"
     },
     {
-     "date": "2026-11-20 18:21",
-     "title": "中新签署启动自贸协定4.0版升级谈判的谅解备忘录，沪新合作也谱新篇章",
-     "url": "http://finance.eastmoney.com/a/202611203936255754.html",
-     "media": "第一财经"
+     "date": "2026-11-20 21:00",
+     "title": "中国旭阳集团旗下翔福新能源20万吨负极项目核心工序投产",
+     "url": "http://finance.eastmoney.com/a/202611203936363576.html",
+     "media": "证券时报网"
     },
     {
-     "date": "2026-11-20 18:20",
-     "title": "【调研快报】凌云股份接待投资者调研",
-     "url": "http://stock.eastmoney.com/a/202611203936216720.html",
-     "media": "东方财富Choice数据"
+     "date": "2026-11-20 21:00",
+     "title": "零跑汽车：第三季度营收达317亿元，交付超31万台",
+     "url": "http://finance.eastmoney.com/a/202611203936364097.html",
+     "media": "中国证券报·中证网"
     },
     {
-     "date": "2026-11-20 18:18",
-     "title": "宝丰能源“十五五”｜端稳能源饭碗 ，锻造材料基石",
-     "url": "http://finance.eastmoney.com/a/202611203936222971.html",
-     "media": "中国基金报"
+     "date": "2026-11-20 20:57",
+     "title": "一周三度出手，宁德时代加速推进200亿~400亿元回购计划",
+     "url": "http://finance.eastmoney.com/a/202611203936318994.html",
+     "media": "21世纪经济报道"
+    },
+    {
+     "date": "2026-11-20 20:56",
+     "title": "紫金矿业、佰维存储等多股披露回购情况丨公告精选",
+     "url": "http://finance.eastmoney.com/a/202611203936317550.html",
+     "media": "21世纪经济报道"
+    },
+    {
+     "date": "2026-11-20 20:56",
+     "title": "300812，公告重要收购！今日股价20%涨停！",
+     "url": "http://finance.eastmoney.com/a/202611203936318857.html",
+     "media": "证券时报"
+    },
+    {
+     "date": "2026-11-20 20:56",
+     "title": "阅迅策被纳入恒生科技指数成份股丨港股公告精选",
+     "url": "http://finance.eastmoney.com/a/202611203936319162.html",
+     "media": "21世纪经济报道"
+    },
+    {
+     "date": "2026-11-20 20:55",
+     "title": "国际汽车城软件园亮相安亭，嘉定汽车软件版图再落一子",
+     "url": "http://finance.eastmoney.com/a/202611203936320055.html",
+     "media": "上观新闻"
     }
    ],
    "newsStats": {
     "count": 30,
-    "pos": 12,
-    "neg": 5,
-    "score": 50.7
+    "pos": 8,
+    "neg": 1,
+    "score": 58.1
    }
   },
   {
@@ -1004,12 +968,12 @@
     "supply": 44.7,
     "valuation": 45.2,
     "crowd": 43.9,
-    "total": 41.7,
+    "total": 41.3,
     "drawdown": -42.4,
     "accel": -0.9,
-    "news": 53.0,
-    "newsDomestic": 55.0,
-    "overseas": 50.0,
+    "news": 48.4,
+    "newsDomestic": 53.3,
+    "overseas": 41.2,
     "industry": null
    },
    "stage": "过渡期",
@@ -1022,8 +986,26 @@
    ],
    "inputs": {},
    "industry": null,
-   "overseasAt": "2026-11-17 20:12（已过期）",
+   "overseasAt": "2026-11-20 20:12",
    "news": [
+    {
+     "date": "2026-11-20 20:47",
+     "title": "国机精工将机器人轴承纳入“十五五”业务板块规划",
+     "url": "http://finance.eastmoney.com/a/202611203936313715.html",
+     "media": "上海证券报·中国证券网"
+    },
+    {
+     "date": "2026-11-20 19:59",
+     "title": "从瓦楞包装装备转向机器人，东方精工回应投资者：已批量交付，核心零部件仍在验证",
+     "url": "http://finance.eastmoney.com/a/202611203936287529.html",
+     "media": "红星资本局"
+    },
+    {
+     "date": "2026-11-20 19:42",
+     "title": "落幕之后：一场APEC，深圳已经等了太久",
+     "url": "http://finance.eastmoney.com/a/202611203936281125.html",
+     "media": "每日经济新闻"
+    },
     {
      "date": "2026-11-20 19:05",
      "title": "机器人数据采集有哪些布局？爱仕达最新回应",
@@ -1089,31 +1071,13 @@
      "title": "A股三大指数集体下跌，工业母机ETF国泰（159667）近5日合计获超1600万元资金净流入",
      "url": "http://stock.eastmoney.com/a/202611203936026271.html",
      "media": "每日经济新闻"
-    },
-    {
-     "date": "2026-11-20 13:35",
-     "title": "深圳机器人组团“上岗”APEC：多场景真实岗位集中亮相，具身智能迎来交付时刻",
-     "url": "http://finance.eastmoney.com/a/202611203936009988.html",
-     "media": "华夏时报网"
-    },
-    {
-     "date": "2026-11-20 12:58",
-     "title": "人形机器人量产有望提振产业链业绩，机器人ETF易方达（159530）半日逆势获5000万份净申购",
-     "url": "http://stock.eastmoney.com/a/202611203935991455.html",
-     "media": "21世纪经济报道"
-    },
-    {
-     "date": "2026-11-20 12:32",
-     "title": "上纬新材启元机器人与邮电器材消费电子事业部达成战略合作",
-     "url": "http://finance.eastmoney.com/a/202611203935976955.html",
-     "media": "人民财讯"
     }
    ],
    "newsStats": {
     "count": 30,
-    "pos": 13,
+    "pos": 10,
     "neg": 3,
-    "score": 55.0
+    "score": 53.3
    }
   },
   {
@@ -1375,12 +1339,12 @@
     "supply": 38.6,
     "valuation": 75.2,
     "crowd": 57.0,
-    "total": 55.6,
+    "total": 55.2,
     "drawdown": -53.9,
     "accel": -0.6,
-    "news": 57.5,
+    "news": 54.0,
     "newsDomestic": 62.5,
-    "overseas": 50.0,
+    "overseas": 41.2,
     "industry": null
    },
    "stage": "阶段4 杀估值",
@@ -1395,8 +1359,14 @@
    ],
    "inputs": {},
    "industry": null,
-   "overseasAt": "2026-11-17 20:12（已过期）",
+   "overseasAt": "2026-11-20 20:12",
    "news": [
+    {
+     "date": "2026-11-20 20:01",
+     "title": "百镜大战2026：销量暴涨、退货高企，AI眼镜何时能戴住？",
+     "url": "http://finance.eastmoney.com/a/202611203936291468.html",
+     "media": "新京报"
+    },
     {
      "date": "2026-11-20 10:48",
      "title": "三星联手英伟达加码MLCC！OpenAI进军手机市场！AI抛售蔓延，长电科技跌超6%，消费电子ETF汇添富(159178)指数跌超3%，多日吸金",
@@ -1474,12 +1444,6 @@
      "title": "“把中国制造推向世界” 一群深圳00后用短视频闯出海路",
      "url": "http://biz.eastmoney.com/a/202611193934965690.html",
      "media": "央视新闻客户端"
-    },
-    {
-     "date": "2026-11-19 06:44",
-     "title": "科技厂商加码AI眼镜 产品研发路线持续分化",
-     "url": "http://finance.eastmoney.com/a/202611193934376355.html",
-     "media": "上海证券报"
     }
    ],
    "newsStats": {
@@ -1830,12 +1794,12 @@
     "supply": 31.7,
     "valuation": 40.0,
     "crowd": 91.8,
-    "total": 36.2,
+    "total": 35.9,
     "drawdown": -64.5,
     "accel": -0.5,
-    "news": 57.5,
+    "news": 54.0,
     "newsDomestic": 62.5,
-    "overseas": 50.0,
+    "overseas": 41.2,
     "industry": null
    },
    "stage": "阶段5 出清/衰退",
@@ -1848,8 +1812,20 @@
    ],
    "inputs": {},
    "industry": null,
-   "overseasAt": "2026-11-17 20:12（已过期）",
+   "overseasAt": "2026-11-20 20:12",
    "news": [
+    {
+     "date": "2026-11-20 21:02",
+     "title": "特朗普账户9月买了啥股票？",
+     "url": "http://finance.eastmoney.com/a/202611203936334836.html",
+     "media": "国际金融报"
+    },
+    {
+     "date": "2026-11-20 20:47",
+     "title": "国机精工将机器人轴承纳入“十五五”业务板块规划",
+     "url": "http://finance.eastmoney.com/a/202611203936313715.html",
+     "media": "上海证券报·中国证券网"
+    },
     {
      "date": "2026-11-20 18:12",
      "title": "【调研快报】中国卫星接待投资者调研",
@@ -1921,23 +1897,11 @@
      "title": "低空智联网需要哪些芯片？机载到空管的配套器件梳理",
      "url": "http://finance.eastmoney.com/a/202611203935974398.html",
      "media": "界面新闻"
-    },
-    {
-     "date": "2026-11-20 11:53",
-     "title": "卫星测试“不出川”，郫都将建四川商业航天先进制造产业基地",
-     "url": "http://finance.eastmoney.com/a/202611203936003243.html",
-     "media": "每日经济新闻"
-    },
-    {
-     "date": "2026-11-20 10:33",
-     "title": "光伏寒意未消 龙头分开作答：2027年装机需求能否迎来小幅反弹？",
-     "url": "http://finance.eastmoney.com/a/202611203935939334.html",
-     "media": "财联社"
     }
    ],
    "newsStats": {
     "count": 30,
-    "pos": 8,
+    "pos": 7,
     "neg": 0,
     "score": 62.5
    }
@@ -2074,7 +2038,7 @@
     {
      "code": "688300",
      "name": "联瑞新材",
-     "price": 73.54,
+     "price": 67.89,
      "chg": -7.682893663312,
      "mcap": 21311773533.6,
      "pe": 64.0418949,
@@ -2084,9 +2048,9 @@
      "ps": 15.91748007,
      "psPct": 84.48,
      "peg": 3.5109419669427466,
-     "drawdown": -64.9,
-     "turnover": 265.5,
-     "amtRatio": 1.14,
+     "drawdown": -67.6,
+     "turnover": 250.0,
+     "amtRatio": 1.11,
      "revYoy": 27.115402346237,
      "proYoy": 18.24065891803,
      "proQoq": 9.822571177293,
@@ -2108,8 +2072,8 @@
       "quality": 48.9,
       "supply": 36.4,
       "valuation": 10.3,
-      "crowd": 48.4,
-      "total": 36.8
+      "crowd": 49.0,
+      "total": 36.9
      }
     },
     {
@@ -2283,28 +2247,58 @@
     "supply": 58.9,
     "valuation": 39.0,
     "crowd": 67.0,
-    "total": 50.0,
-    "drawdown": -65.4,
+    "total": 49.8,
+    "drawdown": -66.7,
     "accel": -3.7,
-    "news": 55.5,
-    "newsDomestic": 59.2,
-    "overseas": 50.0,
+    "news": 53.0,
+    "newsDomestic": 60.8,
+    "overseas": 41.2,
     "industry": null
    },
    "stage": "阶段4 杀估值",
    "stageEn": "Stage 4 Valuation De-rating",
    "reasons": [
     "增速二阶导 -4pct",
-    "股价距 2 年高点 -65%"
+    "股价距 2 年高点 -67%"
    ],
    "reasonsEn": [
     "Growth acceleration -4pct",
-    "price -65% from 2-year high"
+    "price -67% from 2-year high"
    ],
    "inputs": {},
    "industry": null,
-   "overseasAt": "2026-11-17 20:12（已过期）",
+   "overseasAt": "2026-11-20 20:12",
    "news": [
+    {
+     "date": "2026-11-20 21:12",
+     "title": "美股盘前要闻一览：美股恐慌指数VIX刷新3月底以来新高，法兴银行预计2027年美联储将再加息两次",
+     "url": "http://forex.eastmoney.com/a/202611203936370164.html",
+     "media": "财联社"
+    },
+    {
+     "date": "2026-11-20 20:54",
+     "title": "科创板晚报|摩尔线程实控人提议回购5亿至10亿元股份 佰维存储今日首次回购24.61万股",
+     "url": "http://finance.eastmoney.com/a/202611203936328594.html",
+     "media": "科创板日报"
+    },
+    {
+     "date": "2026-11-20 20:52",
+     "title": "三星电子人事大调整，多核心业务线“换帅”",
+     "url": "http://finance.eastmoney.com/a/202611203936316932.html",
+     "media": "南方都市报"
+    },
+    {
+     "date": "2026-11-20 20:35",
+     "title": "联讯仪器：AI景气周期具备强持续性 主动对冲外部环境不确定性",
+     "url": "http://finance.eastmoney.com/a/202611203936312753.html",
+     "media": "证券时报网"
+    },
+    {
+     "date": "2026-11-20 19:46",
+     "title": "华夏时评：从“APEC深圳展望”看“突破算力围城”",
+     "url": "http://finance.eastmoney.com/a/202611203936288868.html",
+     "media": "华夏时报网"
+    },
     {
      "date": "2026-11-20 18:42",
      "title": "晚报丨全球市场遭遇“黑色星期五”，Anthropic盘前跌超6%；得州候任州长称不讨厌数据中心；黄仁勋或将创办新半导体公司；黄金跌幅收窄，德银称黄金需要一个打破紧缩叙事的催化剂",
@@ -2358,43 +2352,13 @@
      "title": "科创半导体设备ETF鹏华(589020)盘中交投活跃，新一代真武V900芯片预计2027年一季度量产",
      "url": "http://stock.eastmoney.com/a/202611203936013944.html",
      "media": "界面新闻"
-    },
-    {
-     "date": "2026-11-20 13:09",
-     "title": "韩国跻身全球第四！半导体出口狂飙 迈入出口万亿美元俱乐部",
-     "url": "http://finance.eastmoney.com/a/202611203935985373.html",
-     "media": "第一财经"
-    },
-    {
-     "date": "2026-11-20 12:52",
-     "title": "异动！满坤科技20%强势涨停！PCB概念爆发",
-     "url": "http://stock.eastmoney.com/a/202611203935988910.html",
-     "media": "证券时报网"
-    },
-    {
-     "date": "2026-11-20 12:47",
-     "title": "002548，强势涨停！两大概念，逆市拉升",
-     "url": "http://stock.eastmoney.com/a/202611203935988897.html",
-     "media": "证券时报网"
-    },
-    {
-     "date": "2026-11-20 12:33",
-     "title": "全球科技股集体回调，A股部分硬科技股逆势翻红",
-     "url": "http://finance.eastmoney.com/a/202611203935985631.html",
-     "media": "大河财立方"
-    },
-    {
-     "date": "2026-11-20 11:55",
-     "title": "三星电子宣布新管理层，加强半导体业务",
-     "url": "http://finance.eastmoney.com/a/202611203935973873.html",
-     "media": "第一财经"
     }
    ],
    "newsStats": {
     "count": 30,
-    "pos": 22,
-    "neg": 2,
-    "score": 59.2
+    "pos": 23,
+    "neg": 1,
+    "score": 60.8
    }
   }
  ]
