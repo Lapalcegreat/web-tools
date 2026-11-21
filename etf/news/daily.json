@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21 14:12",
+ "updatedAt": "2026-11-21 20:12",
  "score": 48.5,
  "days": [
   {
@@ -16,24 +16,6 @@
      "tier": "major",
      "direction": "neu",
      "tags": [],
-     "categories": [
-      "capex"
-     ]
-    },
-    {
-     "title": "Data center construction costs soar 13% in 2026",
-     "titleZh": "2026 年数据中心建设成本将飙升 13%",
-     "source": "CNBC AI",
-     "url": "https://www.cnbc.com/2026/11/20/data-center-construction-costs-soar-13-percent-in-2026.html",
-     "time": "2026-11-21 00:52",
-     "impact": 0.0,
-     "confidence": 0.8,
-     "tier": "major",
-     "direction": "neu",
-     "tags": [
-      "订单",
-      "价格"
-     ],
      "categories": [
       "capex"
      ]
@@ -58,15 +40,15 @@
     }
    ],
    "stats": {
-    "count": 3,
+    "count": 2,
     "pos": 0,
     "neg": 0,
-    "avgConf": 0.79,
+    "avgConf": 0.78,
     "netImpact": 0.0
    },
    "categories": {
     "capex": {
-     "count": 2,
+     "count": 1,
      "impact": 0.0
     },
     "chip": {
@@ -325,24 +307,6 @@
     ]
    },
    {
-    "title": "Data center construction costs soar 13% in 2026",
-    "titleZh": "2026 年数据中心建设成本将飙升 13%",
-    "source": "CNBC AI",
-    "url": "https://www.cnbc.com/2026/11/20/data-center-construction-costs-soar-13-percent-in-2026.html",
-    "time": "2026-11-21 00:52",
-    "impact": 0.0,
-    "confidence": 0.8,
-    "tier": "major",
-    "direction": "neu",
-    "tags": [
-     "订单",
-     "价格"
-    ],
-    "categories": [
-     "capex"
-    ]
-   },
-   {
     "title": "Trump says he discussed Jensen Huang with Xi; Bessent tells CNBC Nvidia chip export policy is unchanged",
     "titleZh": "特朗普表示，他与习近平讨论了黄仁勋；贝森特对CNBC表示，英伟达芯片出口政策未变。",
     "source": "CNBC Tech",
@@ -362,15 +326,15 @@
    }
   ],
   "stats": {
-   "count": 3,
+   "count": 2,
    "pos": 0,
    "neg": 0,
-   "avgConf": 0.79,
+   "avgConf": 0.78,
    "netImpact": 0.0
   },
   "categories": {
    "capex": {
-    "count": 2,
+    "count": 1,
     "impact": 0.0
    },
    "chip": {

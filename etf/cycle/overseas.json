@@ -1,13 +1,13 @@
 {
- "updatedAt": "2026-11-21 14:12",
+ "updatedAt": "2026-11-21 20:12",
  "score": 48.5,
  "stats": {
-  "count": 15,
+  "count": 13,
   "high": 1,
-  "low": 14,
+  "low": 12,
   "pos": 0,
   "neg": 1,
-  "sources": 7,
+  "sources": 5,
   "official": 12,
   "officialImpact": 0
  },
@@ -18,7 +18,7 @@
    "tier": "major",
    "url": "https://www.cnbc.com/2026/11/20/lagarde-eu-data-center-funding.html",
    "time": "2026-11-20 20:52",
-   "ageH": 17.3,
+   "ageH": 23.3,
    "impact": -0.42,
    "confidence": 0.8,
    "tags": [
@@ -57,20 +57,6 @@
    ]
   },
   {
-   "title": "AI Is Giving Optical Computing Another Shot",
-   "source": "IEEE Spectrum AI",
-   "url": "https://spectrum.ieee.org/optical-computing-ai",
-   "time": "2026-11-17 22:00",
-   "impact": 0.13,
-   "confidence": 0.23,
-   "tags": [
-    "capex",
-    "订单",
-    "价格",
-    "技术"
-   ]
-  },
-  {
    "title": "NVIDIA Sweeps MLPerf Training and Endpoints as Vera Rubin Debuts With Leading Performance",
    "source": "NVIDIA Blog",
    "url": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
@@ -99,18 +85,6 @@
    "confidence": 0.88,
    "tags": [
     "官方"
-   ]
-  },
-  {
-   "title": "Data center construction costs soar 13% in 2026",
-   "source": "CNBC AI",
-   "url": "https://www.cnbc.com/2026/11/20/data-center-construction-costs-soar-13-percent-in-2026.html",
-   "time": "2026-11-21 00:52",
-   "impact": 0.0,
-   "confidence": 0.8,
-   "tags": [
-    "订单",
-    "价格"
    ]
   },
   {
@@ -143,6 +117,26 @@
    "impact": 0.0,
    "confidence": 0.62,
    "tags": []
+  },
+  {
+   "title": "SKT powers up AI data centers with Hyosung",
+   "source": "Light Reading",
+   "url": "https://www.lightreading.com/data-centers/skt-hyosung-heavy-industries-team-up-for-stable-aidc-power-supply",
+   "time": "2026-11-16 19:41",
+   "impact": 0.0,
+   "confidence": 0.62,
+   "tags": []
+  },
+  {
+   "title": "Trump says he discussed Jensen Huang with Xi; Bessent tells CNBC Nvidia chip export policy is unchanged",
+   "source": "CNBC Tech",
+   "url": "https://www.cnbc.com/2026/11/20/treasury-secretary-scott-bessent.html",
+   "time": "2026-11-21 06:08",
+   "impact": 0.0,
+   "confidence": 0.66,
+   "tags": [
+    "官方"
+   ]
   }
  ],
  "primary": [
