@@ -1,39 +1,104 @@
 {
- "updatedAt": "2026-11-20 20:12",
- "score": 41.2,
+ "updatedAt": "2026-11-21 14:12",
+ "score": 48.5,
  "days": [
   {
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "items": [
     {
-     "title": "Anthropic shares fall 8% in premarket amid AI selloff as Nvidia, AMD shares drop",
-     "titleZh": "受英伟达、AMD股价下跌影响，人工智能板块遭遇抛售，Anthropic盘前股价下跌8%",
+     "title": "Trump vows to stop U.S. companies from building data centers abroad, threatens 'tremendous tax'",
+     "titleZh": "特朗普誓言阻止美国公司在海外建设数据中心，并威胁要征收“巨额税款”",
      "source": "CNBC Tech",
-     "url": "https://www.cnbc.com/2026/11/20/anthropic-stock-ai-amd-nvidia.html",
-     "time": "2026-11-20 20:08",
-     "impact": -2.5,
-     "confidence": 0.95,
-     "tier": "major",
-     "direction": "neg",
-     "tags": [
-      "官方"
-     ],
-     "categories": [
-      "chip"
-     ]
-    },
-    {
-     "title": "Lumentum CEO defends Marvell deal after stock plunge: 'We've got work to do' with shareholders",
-     "titleZh": "Lumentum首席执行官在股价暴跌后为与迈威尔的交易辩护：“我们还有工作要做”，要向股东解释",
-     "source": "CNBC AI",
-     "url": "https://www.cnbc.com/2026/11/19/lumentum-marvell-deal-ceo-shareholders-cramer.html",
-     "time": "2026-11-20 07:47",
-     "impact": -0.3,
-     "confidence": 0.8,
+     "url": "https://www.cnbc.com/2026/11/20/trump-data-centers-ai-companies-tax.html",
+     "time": "2026-11-21 04:47",
+     "impact": 0.0,
+     "confidence": 0.9,
      "tier": "major",
      "direction": "neu",
      "tags": [],
      "categories": [
+      "capex"
+     ]
+    },
+    {
+     "title": "Data center construction costs soar 13% in 2026",
+     "titleZh": "2026 年数据中心建设成本将飙升 13%",
+     "source": "CNBC AI",
+     "url": "https://www.cnbc.com/2026/11/20/data-center-construction-costs-soar-13-percent-in-2026.html",
+     "time": "2026-11-21 00:52",
+     "impact": 0.0,
+     "confidence": 0.8,
+     "tier": "major",
+     "direction": "neu",
+     "tags": [
+      "订单",
+      "价格"
+     ],
+     "categories": [
+      "capex"
+     ]
+    },
+    {
+     "title": "Trump says he discussed Jensen Huang with Xi; Bessent tells CNBC Nvidia chip export policy is unchanged",
+     "titleZh": "特朗普表示，他与习近平讨论了黄仁勋；贝森特对CNBC表示，英伟达芯片出口政策未变。",
+     "source": "CNBC Tech",
+     "url": "https://www.cnbc.com/2026/11/20/treasury-secretary-scott-bessent.html",
+     "time": "2026-11-21 06:08",
+     "impact": 0.0,
+     "confidence": 0.66,
+     "tier": "major",
+     "direction": "neu",
+     "tags": [
+      "官方"
+     ],
+     "categories": [
+      "chip",
+      "policy"
+     ]
+    }
+   ],
+   "stats": {
+    "count": 3,
+    "pos": 0,
+    "neg": 0,
+    "avgConf": 0.79,
+    "netImpact": 0.0
+   },
+   "categories": {
+    "capex": {
+     "count": 2,
+     "impact": 0.0
+    },
+    "chip": {
+     "count": 1,
+     "impact": 0.0
+    },
+    "policy": {
+     "count": 1,
+     "impact": 0.0
+    }
+   },
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，58.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 58.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+  },
+  {
+   "date": "2026-11-20",
+   "items": [
+    {
+     "title": "Lagarde says EU funds should take first losses on chip plants, data centers",
+     "titleZh": "拉加德表示，欧盟基金应在芯片厂和数据中心方面率先承担损失",
+     "source": "CNBC Tech",
+     "url": "https://www.cnbc.com/2026/11/20/lagarde-eu-data-center-funding.html",
+     "time": "2026-11-20 20:52",
+     "impact": -0.42,
+     "confidence": 0.8,
+     "tier": "major",
+     "direction": "neg",
+     "tags": [
+      "监管"
+     ],
+     "categories": [
+      "capex",
       "chip"
      ]
     },
@@ -53,68 +118,31 @@
      "categories": [
       "chip"
      ]
-    },
-    {
-     "title": "Data center electricity use could double by 2030, IEA says",
-     "titleZh": "国际能源署（IEA）表示，到2030年，数据中心的用电量可能会翻一番",
-     "source": "CNBC Tech",
-     "url": "https://www.cnbc.com/2026/11/19/data-center-electricity-demand-iea.html",
-     "time": "2026-11-20 16:34",
-     "impact": 0.0,
-     "confidence": 0.58,
-     "tier": "major",
-     "direction": "neu",
-     "tags": [],
-     "categories": [
-      "capex",
-      "power"
-     ]
     }
    ],
    "stats": {
-    "count": 4,
+    "count": 2,
     "pos": 0,
     "neg": 1,
-    "avgConf": 0.8,
-    "netImpact": -2.8
+    "avgConf": 0.84,
+    "netImpact": -0.42
    },
    "categories": {
-    "chip": {
-     "count": 3,
-     "impact": -2.8
-    },
     "capex": {
      "count": 1,
-     "impact": 0.0
+     "impact": -0.42
     },
-    "power": {
-     "count": 1,
-     "impact": 0.0
+    "chip": {
+     "count": 2,
+     "impact": -0.42
     }
    },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，60.3分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 60.3). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，58.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 58.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
   },
   {
    "date": "2026-11-18",
    "items": [
-    {
-     "title": "AMD telco chief says GPU 'backlash' is coming in AI-RAN",
-     "titleZh": "AMD电信业务负责人表示，GPU“反弹”即将出现在AI-RAN领域",
-     "source": "Light Reading",
-     "url": "https://www.lightreading.com/5g/amd-telco-chief-says-gpu-backlash-is-coming-in-ai-ran",
-     "time": "2026-11-18 16:30",
-     "impact": 0.0,
-     "confidence": 0.7,
-     "tier": "trade",
-     "direction": "neu",
-     "tags": [
-      "官方"
-     ],
-     "categories": [
-      "chip"
-     ]
-    },
     {
      "title": "VodafoneThree to test Nokia's AI-RAN with Nvidia GPUs",
      "titleZh": "VodafoneThree将测试搭载Nvidia GPU的诺基亚AI-RAN",
@@ -134,7 +162,7 @@
     }
    ],
    "stats": {
-    "count": 2,
+    "count": 1,
     "pos": 0,
     "neg": 0,
     "avgConf": 0.7,
@@ -142,12 +170,12 @@
    },
    "categories": {
     "chip": {
-     "count": 2,
+     "count": 1,
      "impact": 0.0
     }
    },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，60.3分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 60.3). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，58.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 58.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
   },
   {
    "date": "2026-11-17",
@@ -202,8 +230,8 @@
      "impact": 0.0
     }
    },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，60.3分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 60.3). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，58.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 58.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
   },
   {
    "date": "2026-11-16",
@@ -237,15 +265,15 @@
      "impact": 0.0
     }
    },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，60.3分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 60.3). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，58.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 58.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
   },
   {
    "date": "2026-11-13",
    "items": [
     {
      "title": "Jensen Huang out as Nvidia CEO as telecom makes big bets on AI",
-     "titleZh": "随着电信业对人工智能下大赌注，Jensen Huang卸任英伟达首席执行官",
+     "titleZh": "",
      "source": "Light Reading",
      "url": "https://www.lightreading.com/ai-machine-learning/jensen-huang-out-as-nvidia-ceo-as-telecom-makes-big-bets-on-ai",
      "time": "2026-11-13 00:45",
@@ -274,101 +302,87 @@
      "impact": 0.0
     }
    },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，60.3分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 60.3). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，58.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 58.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
   }
  ],
  "latest": {
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "items": [
    {
-    "title": "Anthropic shares fall 8% in premarket amid AI selloff as Nvidia, AMD shares drop",
-    "titleZh": "受英伟达、AMD股价下跌影响，人工智能板块遭遇抛售，Anthropic盘前股价下跌8%",
+    "title": "Trump vows to stop U.S. companies from building data centers abroad, threatens 'tremendous tax'",
+    "titleZh": "特朗普誓言阻止美国公司在海外建设数据中心，并威胁要征收“巨额税款”",
     "source": "CNBC Tech",
-    "url": "https://www.cnbc.com/2026/11/20/anthropic-stock-ai-amd-nvidia.html",
-    "time": "2026-11-20 20:08",
-    "impact": -2.5,
-    "confidence": 0.95,
+    "url": "https://www.cnbc.com/2026/11/20/trump-data-centers-ai-companies-tax.html",
+    "time": "2026-11-21 04:47",
+    "impact": 0.0,
+    "confidence": 0.9,
     "tier": "major",
-    "direction": "neg",
-    "tags": [
-     "官方"
-    ],
+    "direction": "neu",
+    "tags": [],
     "categories": [
-     "chip"
+     "capex"
     ]
    },
    {
-    "title": "Lumentum CEO defends Marvell deal after stock plunge: 'We've got work to do' with shareholders",
-    "titleZh": "Lumentum首席执行官在股价暴跌后为与迈威尔的交易辩护：“我们还有工作要做”，要向股东解释",
+    "title": "Data center construction costs soar 13% in 2026",
+    "titleZh": "2026 年数据中心建设成本将飙升 13%",
     "source": "CNBC AI",
-    "url": "https://www.cnbc.com/2026/11/19/lumentum-marvell-deal-ceo-shareholders-cramer.html",
-    "time": "2026-11-20 07:47",
-    "impact": -0.3,
+    "url": "https://www.cnbc.com/2026/11/20/data-center-construction-costs-soar-13-percent-in-2026.html",
+    "time": "2026-11-21 00:52",
+    "impact": 0.0,
     "confidence": 0.8,
     "tier": "major",
     "direction": "neu",
-    "tags": [],
+    "tags": [
+     "订单",
+     "价格"
+    ],
     "categories": [
-     "chip"
+     "capex"
     ]
    },
    {
-    "title": "Cramer says Nvidia’s woes are trumping Anthropic excitement for the rest of the AI trade",
-    "titleZh": "Cramer表示，Nvidia的困境正在压倒Anthropic对人工智能板块其余部分的兴奋情绪",
+    "title": "Trump says he discussed Jensen Huang with Xi; Bessent tells CNBC Nvidia chip export policy is unchanged",
+    "titleZh": "特朗普表示，他与习近平讨论了黄仁勋；贝森特对CNBC表示，英伟达芯片出口政策未变。",
     "source": "CNBC Tech",
-    "url": "https://www.cnbc.com/2026/11/19/nvidia-anthropic-ipo-ai-trade.html",
-    "time": "2026-11-20 07:22",
+    "url": "https://www.cnbc.com/2026/11/20/treasury-secretary-scott-bessent.html",
+    "time": "2026-11-21 06:08",
     "impact": 0.0,
-    "confidence": 0.88,
+    "confidence": 0.66,
     "tier": "major",
     "direction": "neu",
     "tags": [
      "官方"
     ],
     "categories": [
-     "chip"
-    ]
-   },
-   {
-    "title": "Data center electricity use could double by 2030, IEA says",
-    "titleZh": "国际能源署（IEA）表示，到2030年，数据中心的用电量可能会翻一番",
-    "source": "CNBC Tech",
-    "url": "https://www.cnbc.com/2026/11/19/data-center-electricity-demand-iea.html",
-    "time": "2026-11-20 16:34",
-    "impact": 0.0,
-    "confidence": 0.58,
-    "tier": "major",
-    "direction": "neu",
-    "tags": [],
-    "categories": [
-     "capex",
-     "power"
+     "chip",
+     "policy"
     ]
    }
   ],
   "stats": {
-   "count": 4,
+   "count": 3,
    "pos": 0,
-   "neg": 1,
-   "avgConf": 0.8,
-   "netImpact": -2.8
+   "neg": 0,
+   "avgConf": 0.79,
+   "netImpact": 0.0
   },
   "categories": {
-   "chip": {
-    "count": 3,
-    "impact": -2.8
-   },
    "capex": {
+    "count": 2,
+    "impact": 0.0
+   },
+   "chip": {
     "count": 1,
     "impact": 0.0
    },
-   "power": {
+   "policy": {
     "count": 1,
     "impact": 0.0
    }
   },
-  "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，60.3分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-  "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 60.3). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+  "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，58.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+  "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 58.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
  }
 }
