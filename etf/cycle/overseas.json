@@ -1,37 +1,17 @@
 {
- "updatedAt": "2026-11-21 20:12",
- "score": 48.5,
+ "updatedAt": "2026-11-22 14:12",
+ "score": 50.0,
  "stats": {
-  "count": 13,
-  "high": 1,
-  "low": 12,
+  "count": 15,
+  "high": 0,
+  "low": 15,
   "pos": 0,
-  "neg": 1,
-  "sources": 5,
+  "neg": 0,
+  "sources": 6,
   "official": 12,
   "officialImpact": 0
  },
- "items": [
-  {
-   "title": "Lagarde says EU funds should take first losses on chip plants, data centers",
-   "source": "CNBC Tech",
-   "tier": "major",
-   "url": "https://www.cnbc.com/2026/11/20/lagarde-eu-data-center-funding.html",
-   "time": "2026-11-20 20:52",
-   "ageH": 23.3,
-   "impact": -0.42,
-   "confidence": 0.8,
-   "tags": [
-    "监管"
-   ],
-   "sources": [
-    "CNBC Tech"
-   ],
-   "multiSource": false,
-   "direction": "neg",
-   "status": "high"
-  }
- ],
+ "items": [],
  "pending": [
   {
    "title": "NVIDIA and Microsoft Expand Accelerated Computing From Azure to Windows PCs",
@@ -57,6 +37,31 @@
    ]
   },
   {
+   "title": "Lagarde says EU funds should take first losses on chip plants, data centers",
+   "source": "CNBC Tech",
+   "url": "https://www.cnbc.com/2026/11/20/lagarde-eu-data-center-funding.html",
+   "time": "2026-11-20 20:52",
+   "impact": -0.34,
+   "confidence": 0.8,
+   "tags": [
+    "监管"
+   ]
+  },
+  {
+   "title": "AI Is Giving Optical Computing Another Shot",
+   "source": "IEEE Spectrum AI",
+   "url": "https://spectrum.ieee.org/optical-computing-ai",
+   "time": "2026-11-17 22:00",
+   "impact": 0.13,
+   "confidence": 0.23,
+   "tags": [
+    "capex",
+    "订单",
+    "价格",
+    "技术"
+   ]
+  },
+  {
    "title": "NVIDIA Sweeps MLPerf Training and Endpoints as Vera Rubin Debuts With Leading Performance",
    "source": "NVIDIA Blog",
    "url": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
@@ -73,7 +78,7 @@
    "url": "https://www.cnbc.com/2026/11/20/trump-data-centers-ai-companies-tax.html",
    "time": "2026-11-21 04:47",
    "impact": 0.0,
-   "confidence": 0.9,
+   "confidence": 0.8,
    "tags": []
   },
   {
@@ -85,6 +90,18 @@
    "confidence": 0.88,
    "tags": [
     "官方"
+   ]
+  },
+  {
+   "title": "Data center construction costs soar 13% in 2026",
+   "source": "CNBC AI",
+   "url": "https://www.cnbc.com/2026/11/20/data-center-construction-costs-soar-13-percent-in-2026.html",
+   "time": "2026-11-21 00:52",
+   "impact": 0.0,
+   "confidence": 0.8,
+   "tags": [
+    "订单",
+    "价格"
    ]
   },
   {
@@ -108,35 +125,6 @@
    "tags": [
     "官方"
    ]
-  },
-  {
-   "title": "Vodafone is sold on AI-RAN but not yet on need for GPUs",
-   "source": "Light Reading",
-   "url": "https://www.lightreading.com/5g/vodafone-is-sold-on-ai-ran-but-not-yet-on-need-for-gpus",
-   "time": "2026-11-17 16:30",
-   "impact": 0.0,
-   "confidence": 0.62,
-   "tags": []
-  },
-  {
-   "title": "SKT powers up AI data centers with Hyosung",
-   "source": "Light Reading",
-   "url": "https://www.lightreading.com/data-centers/skt-hyosung-heavy-industries-team-up-for-stable-aidc-power-supply",
-   "time": "2026-11-16 19:41",
-   "impact": 0.0,
-   "confidence": 0.62,
-   "tags": []
-  },
-  {
-   "title": "Trump says he discussed Jensen Huang with Xi; Bessent tells CNBC Nvidia chip export policy is unchanged",
-   "source": "CNBC Tech",
-   "url": "https://www.cnbc.com/2026/11/20/treasury-secretary-scott-bessent.html",
-   "time": "2026-11-21 06:08",
-   "impact": 0.0,
-   "confidence": 0.66,
-   "tags": [
-    "官方"
-   ]
   }
  ],
  "primary": [
@@ -146,7 +134,7 @@
    "date": "2026-11-20",
    "url": "https://www.sec.gov/Archives/edgar/data/820318/000119312526470356/d349041d8k.htm",
    "title": "8-K",
-   "age": 1,
+   "age": 2,
    "items": [],
    "labels": [],
    "signal": "",
@@ -158,7 +146,7 @@
    "date": "2026-11-20",
    "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000218/amd-20261118.htm",
    "title": "8-K",
-   "age": 1,
+   "age": 2,
    "items": [],
    "labels": [],
    "signal": "",
@@ -170,7 +158,7 @@
    "date": "2026-11-19",
    "url": "https://www.sec.gov/Archives/edgar/data/820318/000119312526467737/d867801d8k.htm",
    "title": "8-K",
-   "age": 2,
+   "age": 3,
    "items": [],
    "labels": [],
    "signal": "",
@@ -182,7 +170,7 @@
    "date": "2026-11-17",
    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/nvda-20261117.htm",
    "title": "8-K",
-   "age": 4,
+   "age": 5,
    "items": [],
    "labels": [],
    "signal": "",
@@ -194,7 +182,7 @@
    "date": "2026-11-16",
    "url": "https://www.sec.gov/Archives/edgar/data/2488/000119312526462340/d105780d8ka.htm",
    "title": "8-K/A",
-   "age": 5,
+   "age": 6,
    "items": [],
    "labels": [],
    "signal": "",
@@ -206,7 +194,7 @@
    "date": "2026-11-13",
    "url": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026073564/vrt-20261113.htm",
    "title": "8-K",
-   "age": 8,
+   "age": 9,
    "items": [],
    "labels": [],
    "signal": "",
@@ -218,7 +206,7 @@
    "date": "2026-11-13",
    "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000801/tsm-fsx20261113x6k.htm",
    "title": "6-K",
-   "age": 8,
+   "age": 9,
    "items": [],
    "labels": [],
    "signal": "",
@@ -230,7 +218,7 @@
    "date": "2026-11-12",
    "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000800/a20261112statementregardin.htm",
    "title": "6-K",
-   "age": 9,
+   "age": 10,
    "items": [],
    "labels": [],
    "signal": "",
@@ -242,7 +230,7 @@
    "date": "2026-11-12",
    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm",
    "title": "8-K",
-   "age": 9,
+   "age": 10,
    "items": [],
    "labels": [],
    "signal": "",
@@ -254,7 +242,7 @@
    "date": "2026-11-12",
    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526458525/d177728d8k.htm",
    "title": "8-K",
-   "age": 9,
+   "age": 10,
    "items": [],
    "labels": [],
    "signal": "",
@@ -266,7 +254,7 @@
    "date": "2026-11-12",
    "url": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000026/mrvl-20261111.htm",
    "title": "8-K",
-   "age": 9,
+   "age": 10,
    "items": [],
    "labels": [],
    "signal": "",
@@ -278,7 +266,7 @@
    "date": "2026-11-10",
    "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000797/tsm-boardx202611xx.htm",
    "title": "6-K",
-   "age": 11,
+   "age": 12,
    "items": [],
    "labels": [],
    "signal": "",

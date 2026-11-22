@@ -1,6 +1,6 @@
 {
- "updatedAt": "2026-11-21 20:12",
- "score": 48.5,
+ "updatedAt": "2026-11-22 14:12",
+ "score": 50.0,
  "days": [
   {
    "date": "2026-11-21",
@@ -12,10 +12,28 @@
      "url": "https://www.cnbc.com/2026/11/20/trump-data-centers-ai-companies-tax.html",
      "time": "2026-11-21 04:47",
      "impact": 0.0,
-     "confidence": 0.9,
+     "confidence": 0.8,
      "tier": "major",
      "direction": "neu",
      "tags": [],
+     "categories": [
+      "capex"
+     ]
+    },
+    {
+     "title": "Data center construction costs soar 13% in 2026",
+     "titleZh": "2026 年数据中心建设成本将飙升 13%",
+     "source": "CNBC AI",
+     "url": "https://www.cnbc.com/2026/11/20/data-center-construction-costs-soar-13-percent-in-2026.html",
+     "time": "2026-11-21 00:52",
+     "impact": 0.0,
+     "confidence": 0.8,
+     "tier": "major",
+     "direction": "neu",
+     "tags": [
+      "订单",
+      "价格"
+     ],
      "categories": [
       "capex"
      ]
@@ -40,15 +58,15 @@
     }
    ],
    "stats": {
-    "count": 2,
+    "count": 3,
     "pos": 0,
     "neg": 0,
-    "avgConf": 0.78,
+    "avgConf": 0.75,
     "netImpact": 0.0
    },
    "categories": {
     "capex": {
-     "count": 1,
+     "count": 2,
      "impact": 0.0
     },
     "chip": {
@@ -60,8 +78,8 @@
      "impact": 0.0
     }
    },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，58.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 58.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，59.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 59.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
   },
   {
    "date": "2026-11-20",
@@ -72,10 +90,10 @@
      "source": "CNBC Tech",
      "url": "https://www.cnbc.com/2026/11/20/lagarde-eu-data-center-funding.html",
      "time": "2026-11-20 20:52",
-     "impact": -0.42,
+     "impact": -0.34,
      "confidence": 0.8,
      "tier": "major",
-     "direction": "neg",
+     "direction": "neu",
      "tags": [
       "监管"
      ],
@@ -105,22 +123,22 @@
    "stats": {
     "count": 2,
     "pos": 0,
-    "neg": 1,
+    "neg": 0,
     "avgConf": 0.84,
-    "netImpact": -0.42
+    "netImpact": -0.34
    },
    "categories": {
     "capex": {
      "count": 1,
-     "impact": -0.42
+     "impact": -0.34
     },
     "chip": {
      "count": 2,
-     "impact": -0.42
+     "impact": -0.34
     }
    },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，58.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 58.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，59.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 59.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
   },
   {
    "date": "2026-11-18",
@@ -156,8 +174,8 @@
      "impact": 0.0
     }
    },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，58.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 58.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，59.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 59.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
   },
   {
    "date": "2026-11-17",
@@ -212,8 +230,8 @@
      "impact": 0.0
     }
    },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，58.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 58.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，59.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 59.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
   },
   {
    "date": "2026-11-16",
@@ -247,8 +265,8 @@
      "impact": 0.0
     }
    },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，58.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 58.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，59.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 59.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
   },
   {
    "date": "2026-11-13",
@@ -284,8 +302,8 @@
      "impact": 0.0
     }
    },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，58.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 58.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，59.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 59.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
   }
  ],
  "latest": {
@@ -298,10 +316,28 @@
     "url": "https://www.cnbc.com/2026/11/20/trump-data-centers-ai-companies-tax.html",
     "time": "2026-11-21 04:47",
     "impact": 0.0,
-    "confidence": 0.9,
+    "confidence": 0.8,
     "tier": "major",
     "direction": "neu",
     "tags": [],
+    "categories": [
+     "capex"
+    ]
+   },
+   {
+    "title": "Data center construction costs soar 13% in 2026",
+    "titleZh": "2026 年数据中心建设成本将飙升 13%",
+    "source": "CNBC AI",
+    "url": "https://www.cnbc.com/2026/11/20/data-center-construction-costs-soar-13-percent-in-2026.html",
+    "time": "2026-11-21 00:52",
+    "impact": 0.0,
+    "confidence": 0.8,
+    "tier": "major",
+    "direction": "neu",
+    "tags": [
+     "订单",
+     "价格"
+    ],
     "categories": [
      "capex"
     ]
@@ -326,15 +362,15 @@
    }
   ],
   "stats": {
-   "count": 2,
+   "count": 3,
    "pos": 0,
    "neg": 0,
-   "avgConf": 0.78,
+   "avgConf": 0.75,
    "netImpact": 0.0
   },
   "categories": {
    "capex": {
-    "count": 1,
+    "count": 2,
     "impact": 0.0
    },
    "chip": {
@@ -346,7 +382,7 @@
     "impact": 0.0
    }
   },
-  "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，58.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-  "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 58.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+  "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，59.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+  "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 59.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
  }
 }
