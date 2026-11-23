@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23 21:46",
+ "updatedAt": "2026-11-23 21:57",
  "themes": [
   {
    "id": "ai",
@@ -524,8 +524,8 @@
     "total": 48.1,
     "drawdown": -63.7,
     "accel": -10.4,
-    "news": 50.4,
-    "newsDomestic": 50.7,
+    "news": 50.0,
+    "newsDomestic": 50.0,
     "overseas": 50.0,
     "industry": null
    },
@@ -541,6 +541,12 @@
    "industry": null,
    "overseasAt": "2026-11-22 20:12",
    "news": [
+    {
+     "date": "2026-11-23 21:49",
+     "title": "他们 突破了“卡脖子”技术 广州国资国企创新硬核实力集中亮相",
+     "url": "http://finance.eastmoney.com/a/202611233937579292.html",
+     "media": "广州日报"
+    },
     {
      "date": "2026-11-23 21:28",
      "title": "被证监会立案调查！*ST美丽再添利空 股价年内跌去七成 双重退市警报拉响",
@@ -618,19 +624,13 @@
      "title": "中国石油董事谢军辞任，其正接受中央纪委国家监委纪律审查和监察调查",
      "url": "http://finance.eastmoney.com/a/202611233937527584.html",
      "media": "每日经济新闻"
-    },
-    {
-     "date": "2026-11-23 20:40",
-     "title": "国银金租拟不超35亿元向中兴通讯采购计算机设备丨港股公告精选",
-     "url": "http://finance.eastmoney.com/a/202611233937529419.html",
-     "media": "21世纪经济报道"
     }
    ],
    "newsStats": {
     "count": 30,
-    "pos": 12,
+    "pos": 11,
     "neg": 5,
-    "score": 50.7
+    "score": 50.0
    }
   },
   {
@@ -974,11 +974,11 @@
     "supply": 44.7,
     "valuation": 26.4,
     "crowd": 37.7,
-    "total": 36.8,
+    "total": 36.9,
     "drawdown": -39.8,
     "accel": -0.9,
-    "news": 47.5,
-    "newsDomestic": 45.8,
+    "news": 48.3,
+    "newsDomestic": 47.1,
     "overseas": 50.0,
     "industry": null
    },
@@ -994,6 +994,12 @@
    "industry": null,
    "overseasAt": "2026-11-22 20:12",
    "news": [
+    {
+     "date": "2026-11-23 21:49",
+     "title": "他们 突破了“卡脖子”技术 广州国资国企创新硬核实力集中亮相",
+     "url": "http://finance.eastmoney.com/a/202611233937579292.html",
+     "media": "广州日报"
+    },
     {
      "date": "2026-11-23 21:33",
      "title": "英伟达 盘前大涨8%！利好来了？",
@@ -1071,19 +1077,13 @@
      "title": "从“数字广州”到光影出海，广州文化产业能级跃升",
      "url": "http://finance.eastmoney.com/a/202611233937527818.html",
      "media": "21世纪经济报道"
-    },
-    {
-     "date": "2026-11-23 20:34",
-     "title": "小鹏NGP率先开放欧洲公众体验，目标明年上半年首批交付",
-     "url": "http://finance.eastmoney.com/a/202611233937530619.html",
-     "media": "南方都市报"
     }
    ],
    "newsStats": {
     "count": 30,
-    "pos": 7,
+    "pos": 8,
     "neg": 5,
-    "score": 45.8
+    "score": 47.1
    }
   },
   {

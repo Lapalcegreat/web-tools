@@ -599,7 +599,7 @@
       const spikeCount = state.spikes.filter(Boolean).length;
       foot.innerHTML =
         `<span>${modeText} · ${bars.length} 根 · 爆量 ${spikeCount} 根 · ${bars[0][0]} ~ ${bars[bars.length - 1][0]}</span>` +
-        `<span>数据：东方财富 · 前复权 · 成交量单位：手</span>`;
+        `<span>数据：东方财富 / 腾讯 · 前复权 · 成交量单位：手</span>`;
       legend.innerHTML =
         `<span><i style="background:#f5a524"></i>MA5</span>` +
         `<span><i style="background:#4c8dff"></i>MA10</span>` +

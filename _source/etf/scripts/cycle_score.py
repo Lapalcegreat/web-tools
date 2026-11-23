@@ -157,7 +157,7 @@ def fetch_kline(code: str, beg: str = "20230101") -> list[dict]:
         "beg": beg, "end": "20500101", "lmt": "3000",
     })
     try:
-        d = json.loads(get("https://push2his.eastmoney.com/api/qt/stock/kline/get?" + q))["data"]
+        d = json.loads(get("https://push2his.eastmoney.com/api/qt/stock/kline/get?" + q, tries=1))["data"]
     except Exception:  # noqa: BLE001
         return fetch_kline_tencent(code)
     rows = []

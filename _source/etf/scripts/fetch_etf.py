@@ -28,7 +28,7 @@ from pathlib import Path
 START_DATE = "2026-06-01"
 TZ = dt.timezone(dt.timedelta(hours=8))  # Asia/Shanghai，无夏令时
 KLINE_URL = "https://push2his.eastmoney.com/api/qt/stock/kline/get"
-TENCENT_KLINE_URL = "https://web.ifzq.gtimg.cn/appstock/app/kline/kline"
+TENCENT_KLINE_URL = "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get"
 
 # 各板块代表性宽基 ETF（同一指数取规模/流动性最好的一只）
 ETFS = [
@@ -70,14 +70,14 @@ def fetch_klines_tencent(secid: str, beg: str) -> list[list]:
     code = secid.split(".")[-1]
     prefix = "sh" if code.startswith(("6", "5")) else "sz"
     beg_date = f"{beg[:4]}-{beg[4:6]}-{beg[6:]}" if len(beg) == 8 else beg
-    query = urllib.parse.urlencode({"param": f"{prefix}{code},day,,,640"})
+    query = urllib.parse.urlencode({"param": f"{prefix}{code},day,{beg_date},2050-01-01,1000,qfq"})
     req = urllib.request.Request(
         f"{TENCENT_KLINE_URL}?{query}",
         headers={**HEADERS, "Referer": "https://gu.qq.com/"})
     with urllib.request.urlopen(req, timeout=25) as resp:
         payload = json.loads(resp.read().decode("utf-8"))
     block = payload["data"][f"{prefix}{code}"]
-    rows = block.get("day") or block.get("qfqday") or []
+    rows = block.get("qfqday") or block.get("day") or []
     out = []
     prev_close = None
     for row in rows:
@@ -224,7 +224,7 @@ def main() -> int:
 
     doc = {
         "schema": 1,
-        "source": "eastmoney",
+        "source": "eastmoney / tencent-qfq",
         "start": args.start,
         "updatedAt": now.strftime("%Y-%m-%d %H:%M:%S"),
         "updatedAtISO": now.isoformat(timespec="seconds"),
