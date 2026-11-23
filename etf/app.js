@@ -313,17 +313,23 @@
       if (max === min) { max += 0.001; min -= 0.001; }
       const x = (i) => 1 + (i / (bars.length - 1)) * (w - 2);
       const y = (v) => h - 2 - ((v - min) / (max - min)) * (h - 4);
-      const rising = bars[bars.length - 1][2] >= bars[0][1];
+      const rising = bars.length > 1 ? bars[bars.length - 1][2] >= bars[bars.length - 2][2] : true;
+      const flat = bars.length > 1 && bars[bars.length - 1][2] === bars[bars.length - 2][2];
+      const lineColor = flat ? "#8b98a9" : rising ? "#f05252" : "#21a67a";
       g.beginPath();
       bars.forEach((b, i) => { i ? g.lineTo(x(i), y(b[2])) : g.moveTo(x(i), y(b[2])); });
-      g.strokeStyle = rising ? "#f05252" : "#21a67a";
+      g.strokeStyle = lineColor;
       g.lineWidth = 1.2;
       g.stroke();
       g.lineTo(x(bars.length - 1), h); g.lineTo(x(0), h); g.closePath();
       const grad = g.createLinearGradient(0, 2, 0, h);
-      grad.addColorStop(0, rising ? "rgba(240,82,82,.30)" : "rgba(33,166,122,.30)");
+      grad.addColorStop(0, flat ? "rgba(139,152,169,.18)" : rising ? "rgba(240,82,82,.30)" : "rgba(33,166,122,.30)");
       grad.addColorStop(1, "rgba(13,17,23,0)");
       g.fillStyle = grad;
+      g.fill();
+      g.beginPath();
+      g.arc(x(bars.length - 1), y(bars[bars.length - 1][2]), 1.6, 0, Math.PI * 2);
+      g.fillStyle = lineColor;
       g.fill();
       return c;
     }
