@@ -1,24 +1,65 @@
 {
- "updatedAt": "2026-11-22 20:12",
- "score": 50.0,
+ "updatedAt": "2026-11-24 20:12",
+ "score": 58.8,
  "stats": {
   "count": 15,
-  "high": 0,
-  "low": 15,
-  "pos": 0,
-  "neg": 0,
+  "high": 2,
+  "low": 13,
+  "pos": 1,
+  "neg": 1,
   "sources": 6,
   "official": 12,
   "officialImpact": 0
  },
- "items": [],
+ "items": [
+  {
+   "title": "Six key questions raised by Jensen Huang's return to Nvidia",
+   "source": "CNBC Tech",
+   "tier": "major",
+   "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-politics-market.html",
+   "time": "2026-11-24 15:12",
+   "ageH": 5.0,
+   "impact": 4.0,
+   "confidence": 0.88,
+   "tags": [
+    "官方"
+   ],
+   "sources": [
+    "CNBC Tech"
+   ],
+   "multiSource": false,
+   "official": true,
+   "direction": "pos",
+   "status": "high"
+  },
+  {
+   "title": "U.S. probes Megaspeed, Alice Huang as new figure emerges in Nvidia chip case",
+   "source": "CNBC Tech",
+   "tier": "major",
+   "url": "https://www.cnbc.com/2026/11/23/nvidia-megaspeed-chipmaker-us.html",
+   "time": "2026-11-23 22:40",
+   "ageH": 21.5,
+   "impact": -1.5,
+   "confidence": 0.66,
+   "tags": [
+    "官方"
+   ],
+   "sources": [
+    "CNBC Tech"
+   ],
+   "multiSource": false,
+   "official": true,
+   "direction": "neg",
+   "status": "ok"
+  }
+ ],
  "pending": [
   {
    "title": "NVIDIA and Microsoft Expand Accelerated Computing From Azure to Windows PCs",
    "source": "NVIDIA Blog",
    "url": "https://blogs.nvidia.com/blog/microsoft-ignite-accelerated-computing-azure-windows-pcs/",
    "time": "2026-11-20 04:00",
-   "impact": 0.62,
+   "impact": 0.43,
    "confidence": 0.48,
    "tags": [
     "官方"
@@ -29,7 +70,7 @@
    "source": "NVIDIA Blog",
    "url": "https://blogs.nvidia.com/blog/lambda-photonics/",
    "time": "2026-11-17 00:00",
-   "impact": 0.45,
+   "impact": 0.29,
    "confidence": 0.48,
    "tags": [
     "技术",
@@ -37,15 +78,13 @@
    ]
   },
   {
-   "title": "Lagarde says EU funds should take first losses on chip plants, data centers",
-   "source": "CNBC Tech",
-   "url": "https://www.cnbc.com/2026/11/20/lagarde-eu-data-center-funding.html",
-   "time": "2026-11-20 20:52",
-   "impact": -0.34,
-   "confidence": 0.8,
-   "tags": [
-    "监管"
-   ]
+   "title": "Amazon snaps up Decart’s AI optimization tech for $7.5B as it prepares to sell Trainium chips",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
+   "time": "2026-11-24 01:14",
+   "impact": 0.13,
+   "confidence": 0.62,
+   "tags": []
   },
   {
    "title": "AI Is Giving Optical Computing Another Shot",
@@ -66,26 +105,26 @@
    "source": "NVIDIA Blog",
    "url": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
    "time": "2026-11-17 00:00",
-   "impact": -0.06,
+   "impact": -0.04,
    "confidence": 0.48,
    "tags": [
     "官方"
    ]
   },
   {
-   "title": "Trump vows to stop U.S. companies from building data centers abroad, threatens 'tremendous tax'",
+   "title": "Amazon to acquire AI startup Decart's chip software, hire founders",
    "source": "CNBC Tech",
-   "url": "https://www.cnbc.com/2026/11/20/trump-data-centers-ai-companies-tax.html",
-   "time": "2026-11-21 04:47",
+   "url": "https://www.cnbc.com/2026/11/23/amazon-decarts-ai-acquisition.html",
+   "time": "2026-11-24 03:34",
    "impact": 0.0,
    "confidence": 0.8,
    "tags": []
   },
   {
-   "title": "Cramer says Nvidia’s woes are trumping Anthropic excitement for the rest of the AI trade",
+   "title": "Congress shreds Nvidia's 'outrageous' decision to bring back Huang: 'Failure of character'",
    "source": "CNBC Tech",
-   "url": "https://www.cnbc.com/2026/11/19/nvidia-anthropic-ipo-ai-trade.html",
-   "time": "2026-11-20 07:22",
+   "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-congress-trump.html",
+   "time": "2026-11-24 04:22",
    "impact": 0.0,
    "confidence": 0.88,
    "tags": [
@@ -93,16 +132,13 @@
    ]
   },
   {
-   "title": "Data center construction costs soar 13% in 2026",
-   "source": "CNBC AI",
-   "url": "https://www.cnbc.com/2026/11/20/data-center-construction-costs-soar-13-percent-in-2026.html",
-   "time": "2026-11-21 00:52",
+   "title": "AI data centers throw another wrench into chaotic UN climate talks",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit",
+   "time": "2026-11-24 05:09",
    "impact": 0.0,
    "confidence": 0.8,
-   "tags": [
-    "订单",
-    "价格"
-   ]
+   "tags": []
   },
   {
    "title": "NVIDIA Announces Rubin HPC — A New GPU to Accelerate Agents for Science, Engineering and Analytics",
@@ -116,10 +152,10 @@
    ]
   },
   {
-   "title": "VodafoneThree to test Nokia's AI-RAN with Nvidia GPUs",
+   "title": "Nokia tie-up with Nvidia on AI-RAN gets warning from Orange CTO",
    "source": "Light Reading",
-   "url": "https://www.lightreading.com/ai-machine-learning/vodafonethree-to-test-nokia-s-ai-ran-with-nvidia-gpus",
-   "time": "2026-11-18 16:15",
+   "url": "https://www.lightreading.com/5g/nokia-tie-up-with-nvidia-on-ai-ran-gets-warning-from-orange-cto",
+   "time": "2026-11-23 16:30",
    "impact": 0.0,
    "confidence": 0.7,
    "tags": [
@@ -129,12 +165,48 @@
  ],
  "primary": [
   {
+   "company": "NVIDIA",
+   "form": "8-K",
+   "date": "2026-11-23",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm",
+   "title": "8-K",
+   "age": 1,
+   "items": [],
+   "labels": [],
+   "signal": "",
+   "impact": 0.0
+  },
+  {
+   "company": "Meta",
+   "form": "8-K",
+   "date": "2026-11-23",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026075541/meta-20261118.htm",
+   "title": "8-K",
+   "age": 1,
+   "items": [],
+   "labels": [],
+   "signal": "",
+   "impact": 0.0
+  },
+  {
+   "company": "Lumentum",
+   "form": "8-K",
+   "date": "2026-11-23",
+   "url": "https://www.sec.gov/Archives/edgar/data/1633978/000162828026075535/lite-20261118.htm",
+   "title": "8-K",
+   "age": 1,
+   "items": [],
+   "labels": [],
+   "signal": "",
+   "impact": 0.0
+  },
+  {
    "company": "Coherent",
    "form": "8-K",
    "date": "2026-11-20",
    "url": "https://www.sec.gov/Archives/edgar/data/820318/000119312526470356/d349041d8k.htm",
    "title": "8-K",
-   "age": 2,
+   "age": 4,
    "items": [],
    "labels": [],
    "signal": "",
@@ -146,7 +218,7 @@
    "date": "2026-11-20",
    "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000218/amd-20261118.htm",
    "title": "8-K",
-   "age": 2,
+   "age": 4,
    "items": [],
    "labels": [],
    "signal": "",
@@ -158,7 +230,7 @@
    "date": "2026-11-19",
    "url": "https://www.sec.gov/Archives/edgar/data/820318/000119312526467737/d867801d8k.htm",
    "title": "8-K",
-   "age": 3,
+   "age": 5,
    "items": [],
    "labels": [],
    "signal": "",
@@ -170,7 +242,7 @@
    "date": "2026-11-17",
    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/nvda-20261117.htm",
    "title": "8-K",
-   "age": 5,
+   "age": 7,
    "items": [],
    "labels": [],
    "signal": "",
@@ -182,7 +254,7 @@
    "date": "2026-11-16",
    "url": "https://www.sec.gov/Archives/edgar/data/2488/000119312526462340/d105780d8ka.htm",
    "title": "8-K/A",
-   "age": 6,
+   "age": 8,
    "items": [],
    "labels": [],
    "signal": "",
@@ -194,7 +266,7 @@
    "date": "2026-11-13",
    "url": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026073564/vrt-20261113.htm",
    "title": "8-K",
-   "age": 9,
+   "age": 11,
    "items": [],
    "labels": [],
    "signal": "",
@@ -206,7 +278,7 @@
    "date": "2026-11-13",
    "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000801/tsm-fsx20261113x6k.htm",
    "title": "6-K",
-   "age": 9,
+   "age": 11,
    "items": [],
    "labels": [],
    "signal": "",
@@ -218,7 +290,7 @@
    "date": "2026-11-12",
    "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000800/a20261112statementregardin.htm",
    "title": "6-K",
-   "age": 10,
+   "age": 12,
    "items": [],
    "labels": [],
    "signal": "",
@@ -230,42 +302,6 @@
    "date": "2026-11-12",
    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm",
    "title": "8-K",
-   "age": 10,
-   "items": [],
-   "labels": [],
-   "signal": "",
-   "impact": 0.0
-  },
-  {
-   "company": "Meta",
-   "form": "8-K",
-   "date": "2026-11-12",
-   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526458525/d177728d8k.htm",
-   "title": "8-K",
-   "age": 10,
-   "items": [],
-   "labels": [],
-   "signal": "",
-   "impact": 0.0
-  },
-  {
-   "company": "Marvell",
-   "form": "8-K",
-   "date": "2026-11-12",
-   "url": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000026/mrvl-20261111.htm",
-   "title": "8-K",
-   "age": 10,
-   "items": [],
-   "labels": [],
-   "signal": "",
-   "impact": 0.0
-  },
-  {
-   "company": "TSMC",
-   "form": "6-K",
-   "date": "2026-11-10",
-   "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000797/tsm-boardx202611xx.htm",
-   "title": "6-K",
    "age": 12,
    "items": [],
    "labels": [],

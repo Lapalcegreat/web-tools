@@ -1,16 +1,80 @@
 {
- "updatedAt": "2026-11-22 20:12",
- "score": 50.0,
+ "updatedAt": "2026-11-24 20:12",
+ "score": 58.8,
  "days": [
   {
-   "date": "2026-11-21",
+   "date": "2026-11-24",
    "items": [
     {
-     "title": "Trump vows to stop U.S. companies from building data centers abroad, threatens 'tremendous tax'",
-     "titleZh": "特朗普誓言阻止美国公司在海外建设数据中心，并威胁要征收“巨额税款”",
+     "title": "Six key questions raised by Jensen Huang's return to Nvidia",
+     "titleZh": "Jensen Huang重返Nvidia引发的六大关键问题",
      "source": "CNBC Tech",
-     "url": "https://www.cnbc.com/2026/11/20/trump-data-centers-ai-companies-tax.html",
-     "time": "2026-11-21 04:47",
+     "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-politics-market.html",
+     "time": "2026-11-24 15:12",
+     "impact": 4.0,
+     "confidence": 0.88,
+     "tier": "major",
+     "direction": "pos",
+     "tags": [
+      "官方"
+     ],
+     "categories": [
+      "chip"
+     ]
+    },
+    {
+     "title": "Amazon snaps up Decart’s AI optimization tech for $7.5B as it prepares to sell Trainium chips",
+     "titleZh": "亚马逊以75亿美元收购Decart的AI优化技术，为销售Trainium芯片做准备",
+     "source": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
+     "time": "2026-11-24 01:14",
+     "impact": 0.13,
+     "confidence": 0.62,
+     "tier": "trade",
+     "direction": "neu",
+     "tags": [],
+     "categories": [
+      "chip"
+     ]
+    },
+    {
+     "title": "Amazon to acquire AI startup Decart's chip software, hire founders",
+     "titleZh": "亚马逊将收购人工智能初创公司Decart的芯片软件，并聘用其创始人",
+     "source": "CNBC Tech",
+     "url": "https://www.cnbc.com/2026/11/23/amazon-decarts-ai-acquisition.html",
+     "time": "2026-11-24 03:34",
+     "impact": 0.0,
+     "confidence": 0.8,
+     "tier": "major",
+     "direction": "neu",
+     "tags": [],
+     "categories": [
+      "chip"
+     ]
+    },
+    {
+     "title": "Congress shreds Nvidia's 'outrageous' decision to bring back Huang: 'Failure of character'",
+     "titleZh": "国会抨击英伟达召回黄仁勋的“荒谬”决定：“品格败坏”",
+     "source": "CNBC Tech",
+     "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-congress-trump.html",
+     "time": "2026-11-24 04:22",
+     "impact": 0.0,
+     "confidence": 0.88,
+     "tier": "major",
+     "direction": "neu",
+     "tags": [
+      "官方"
+     ],
+     "categories": [
+      "chip"
+     ]
+    },
+    {
+     "title": "AI data centers throw another wrench into chaotic UN climate talks",
+     "titleZh": "人工智能数据中心为混乱的联合国气候谈判再添变数",
+     "source": "The Verge",
+     "url": "https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit",
+     "time": "2026-11-24 05:09",
      "impact": 0.0,
      "confidence": 0.8,
      "tier": "major",
@@ -19,98 +83,57 @@
      "categories": [
       "capex"
      ]
+    }
+   ],
+   "stats": {
+    "count": 5,
+    "pos": 1,
+    "neg": 0,
+    "avgConf": 0.8,
+    "netImpact": 4.13
+   },
+   "categories": {
+    "chip": {
+     "count": 4,
+     "impact": 4.13
     },
+    "capex": {
+     "count": 1,
+     "impact": 0.0
+    }
+   },
+   "conclusion": "算力芯片链偏多。对应主题：AI硬件（阶段4 杀估值，58.3分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "Compute-chip chain is bullish. Themes: AI Hardware (Stage 4 valuation de-rating, 58.3). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+  },
+  {
+   "date": "2026-11-23",
+   "items": [
     {
-     "title": "Data center construction costs soar 13% in 2026",
-     "titleZh": "2026 年数据中心建设成本将飙升 13%",
-     "source": "CNBC AI",
-     "url": "https://www.cnbc.com/2026/11/20/data-center-construction-costs-soar-13-percent-in-2026.html",
-     "time": "2026-11-21 00:52",
-     "impact": 0.0,
-     "confidence": 0.8,
-     "tier": "major",
-     "direction": "neu",
-     "tags": [
-      "订单",
-      "价格"
-     ],
-     "categories": [
-      "capex"
-     ]
-    },
-    {
-     "title": "Trump says he discussed Jensen Huang with Xi; Bessent tells CNBC Nvidia chip export policy is unchanged",
-     "titleZh": "特朗普表示，他与习近平讨论了黄仁勋；贝森特对CNBC表示，英伟达芯片出口政策未变。",
+     "title": "U.S. probes Megaspeed, Alice Huang as new figure emerges in Nvidia chip case",
+     "titleZh": "美国调查Megaspeed和Alice Huang，Nvidia芯片案中出现新人物",
      "source": "CNBC Tech",
-     "url": "https://www.cnbc.com/2026/11/20/treasury-secretary-scott-bessent.html",
-     "time": "2026-11-21 06:08",
-     "impact": 0.0,
+     "url": "https://www.cnbc.com/2026/11/23/nvidia-megaspeed-chipmaker-us.html",
+     "time": "2026-11-23 22:40",
+     "impact": -1.5,
      "confidence": 0.66,
      "tier": "major",
-     "direction": "neu",
+     "direction": "neg",
      "tags": [
       "官方"
      ],
      "categories": [
-      "chip",
-      "policy"
-     ]
-    }
-   ],
-   "stats": {
-    "count": 3,
-    "pos": 0,
-    "neg": 0,
-    "avgConf": 0.75,
-    "netImpact": 0.0
-   },
-   "categories": {
-    "capex": {
-     "count": 2,
-     "impact": 0.0
-    },
-    "chip": {
-     "count": 1,
-     "impact": 0.0
-    },
-    "policy": {
-     "count": 1,
-     "impact": 0.0
-    }
-   },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，59.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 59.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
-  },
-  {
-   "date": "2026-11-20",
-   "items": [
-    {
-     "title": "Lagarde says EU funds should take first losses on chip plants, data centers",
-     "titleZh": "拉加德表示，欧盟基金应在芯片厂和数据中心方面率先承担损失",
-     "source": "CNBC Tech",
-     "url": "https://www.cnbc.com/2026/11/20/lagarde-eu-data-center-funding.html",
-     "time": "2026-11-20 20:52",
-     "impact": -0.34,
-     "confidence": 0.8,
-     "tier": "major",
-     "direction": "neu",
-     "tags": [
-      "监管"
-     ],
-     "categories": [
-      "capex",
       "chip"
      ]
     },
     {
-     "title": "Cramer says Nvidia’s woes are trumping Anthropic excitement for the rest of the AI trade",
-     "titleZh": "Cramer表示，Nvidia的困境正在压倒Anthropic对人工智能板块其余部分的兴奋情绪",
-     "source": "CNBC Tech",
-     "url": "https://www.cnbc.com/2026/11/19/nvidia-anthropic-ipo-ai-trade.html",
-     "time": "2026-11-20 07:22",
+     "title": "Nokia tie-up with Nvidia on AI-RAN gets warning from Orange CTO",
+     "titleZh": "诺基亚与英伟达在AI-RAN方面的合作受到Orange首席技术官的警告",
+     "source": "Light Reading",
+     "url": "https://www.lightreading.com/5g/nokia-tie-up-with-nvidia-on-ai-ran-gets-warning-from-orange-cto",
+     "time": "2026-11-23 16:30",
      "impact": 0.0,
-     "confidence": 0.88,
-     "tier": "major",
+     "confidence": 0.7,
+     "tier": "trade",
      "direction": "neu",
      "tags": [
       "官方"
@@ -123,22 +146,18 @@
    "stats": {
     "count": 2,
     "pos": 0,
-    "neg": 0,
-    "avgConf": 0.84,
-    "netImpact": -0.34
+    "neg": 1,
+    "avgConf": 0.68,
+    "netImpact": -1.5
    },
    "categories": {
-    "capex": {
-     "count": 1,
-     "impact": -0.34
-    },
     "chip": {
      "count": 2,
-     "impact": -0.34
+     "impact": -1.5
     }
    },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，59.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 59.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，58.3分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 58.3). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
   },
   {
    "date": "2026-11-18",
@@ -174,8 +193,8 @@
      "impact": 0.0
     }
    },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，59.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 59.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，58.3分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 58.3). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
   },
   {
    "date": "2026-11-17",
@@ -230,8 +249,8 @@
      "impact": 0.0
     }
    },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，59.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 59.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，58.3分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 58.3). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
   },
   {
    "date": "2026-11-16",
@@ -265,56 +284,83 @@
      "impact": 0.0
     }
    },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，59.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 59.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
-  },
-  {
-   "date": "2026-11-13",
-   "items": [
-    {
-     "title": "Jensen Huang out as Nvidia CEO as telecom makes big bets on AI",
-     "titleZh": "",
-     "source": "Light Reading",
-     "url": "https://www.lightreading.com/ai-machine-learning/jensen-huang-out-as-nvidia-ceo-as-telecom-makes-big-bets-on-ai",
-     "time": "2026-11-13 00:45",
-     "impact": 0.0,
-     "confidence": 0.6,
-     "tier": "trade",
-     "direction": "neu",
-     "tags": [
-      "官方"
-     ],
-     "categories": [
-      "chip"
-     ]
-    }
-   ],
-   "stats": {
-    "count": 1,
-    "pos": 0,
-    "neg": 0,
-    "avgConf": 0.6,
-    "netImpact": 0.0
-   },
-   "categories": {
-    "chip": {
-     "count": 1,
-     "impact": 0.0
-    }
-   },
-   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，59.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 59.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+   "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，58.3分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+   "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 58.3). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
   }
  ],
  "latest": {
-  "date": "2026-11-21",
+  "date": "2026-11-24",
   "items": [
    {
-    "title": "Trump vows to stop U.S. companies from building data centers abroad, threatens 'tremendous tax'",
-    "titleZh": "特朗普誓言阻止美国公司在海外建设数据中心，并威胁要征收“巨额税款”",
+    "title": "Six key questions raised by Jensen Huang's return to Nvidia",
+    "titleZh": "Jensen Huang重返Nvidia引发的六大关键问题",
     "source": "CNBC Tech",
-    "url": "https://www.cnbc.com/2026/11/20/trump-data-centers-ai-companies-tax.html",
-    "time": "2026-11-21 04:47",
+    "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-politics-market.html",
+    "time": "2026-11-24 15:12",
+    "impact": 4.0,
+    "confidence": 0.88,
+    "tier": "major",
+    "direction": "pos",
+    "tags": [
+     "官方"
+    ],
+    "categories": [
+     "chip"
+    ]
+   },
+   {
+    "title": "Amazon snaps up Decart’s AI optimization tech for $7.5B as it prepares to sell Trainium chips",
+    "titleZh": "亚马逊以75亿美元收购Decart的AI优化技术，为销售Trainium芯片做准备",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
+    "time": "2026-11-24 01:14",
+    "impact": 0.13,
+    "confidence": 0.62,
+    "tier": "trade",
+    "direction": "neu",
+    "tags": [],
+    "categories": [
+     "chip"
+    ]
+   },
+   {
+    "title": "Amazon to acquire AI startup Decart's chip software, hire founders",
+    "titleZh": "亚马逊将收购人工智能初创公司Decart的芯片软件，并聘用其创始人",
+    "source": "CNBC Tech",
+    "url": "https://www.cnbc.com/2026/11/23/amazon-decarts-ai-acquisition.html",
+    "time": "2026-11-24 03:34",
+    "impact": 0.0,
+    "confidence": 0.8,
+    "tier": "major",
+    "direction": "neu",
+    "tags": [],
+    "categories": [
+     "chip"
+    ]
+   },
+   {
+    "title": "Congress shreds Nvidia's 'outrageous' decision to bring back Huang: 'Failure of character'",
+    "titleZh": "国会抨击英伟达召回黄仁勋的“荒谬”决定：“品格败坏”",
+    "source": "CNBC Tech",
+    "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-congress-trump.html",
+    "time": "2026-11-24 04:22",
+    "impact": 0.0,
+    "confidence": 0.88,
+    "tier": "major",
+    "direction": "neu",
+    "tags": [
+     "官方"
+    ],
+    "categories": [
+     "chip"
+    ]
+   },
+   {
+    "title": "AI data centers throw another wrench into chaotic UN climate talks",
+    "titleZh": "人工智能数据中心为混乱的联合国气候谈判再添变数",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit",
+    "time": "2026-11-24 05:09",
     "impact": 0.0,
     "confidence": 0.8,
     "tier": "major",
@@ -323,66 +369,26 @@
     "categories": [
      "capex"
     ]
-   },
-   {
-    "title": "Data center construction costs soar 13% in 2026",
-    "titleZh": "2026 年数据中心建设成本将飙升 13%",
-    "source": "CNBC AI",
-    "url": "https://www.cnbc.com/2026/11/20/data-center-construction-costs-soar-13-percent-in-2026.html",
-    "time": "2026-11-21 00:52",
-    "impact": 0.0,
-    "confidence": 0.8,
-    "tier": "major",
-    "direction": "neu",
-    "tags": [
-     "订单",
-     "价格"
-    ],
-    "categories": [
-     "capex"
-    ]
-   },
-   {
-    "title": "Trump says he discussed Jensen Huang with Xi; Bessent tells CNBC Nvidia chip export policy is unchanged",
-    "titleZh": "特朗普表示，他与习近平讨论了黄仁勋；贝森特对CNBC表示，英伟达芯片出口政策未变。",
-    "source": "CNBC Tech",
-    "url": "https://www.cnbc.com/2026/11/20/treasury-secretary-scott-bessent.html",
-    "time": "2026-11-21 06:08",
-    "impact": 0.0,
-    "confidence": 0.66,
-    "tier": "major",
-    "direction": "neu",
-    "tags": [
-     "官方"
-    ],
-    "categories": [
-     "chip",
-     "policy"
-    ]
    }
   ],
   "stats": {
-   "count": 3,
-   "pos": 0,
+   "count": 5,
+   "pos": 1,
    "neg": 0,
-   "avgConf": 0.75,
-   "netImpact": 0.0
+   "avgConf": 0.8,
+   "netImpact": 4.13
   },
   "categories": {
-   "capex": {
-    "count": 2,
-    "impact": 0.0
-   },
    "chip": {
-    "count": 1,
-    "impact": 0.0
+    "count": 4,
+    "impact": 4.13
    },
-   "policy": {
+   "capex": {
     "count": 1,
     "impact": 0.0
    }
   },
-  "conclusion": "无高置信度方向性事件，维持观察。对应主题：AI硬件（阶段4 杀估值，59.7分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
-  "conclusionEn": "No high-confidence directional catalyst; stay on watch. Themes: AI Hardware (Stage 4 valuation de-rating, 59.7). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
+  "conclusion": "算力芯片链偏多。对应主题：AI硬件（阶段4 杀估值，58.3分）。事件偏多但板块处于杀估值阶段，更可能是反弹催化，而非趋势反转。",
+  "conclusionEn": "Compute-chip chain is bullish. Themes: AI Hardware (Stage 4 valuation de-rating, 58.3). Headlines are positive but the theme is in a valuation de-rating stage: more likely a rebound catalyst than a trend reversal."
  }
 }
