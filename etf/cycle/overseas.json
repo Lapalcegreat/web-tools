@@ -1,45 +1,42 @@
 {
- "updatedAt": "2026-11-25 20:12",
- "score": 55.3,
+ "updatedAt": "2026-11-28 14:10",
+ "score": 47.3,
  "stats": {
-  "count": 16,
-  "high": 2,
-  "low": 14,
+  "count": 22,
+  "high": 3,
+  "low": 19,
   "pos": 1,
-  "neg": 1,
-  "sources": 4,
-  "official": 12,
+  "neg": 2,
+  "sources": 6,
+  "official": 11,
   "officialImpact": 0
  },
  "items": [
   {
-   "title": "Six key questions raised by Jensen Huang's return to Nvidia",
+   "title": "SpaceX wins FCC approval to deploy 1 million orbital data center satellites",
    "source": "CNBC Tech",
    "tier": "major",
-   "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-politics-market.html",
-   "time": "2026-11-24 21:31",
-   "ageH": 22.6,
-   "impact": 4.0,
-   "confidence": 0.88,
-   "tags": [
-    "官方"
-   ],
+   "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
+   "time": "2026-11-26 10:35",
+   "ageH": 51.6,
+   "impact": 2.52,
+   "confidence": 0.8,
+   "tags": [],
    "sources": [
     "CNBC Tech"
    ],
    "multiSource": false,
-   "official": true,
    "direction": "pos",
    "status": "high"
   },
   {
-   "title": "AI debt markets shudder as Nvidia's top 'banker' returns",
+   "title": "Nvidia sellers seek new buyers as U.S. curbs China AI chip access, sources tell CNBC",
    "source": "CNBC Tech",
    "tier": "major",
-   "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-ai-credit-markets.html",
-   "time": "2026-11-25 05:52",
-   "ageH": 14.3,
-   "impact": -2.48,
+   "url": "https://www.cnbc.com/2026/11/25/nvidia-china-ai-chip-remote-access.html",
+   "time": "2026-11-26 01:28",
+   "ageH": 60.7,
+   "impact": -2.02,
    "confidence": 0.88,
    "tags": [
     "监管",
@@ -52,29 +49,102 @@
    "official": true,
    "direction": "neg",
    "status": "high"
+  },
+  {
+   "title": "Nvidia hits pause on chip shipments to Southeast Asia",
+   "source": "TechCrunch",
+   "tier": "trade",
+   "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+   "time": "2026-11-27 04:03",
+   "ageH": 34.1,
+   "impact": -1.26,
+   "confidence": 0.7,
+   "tags": [
+    "订单",
+    "官方"
+   ],
+   "sources": [
+    "TechCrunch"
+   ],
+   "multiSource": false,
+   "official": true,
+   "direction": "neg",
+   "status": "high"
   }
  ],
  "pending": [
+  {
+   "title": "Two Californian Nvidia AI chip customers are really Chinese-owned",
+   "source": "Tom's Hardware",
+   "url": "https://www.tomshardware.com/tech-industry/big-tech/two-californian-nvidia-ai-chip-customers-are-really-chinese-owned-companies-used-as-workaround-for-government-export-controls",
+   "time": "2026-11-27 02:00",
+   "impact": -0.29,
+   "confidence": 0.7,
+   "tags": [
+    "监管",
+    "官方"
+   ]
+  },
   {
    "title": "NVIDIA and Microsoft Expand Accelerated Computing From Azure to Windows PCs",
    "source": "NVIDIA Blog",
    "url": "https://blogs.nvidia.com/blog/microsoft-ignite-accelerated-computing-azure-windows-pcs/",
    "time": "2026-11-20 04:00",
-   "impact": 0.43,
+   "impact": 0.27,
    "confidence": 0.48,
    "tags": [
     "官方"
    ]
   },
   {
-   "title": "Lambda Boosts AI Factory Resiliency and Efficiency With NVIDIA Photonics",
-   "source": "NVIDIA Blog",
-   "url": "https://blogs.nvidia.com/blog/lambda-photonics/",
-   "time": "2026-11-17 00:00",
-   "impact": 0.29,
-   "confidence": 0.48,
+   "title": "FCC approves SpaceX plan to put AI data centers in space",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/25/fcc-approves-spacex-plan-to-put-ai-data-centers-in-space/",
+   "time": "2026-11-26 04:56",
+   "impact": 0.21,
+   "confidence": 0.74,
+   "tags": []
+  },
+  {
+   "title": "China’s AI hardware push is moving beyond GPUs to the PCBs underneath them — Beijing races to corner the market on copper foil and micro-drill bits as board complexity explodes",
+   "source": "Tom's Hardware",
+   "url": "https://www.tomshardware.com/tech-industry/manufacturing/chinas-ai-hardware-push-is-moving-beyond-gpus-to-the-pcbs-underneath-them-beijing-races-to-corner-the-market-on-copper-foil-and-micro-drill-bits-as-board-complexity-explodes",
+   "time": "2026-11-28 01:00",
+   "impact": 0.2,
+   "confidence": 0.62,
    "tags": [
-    "技术",
+    "订单"
+   ]
+  },
+  {
+   "title": "Texas lifts freeze on 1,800+ data center projects in Greg Abbott U-turn",
+   "source": "Tom's Hardware",
+   "url": "https://www.tomshardware.com/tech-industry/data-centers/texas-lifts-freeze-on-1-800-data-center-projects-in-greg-abbott-u-turn-companies-rush-for-permits-before-gina-hinojosas-january-arrival",
+   "time": "2026-11-27 19:00",
+   "impact": 0.1,
+   "confidence": 0.62,
+   "tags": []
+  },
+  {
+   "title": "Built for trust and control: Powering the next wave of AI agents across Google Workspace and Google Cloud",
+   "source": "Google Cloud Blog",
+   "url": "https://cloud.google.com/blog/products/identity-security/deploying-agents-safely-in-your-enterprise/",
+   "time": "2026-11-25 01:00",
+   "impact": -0.1,
+   "confidence": 0.6,
+   "tags": [
+    "监管",
+    "官方"
+   ]
+  },
+  {
+   "title": "Amazon and Meta reportedly in talks to lift blockade on AI agent Muse",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
+   "time": "2026-11-25 22:10",
+   "impact": 0.1,
+   "confidence": 0.26,
+   "tags": [
     "官方"
    ]
   },
@@ -83,7 +153,7 @@
    "source": "CNBC Tech",
    "url": "https://www.cnbc.com/2026/11/25/ai-debt-big-tech-spending-nvidia.html",
    "time": "2026-11-25 14:29",
-   "impact": 0.09,
+   "impact": 0.08,
    "confidence": 0.66,
    "tags": [
     "capex",
@@ -91,12 +161,12 @@
    ]
   },
   {
-   "title": "NVIDIA Sweeps MLPerf Training and Endpoints as Vera Rubin Debuts With Leading Performance",
-   "source": "NVIDIA Blog",
-   "url": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
-   "time": "2026-11-17 00:00",
-   "impact": -0.04,
-   "confidence": 0.48,
+   "title": "‘Your booth is waiting’: Denny’s welcomes Jensen Huang back as Nvidia CEO",
+   "source": "CNBC Tech",
+   "url": "https://www.cnbc.com/2026/11/26/dennys-jensen-huang-nvidia.html",
+   "time": "2026-11-26 11:13",
+   "impact": 0.0,
+   "confidence": 0.88,
    "tags": [
     "官方"
    ]
@@ -105,60 +175,9 @@
    "title": "Jensen Huang's Nvidia return shows the U.S.-China AI race is about more than chips",
    "source": "CNBC Tech",
    "url": "https://www.cnbc.com/2026/11/25/jensen-huang-nvidia-ai-talent-race.html",
-   "time": "2026-11-25 09:13",
+   "time": "2026-11-25 22:29",
    "impact": 0.0,
    "confidence": 0.88,
-   "tags": [
-    "官方"
-   ]
-  },
-  {
-   "title": "Saudi national charged in OpenAI bugging to be released on $1 million bond",
-   "source": "CNBC Tech",
-   "url": "https://www.cnbc.com/2026/11/24/openai-bugging-aflozan-release-saudi.html",
-   "time": "2026-11-25 06:03",
-   "impact": 0.0,
-   "confidence": 0.8,
-   "tags": []
-  },
-  {
-   "title": "NVIDIA Announces Rubin HPC — A New GPU to Accelerate Agents for Science, Engineering and Analytics",
-   "source": "NVIDIA Blog",
-   "url": "https://blogs.nvidia.com/blog/rubin-hpc/",
-   "time": "2026-11-17 00:00",
-   "impact": 0.0,
-   "confidence": 0.84,
-   "tags": [
-    "官方"
-   ]
-  },
-  {
-   "title": "Why a Crusoe investor is betting on solar and batteries to power future AI data centers",
-   "source": "TechCrunch",
-   "url": "https://techcrunch.com/2026/11/24/why-a-crusoe-investor-is-betting-on-solar-and-batteries-to-power-future-ai-data-centers/",
-   "time": "2026-11-25 00:10",
-   "impact": 0.0,
-   "confidence": 0.62,
-   "tags": []
-  },
-  {
-   "title": "Amazon’s Decart acquisition is a bet on using software to narrow the silicon gap with Nvidia",
-   "source": "TechCrunch",
-   "url": "https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race/",
-   "time": "2026-11-24 23:51",
-   "impact": 0.0,
-   "confidence": 0.7,
-   "tags": [
-    "官方"
-   ]
-  },
-  {
-   "title": "Nokia tie-up with Nvidia on AI-RAN gets warning from Orange CTO",
-   "source": "Light Reading",
-   "url": "https://www.lightreading.com/5g/nokia-tie-up-with-nvidia-on-ai-ran-gets-warning-from-orange-cto",
-   "time": "2026-11-23 16:30",
-   "impact": 0.0,
-   "confidence": 0.7,
    "tags": [
     "官方"
    ]
@@ -171,7 +190,7 @@
    "date": "2026-11-25",
    "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000807/tsm-dividendadjustmentx202.htm",
    "title": "6-K",
-   "age": 0,
+   "age": 3,
    "items": [],
    "labels": [],
    "signal": "",
@@ -183,7 +202,7 @@
    "date": "2026-11-25",
    "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000805/tsm-monthend6kx20261125.htm",
    "title": "6-K",
-   "age": 0,
+   "age": 3,
    "items": [],
    "labels": [],
    "signal": "",
@@ -195,7 +214,7 @@
    "date": "2026-11-24",
    "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526475973/d91615d8k.htm",
    "title": "8-K",
-   "age": 1,
+   "age": 4,
    "items": [],
    "labels": [],
    "signal": "",
@@ -207,7 +226,7 @@
    "date": "2026-11-23",
    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm",
    "title": "8-K",
-   "age": 2,
+   "age": 5,
    "items": [],
    "labels": [],
    "signal": "",
@@ -219,7 +238,7 @@
    "date": "2026-11-23",
    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026075541/meta-20261118.htm",
    "title": "8-K",
-   "age": 2,
+   "age": 5,
    "items": [],
    "labels": [],
    "signal": "",
@@ -231,7 +250,7 @@
    "date": "2026-11-23",
    "url": "https://www.sec.gov/Archives/edgar/data/1633978/000162828026075535/lite-20261118.htm",
    "title": "8-K",
-   "age": 2,
+   "age": 5,
    "items": [],
    "labels": [],
    "signal": "",
@@ -243,7 +262,7 @@
    "date": "2026-11-20",
    "url": "https://www.sec.gov/Archives/edgar/data/820318/000119312526470356/d349041d8k.htm",
    "title": "8-K",
-   "age": 5,
+   "age": 8,
    "items": [],
    "labels": [],
    "signal": "",
@@ -255,7 +274,7 @@
    "date": "2026-11-20",
    "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000218/amd-20261118.htm",
    "title": "8-K",
-   "age": 5,
+   "age": 8,
    "items": [],
    "labels": [],
    "signal": "",
@@ -267,7 +286,7 @@
    "date": "2026-11-19",
    "url": "https://www.sec.gov/Archives/edgar/data/820318/000119312526467737/d867801d8k.htm",
    "title": "8-K",
-   "age": 6,
+   "age": 9,
    "items": [],
    "labels": [],
    "signal": "",
@@ -279,7 +298,7 @@
    "date": "2026-11-17",
    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/nvda-20261117.htm",
    "title": "8-K",
-   "age": 8,
+   "age": 11,
    "items": [],
    "labels": [],
    "signal": "",
@@ -291,18 +310,6 @@
    "date": "2026-11-16",
    "url": "https://www.sec.gov/Archives/edgar/data/2488/000119312526462340/d105780d8ka.htm",
    "title": "8-K/A",
-   "age": 9,
-   "items": [],
-   "labels": [],
-   "signal": "",
-   "impact": 0.0
-  },
-  {
-   "company": "Vertiv",
-   "form": "8-K",
-   "date": "2026-11-13",
-   "url": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026073564/vrt-20261113.htm",
-   "title": "8-K",
    "age": 12,
    "items": [],
    "labels": [],
