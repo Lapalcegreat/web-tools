@@ -1,13 +1,13 @@
 {
- "updatedAt": "2026-11-28 14:10",
+ "updatedAt": "2026-11-28 20:12",
  "score": 47.3,
  "stats": {
-  "count": 22,
+  "count": 15,
   "high": 3,
-  "low": 19,
+  "low": 12,
   "pos": 1,
   "neg": 2,
-  "sources": 6,
+  "sources": 4,
   "official": 11,
   "officialImpact": 0
  },
@@ -18,7 +18,7 @@
    "tier": "major",
    "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
    "time": "2026-11-26 10:35",
-   "ageH": 51.6,
+   "ageH": 57.6,
    "impact": 2.52,
    "confidence": 0.8,
    "tags": [],
@@ -35,7 +35,7 @@
    "tier": "major",
    "url": "https://www.cnbc.com/2026/11/25/nvidia-china-ai-chip-remote-access.html",
    "time": "2026-11-26 01:28",
-   "ageH": 60.7,
+   "ageH": 66.7,
    "impact": -2.02,
    "confidence": 0.88,
    "tags": [
@@ -56,7 +56,7 @@
    "tier": "trade",
    "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
    "time": "2026-11-27 04:03",
-   "ageH": 34.1,
+   "ageH": 40.1,
    "impact": -1.26,
    "confidence": 0.7,
    "tags": [
@@ -73,18 +73,6 @@
   }
  ],
  "pending": [
-  {
-   "title": "Two Californian Nvidia AI chip customers are really Chinese-owned",
-   "source": "Tom's Hardware",
-   "url": "https://www.tomshardware.com/tech-industry/big-tech/two-californian-nvidia-ai-chip-customers-are-really-chinese-owned-companies-used-as-workaround-for-government-export-controls",
-   "time": "2026-11-27 02:00",
-   "impact": -0.29,
-   "confidence": 0.7,
-   "tags": [
-    "监管",
-    "官方"
-   ]
-  },
   {
    "title": "NVIDIA and Microsoft Expand Accelerated Computing From Azure to Windows PCs",
    "source": "NVIDIA Blog",
@@ -106,38 +94,6 @@
    "tags": []
   },
   {
-   "title": "China’s AI hardware push is moving beyond GPUs to the PCBs underneath them — Beijing races to corner the market on copper foil and micro-drill bits as board complexity explodes",
-   "source": "Tom's Hardware",
-   "url": "https://www.tomshardware.com/tech-industry/manufacturing/chinas-ai-hardware-push-is-moving-beyond-gpus-to-the-pcbs-underneath-them-beijing-races-to-corner-the-market-on-copper-foil-and-micro-drill-bits-as-board-complexity-explodes",
-   "time": "2026-11-28 01:00",
-   "impact": 0.2,
-   "confidence": 0.62,
-   "tags": [
-    "订单"
-   ]
-  },
-  {
-   "title": "Texas lifts freeze on 1,800+ data center projects in Greg Abbott U-turn",
-   "source": "Tom's Hardware",
-   "url": "https://www.tomshardware.com/tech-industry/data-centers/texas-lifts-freeze-on-1-800-data-center-projects-in-greg-abbott-u-turn-companies-rush-for-permits-before-gina-hinojosas-january-arrival",
-   "time": "2026-11-27 19:00",
-   "impact": 0.1,
-   "confidence": 0.62,
-   "tags": []
-  },
-  {
-   "title": "Built for trust and control: Powering the next wave of AI agents across Google Workspace and Google Cloud",
-   "source": "Google Cloud Blog",
-   "url": "https://cloud.google.com/blog/products/identity-security/deploying-agents-safely-in-your-enterprise/",
-   "time": "2026-11-25 01:00",
-   "impact": -0.1,
-   "confidence": 0.6,
-   "tags": [
-    "监管",
-    "官方"
-   ]
-  },
-  {
    "title": "Amazon and Meta reportedly in talks to lift blockade on AI agent Muse",
    "source": "TechCrunch",
    "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
@@ -153,7 +109,7 @@
    "source": "CNBC Tech",
    "url": "https://www.cnbc.com/2026/11/25/ai-debt-big-tech-spending-nvidia.html",
    "time": "2026-11-25 14:29",
-   "impact": 0.08,
+   "impact": 0.05,
    "confidence": 0.66,
    "tags": [
     "capex",
@@ -181,6 +137,46 @@
    "tags": [
     "官方"
    ]
+  },
+  {
+   "title": "Saudi national charged in OpenAI bugging to be released on $1 million bond",
+   "source": "CNBC Tech",
+   "url": "https://www.cnbc.com/2026/11/24/openai-bugging-aflozan-release-saudi.html",
+   "time": "2026-11-25 23:55",
+   "impact": 0.0,
+   "confidence": 0.8,
+   "tags": []
+  },
+  {
+   "title": "Nokia tie-up with Nvidia on AI-RAN gets warning from Orange CTO",
+   "source": "Light Reading",
+   "url": "https://www.lightreading.com/5g/nokia-tie-up-with-nvidia-on-ai-ran-gets-warning-from-orange-cto",
+   "time": "2026-11-23 16:30",
+   "impact": 0.0,
+   "confidence": 0.7,
+   "tags": [
+    "官方"
+   ]
+  },
+  {
+   "title": "Nvidia chip buyers told to rule out Chinese renters to purchase GPUs, sources say",
+   "source": "CNBC Tech",
+   "url": "https://www.cnbc.com/2026/11/26/neoclouds-nvidia-china-ai.html",
+   "time": "2026-11-27 01:04",
+   "impact": 0.0,
+   "confidence": 0.66,
+   "tags": [
+    "官方"
+   ]
+  },
+  {
+   "title": "Saudi national in OpenAI bugging case is out on bond after DOJ tries to block release",
+   "source": "CNBC Tech",
+   "url": "https://www.cnbc.com/2026/11/25/openai-bugging-aflozan-bond-release-saudi.html",
+   "time": "2026-11-26 03:11",
+   "impact": 0.0,
+   "confidence": 0.58,
+   "tags": []
   }
  ],
  "primary": [
