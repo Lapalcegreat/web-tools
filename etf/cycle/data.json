@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-27 23:49",
+ "updatedAt": "2026-11-28 11:57",
  "themes": [
   {
    "id": "ai",
@@ -219,11 +219,11 @@
     "supply": 32.6,
     "valuation": 49.2,
     "crowd": 39.6,
-    "total": 55.0,
+    "total": 53.0,
     "drawdown": -62.8,
     "accel": -11.2,
-    "news": 61.7,
-    "newsDomestic": 69.5,
+    "news": 38.3,
+    "newsDomestic": 30.5,
     "overseas": 50.0,
     "industry": 57.6
    },
@@ -248,95 +248,95 @@
    "overseasAt": "2026-11-25 20:12（已过期）",
    "news": [
     {
-     "date": "2026-11-27 23:35",
-     "title": "中概股深夜强势上涨，美股芯片股拉升，黄金白银大涨",
-     "url": "http://finance.eastmoney.com/a/202611273942094240.html",
+     "date": "2026-11-28 10:01",
+     "title": "海量财经｜中际旭创市值回到6078亿",
+     "url": "http://finance.eastmoney.com/a/202611283942338734.html",
+     "media": "海报新闻"
+    },
+    {
+     "date": "2026-11-28 10:00",
+     "title": "本周超82亿主力资金加仓中际旭创，银行板块承压调整",
+     "url": "http://finance.eastmoney.com/a/202611283942337777.html",
      "media": "21世纪经济报道"
     },
     {
-     "date": "2026-11-27 23:22",
-     "title": "美股三大指数集体高开，存储、光通信等走强",
-     "url": "http://finance.eastmoney.com/a/202611273942084039.html",
-     "media": "21世纪经济报道"
+     "date": "2026-11-28 09:07",
+     "title": "AI交易回暖 美股集体收涨",
+     "url": "http://finance.eastmoney.com/a/202611283942333251.html",
+     "media": "财闻"
     },
     {
-     "date": "2026-11-27 23:17",
-     "title": "聚焦高端铜基材料突破 “上市公司新质生产力调研行”走进斯瑞新材",
-     "url": "http://stock.eastmoney.com/a/202611273942080896.html",
-     "media": "上海证券报·中国证券网"
+     "date": "2026-11-28 09:00",
+     "title": "闪迪涨近16%，美国科技股，暴涨！",
+     "url": "http://finance.eastmoney.com/a/202611283942332092.html",
+     "media": "上海证券报"
     },
     {
-     "date": "2026-11-27 22:51",
-     "title": "今夜！A股 重大调整！科技股重磅入局",
-     "url": "http://finance.eastmoney.com/a/202611273942062478.html",
-     "media": "券商中国"
+     "date": "2026-11-28 08:23",
+     "title": "恐慌指数跳水超10%！AI交易回暖美股大涨 大摩称反弹或具持续性",
+     "url": "http://stock.eastmoney.com/a/202611283942325780.html",
+     "media": "财闻"
     },
     {
-     "date": "2026-11-27 22:48",
-     "title": "【财闻联播】美团三季报出炉：营收增长21.6%！又一车企宣布，将停产燃油车",
-     "url": "http://finance.eastmoney.com/a/202611273942062774.html",
-     "media": "券商中国"
+     "date": "2026-11-28 08:19",
+     "title": "美股全线上涨，中国资产大幅走强",
+     "url": "http://finance.eastmoney.com/a/202611283942324667.html",
+     "media": "中国证券报"
     },
     {
-     "date": "2026-11-27 22:40",
-     "title": "美股三大股指齐涨，AI产业链交易回暖；证监会：抓紧研究出台增量政策；贵州茅台拟分红超320亿丨每经晚参",
-     "url": "http://finance.eastmoney.com/a/202611273942062633.html",
-     "media": "每日经济新闻"
+     "date": "2026-11-28 08:15",
+     "title": "全线拉升！一觉醒来，科技股、金价大涨",
+     "url": "http://forex.eastmoney.com/a/202611283942323625.html",
+     "media": "中国基金报"
     },
     {
-     "date": "2026-11-27 22:35",
-     "title": "美股开盘丨三大指数集体高开 闪迪涨超8%",
-     "url": "http://finance.eastmoney.com/a/202611273942053185.html",
-     "media": "第一财经"
+     "date": "2026-11-28 08:10",
+     "title": "美股三大指数全线收涨，大型科技股齐涨，芯片、光通信股上涨，闪迪涨近16%，中概股普涨；交易员缩减对美联储加息押注，预计明年晚些转向宽松；国际金价大涨",
+     "url": "http://forex.eastmoney.com/a/202611283942324273.html",
+     "media": "中国基金报"
     },
     {
-     "date": "2026-11-27 22:34",
-     "title": "建信基金陶灿：以均衡之道配置中国科技 短期波动不改长期信心",
-     "url": "http://finance.eastmoney.com/a/202611273942046585.html",
-     "media": "经济参考报"
+     "date": "2026-11-28 08:04",
+     "title": "上涨股票数创纪录 成交额重新站上2万亿 A股市场全线走强 半导体和光模块领涨",
+     "url": "http://finance.eastmoney.com/a/202611283942148085.html",
+     "media": "中国证券报"
     },
     {
-     "date": "2026-11-27 22:34",
-     "title": "美股纳指高开1.5% 存储、光通信、新云服务商等走强",
-     "url": "http://finance.eastmoney.com/a/202611273942054731.html",
+     "date": "2026-11-28 07:58",
+     "title": "银价跌破40美元关口后反弹 上行弹性尚待工业需求驱动",
+     "url": "http://finance.eastmoney.com/a/202611283942147573.html",
+     "media": "中国证券报"
+    },
+    {
+     "date": "2026-11-28 07:56",
+     "title": "美股大涨！VIX恐慌指数，直线跳水",
+     "url": "http://finance.eastmoney.com/a/202611283942323135.html",
+     "media": "证券时报"
+    },
+    {
+     "date": "2026-11-28 07:55",
+     "title": "美三大股指集体收涨 Anthropic涨11%",
+     "url": "http://finance.eastmoney.com/a/202611283942323430.html",
      "media": "南方财经网"
     },
     {
-     "date": "2026-11-27 22:33",
-     "title": "AI交易回暖，美股纳指高开1.5%，存储、光通信、新云服务商等走强",
-     "url": "http://finance.eastmoney.com/a/202611273942052173.html",
-     "media": "界面新闻"
+     "date": "2026-11-28 07:22",
+     "title": "凌晨！VIX恐慌指数，直线跳水！",
+     "url": "http://finance.eastmoney.com/a/202611283942324362.html",
+     "media": "券商中国"
     },
     {
-     "date": "2026-11-27 22:32",
-     "title": "美股光通信股开盘普涨，Lumentum涨7.17%，康宁涨3.47%",
-     "url": "http://finance.eastmoney.com/a/202611273942051398.html",
-     "media": "每日经济新闻"
-    },
-    {
-     "date": "2026-11-27 22:31",
-     "title": "美股纳指高1.5% 存储、光通信、新云服务商等走强",
-     "url": "http://finance.eastmoney.com/a/202611273942051927.html",
-     "media": "每日经济新闻"
-    },
-    {
-     "date": "2026-11-27 22:31",
-     "title": "AI交易回暖 美股纳指高1.5% 存储、光通信、新云服务商等走强",
-     "url": "http://finance.eastmoney.com/a/202611273942038425.html",
-     "media": "东方财富Choice数据"
-    },
-    {
-     "date": "2026-11-27 22:30",
-     "title": "AI交易回暖 美股纳指高开1.5% 存储、光通信、新云服务商等走强",
-     "url": "http://finance.eastmoney.com/a/202611273942048731.html",
-     "media": "财联社"
+     "date": "2026-11-28 07:22",
+     "title": "凌晨！VIX恐慌指数直线跳水！全球市场情绪回暖",
+     "url": "http://finance.eastmoney.com/a/202611283942152758.html",
+     "media": "券商中国"
     }
    ],
    "newsStats": {
-    "count": 16,
-    "pos": 7,
-    "neg": 0,
-    "score": 69.5
+    "count": 14,
+    "pos": 0,
+    "neg": 1,
+    "score": 30.5
    }
   },
   {
@@ -560,8 +560,8 @@
     "total": 47.8,
     "drawdown": -62.1,
     "accel": -10.4,
-    "news": 53.9,
-    "newsDomestic": 56.5,
+    "news": 53.5,
+    "newsDomestic": 55.8,
     "overseas": 50.0,
     "industry": null
    },
@@ -578,95 +578,95 @@
    "overseasAt": "2026-11-25 20:12（已过期）",
    "news": [
     {
-     "date": "2026-11-27 23:45",
-     "title": "五年电动化变革后，广州车展迎来新课题 | 2026广州车展",
-     "url": "http://finance.eastmoney.com/a/202611273942102230.html",
-     "media": "界面新闻"
+     "date": "2026-11-28 10:43",
+     "title": "公私募顶流密集解除“限购令”，陈光明专户解封、董承非重启募集，顶流大佬相继“开门迎客”",
+     "url": "http://finance.eastmoney.com/a/202611283942343238.html",
+     "media": "时代财经"
     },
     {
-     "date": "2026-11-27 23:32",
-     "title": "上汽MG：明年1月1日起在中国大陆停产燃油车",
-     "url": "http://finance.eastmoney.com/a/202611273942095526.html",
-     "media": "新京报"
-    },
-    {
-     "date": "2026-11-27 23:30",
-     "title": "出资千万元跨界投资！民丰特纸参投1.17亿元私募，投向芯片半导体与商业航天等",
-     "url": "http://finance.eastmoney.com/a/202611273942091264.html",
+     "date": "2026-11-28 10:29",
+     "title": "突发利空！301152，收警示函",
+     "url": "http://finance.eastmoney.com/a/202611283942341561.html",
      "media": "每日经济新闻"
     },
     {
-     "date": "2026-11-27 23:26",
-     "title": "11.99万元起 智能零压SUV东风日产NX7正式上市",
-     "url": "http://finance.eastmoney.com/a/202611273942088932.html",
-     "media": "北京商报"
+     "date": "2026-11-28 10:22",
+     "title": "“Token之都”里的淘金客：抢时间，抓风口，在450亿投资里分一杯羹",
+     "url": "http://finance.eastmoney.com/a/202611283942339865.html",
+     "media": "时代周报"
     },
     {
-     "date": "2026-11-27 23:23",
-     "title": "广汽传祺发布星源超级双擎混动技术",
-     "url": "http://finance.eastmoney.com/a/202611273942086566.html",
-     "media": "上海证券报·中国证券网"
+     "date": "2026-11-28 10:17",
+     "title": "冷能卖钱：一年十个月靠天制冷 电价不到北京一半 乌兰察布要抢算力饭碗",
+     "url": "http://finance.eastmoney.com/a/202611273941831651.html",
+     "media": "时代周报"
     },
     {
-     "date": "2026-11-27 23:21",
-     "title": "厦门象屿2.83亿元中期分红即将落地 管理层对全年经营抱有信心",
-     "url": "http://finance.eastmoney.com/a/202611273942084843.html",
-     "media": "上海证券报·中国证券网"
+     "date": "2026-11-28 09:51",
+     "title": "总额平稳增长 需求向新升级——1至10月我国物流运行分析",
+     "url": "http://finance.eastmoney.com/a/202611283942337474.html",
+     "media": "新华社"
     },
     {
-     "date": "2026-11-27 23:08",
-     "title": "汽车企业为更难增长的2027年做好准备 | 2026广州车展",
-     "url": "http://finance.eastmoney.com/a/202611273942073672.html",
-     "media": "界面新闻"
+     "date": "2026-11-28 09:42",
+     "title": "上汽MG：2027年1月1日起面向中国大陆市场停产燃油车",
+     "url": "http://finance.eastmoney.com/a/202611283942337064.html",
+     "media": "财联社"
     },
     {
-     "date": "2026-11-27 22:58",
-     "title": "筹划重大资产重组！拟现金购买年赚3亿元的燃气公司控股权，中南文化前三季扣非净利只剩243万元",
-     "url": "http://finance.eastmoney.com/a/202611273942066084.html",
-     "media": "每日经济新闻"
+     "date": "2026-11-28 09:32",
+     "title": "汽车早报【11月28日】",
+     "url": "http://finance.eastmoney.com/a/202611283942335623.html",
+     "media": "财联社"
     },
     {
-     "date": "2026-11-27 22:58",
-     "title": "宁波东力：2026年1~3季度，公司实现营业收入12.20亿元，同比增长9.42%",
-     "url": "http://finance.eastmoney.com/a/202611273942072451.html",
-     "media": "南方财经网"
+     "date": "2026-11-28 09:13",
+     "title": "600万股被拍卖，迅游科技迎新控股股东智龙网联，实控人变更为董事长童毅",
+     "url": "http://finance.eastmoney.com/a/202611283942335389.html",
+     "media": "深圳商报·读创"
     },
     {
-     "date": "2026-11-27 22:52",
-     "title": "订单、GTV齐向上，滴滴国际出行业务前三季度持续盈利",
-     "url": "http://finance.eastmoney.com/a/202611273942062520.html",
-     "media": "券商中国"
+     "date": "2026-11-28 09:12",
+     "title": "前10个月规上工业企业利润增长16%",
+     "url": "http://finance.eastmoney.com/a/202611283942334582.html",
+     "media": "中国证券报·中证网"
     },
     {
-     "date": "2026-11-27 22:49",
-     "title": "合资车企广州车展集体“换脑”又“换身”",
-     "url": "http://finance.eastmoney.com/a/202611273942065383.html",
-     "media": "新京报"
+     "date": "2026-11-28 09:10",
+     "title": "中概股普遍上涨，纳斯达克中国金龙指数涨3.02%",
+     "url": "http://finance.eastmoney.com/a/202611283942333815.html",
+     "media": "财闻"
     },
     {
-     "date": "2026-11-27 22:34",
-     "title": "建信基金陶灿：以均衡之道配置中国科技 短期波动不改长期信心",
-     "url": "http://finance.eastmoney.com/a/202611273942046585.html",
-     "media": "经济参考报"
+     "date": "2026-11-28 09:09",
+     "title": "大手笔护盘！A股，真金白银来了",
+     "url": "http://finance.eastmoney.com/a/202611283942333785.html",
+     "media": "中国商报"
     },
     {
-     "date": "2026-11-27 22:34",
-     "title": "“生态包袱”变发展资源 ——贵州一座煤城的“变废为宝”实践",
-     "url": "http://finance.eastmoney.com/a/202611273942044355.html",
-     "media": "经济参考报"
+     "date": "2026-11-28 09:06",
+     "title": "付费前夜 DeepSeek大佬圈都有谁？黄仁勋也去了",
+     "url": "http://finance.eastmoney.com/a/202611283942332916.html",
+     "media": "财闻"
     },
     {
-     "date": "2026-11-27 22:34",
-     "title": "跨境支付机构护航“新三样”出海",
-     "url": "http://finance.eastmoney.com/a/202611273942044190.html",
-     "media": "经济参考报"
+     "date": "2026-11-28 09:00",
+     "title": "闪迪涨近16%，美国科技股，暴涨！",
+     "url": "http://finance.eastmoney.com/a/202611283942332092.html",
+     "media": "上海证券报"
+    },
+    {
+     "date": "2026-11-28 08:56",
+     "title": "上汽MG官宣全面转型：明年1月1日起在中国大陆停产燃油车",
+     "url": "http://finance.eastmoney.com/a/202611283942331261.html",
+     "media": "财闻"
     }
    ],
    "newsStats": {
     "count": 30,
-    "pos": 17,
-    "neg": 3,
-    "score": 56.5
+    "pos": 10,
+    "neg": 2,
+    "score": 55.8
    }
   },
   {
@@ -884,11 +884,11 @@
      "code": "601689",
      "name": "拓普集团",
      "price": 50.1,
-     "chg": 9.89,
+     "chg": 9.892520289537,
      "mcap": 87065562558.0,
-     "pe": 39.29,
-     "pb": 3.52,
-     "pePct": 52.32,
+     "pe": 35.18391747,
+     "pb": 3.51887719,
+     "pePct": 38.0,
      "pbPct": 10.879999999999999,
      "ps": 2.78445057,
      "psPct": 9.28,
@@ -916,9 +916,9 @@
       "growth": 23.7,
       "quality": 44.5,
       "supply": 47.7,
-      "valuation": 61.5,
+      "valuation": 71.0,
       "crowd": 67.0,
-      "total": 45.5
+      "total": 47.7
      }
     },
     {
@@ -1031,93 +1031,93 @@
    "overseasAt": "2026-11-25 20:12（已过期）",
    "news": [
     {
-     "date": "2026-11-27 23:45",
-     "title": "五年电动化变革后，广州车展迎来新课题 | 2026广州车展",
-     "url": "http://finance.eastmoney.com/a/202611273942102230.html",
-     "media": "界面新闻"
-    },
-    {
-     "date": "2026-11-27 23:35",
-     "title": "美股三大指数集体上涨 AI存储板块走强 闪迪涨超11%",
-     "url": "http://finance.eastmoney.com/a/202611273942038237.html",
-     "media": "东方财富Choice数据"
-    },
-    {
-     "date": "2026-11-27 22:48",
-     "title": "高交会观察：具身智能加速迈向工程验证与场景落地",
-     "url": "http://finance.eastmoney.com/a/202611273942061771.html",
-     "media": "蓝鲸财经"
-    },
-    {
-     "date": "2026-11-27 22:30",
-     "title": "何小鹏谈智驾付费：构建商业循环 支撑高阶智驾持续迭代",
-     "url": "http://finance.eastmoney.com/a/202611273942040870.html",
-     "media": "中国经营报"
-    },
-    {
-     "date": "2026-11-27 22:14",
-     "title": "拓斯达董事长吴丰礼当选新一届东莞市工商联主席、总商会会长",
-     "url": "http://finance.eastmoney.com/a/202611273942019651.html",
+     "date": "2026-11-28 11:33",
+     "title": "慧仑科技发布动作模型：明年实现机器人量产",
+     "url": "http://finance.eastmoney.com/a/202611283942346318.html",
      "media": "21世纪经济报道"
     },
     {
-     "date": "2026-11-27 22:07",
-     "title": "小鹏明年5款国际化车型将在海外上市",
-     "url": "http://finance.eastmoney.com/a/202611273942030046.html",
-     "media": "新京报"
-    },
-    {
-     "date": "2026-11-27 21:14",
-     "title": "不止于更高速率，新一代通信网建设迎来“施工图”",
-     "url": "http://finance.eastmoney.com/a/202611273941947623.html",
-     "media": "21世纪经济报道"
-    },
-    {
-     "date": "2026-11-27 21:11",
-     "title": "资金密集抢筹，微亿智造自研“物理AI大脑”定义工业具身智能新范式",
-     "url": "http://finance.eastmoney.com/a/202611273941946888.html",
-     "media": "上海证券报·中国证券网"
-    },
-    {
-     "date": "2026-11-27 21:09",
-     "title": "奇瑞全新艾瑞泽7开启预售，全新瑞虎8 PLUS全球首秀｜2026广州车展",
-     "url": "http://finance.eastmoney.com/a/202611273941949523.html",
-     "media": "广州日报新花城"
-    },
-    {
-     "date": "2026-11-27 21:01",
-     "title": "科创板晚报|科创50指数调整5只样本 思特威实控人提议回购5-10亿元股份用于注销",
-     "url": "http://finance.eastmoney.com/a/202611273941934316.html",
-     "media": "财联社"
-    },
-    {
-     "date": "2026-11-27 21:01",
-     "title": "固态电池应用场景持续拓宽",
-     "url": "http://finance.eastmoney.com/a/202611273941960156.html",
+     "date": "2026-11-28 10:36",
+     "title": "凌雄科技集团华宝城：算力筑基 数智领航 ——以数智化闭环DaaS模式赋能高质量发展",
+     "url": "http://finance.eastmoney.com/a/202611283942344788.html",
      "media": "证券日报"
     },
     {
-     "date": "2026-11-27 20:43",
-     "title": "拒绝“速成”，广州国际车展透视“广式”造车功夫体系进阶｜2026广州车展",
-     "url": "http://finance.eastmoney.com/a/202611273942094576.html",
-     "media": "广州日报新花城"
+     "date": "2026-11-28 10:22",
+     "title": "这三家公司控股股东真金白银进场，股价却把大股东摁在地上“摩擦”",
+     "url": "http://finance.eastmoney.com/a/202611283942340345.html",
+     "media": "每日经济新闻"
     },
     {
-     "date": "2026-11-27 20:24",
-     "title": "千觉机器人发布Luma高精度形貌测量仪",
-     "url": "http://finance.eastmoney.com/a/202611273941996792.html",
-     "media": "界面新闻"
+     "date": "2026-11-28 09:06",
+     "title": "付费前夜 DeepSeek大佬圈都有谁？黄仁勋也去了",
+     "url": "http://finance.eastmoney.com/a/202611283942332916.html",
+     "media": "财闻"
     },
     {
-     "date": "2026-11-27 20:20",
-     "title": "广州数科集团亮出70年家底，锚定未来五大科创发展路径",
-     "url": "http://finance.eastmoney.com/a/202611273941897955.html",
-     "media": "21世纪经济报道"
+     "date": "2026-11-28 08:50",
+     "title": "又一国产“智”造全球爆单！",
+     "url": "http://insurance.eastmoney.com/a/202611283942141596.html",
+     "media": "央视财经"
+    },
+    {
+     "date": "2026-11-28 08:35",
+     "title": "帕西尼武汉具身超级数据工厂启用 面向触觉全模态数据采集",
+     "url": "http://finance.eastmoney.com/a/202611283942328041.html",
+     "media": "上海证券报·中国证券网"
+    },
+    {
+     "date": "2026-11-28 08:33",
+     "title": "文兴：不急于在磨底阶段重仓押注 紧盯三条主线",
+     "url": "http://finance.eastmoney.com/a/202611283942328625.html",
+     "media": "金融投资报"
+    },
+    {
+     "date": "2026-11-28 08:15",
+     "title": "全线拉升！一觉醒来，科技股、金价大涨",
+     "url": "http://forex.eastmoney.com/a/202611283942323625.html",
+     "media": "中国基金报"
+    },
+    {
+     "date": "2026-11-28 08:10",
+     "title": "美股三大指数全线收涨，大型科技股齐涨，芯片、光通信股上涨，闪迪涨近16%，中概股普涨；交易员缩减对美联储加息押注，预计明年晚些转向宽松；国际金价大涨",
+     "url": "http://forex.eastmoney.com/a/202611283942324273.html",
+     "media": "中国基金报"
+    },
+    {
+     "date": "2026-11-28 08:04",
+     "title": "上涨股票数创纪录 成交额重新站上2万亿 A股市场全线走强 半导体和光模块领涨",
+     "url": "http://finance.eastmoney.com/a/202611283942148085.html",
+     "media": "中国证券报"
+    },
+    {
+     "date": "2026-11-28 07:30",
+     "title": "机器人、空间相机业务 打开激光雷达赛道增长空间",
+     "url": "http://finance.eastmoney.com/a/202611283942117945.html",
+     "media": "上海证券报"
+    },
+    {
+     "date": "2026-11-28 07:17",
+     "title": "科技股再定价 基金经理拆解反弹逻辑",
+     "url": "http://finance.eastmoney.com/a/202611283942118490.html",
+     "media": "上海证券报"
+    },
+    {
+     "date": "2026-11-28 06:46",
+     "title": "周六你需要知道的隔夜全球要闻：AI交易回暖纳指涨超2%；交易员削减美联储加息押注 预计明年晚些转向宽松；瑞银建议逢低买入白银",
+     "url": "http://finance.eastmoney.com/a/202611283942144154.html",
+     "media": "财联社"
+    },
+    {
+     "date": "2026-11-28 04:43",
+     "title": "车企集体造芯 黑芝麻智能扭亏面临挑战",
+     "url": "http://finance.eastmoney.com/a/202611283942130274.html",
+     "media": "中国经营网"
     }
    ],
    "newsStats": {
     "count": 30,
-    "pos": 10,
+    "pos": 11,
     "neg": 0,
     "score": 62.5
    }
@@ -1384,8 +1384,8 @@
     "total": 53.7,
     "drawdown": -46.9,
     "accel": -0.6,
-    "news": 56.2,
-    "newsDomestic": 60.3,
+    "news": 55.8,
+    "newsDomestic": 59.7,
     "overseas": 50.0,
     "industry": null
    },
@@ -1403,6 +1403,18 @@
    "industry": null,
    "overseasAt": "2026-11-25 20:12（已过期）",
    "news": [
+    {
+     "date": "2026-11-28 06:04",
+     "title": "供需互促激活万千气象 ——广东经济生态观察之五",
+     "url": "http://finance.eastmoney.com/a/202611283942138621.html",
+     "media": "经济日报"
+    },
+    {
+     "date": "2026-11-28 06:04",
+     "title": "在广州“买得舒心”",
+     "url": "http://finance.eastmoney.com/a/202611283942141125.html",
+     "media": "经济日报"
+    },
     {
      "date": "2026-11-27 21:27",
      "title": "AI眼镜能翻译、AI手表测心率，华强北“AI八骏”装进年货大礼包，海外客商也来打卡",
@@ -1474,25 +1486,13 @@
      "title": "【调研快报】好上好接待投资者网上提问调研",
      "url": "http://stock.eastmoney.com/a/202611263940845824.html",
      "media": "东方财富Choice数据"
-    },
-    {
-     "date": "2026-11-26 19:21",
-     "title": "字节PICO XR新品定档12月2日 产业链公司持续布局",
-     "url": "http://finance.eastmoney.com/a/202611263940753569.html",
-     "media": "上海证券报·中国证券网"
-    },
-    {
-     "date": "2026-11-26 18:57",
-     "title": "瀛通通讯股价过山车！智能眼镜业务营收占比不足1%，回应：字节订单规模不太大",
-     "url": "http://finance.eastmoney.com/a/202611263940743747.html",
-     "media": "时代周报"
     }
    ],
    "newsStats": {
     "count": 29,
-    "pos": 14,
+    "pos": 11,
     "neg": 1,
-    "score": 60.3
+    "score": 59.7
    }
   },
   {
@@ -1839,8 +1839,8 @@
     "total": 34.6,
     "drawdown": -63.3,
     "accel": -0.5,
-    "news": 54.7,
-    "newsDomestic": 57.8,
+    "news": 54.8,
+    "newsDomestic": 58.1,
     "overseas": 50.0,
     "industry": null
    },
@@ -1856,6 +1856,48 @@
    "industry": null,
    "overseasAt": "2026-11-25 20:12（已过期）",
    "news": [
+    {
+     "date": "2026-11-28 09:31",
+     "title": "6G政策东风劲吹 产业发展将驶入快车道 龙头企业有望率先受益",
+     "url": "http://stock.eastmoney.com/a/202611283942334090.html",
+     "media": "金融投资报"
+    },
+    {
+     "date": "2026-11-28 07:00",
+     "title": "60亿元央企子公司高管班子落定 经营考题开场",
+     "url": "http://finance.eastmoney.com/a/202611283942145239.html",
+     "media": "21世纪经济报道"
+    },
+    {
+     "date": "2026-11-28 07:00",
+     "title": "恒星力量 攻关太空能源",
+     "url": "http://finance.eastmoney.com/a/202611283942145824.html",
+     "media": "21世纪经济报道"
+    },
+    {
+     "date": "2026-11-28 06:04",
+     "title": "浙江 未来产业新引擎动力澎湃",
+     "url": "http://finance.eastmoney.com/a/202611283942138734.html",
+     "media": "经济日报"
+    },
+    {
+     "date": "2026-11-28 05:45",
+     "title": "企业利润“晴雨表”，一幅动能转换“透视图”（经济时评）",
+     "url": "http://finance.eastmoney.com/a/202611283942135826.html",
+     "media": "人民日报"
+    },
+    {
+     "date": "2026-11-28 04:01",
+     "title": "机器人上太空作业 已成产业新动向？",
+     "url": "http://finance.eastmoney.com/a/202611283942127841.html",
+     "media": "中国经营网"
+    },
+    {
+     "date": "2026-11-28 00:59",
+     "title": "A股重返3600点！富国、华泰柏瑞、永赢、摩根、中欧、平安、中银等多家基金公司集体发声",
+     "url": "http://finance.eastmoney.com/a/202611273941962015.html",
+     "media": "中国基金报"
+    },
     {
      "date": "2026-11-27 23:30",
      "title": "出资千万元跨界投资！民丰特纸参投1.17亿元私募，投向芯片半导体与商业航天等",
@@ -1893,59 +1935,17 @@
      "media": "每日经济新闻"
     },
     {
-     "date": "2026-11-27 20:59",
-     "title": "A股重返3600点！富国、华泰柏瑞、永赢、摩根、中欧、平安、中银等多家基金公司集体发声",
-     "url": "http://finance.eastmoney.com/a/202611273941962015.html",
-     "media": "中国基金报"
-    },
-    {
      "date": "2026-11-27 20:01",
      "title": "“深读无锡”调研行 | 从“芯”到“光”，无锡打造集成电路“第二增长极”",
      "url": "http://finance.eastmoney.com/a/202611273941974381.html",
      "media": "新华财经"
-    },
-    {
-     "date": "2026-11-27 17:54",
-     "title": "深圳空天布局再提速 总投资超20亿元重点实验室集群启用",
-     "url": "http://finance.eastmoney.com/a/202611273941977854.html",
-     "media": "21世纪经济报道"
-    },
-    {
-     "date": "2026-11-27 17:46",
-     "title": "国常会罕见“朝会午发”加力稳市，直提“国家队+充足流动性”，券商首席：悲观时刻已过",
-     "url": "http://forex.eastmoney.com/a/202611273941968045.html",
-     "media": "蓝鲸财经"
-    },
-    {
-     "date": "2026-11-27 17:38",
-     "title": "ETF收盘解读 | 市场反击，上证重回3600",
-     "url": "http://stock.eastmoney.com/a/202611273942078041.html",
-     "media": "21世纪经济报道"
-    },
-    {
-     "date": "2026-11-27 17:25",
-     "title": "杨德龙：国常会释放重磅利好 大盘或迎反转机会",
-     "url": "http://stock.eastmoney.com/a/202611273941988228.html",
-     "media": "大河财立方"
-    },
-    {
-     "date": "2026-11-27 16:53",
-     "title": "新一代通信网建设纲领性文件出炉，各细分领域公司将如何受益？",
-     "url": "http://finance.eastmoney.com/a/202611273941741230.html",
-     "media": "界面新闻"
-    },
-    {
-     "date": "2026-11-27 16:34",
-     "title": "中国—上海合作组织数字经济合作平台商业卫星数据应用服务国际合作交流活动举行",
-     "url": "http://finance.eastmoney.com/a/202611273941717265.html",
-     "media": "天津日报"
     }
    ],
    "newsStats": {
     "count": 30,
-    "pos": 15,
+    "pos": 16,
     "neg": 2,
-    "score": 57.8
+    "score": 58.1
    }
   },
   {
@@ -2312,6 +2312,12 @@
    "overseasAt": "2026-11-25 20:12（已过期）",
    "news": [
     {
+     "date": "2026-11-28 08:15",
+     "title": "展望2027年中国股市 外资机构关注盈利改善与估值修复机会",
+     "url": "http://finance.eastmoney.com/a/202611283942147462.html",
+     "media": "中国证券报"
+    },
+    {
      "date": "2026-11-27 22:48",
      "title": "【财闻联播】美团三季报出炉：营收增长21.6%！又一车企宣布，将停产燃油车",
      "url": "http://finance.eastmoney.com/a/202611273942062774.html",
@@ -2388,17 +2394,11 @@
      "title": "科创50创单日历史第三高涨幅 国产算力领涨 以史为鉴后市怎么看？",
      "url": "http://finance.eastmoney.com/a/202611273941673694.html",
      "media": "科创板日报"
-    },
-    {
-     "date": "2026-11-27 15:17",
-     "title": "A股井喷！沪指涨3.73%，深成指涨7.24%，创指涨11.61%，超1700股涨超9%",
-     "url": "http://finance.eastmoney.com/a/202611273941665547.html",
-     "media": "澎湃新闻"
     }
    ],
    "newsStats": {
     "count": 30,
-    "pos": 31,
+    "pos": 33,
     "neg": 0,
     "score": 62.5
    }
